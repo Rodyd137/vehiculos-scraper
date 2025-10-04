@@ -1,7 +1,7 @@
 # scraper/main.py
 from __future__ import annotations
 import os, re, json, time, sys, pathlib, datetime as dt
-from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode, urljoin, URLComponents  # type: ignore
+from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode, urljoin
 import requests
 from bs4 import BeautifulSoup
 

@@ -1,7 +1,7 @@
 # scraper/main.py
 from __future__ import annotations
 import os, re, json, time, sys, pathlib, datetime as dt
-from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode, urljoin
+from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode, urljoin, URLComponents  # type: ignore
 import requests
 from bs4 import BeautifulSoup
 
@@ -40,7 +40,7 @@ def add_or_replace_query(url: str, **params):
     q = dict(parse_qsl(p.query, keep_blank_values=True))
     # no sobreescribir params ya presentes si el valor nuevo es None
     for k, v in params.items():
-        if v is None: 
+        if v is None:
             continue
         q[k] = str(v)
     new = p._replace(query=urlencode(q, doseq=True))
@@ -80,7 +80,7 @@ def get_base_root(base_url: str) -> str:
     p = urlparse(base_url)
     return f"{p.scheme}://{p.netloc}"
 
-def normalize_url(href: str, base_root: str):
+def normalize_url(href: str | None, base_root: str):
     if not href: return None
     if href.startswith("http"): return href
     return urljoin(base_root, href)
@@ -106,7 +106,7 @@ def fetch(url: str, ua: str, retries: int = 2, backoff: float = 1.5) -> str:
 def parse_listings(html: str, page_url: str, base_root: str):
     soup = BeautifulSoup(html, "lxml")
     cont = soup.select_one("#bigsearch-results-inner-results ul")
-    if not cont: 
+    if not cont:
         return []
     results = []
     # Tomar li con clase 'normal' o con alguna clase que empiece con 'promo-'
@@ -142,7 +142,7 @@ def parse_listings(html: str, page_url: str, base_root: str):
         price_currency, price_amount = parse_price(p.get_text(" ", strip=True)) if p else (None, None)
 
         img = li.select_one("img.real")
-        thumb = normalize_url(img.get("src"), base_root) if img else None
+        thumb = normalize_url(img.get("src") if img else None, base_root)
 
         dphotos = li.get("data-photos") or ""
         photo_ids = [x.strip() for x in dphotos.split(",") if x.strip()]
@@ -163,6 +163,7 @@ def parse_listings(html: str, page_url: str, base_root: str):
     return results
 
 # --------- Detalle ---------
+
 def to_mobile(url: str, base_url: str) -> str:
     if not url: return url
     p = urlparse(url)
@@ -172,7 +173,17 @@ def to_mobile(url: str, base_url: str) -> str:
     m_netloc = f"m.{root}"
     return p._replace(scheme="https", netloc=m_netloc).geturl()
 
+def to_desktop(url: str, base_url: str) -> str:
+    if not url: return url
+    p = urlparse(url)
+    base = urlparse(base_url)
+    netloc = p.netloc or base.netloc
+    if netloc.startswith("m."):
+        netloc = netloc[2:]
+    return p._replace(scheme="https", netloc=netloc).geturl()
+
 PHONE_RE = re.compile(r"(?:\+?1?\s?(?:809|829|849))[\-\s\.]?\d{3}[\-\s\.]?\d{4}")
+SIZE_SEG = re.compile(r"/(\d{2,4})x(\d{2,4})/")
 
 def extract_section_texts(soup: BeautifulSoup, title_regex: str):
     title = None
@@ -202,7 +213,7 @@ def parse_keyvals_from_block(text_lines):
     out = {}
     for raw in text_lines:
         t = raw.strip().strip("•").strip("-").strip()
-        if not t or ":" not in t: 
+        if not t or ":" not in t:
             continue
         k, v = t.split(":", 1)
         k = re.sub(r"\s+", " ", k).strip()
@@ -210,8 +221,44 @@ def parse_keyvals_from_block(text_lines):
         if k and v: out[k] = v
     return out
 
-def parse_detail_page(html: str):
+def upscale_adsphoto(u: str) -> str:
+    """Si es AdsPhotos con tamaño embebido, fuerza 1200x800."""
+    if "AdsPhotos" in u:
+        u = SIZE_SEG.sub("/1200x800/", u)
+    return u
+
+def pick_best_img_url(tag) -> str | None:
+    """Devuelve la mejor URL de un <img>: usa el mayor 'srcset', o data-* o src."""
+    # 1) srcset → elegir el mayor width
+    srcset = (tag.get("srcset") or "").strip()
+    best = None
+    best_w = -1
+    if srcset:
+        for part in srcset.split(","):
+            part = part.strip()
+            if not part:
+                continue
+            bits = part.split()
+            url = bits[0]
+            w = 0
+            if len(bits) > 1 and bits[1].endswith("w"):
+                try: w = int(bits[1][:-1])
+                except: w = 0
+            if w > best_w:
+                best_w = w; best = url
+    # 2) data-* o src
+    if not best:
+        for k in ("data-src","data-original","data-lazy","data-url","src"):
+            v = (tag.get(k) or "").strip()
+            if v:
+                best = v
+                break
+    return best
+
+def parse_detail_page(html: str, page_url: str, base_root: str):
     soup = BeautifulSoup(html, "lxml")
+
+    # Bloques de texto (igual que antes)
     datos_lines = extract_section_texts(soup, r"Datos\s+Generales")
     datos = parse_keyvals_from_block(datos_lines)
     acc_lines = extract_section_texts(soup, r"(Accesorios|Caracter\u00EDsticas|Características)")
@@ -221,12 +268,30 @@ def parse_detail_page(html: str):
     vend_lines = extract_section_texts(soup, r"(Vendedor|Contacto\s+Vendedor|Contacto\s+Dealer|Datos\s+del\s+Vendedor)")
     vendedor_text = " \n ".join(vend_lines) if vend_lines else None
     phones = sorted(set(PHONE_RE.findall(vendedor_text or "")))
-    imgs = []
+
+    # ====== Imágenes de alta ======
+    imgs_set: set[str] = set()
+
+    # a) src/srcset/data-* de <img>
     for im in soup.select("img"):
-        src = (im.get("src") or "").strip()
-        if "AdsPhotos" in src:
-            imgs.append(src)
-    imgs = sorted(set(imgs))
+        u = pick_best_img_url(im)
+        if not u:
+            continue
+        u = u.strip()
+        if u.startswith("data:"):
+            continue
+        # normalizar relativo → absoluto
+        u = normalize_url(u, base_root) or u
+        # subir resolución si es AdsPhotos
+        u = upscale_adsphoto(u)
+        imgs_set.add(u)
+
+    # b) Regex por si hay rutas en scripts (galería en JSON inline)
+    for m in re.findall(r"https?://[^\s\"']*AdsPhotos/\d{2,4}x\d{2,4}/[^\s\"']+", html):
+        imgs_set.add(upscale_adsphoto(m))
+
+    imgs = sorted(imgs_set)
+
     return {
         "general": datos or None,
         "accessories": accesorios or None,
@@ -239,14 +304,30 @@ def parse_detail_page(html: str):
 def enrich_with_details(item: dict, ua: str, base_url: str, sleep_s: float) -> dict:
     url = item.get("url")
     if not url: return item
-    murl = to_mobile(url, base_url)
-    try:
-        html = fetch(murl, ua)
-        detail = parse_detail_page(html)
-        item["detail"] = detail
-    except Exception as e:
-        item.setdefault("detail_error", str(e))
-    time.sleep(sleep_s)
+
+    base_root = get_base_root(base_url)
+    # Preferir ESCRITORIO; si falla o trae pocas fotos, probar MÓVIL
+    candidates = [to_desktop(url, base_url), to_mobile(url, base_url)]
+    merged = None
+    for idx, u in enumerate(candidates):
+        try:
+            html = fetch(u, ua)
+            detail = parse_detail_page(html, u, base_root)
+            if not merged or len(detail.get("images") or []) > len(merged.get("images") or []):
+                merged = detail
+            # si ya logramos >=4 fotos, suficiente
+            if len(merged.get("images") or []) >= 4:
+                break
+        except Exception as e:
+            item.setdefault("detail_error", str(e))
+        finally:
+            time.sleep(sleep_s)
+
+    if merged:
+        item["detail"] = merged
+        imgs_n = len(merged.get("images") or [])
+        if imgs_n:
+            print(f"[DETAIL] {item.get('id','?')}: {imgs_n} imágenes")
     return item
 
 def main():

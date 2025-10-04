@@ -1,0 +1,32 @@
+name: Vehiculos Scraper
+
+on:
+  schedule:
+    - cron: "0 13 * * *"  # 9:00 AM America/Santo_Domingo
+    - cron: "0 1 * * *"   # 9:00 PM America/Santo_Domingo
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Run scraper
+        run: python scraper/main.py
+
+      - name: Commit & push JSON
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(data): update listings [skip ci]"

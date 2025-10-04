@@ -1,7 +1,7 @@
 # scraper/main.py
 from __future__ import annotations
 import os, re, json, time, sys, pathlib, datetime as dt
-from urllib.parse import urljoin, urlparse, urlunparse, parse_qsl, urlencode
+from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode, urljoin
 import requests
 from bs4 import BeautifulSoup
 
@@ -10,26 +10,40 @@ DATA_DIR = ROOT / "data"
 
 CONFIG_PATH = ROOT / "config.json"
 DEFAULT_CONFIG = {
-    "base_url": "",
-    "pages": 3,
-    "sleep_seconds": 1.0,
-    "user_agent": "Mozilla/5.0 (compatible; VehiculosScraper/1.1)",
+    "base_url": "",                 # ej: "https://www.supercarros.com/buscar"
+    "pages": 120,                   # máx. páginas; si <=0 hace auto hasta agotar
+    "sleep_seconds": 2.0,           # pausa entre páginas
+    "user_agent": "Mozilla/5.0 (compatible; VehiculosScraper/1.2)",
     "details": True,
     "detail_sleep_seconds": 0.8,
-    "max_details": 120
+    "max_details": 120,
+    "order_column": "Id",
+    "order_direction": "DESC",
+    "items_per_page": 24
 }
 
 def load_config():
+    cfg = DEFAULT_CONFIG.copy()
     if CONFIG_PATH.exists():
         with open(CONFIG_PATH, "r", encoding="utf-8") as f:
-            return {**DEFAULT_CONFIG, **json.load(f)}
-    return DEFAULT_CONFIG
+            cfg.update(json.load(f))
+    # Overrides por env vars (opcional)
+    if "SC_MAX_PAGES" in os.environ:      cfg["pages"] = int(os.getenv("SC_MAX_PAGES", cfg["pages"]))
+    if "SC_SLEEP_SECONDS" in os.environ:  cfg["sleep_seconds"] = float(os.getenv("SC_SLEEP_SECONDS", cfg["sleep_seconds"]))
+    if "SC_DETAILS" in os.environ:        cfg["details"] = os.getenv("SC_DETAILS", "1") not in ("0","false","False")
+    if "SC_DETAIL_SLEEP_SECONDS" in os.environ: cfg["detail_sleep_seconds"] = float(os.getenv("SC_DETAIL_SLEEP_SECONDS", cfg["detail_sleep_seconds"]))
+    if "SC_MAX_DETAILS" in os.environ:    cfg["max_details"] = int(os.getenv("SC_MAX_DETAILS", cfg["max_details"]))
+    return cfg
 
 def add_or_replace_query(url: str, **params):
-    parsed = urlparse(url)
-    q = dict(parse_qsl(parsed.query, keep_blank_values=True))
-    q.update({k: str(v) for k,v in params.items()})
-    new = parsed._replace(query=urlencode(q, doseq=True))
+    p = urlparse(url)
+    q = dict(parse_qsl(p.query, keep_blank_values=True))
+    # no sobreescribir params ya presentes si el valor nuevo es None
+    for k, v in params.items():
+        if v is None: 
+            continue
+        q[k] = str(v)
+    new = p._replace(query=urlencode(q, doseq=True))
     return urlunparse(new)
 
 PRICE_RE = re.compile(r"(?i)\s*(US\$|RD\$|\$)\s*([0-9\.\,]+)")
@@ -52,7 +66,7 @@ def parse_fuel_and_condition(text: str):
     parts = [p.strip() for p in text.split("-")]
     for p in parts:
         pl = p.lower()
-        if p in FUEL_OPTIONS or any(k in pl for k in ["gasolina","diesel","elé","electr","híbr","glp"]):
+        if p in FUEL_OPTIONS or any(k in pl for k in ["gasolina","diesel","elé","electr","híbr","glp","gasoil"]):
             if pl.startswith("gasoil") or "diese" in pl: fuel = "Diesel"
             elif "glp" in pl: fuel = "GLP"
             elif "elé" in pl or "electr" in pl: fuel = "Eléctrico"
@@ -71,30 +85,48 @@ def normalize_url(href: str, base_root: str):
     if href.startswith("http"): return href
     return urljoin(base_root, href)
 
-def fetch(url: str, ua: str):
+def fetch(url: str, ua: str, retries: int = 2, backoff: float = 1.5) -> str:
     headers = {
         "User-Agent": ua,
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
         "Accept-Language": "es-DO,es;q=0.9,en;q=0.8",
         "Connection": "close",
     }
-    r = requests.get(url, headers=headers, timeout=25)
-    r.raise_for_status()
-    return r.text
+    last_err = None
+    for attempt in range(retries + 1):
+        try:
+            r = requests.get(url, headers=headers, timeout=25)
+            r.raise_for_status()
+            return r.text
+        except Exception as e:
+            last_err = e
+            time.sleep(backoff * (attempt + 1))
+    raise last_err
 
 def parse_listings(html: str, page_url: str, base_root: str):
     soup = BeautifulSoup(html, "lxml")
     cont = soup.select_one("#bigsearch-results-inner-results ul")
-    if not cont: return []
+    if not cont: 
+        return []
     results = []
-    for li in cont.select("li.normal"):
-        classes = set(li.get("class", [])); classes.discard("normal")
-        badges = sorted(list(classes)) if classes else []
+    # Tomar li con clase 'normal' o con alguna clase que empiece con 'promo-'
+    for li in cont.select("li"):
+        classes = set(li.get("class", []))
+        if "normal" not in classes and not any(c.startswith("promo-") for c in classes):
+            continue
+        classes.discard("normal")
+        badges = sorted([c for c in classes if c.startswith("promo-") or c.startswith("featured-")])
+
         ad_id = li.get("data-id") or ""
+        if not ad_id:
+            continue
+
         a = li.select_one("a[href]")
         href = normalize_url(a.get("href") if a else None, base_root)
+
         t1 = li.select_one(".title1")
         title = t1.get_text(strip=True) if t1 else None
+
         year = None
         y = li.select_one(".year")
         if y:
@@ -102,15 +134,19 @@ def parse_listings(html: str, page_url: str, base_root: str):
             if ytxt:
                 try: year = int(ytxt)
                 except: year = None
+
         t2 = li.select_one(".title2")
         fuel, condition = parse_fuel_and_condition(t2.get_text(" ", strip=True) if t2 else "")
+
         p = li.select_one(".price")
         price_currency, price_amount = parse_price(p.get_text(" ", strip=True)) if p else (None, None)
+
         img = li.select_one("img.real")
         thumb = normalize_url(img.get("src"), base_root) if img else None
-        photo_ids = []
-        dphotos = li.get("data-photos")
-        if dphotos: photo_ids = [x.strip() for x in dphotos.split(",") if x.strip()]
+
+        dphotos = li.get("data-photos") or ""
+        photo_ids = [x.strip() for x in dphotos.split(",") if x.strip()]
+
         results.append({
             "id": str(ad_id),
             "url": href,
@@ -127,16 +163,16 @@ def parse_listings(html: str, page_url: str, base_root: str):
     return results
 
 # --------- Detalle ---------
-
 def to_mobile(url: str, base_url: str) -> str:
     if not url: return url
     p = urlparse(url)
     base = urlparse(base_url)
     netloc = base.netloc or p.netloc
-    # construir subdominio móvil generando m.<dominio_sin_www>
     root = netloc[4:] if netloc.startswith("www.") else netloc
     m_netloc = f"m.{root}"
     return p._replace(scheme="https", netloc=m_netloc).geturl()
+
+PHONE_RE = re.compile(r"(?:\+?1?\s?(?:809|829|849))[\-\s\.]?\d{3}[\-\s\.]?\d{4}")
 
 def extract_section_texts(soup: BeautifulSoup, title_regex: str):
     title = None
@@ -156,7 +192,6 @@ def extract_section_texts(soup: BeautifulSoup, title_regex: str):
         elif sib.name in ("p","div","span","li"):
             t = sib.get_text(" ", strip=True)
             if t: lines.append(t)
-    # únicos
     seen=set(); out=[]
     for t in lines:
         if t not in seen:
@@ -174,8 +209,6 @@ def parse_keyvals_from_block(text_lines):
         v = re.sub(r"\s+", " ", v).strip()
         if k and v: out[k] = v
     return out
-
-PHONE_RE = re.compile(r"(?:\+?1?\s?(?:809|829|849))[\-\s\.]?\d{3}[\-\s\.]?\d{4}")
 
 def parse_detail_page(html: str):
     soup = BeautifulSoup(html, "lxml")
@@ -195,12 +228,12 @@ def parse_detail_page(html: str):
             imgs.append(src)
     imgs = sorted(set(imgs))
     return {
-        "general": datos,
-        "accessories": accesorios,
-        "description": descripcion,
-        "vendor_text": vendedor_text,
-        "phones": phones,
-        "images": imgs
+        "general": datos or None,
+        "accessories": accesorios or None,
+        "description": descripcion or None,
+        "vendor_text": vendedor_text or None,
+        "phones": phones or None,
+        "images": imgs or None
     }
 
 def enrich_with_details(item: dict, ua: str, base_url: str, sleep_s: float) -> dict:
@@ -218,38 +251,76 @@ def enrich_with_details(item: dict, ua: str, base_url: str, sleep_s: float) -> d
 
 def main():
     cfg = load_config()
-    base_url = cfg["base_url"]
-    pages = int(cfg["pages"])
-    sleep_s = float(cfg["sleep_seconds"])
-    ua = cfg["user_agent"]
-    base_root = get_base_root(base_url)
+    base_url   = cfg["base_url"]
+    if not base_url:
+        print("[ERROR] Define 'base_url' en config.json (p. ej. https://www.tu-dominio.com/buscar)", file=sys.stderr)
+        sys.exit(1)
+
+    pages      = int(cfg["pages"])
+    sleep_s    = float(cfg["sleep_seconds"])
+    ua         = cfg["user_agent"]
+    base_root  = get_base_root(base_url)
+
+    order_col  = cfg.get("order_column", "Id")
+    order_dir  = cfg.get("order_direction", "DESC")
+    ipp        = int(cfg.get("items_per_page", 24))
 
     all_items = []
-    for i in range(pages):
-        url = add_or_replace_query(base_url, PagingPageSkip=i)
-        try:
-            html = fetch(url, ua)
-        except Exception as e:
-            print(f"[WARN] Error al descargar página {i}: {e}", file=sys.stderr)
+    seen_ids  = set()
+    page = 0
+    while True:
+        if pages > 0 and page >= pages:
             break
-        items = parse_listings(html, url, base_root)
-        print(f"[INFO] Página {i}: {len(items)} items")
-        if not items: break
+
+        page_url = add_or_replace_query(
+            base_url,
+            PagingPageSkip=page,
+            PagingItemsPerPage=ipp,
+            OrderColumn=order_col,
+            OrderDirection=order_dir
+        )
+
+        try:
+            html = fetch(page_url, ua)
+        except Exception as e:
+            print(f"[WARN] Error al descargar página {page}: {e}", file=sys.stderr)
+            break
+
+        items = parse_listings(html, page_url, base_root)
+        print(f"[INFO] Página {page}: {len(items)} items (antes de dedupe)")
+
+        if not items:
+            if page == 0:
+                print("[INFO] 0 resultados en la primera página → fin")
+            else:
+                print(f"[INFO] Página {page} sin resultados → fin")
+            break
+
+        # merge por id
+        nuevos = 0
+        now_iso = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
         for it in items:
-            it["scraped_at"] = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
+            _id = it.get("id")
+            if not _id or _id in seen_ids:
+                continue
+            seen_ids.add(_id)
+            it["scraped_at"] = now_iso
             it["source"] = base_url
-        all_items.extend(items)
-        time.sleep(sleep_s)
+            all_items.append(it)
+            nuevos += 1
 
-    # Dedup por id
-    seen=set(); dedup=[]
-    for it in all_items:
-        if it["id"] in seen: continue
-        seen.add(it["id"]); dedup.append(it)
-    all_items = dedup
+        print(f"[INFO] Página {page}: nuevos {nuevos}, acumulado {len(all_items)}")
 
-    # Detalles
-    if cfg.get("details", True):
+        # Heurística de parada: si la página no aportó nada nuevo
+        if nuevos == 0:
+            print("[INFO] Sin nuevos IDs en esta página → fin")
+            break
+
+        page += 1
+        time.sleep(sleep_s if sleep_s >= 0 else 0)
+
+    # Detalles (opcional)
+    if cfg.get("details", True) and all_items:
         max_details = int(cfg.get("max_details", 120))
         d_sleep = float(cfg.get("detail_sleep_seconds", 0.8))
         count = 0

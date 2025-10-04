@@ -1,8 +1,7 @@
 {
-  "base_url": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC",
-  "pages": 3,
-  "sleep_seconds": 1.0,
-  "user_agent": "Mozilla/5.0 (compatible; VehiculosScraper/1.1; +https://freedom.com.do)",
+  "base_url": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24",
+  "pages": 120,
+  "sleep_seconds": 2.0,
   "details": true,
   "detail_sleep_seconds": 0.8,
   "max_details": 120

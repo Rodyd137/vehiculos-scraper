@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+.venv/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# OS
+.DS_Store
+
+# Data temp
+data/*.tmp

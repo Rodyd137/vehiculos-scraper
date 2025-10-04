@@ -22,6 +22,12 @@ DEFAULT_CONFIG = {
     "items_per_page": 24
 }
 
+# ✅ Nuevas fuentes adicionales (categorías)
+EXTRA_CATALOG_URLS = [
+    "https://www.supercarros.com/v.pesados/",
+    "https://www.supercarros.com/motores/",
+]
+
 def load_config():
     cfg = DEFAULT_CONFIG.copy()
     if CONFIG_PATH.exists():
@@ -40,7 +46,7 @@ def add_or_replace_query(url: str, **params):
     q = dict(parse_qsl(p.query, keep_blank_values=True))
     # no sobreescribir params ya presentes si el valor nuevo es None
     for k, v in params.items():
-        if v is None: 
+        if v is None:
             continue
         q[k] = str(v)
     new = p._replace(query=urlencode(q, doseq=True))
@@ -105,21 +111,35 @@ def fetch(url: str, ua: str, retries: int = 2, backoff: float = 1.5) -> str:
 
 def parse_listings(html: str, page_url: str, base_root: str):
     soup = BeautifulSoup(html, "lxml")
-    cont = soup.select_one("#bigsearch-results-inner-results ul")
-    if not cont: 
-        return []
-    results = []
-    # Tomar li con clase 'normal' o con alguna clase que empiece con 'promo-'
-    for li in cont.select("li"):
-        classes = set(li.get("class", []))
-        if "normal" not in classes and not any(c.startswith("promo-") for c in classes):
-            continue
-        classes.discard("normal")
-        badges = sorted([c for c in classes if c.startswith("promo-") or c.startswith("featured-")])
 
+    # Contenedor estándar (buscador clásico)
+    cont = soup.select_one("#bigsearch-results-inner-results ul")
+
+    # Fallback: si no existe (p.ej. v.pesados/ o motores/), buscamos <li data-id>
+    if not cont:
+        candidates = soup.select("li[data-id]")
+        if not candidates:
+            return []
+        # Creamos un contenedor virtual con esos li
+        class FakeCont:
+            def __init__(self, nodes): self._nodes = nodes
+            def select(self, sel):
+                if sel == "li":
+                    return self._nodes
+                return []
+        cont = FakeCont(candidates)
+
+    results = []
+    for li in cont.select("li"):
+        # Robustez: tomar cualquier li que tenga data-id
         ad_id = li.get("data-id") or ""
         if not ad_id:
             continue
+
+        # badges: mantener compatibilidad
+        classes = set(li.get("class", []))
+        classes.discard("normal")
+        badges = sorted([c for c in classes if c.startswith("promo-") or c.startswith("featured-")])
 
         a = li.select_one("a[href]")
         href = normalize_url(a.get("href") if a else None, base_root)
@@ -141,8 +161,9 @@ def parse_listings(html: str, page_url: str, base_root: str):
         p = li.select_one(".price")
         price_currency, price_amount = parse_price(p.get_text(" ", strip=True)) if p else (None, None)
 
-        img = li.select_one("img.real")
-        thumb = normalize_url(img.get("src"), base_root) if img else None
+        # imagen: primero intenta .real; si no, la primera <img>
+        img = li.select_one("img.real") or li.select_one("img")
+        thumb = normalize_url(img.get("src") if img else None, base_root) if img else None
 
         dphotos = li.get("data-photos") or ""
         photo_ids = [x.strip() for x in dphotos.split(",") if x.strip()]
@@ -202,7 +223,7 @@ def parse_keyvals_from_block(text_lines):
     out = {}
     for raw in text_lines:
         t = raw.strip().strip("•").strip("-").strip()
-        if not t or ":" not in t: 
+        if not t or ":" not in t:
             continue
         k, v = t.split(":", 1)
         k = re.sub(r"\s+", " ", k).strip()
@@ -249,31 +270,24 @@ def enrich_with_details(item: dict, ua: str, base_url: str, sleep_s: float) -> d
     time.sleep(sleep_s)
     return item
 
-def main():
-    cfg = load_config()
-    base_url   = cfg["base_url"]
-    if not base_url:
-        print("[ERROR] Define 'base_url' en config.json (p. ej. https://www.tu-dominio.com/buscar)", file=sys.stderr)
-        sys.exit(1)
-
+# ---------- Scrape por cada fuente ----------
+def scrape_source(source_url: str, cfg: dict, seen_ids: set, all_items: list):
     pages      = int(cfg["pages"])
     sleep_s    = float(cfg["sleep_seconds"])
     ua         = cfg["user_agent"]
-    base_root  = get_base_root(base_url)
+    base_root  = get_base_root(source_url)
 
     order_col  = cfg.get("order_column", "Id")
     order_dir  = cfg.get("order_direction", "DESC")
     ipp        = int(cfg.get("items_per_page", 24))
 
-    all_items = []
-    seen_ids  = set()
     page = 0
     while True:
         if pages > 0 and page >= pages:
             break
 
         page_url = add_or_replace_query(
-            base_url,
+            source_url,
             PagingPageSkip=page,
             PagingItemsPerPage=ipp,
             OrderColumn=order_col,
@@ -283,20 +297,19 @@ def main():
         try:
             html = fetch(page_url, ua)
         except Exception as e:
-            print(f"[WARN] Error al descargar página {page}: {e}", file=sys.stderr)
+            print(f"[WARN] ({source_url}) Error al descargar página {page}: {e}", file=sys.stderr)
             break
 
         items = parse_listings(html, page_url, base_root)
-        print(f"[INFO] Página {page}: {len(items)} items (antes de dedupe)")
+        print(f"[INFO] ({source_url}) Página {page}: {len(items)} items (antes de dedupe)")
 
         if not items:
             if page == 0:
-                print("[INFO] 0 resultados en la primera página → fin")
+                print(f"[INFO] ({source_url}) 0 resultados en la primera página → fin")
             else:
-                print(f"[INFO] Página {page} sin resultados → fin")
+                print(f"[INFO] ({source_url}) Página {page} sin resultados → fin")
             break
 
-        # merge por id
         nuevos = 0
         now_iso = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
         for it in items:
@@ -305,28 +318,45 @@ def main():
                 continue
             seen_ids.add(_id)
             it["scraped_at"] = now_iso
-            it["source"] = base_url
+            it["source"] = source_url
             all_items.append(it)
             nuevos += 1
 
-        print(f"[INFO] Página {page}: nuevos {nuevos}, acumulado {len(all_items)}")
+        print(f"[INFO] ({source_url}) Página {page}: nuevos {nuevos}, acumulado {len(all_items)}")
 
-        # Heurística de parada: si la página no aportó nada nuevo
         if nuevos == 0:
-            print("[INFO] Sin nuevos IDs en esta página → fin")
+            print(f"[INFO] ({source_url}) Sin nuevos IDs en esta página → fin")
             break
 
         page += 1
         time.sleep(sleep_s if sleep_s >= 0 else 0)
 
+def main():
+    cfg = load_config()
+    base_url   = cfg["base_url"]
+    if not base_url:
+        print("[ERROR] Define 'base_url' en config.json (p. ej. https://www.supercarros.com/buscar)", file=sys.stderr)
+        sys.exit(1)
+
+    # Fuentes: base + extras
+    sources = [base_url] + EXTRA_CATALOG_URLS
+
+    all_items: list[dict] = []
+    seen_ids: set[str] = set()
+
+    for src in sources:
+        print(f"[INFO] >>> Iniciando scrape de fuente: {src}")
+        scrape_source(src, cfg, seen_ids, all_items)
+
     # Detalles (opcional)
     if cfg.get("details", True) and all_items:
         max_details = int(cfg.get("max_details", 120))
         d_sleep = float(cfg.get("detail_sleep_seconds", 0.8))
+        ua = cfg["user_agent"]
         count = 0
         for it in all_items:
             if count >= max_details: break
-            enrich_with_details(it, ua, base_url, d_sleep)
+            enrich_with_details(it, ua, it.get("source") or base_url, d_sleep)
             count += 1
         print(f"[INFO] Detalles descargados: {count}")
 

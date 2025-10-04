@@ -40,7 +40,7 @@ def add_or_replace_query(url: str, **params):
     q = dict(parse_qsl(p.query, keep_blank_values=True))
     # no sobreescribir params ya presentes si el valor nuevo es None
     for k, v in params.items():
-        if v is None:
+        if v is None: 
             continue
         q[k] = str(v)
     new = p._replace(query=urlencode(q, doseq=True))
@@ -80,7 +80,7 @@ def get_base_root(base_url: str) -> str:
     p = urlparse(base_url)
     return f"{p.scheme}://{p.netloc}"
 
-def normalize_url(href: str | None, base_root: str):
+def normalize_url(href: str, base_root: str):
     if not href: return None
     if href.startswith("http"): return href
     return urljoin(base_root, href)
@@ -106,7 +106,7 @@ def fetch(url: str, ua: str, retries: int = 2, backoff: float = 1.5) -> str:
 def parse_listings(html: str, page_url: str, base_root: str):
     soup = BeautifulSoup(html, "lxml")
     cont = soup.select_one("#bigsearch-results-inner-results ul")
-    if not cont:
+    if not cont: 
         return []
     results = []
     # Tomar li con clase 'normal' o con alguna clase que empiece con 'promo-'
@@ -202,7 +202,7 @@ def parse_keyvals_from_block(text_lines):
     out = {}
     for raw in text_lines:
         t = raw.strip().strip("•").strip("-").strip()
-        if not t or ":" not in t:
+        if not t or ":" not in t: 
             continue
         k, v = t.split(":", 1)
         k = re.sub(r"\s+", " ", k).strip()
@@ -210,13 +210,8 @@ def parse_keyvals_from_block(text_lines):
         if k and v: out[k] = v
     return out
 
-def parse_detail_page(html: str, base_root: str):
-    """
-    NO fabrica tamaños (nada de 1200x800). Solo devuelve exactamente
-    los tamaños que el HTML expone (img[src], img[srcset], data-* y <a href>).
-    """
+def parse_detail_page(html: str):
     soup = BeautifulSoup(html, "lxml")
-
     datos_lines = extract_section_texts(soup, r"Datos\s+Generales")
     datos = parse_keyvals_from_block(datos_lines)
     acc_lines = extract_section_texts(soup, r"(Accesorios|Caracter\u00EDsticas|Características)")
@@ -226,48 +221,12 @@ def parse_detail_page(html: str, base_root: str):
     vend_lines = extract_section_texts(soup, r"(Vendedor|Contacto\s+Vendedor|Contacto\s+Dealer|Datos\s+del\s+Vendedor)")
     vendedor_text = " \n ".join(vend_lines) if vend_lines else None
     phones = sorted(set(PHONE_RE.findall(vendedor_text or "")))
-
-    imgs_set = set()
-
-    def add_img(u: str | None):
-        if not u: return
-        u = normalize_url(u.strip(), base_root)
-        if not u: return
-        if "AdsPhotos" in u:  # limitamos a las fotos oficiales
-            imgs_set.add(u)
-
-    # img[src], img[data-src], img[srcset]/data-srcset → tomar el tamaño mayor del srcset
-    for im in soup.find_all("img"):
-        add_img(im.get("src") or im.get("data-src"))
-
-        srcset = im.get("srcset") or im.get("data-srcset")
-        if srcset:
-            # "url1 320w, url2 640w, url3 1024w" → quédate con la mayor
-            pairs = []
-            for part in srcset.split(","):
-                p = part.strip()
-                if not p: continue
-                bits = p.split()
-                url_part = bits[0]
-                w = 0
-                if len(bits) >= 2 and bits[1].endswith("w"):
-                    try:
-                        w = int(re.sub(r"[^\d]", "", bits[1]))
-                    except:
-                        w = 0
-                pairs.append((w, url_part))
-            if pairs:
-                url_largest = max(pairs, key=lambda t: t[0])[1]
-                add_img(url_largest)
-
-    # Enlaces <a href> que apunten a AdsPhotos (a veces la galería enlaza a grande)
-    for a in soup.find_all("a", href=True):
-        href = a.get("href")
-        if href and "AdsPhotos" in href:
-            add_img(href)
-
-    imgs = sorted(imgs_set)
-
+    imgs = []
+    for im in soup.select("img"):
+        src = (im.get("src") or "").strip()
+        if "AdsPhotos" in src:
+            imgs.append(src)
+    imgs = sorted(set(imgs))
     return {
         "general": datos or None,
         "accessories": accesorios or None,
@@ -277,32 +236,17 @@ def parse_detail_page(html: str, base_root: str):
         "images": imgs or None
     }
 
-def enrich_with_details(item: dict, ua: str, base_url: str, base_root: str, sleep_s: float) -> dict:
-    """
-    Primero intenta la página DESKTOP (mejor calidad). Si falla todo,
-    intenta mobile como fallback. No fabrica tamaños, solo recoge lo que hay.
-    """
+def enrich_with_details(item: dict, ua: str, base_url: str, sleep_s: float) -> dict:
     url = item.get("url")
-    if not url:
-        return item
-
-    tried = set()
-    candidates = [url, to_mobile(url, base_url)]
-    for detail_url in candidates:
-        if not detail_url or detail_url in tried:
-            continue
-        tried.add(detail_url)
-        try:
-            html = fetch(detail_url, ua)
-            detail = parse_detail_page(html, base_root)
-            # Acepta el primero que devuelva algo útil (imágenes o datos)
-            if detail.get("images") or detail.get("general") or detail.get("description"):
-                item["detail"] = detail
-                break
-        except Exception as e:
-            item.setdefault("detail_error", str(e))
-        finally:
-            time.sleep(sleep_s if sleep_s >= 0 else 0)
+    if not url: return item
+    murl = to_mobile(url, base_url)
+    try:
+        html = fetch(murl, ua)
+        detail = parse_detail_page(html)
+        item["detail"] = detail
+    except Exception as e:
+        item.setdefault("detail_error", str(e))
+    time.sleep(sleep_s)
     return item
 
 def main():
@@ -375,14 +319,14 @@ def main():
         page += 1
         time.sleep(sleep_s if sleep_s >= 0 else 0)
 
-    # Detalles (opcional, sin fabricar tamaños)
+    # Detalles (opcional)
     if cfg.get("details", True) and all_items:
         max_details = int(cfg.get("max_details", 120))
         d_sleep = float(cfg.get("detail_sleep_seconds", 0.8))
         count = 0
         for it in all_items:
             if count >= max_details: break
-            enrich_with_details(it, ua, base_url, base_root, d_sleep)
+            enrich_with_details(it, ua, base_url, d_sleep)
             count += 1
         print(f"[INFO] Detalles descargados: {count}")
 

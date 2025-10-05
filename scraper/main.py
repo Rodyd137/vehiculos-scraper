@@ -16,7 +16,7 @@ DEFAULT_CONFIG = {
     "user_agent": "Mozilla/5.0 (compatible; VehiculosScraper/1.2)",
     "details": True,
     "detail_sleep_seconds": 0.8,
-    # 0 o negativo = sin límite (descargar detalles de TODOS)
+    # 0 o negativo = sin límite (enriquecer TODOS los items)
     "max_details": 0,
     "order_column": "Id",
     "order_direction": "DESC",
@@ -44,8 +44,7 @@ def add_or_replace_query(url: str, **params):
     p = urlparse(url)
     q = dict(parse_qsl(p.query, keep_blank_values=True))
     for k, v in params.items():
-        if v is None:
-            continue
+        if v is None: continue
         q[k] = str(v)
     new = p._replace(query=urlencode(q, doseq=True))
     return urlunparse(new)
@@ -112,21 +111,18 @@ def parse_listings(html: str, page_url: str, base_root: str):
     cont = soup.select_one("#bigsearch-results-inner-results ul")
     if not cont:
         candidates = soup.select("li[data-id]")
-        if not candidates:
-            return []
+        if not candidates: return []
         class FakeCont:
             def __init__(self, nodes): self._nodes = nodes
             def select(self, sel):
-                if sel == "li":
-                    return self._nodes
+                if sel == "li": return self._nodes
                 return []
         cont = FakeCont(candidates)
 
     results = []
     for li in cont.select("li"):
         ad_id = li.get("data-id") or ""
-        if not ad_id:
-            continue
+        if not ad_id: continue
 
         classes = set(li.get("class", []))
         classes.discard("normal")
@@ -194,7 +190,6 @@ BAN_WORDS = {
     "santo domingo", "rd$", "us$", "precio", "id", "anuncio"
 }
 
-# ==== Utilidades de normalización y ciudades RD
 def _strip_accents(s: str) -> str:
     return "".join(c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn")
 
@@ -226,13 +221,10 @@ CITY_ALIASES = {
     "Samaná": ["samana", "samaná"],
     "Cotui": ["cotui", "cotuí", "sanchez ramirez", "sánchez ramírez"],
 }
-
 CITY_NORM = {canon: [_norm(canon)] + [_norm(a) for a in aliases] for canon, aliases in CITY_ALIASES.items()}
-ALL_CITY_VARIANTS = {v for vars_ in CITY_NORM.values() for v in vars_}
 
 def _find_city_in_text(text: str) -> str | None:
     t = _norm(text)
-    # Búsqueda por variantes (palabra completa o muy delimitada)
     for canon, variants in CITY_NORM.items():
         for v in variants:
             if re.search(rf"(?<![A-Za-zÁÉÍÓÚÜÑáéíóúüñ]){re.escape(v)}(?![A-Za-zÁÉÍÓÚÜÑáéíóúüñ])", t):
@@ -240,7 +232,7 @@ def _find_city_in_text(text: str) -> str | None:
     return None
 
 # ======================================================
-# Extracción de bloques/kv y heurísticas existentes
+# Extracción de bloques/kv y heurísticas
 # ======================================================
 def extract_section_texts(soup: BeautifulSoup, title_regex: str):
     title = None
@@ -270,8 +262,7 @@ def parse_keyvals_from_block(text_lines):
     out = {}
     for raw in text_lines:
         t = raw.strip().strip("•").strip("-").strip()
-        if not t or ":" not in t:
-            continue
+        if not t or ":" not in t: continue
         k, v = t.split(":", 1)
         k = re.sub(r"\s+", " ", k).strip()
         v = re.sub(r"\s+", " ", v).strip()
@@ -294,8 +285,7 @@ def _is_probable_name(t: str) -> bool:
 def _pick_human_name(candidates: list[str]) -> str | None:
     for line in candidates:
         t = line.strip().strip("•").strip("-").strip()
-        if _is_probable_name(t):
-            return t
+        if _is_probable_name(t): return t
     return None
 
 def _name_from_email(email: str) -> str | None:
@@ -305,11 +295,8 @@ def _name_from_email(email: str) -> str | None:
         return None
     local = re.sub(r"[\._\-]+", " ", local)
     local = re.sub(r"\d+", "", local).strip()
-    if not local:
-        return None
-    parts = [p for p in local.split() if p]
-    if not parts: return None
-    parts = [p.capitalize() for p in parts]
+    if not local: return None
+    parts = [p.capitalize() for p in local.split() if p]
     name = " ".join(parts)
     return name if _is_probable_name(name) else None
 
@@ -334,9 +321,7 @@ def _guess_from_bottom(soup: BeautifulSoup):
         vendor_name = _pick_human_name(prev_slice)
     return vendor_name, first_phone, tail, phone_idx
 
-# === NUEVO: JSON-LD / microdatos para addressLocality
 def _find_city_in_structured_data(soup: BeautifulSoup) -> str | None:
-    # JSON-LD
     for s in soup.find_all("script", {"type":"application/ld+json"}):
         try:
             data = json.loads(s.string or "{}")
@@ -352,7 +337,6 @@ def _find_city_in_structured_data(soup: BeautifulSoup) -> str | None:
                     if text:
                         c = _find_city_in_text(text)
                         if c: return c
-                # Recurse
                 for v in obj.values():
                     c = scan(v)
                     if c: return c
@@ -363,7 +347,6 @@ def _find_city_in_structured_data(soup: BeautifulSoup) -> str | None:
             return None
         city = scan(data)
         if city: return city
-    # Microdata metas
     metas = soup.select('[itemprop="addressLocality"], meta[itemprop="addressLocality"]')
     for m in metas:
         content = m.get("content") or m.get_text(" ", strip=True)
@@ -376,7 +359,6 @@ def parse_detail_page(html: str, base_url: str):
     soup = BeautifulSoup(html, "lxml")
     base_root = get_base_root(base_url)
 
-    # --- Datos generales / accesorios / descripción ---
     datos_lines = extract_section_texts(soup, r"Datos\s+Generales")
     datos = parse_keyvals_from_block(datos_lines)
     acc_lines = extract_section_texts(soup, r"(Accesorios|Caracter\u00EDsticas|Características)")
@@ -384,14 +366,12 @@ def parse_detail_page(html: str, base_url: str):
     obs_lines = extract_section_texts(soup, r"(Observaciones|Descripci\u00F3n|Descripción)")
     descripcion = "\n".join(obs_lines).strip() if obs_lines else None
 
-    # --- Vendedor
     vend_lines = extract_section_texts(soup, r"(Vendedor|Contacto\s+Vendedor|Contacto\s+Dealer|Datos\s+del\s+Vendedor)")
     vend_kv = parse_keyvals_from_block(vend_lines)
     vendedor_text = " \n ".join(vend_lines) if vend_lines else None
 
     phones = sorted(set(PHONE_RE.findall(vendedor_text or "")))
     primary_phone = phones[0] if phones else None
-
     emails_in_vendor = EMAIL_RE.findall(vendedor_text or "")
 
     vendor_name = (
@@ -420,13 +400,8 @@ def parse_detail_page(html: str, base_url: str):
         if emails_all:
             vendor_name = _name_from_email(emails_all[0])
 
-    # --- CIUDAD ---------------------------------------
     city = None
-
-    # 1) JSON-LD / microdatos
     city = _find_city_in_structured_data(soup) or city
-
-    # 2) Claves explícitas en "Datos Generales" o bloque de vendedor
     if not city and datos:
         for k, v in datos.items():
             if re.search(r"(?i)(ciudad|ubicaci[oó]n|provincia|sector|localidad|zona)", k):
@@ -437,25 +412,19 @@ def parse_detail_page(html: str, base_url: str):
             if re.search(r"(?i)(ciudad|ubicaci[oó]n|provincia|sector|localidad|zona)", k):
                 c = _find_city_in_text(v)
                 if c: city = c; break
-
-    # 3) En el “tail” alrededor del primer teléfono (móvil)
     if not city and idx is not None:
         lo = max(0, idx - 8); hi = min(len(tail), idx + 8)
         ctx = "\n".join(tail[lo:hi])
         city = _find_city_in_text(ctx) or city
-
-    # 4) Búsqueda global en todo el texto como último recurso
     if not city:
         city = _find_city_in_text(soup.get_text(" ", strip=True)) or city
 
-    # --- Imágenes (normalizadas a URL absolutas)
     imgs = []
     for im in soup.select("img"):
         src = (im.get("src") or "").strip()
         if "AdsPhotos" in src:
             absu = normalize_url(src, base_root)
-            if absu:
-                imgs.append(absu)
+            if absu: imgs.append(absu)
     imgs = sorted(set(imgs))
 
     return {
@@ -483,7 +452,7 @@ def enrich_with_details(item: dict, ua: str, base_url: str, sleep_s: float) -> d
         item["city"]          = detail.get("city")
     except Exception as e:
         item.setdefault("detail_error", str(e))
-    time.sleep(sleep_s if sleep_s >= 0 else 0)
+    time.sleep(max(0.0, sleep_s))
     return item
 
 # ---------- Scrape por cada fuente ----------
@@ -491,16 +460,17 @@ def scrape_source(source_url: str, cfg: dict, seen_ids: set, all_items: list):
     pages      = int(cfg["pages"])
     sleep_s    = float(cfg["sleep_seconds"])
     ua         = cfg["user_agent"]
-    base_root  = get_base_root(source_url)
 
     order_col  = cfg.get("order_column", "Id")
     order_dir  = cfg.get("order_direction", "DESC")
     ipp        = int(cfg.get("items_per_page", 24))
 
     page = 0
+    zero_new_streak = 0
+    ZERO_NEW_LIMIT = 3  # seguridad: 3 páginas seguidas sin nuevos → parar
+
     while True:
-        if pages > 0 and page >= pages:
-            break
+        if pages > 0 and page >= pages: break
 
         page_url = add_or_replace_query(
             source_url,
@@ -516,7 +486,7 @@ def scrape_source(source_url: str, cfg: dict, seen_ids: set, all_items: list):
             print(f"[WARN] ({source_url}) Error al descargar página {page}: {e}", file=sys.stderr)
             break
 
-        items = parse_listings(html, page_url, base_root)
+        items = parse_listings(html, page_url, get_base_root(source_url))
         print(f"[INFO] ({source_url}) Página {page}: {len(items)} items (antes de dedupe)")
 
         if not items:
@@ -530,8 +500,7 @@ def scrape_source(source_url: str, cfg: dict, seen_ids: set, all_items: list):
         now_iso = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
         for it in items:
             _id = it.get("id")
-            if not _id or _id in seen_ids:
-                continue
+            if not _id or _id in seen_ids: continue
             seen_ids.add(_id)
             it["scraped_at"] = now_iso
             it["source"] = source_url
@@ -540,19 +509,35 @@ def scrape_source(source_url: str, cfg: dict, seen_ids: set, all_items: list):
 
         print(f"[INFO] ({source_url}) Página {page}: nuevos {nuevos}, acumulado {len(all_items)}")
 
+        # 🔁 Ya NO cortamos si nuevos == 0; seguimos hasta tope de páginas o página vacía
         if nuevos == 0:
-            print(f"[INFO] ({source_url}) Sin nuevos IDs en esta página → fin")
-            break
+            zero_new_streak += 1
+            if zero_new_streak >= ZERO_NEW_LIMIT:
+                print(f"[INFO] ({source_url}) {ZERO_NEW_LIMIT} páginas seguidas sin IDs nuevos → fin")
+                break
+        else:
+            zero_new_streak = 0
 
         page += 1
-        time.sleep(sleep_s if sleep_s >= 0 else 0)
+        time.sleep(max(0.0, sleep_s))
 
 def main():
     cfg = load_config()
-    base_url   = cfg["base_url"]
+    base_url = cfg["base_url"]
     if not base_url:
         print("[ERROR] Define 'base_url' en config.json (p. ej. https://www.supercarros.com/buscar)", file=sys.stderr)
         sys.exit(1)
+
+    # Log de configuración efectiva
+    print("[CFG]", json.dumps({
+        "base_url": base_url,
+        "pages": cfg["pages"],
+        "items_per_page": cfg["items_per_page"],
+        "details": cfg["details"],
+        "max_details": cfg["max_details"],
+        "sleep_seconds": cfg["sleep_seconds"],
+        "detail_sleep_seconds": cfg["detail_sleep_seconds"]
+    }, ensure_ascii=False))
 
     sources = [base_url] + EXTRA_CATALOG_URLS
 

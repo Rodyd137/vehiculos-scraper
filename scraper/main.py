@@ -44,7 +44,6 @@ def load_config():
 def add_or_replace_query(url: str, **params):
     p = urlparse(url)
     q = dict(parse_qsl(p.query, keep_blank_values=True))
-    # no sobreescribir params ya presentes si el valor nuevo es None
     for k, v in params.items():
         if v is None:
             continue
@@ -111,16 +110,11 @@ def fetch(url: str, ua: str, retries: int = 2, backoff: float = 1.5) -> str:
 
 def parse_listings(html: str, page_url: str, base_root: str):
     soup = BeautifulSoup(html, "lxml")
-
-    # Contenedor estándar (buscador clásico)
     cont = soup.select_one("#bigsearch-results-inner-results ul")
-
-    # Fallback: si no existe (p.ej. v.pesados/ o motores/), buscamos <li data-id>
     if not cont:
         candidates = soup.select("li[data-id]")
         if not candidates:
             return []
-        # Creamos un contenedor virtual con esos li
         class FakeCont:
             def __init__(self, nodes): self._nodes = nodes
             def select(self, sel):
@@ -131,12 +125,10 @@ def parse_listings(html: str, page_url: str, base_root: str):
 
     results = []
     for li in cont.select("li"):
-        # Robustez: tomar cualquier li que tenga data-id
         ad_id = li.get("data-id") or ""
         if not ad_id:
             continue
 
-        # badges: mantener compatibilidad
         classes = set(li.get("class", []))
         classes.discard("normal")
         badges = sorted([c for c in classes if c.startswith("promo-") or c.startswith("featured-")])
@@ -161,7 +153,6 @@ def parse_listings(html: str, page_url: str, base_root: str):
         p = li.select_one(".price")
         price_currency, price_amount = parse_price(p.get_text(" ", strip=True)) if p else (None, None)
 
-        # imagen: primero intenta .real; si no, la primera <img>
         img = li.select_one("img.real") or li.select_one("img")
         thumb = normalize_url(img.get("src") if img else None, base_root) if img else None
 
@@ -195,6 +186,15 @@ def to_mobile(url: str, base_url: str) -> str:
 
 PHONE_RE = re.compile(r"(?:\+?1?\s?(?:809|829|849))[\-\s\.]?\d{3}[\-\s\.]?\d{4}")
 EMAIL_RE = re.compile(r"[A-Z0-9._%+\-]+@[A-Z0-9.\-]+\.[A-Z]{2,}", re.I)
+
+# Palabras que delatan líneas de contacto/labels (no nombre)
+BAN_WORDS = {
+    "tel", "tel.", "teléfono", "telefono", "whatsapp", "whatsap", "cel", "celular",
+    "movil", "móvil", "email", "correo", "contacto", "vendedor", "dealer", "empresa",
+    "concesionario", "horario", "dirección", "direccion", "ubicación", "ubicacion",
+    "provincia", "ciudad", "sector", "localidad", "zona", "website", "web", "sitio",
+    "santo domingo", "rd$", "us$", "precio", "id", "anuncio"
+}
 
 def extract_section_texts(soup: BeautifulSoup, title_regex: str):
     title = None
@@ -232,48 +232,78 @@ def parse_keyvals_from_block(text_lines):
         if k and v: out[k] = v
     return out
 
+def _is_probable_name(t: str) -> bool:
+    if not t: return False
+    tt = t.strip()
+    if not tt: return False
+    if tt.endswith(":"): return False
+    low = tt.lower()
+
+    # Palabras vetadas (labels de contacto)
+    if any(w in low for w in BAN_WORDS):
+        return False
+
+    # Evitar dígitos (si quieres permitir marcas con números, comenta esta línea)
+    if re.search(r"\d", tt):
+        return False
+
+    # Longitud y número de palabras razonable
+    words = [w for w in re.split(r"\s+", tt) if w]
+    if len(words) == 0 or len(words) > 8:  # evita textos largos tipo direcciones
+        return False
+    if len(tt) < 3 or len(tt) > 64:
+        return False
+
+    # Tiene letras
+    if not re.search(r"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]", tt):
+        return False
+
+    return True
+
 def _pick_human_name(candidates: list[str]) -> str | None:
-    """
-    Dado un conjunto de líneas, elige la primera que luzca como nombre:
-    - No es teléfono, ni e-mail, ni etiqueta 'Ciudad/Ubicación/Provincia'.
-    - Tiene letras y al menos 3 caracteres.
-    """
     for line in candidates:
-        t = line.strip()
-        if not t: continue
-        if ":" in t:  # suele ser 'Ciudad: Santo Domingo', etc.
-            k = t.split(":",1)[0].lower()
-            if any(x in k for x in ("ciudad","ubicación","ubicacion","provincia","sector","localidad","zona")):
-                continue
-        if PHONE_RE.search(t): continue
-        if EMAIL_RE.search(t): continue
-        letters = re.sub(r"[^A-Za-zÁÉÍÓÚÜÑáéíóúüñ\-\s]", "", t)
-        if len(letters.strip()) >= 3:
+        t = line.strip().strip("•").strip("-").strip()
+        if _is_probable_name(t):
             return t
     return None
 
-def _guess_from_bottom(soup: BeautifulSoup):
-    """
-    Fallback genérico para versión móvil: toma las últimas líneas del texto de la página,
-    busca primer teléfono y la línea anterior 'humana' como posible nombre.
-    """
+def _name_from_email(email: str) -> str | None:
+    try:
+        local = email.split("@",1)[0]
+    except Exception:
+        return None
+    local = re.sub(r"[\._\-]+", " ", local)
+    local = re.sub(r"\d+", "", local).strip()
+    if not local:
+        return None
+    # Capitaliza palabras
+    parts = [p for p in local.split() if p]
+    if not parts: return None
+    parts = [p.capitalize() for p in parts]
+    name = " ".join(parts)
+    # Validación rápida
+    return name if _is_probable_name(name) else None
+
+def _tail_lines(soup: BeautifulSoup, n: int = 50):
     text = soup.get_text("\n", strip=True)
     lines = [ln for ln in text.splitlines() if ln.strip()]
-    tail = lines[-40:]  # últimas ~40 líneas
-    # primer teléfono en el tail
+    return lines[-n:]
+
+def _guess_from_bottom(soup: BeautifulSoup):
+    tail = _tail_lines(soup, n=60)
     first_phone = None
-    for ln in tail:
+    phone_idx = None
+    for idx, ln in enumerate(tail):
         m = PHONE_RE.search(ln)
         if m:
             first_phone = m.group(0)
+            phone_idx = idx
             break
-    # nombre: línea anterior válida
     vendor_name = None
-    if first_phone:
-        idx = tail.index(ln)
-        prev_slice = list(reversed(tail[:idx]))
+    if first_phone is not None:
+        prev_slice = list(reversed(tail[:phone_idx]))
         vendor_name = _pick_human_name(prev_slice)
-    return vendor_name, first_phone
+    return vendor_name, first_phone, tail, phone_idx
 
 def parse_detail_page(html: str):
     soup = BeautifulSoup(html, "lxml")
@@ -291,22 +321,44 @@ def parse_detail_page(html: str):
     vend_kv = parse_keyvals_from_block(vend_lines)
     vendedor_text = " \n ".join(vend_lines) if vend_lines else None
 
-    # Teléfonos (toma todos y luego elegimos el primero)
+    # Teléfonos de esa sección
     phones = sorted(set(PHONE_RE.findall(vendedor_text or "")))
     primary_phone = phones[0] if phones else None
 
-    # Nombre: primero intenta por claves conocidas; luego heurística en líneas; luego fallback del "bottom"
-    vendor_name = vend_kv.get("Nombre") or vend_kv.get("Vendedor") or vend_kv.get("Contacto") or vend_kv.get("Dealer")
+    # Correos detectados para posible fallback de nombre
+    emails_in_vendor = EMAIL_RE.findall(vendedor_text or "")
+
+    # Nombre directo por claves
+    vendor_name = (
+        vend_kv.get("Nombre")
+        or vend_kv.get("Vendedor")
+        or vend_kv.get("Contacto")
+        or vend_kv.get("Dealer")
+        or vend_kv.get("Empresa")
+        or vend_kv.get("Concesionario")
+    )
     if not vendor_name and vend_lines:
         vendor_name = _pick_human_name(vend_lines)
+
+    # Fallback móvil: buscar en el "tail"
     if not vendor_name or not primary_phone:
-        # fallback robusto a partir de la parte baja (vista móvil)
-        name_guess, phone_guess = _guess_from_bottom(soup)
+        name_guess, phone_guess, tail, idx = _guess_from_bottom(soup)
         if not vendor_name and name_guess:
             vendor_name = name_guess
         if not primary_phone and phone_guess:
             primary_phone = phone_guess
             phones = [primary_phone] + [p for p in phones if p != primary_phone]
+        # Si no tenemos vendor_text, intenta armar contexto alrededor del teléfono
+        if vendedor_text is None and idx is not None:
+            lo = max(0, idx - 6); hi = min(len(tail), idx + 6)
+            vendedor_text = "\n".join(tail[lo:hi])
+
+    # Fallback por email → nombre (juan.perez → Juan Perez)
+    if not vendor_name:
+        # Usa emails de sección; si no, busca en todo el documento
+        emails_all = emails_in_vendor or EMAIL_RE.findall(soup.get_text(" ", strip=True))
+        if emails_all:
+            vendor_name = _name_from_email(emails_all[0])
 
     # Ciudad (de 'Datos Generales' o de la sección de vendedor)
     city = None
@@ -338,10 +390,10 @@ def parse_detail_page(html: str):
         "accessories": accesorios or None,
         "description": descripcion or None,
         "vendor_text": vendedor_text or None,
-        "vendor_name": vendor_name or None,     # ← NUEVO
+        "vendor_name": vendor_name or None,     # ← nombre más robusto
         "phones": phones or None,
-        "primary_phone": primary_phone or None, # ← NUEVO
-        "city": city or None,                   # ← NUEVO
+        "primary_phone": primary_phone or None,
+        "city": city or None,
         "images": imgs or None
     }
 

@@ -4,5 +4,5 @@
   "sleep_seconds": 2.0,
   "details": true,
   "detail_sleep_seconds": 0.8,
-  "max_details": 120
+  "max_details": 0
 }

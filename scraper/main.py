@@ -13,10 +13,10 @@ DEFAULT_CONFIG = {
     "base_url": "",
     "pages": 120,
     "sleep_seconds": 2.0,
-    "user_agent": "Mozilla/5.0 (compatible; VehiculosScraper/1.2)",
+    "user_agent": "Mozilla/5.0 (compatible; VehiculosScraper/1.3)",
     "details": True,
     "detail_sleep_seconds": 0.8,
-    # 0 o negativo = sin límite (enriquecer TODOS los items)
+    # ⚠️ 0 = SIN LÍMITE (antes 120). Si quieres limitar, pon un entero > 0.
     "max_details": 0,
     "order_column": "Id",
     "order_direction": "DESC",
@@ -28,23 +28,47 @@ EXTRA_CATALOG_URLS = [
     "https://www.supercarros.com/motores/",
 ]
 
+# =====================================================
+# Config
+# =====================================================
 def load_config():
     cfg = DEFAULT_CONFIG.copy()
     if CONFIG_PATH.exists():
         with open(CONFIG_PATH, "r", encoding="utf-8") as f:
-            cfg.update(json.load(f))
-    if "SC_MAX_PAGES" in os.environ:      cfg["pages"] = int(os.getenv("SC_MAX_PAGES", cfg["pages"]))
-    if "SC_SLEEP_SECONDS" in os.environ:  cfg["sleep_seconds"] = float(os.getenv("SC_SLEEP_SECONDS", cfg["sleep_seconds"]))
-    if "SC_DETAILS" in os.environ:        cfg["details"] = os.getenv("SC_DETAILS", "1") not in ("0","false","False")
-    if "SC_DETAIL_SLEEP_SECONDS" in os.environ: cfg["detail_sleep_seconds"] = float(os.getenv("SC_DETAIL_SLEEP_SECONDS", cfg["detail_sleep_seconds"]))
-    if "SC_MAX_DETAILS" in os.environ:    cfg["max_details"] = int(os.getenv("SC_MAX_DETAILS", cfg["max_details"]))
+            try:
+                cfg.update(json.load(f))
+            except Exception as e:
+                print(f"[WARN] Error leyendo config.json: {e}", file=sys.stderr)
+
+    # Overrides por variables de entorno
+    if "SC_BASE_URL" in os.environ:                 cfg["base_url"] = os.getenv("SC_BASE_URL") or cfg["base_url"]
+    if "SC_MAX_PAGES" in os.environ:                cfg["pages"] = int(os.getenv("SC_MAX_PAGES", cfg["pages"]))
+    if "SC_SLEEP_SECONDS" in os.environ:            cfg["sleep_seconds"] = float(os.getenv("SC_SLEEP_SECONDS", cfg["sleep_seconds"]))
+    if "SC_DETAILS" in os.environ:                  cfg["details"] = os.getenv("SC_DETAILS", "1") not in ("0","false","False")
+    if "SC_DETAIL_SLEEP_SECONDS" in os.environ:     cfg["detail_sleep_seconds"] = float(os.getenv("SC_DETAIL_SLEEP_SECONDS", cfg["detail_sleep_seconds"]))
+    if "SC_MAX_DETAILS" in os.environ:              cfg["max_details"] = int(os.getenv("SC_MAX_DETAILS", cfg["max_details"]))
+    if "SC_ITEMS_PER_PAGE" in os.environ:           cfg["items_per_page"] = int(os.getenv("SC_ITEMS_PER_PAGE", cfg["items_per_page"]))
+    if "SC_ORDER_COLUMN" in os.environ:             cfg["order_column"] = os.getenv("SC_ORDER_COLUMN", cfg["order_column"])
+    if "SC_ORDER_DIRECTION" in os.environ:          cfg["order_direction"] = os.getenv("SC_ORDER_DIRECTION", cfg["order_direction"])
     return cfg
 
+def print_cfg(cfg: dict):
+    printable = {**cfg}
+    # Evita volcar cosas raras
+    for k in list(printable.keys()):
+        if printable[k] is None:
+            printable[k] = None
+    print("[CFG]", json.dumps(printable, ensure_ascii=False, indent=2))
+
+# =====================================================
+# Utilidades
+# =====================================================
 def add_or_replace_query(url: str, **params):
     p = urlparse(url)
     q = dict(parse_qsl(p.query, keep_blank_values=True))
     for k, v in params.items():
-        if v is None: continue
+        if v is None:
+            continue
         q[k] = str(v)
     new = p._replace(query=urlencode(q, doseq=True))
     return urlunparse(new)
@@ -83,7 +107,7 @@ def get_base_root(base_url: str) -> str:
     p = urlparse(base_url)
     return f"{p.scheme}://{p.netloc}"
 
-def normalize_url(href: str | None, base_root: str):
+def normalize_url(href: str, base_root: str):
     if not href: return None
     if href.startswith("http"): return href
     return urljoin(base_root, href)
@@ -106,23 +130,29 @@ def fetch(url: str, ua: str, retries: int = 2, backoff: float = 1.5) -> str:
             time.sleep(backoff * (attempt + 1))
     raise last_err
 
+# =====================================================
+# Parse listado
+# =====================================================
 def parse_listings(html: str, page_url: str, base_root: str):
     soup = BeautifulSoup(html, "lxml")
     cont = soup.select_one("#bigsearch-results-inner-results ul")
     if not cont:
         candidates = soup.select("li[data-id]")
-        if not candidates: return []
+        if not candidates:
+            return []
         class FakeCont:
             def __init__(self, nodes): self._nodes = nodes
             def select(self, sel):
-                if sel == "li": return self._nodes
+                if sel == "li":
+                    return self._nodes
                 return []
         cont = FakeCont(candidates)
 
     results = []
     for li in cont.select("li"):
         ad_id = li.get("data-id") or ""
-        if not ad_id: continue
+        if not ad_id:
+            continue
 
         classes = set(li.get("class", []))
         classes.discard("normal")
@@ -169,7 +199,9 @@ def parse_listings(html: str, page_url: str, base_root: str):
         })
     return results
 
-# --------- Detalle ---------
+# =====================================================
+# Parse detalle
+# =====================================================
 def to_mobile(url: str, base_url: str) -> str:
     if not url: return url
     p = urlparse(url)
@@ -222,6 +254,7 @@ CITY_ALIASES = {
     "Cotui": ["cotui", "cotuí", "sanchez ramirez", "sánchez ramírez"],
 }
 CITY_NORM = {canon: [_norm(canon)] + [_norm(a) for a in aliases] for canon, aliases in CITY_ALIASES.items()}
+ALL_CITY_VARIANTS = {v for vars_ in CITY_NORM.values() for v in vars_}
 
 def _find_city_in_text(text: str) -> str | None:
     t = _norm(text)
@@ -231,9 +264,6 @@ def _find_city_in_text(text: str) -> str | None:
                 return canon
     return None
 
-# ======================================================
-# Extracción de bloques/kv y heurísticas
-# ======================================================
 def extract_section_texts(soup: BeautifulSoup, title_regex: str):
     title = None
     for tag in soup.find_all(True):
@@ -262,7 +292,8 @@ def parse_keyvals_from_block(text_lines):
     out = {}
     for raw in text_lines:
         t = raw.strip().strip("•").strip("-").strip()
-        if not t or ":" not in t: continue
+        if not t or ":" not in t:
+            continue
         k, v = t.split(":", 1)
         k = re.sub(r"\s+", " ", k).strip()
         v = re.sub(r"\s+", " ", v).strip()
@@ -285,7 +316,8 @@ def _is_probable_name(t: str) -> bool:
 def _pick_human_name(candidates: list[str]) -> str | None:
     for line in candidates:
         t = line.strip().strip("•").strip("-").strip()
-        if _is_probable_name(t): return t
+        if _is_probable_name(t):
+            return t
     return None
 
 def _name_from_email(email: str) -> str | None:
@@ -295,8 +327,10 @@ def _name_from_email(email: str) -> str | None:
         return None
     local = re.sub(r"[\._\-]+", " ", local)
     local = re.sub(r"\d+", "", local).strip()
-    if not local: return None
-    parts = [p.capitalize() for p in local.split() if p]
+    if not local:
+        return None
+    parts = [p for p in local.split() if p]
+    parts = [p.capitalize() for p in parts]
     name = " ".join(parts)
     return name if _is_probable_name(name) else None
 
@@ -322,6 +356,7 @@ def _guess_from_bottom(soup: BeautifulSoup):
     return vendor_name, first_phone, tail, phone_idx
 
 def _find_city_in_structured_data(soup: BeautifulSoup) -> str | None:
+    # JSON-LD
     for s in soup.find_all("script", {"type":"application/ld+json"}):
         try:
             data = json.loads(s.string or "{}")
@@ -347,6 +382,7 @@ def _find_city_in_structured_data(soup: BeautifulSoup) -> str | None:
             return None
         city = scan(data)
         if city: return city
+    # Microdata metas
     metas = soup.select('[itemprop="addressLocality"], meta[itemprop="addressLocality"]')
     for m in metas:
         content = m.get("content") or m.get_text(" ", strip=True)
@@ -355,10 +391,10 @@ def _find_city_in_structured_data(soup: BeautifulSoup) -> str | None:
             if c: return c
     return None
 
-def parse_detail_page(html: str, base_url: str):
+def parse_detail_page(html: str):
     soup = BeautifulSoup(html, "lxml")
-    base_root = get_base_root(base_url)
 
+    # --- Datos generales / accesorios / descripción ---
     datos_lines = extract_section_texts(soup, r"Datos\s+Generales")
     datos = parse_keyvals_from_block(datos_lines)
     acc_lines = extract_section_texts(soup, r"(Accesorios|Caracter\u00EDsticas|Características)")
@@ -366,12 +402,14 @@ def parse_detail_page(html: str, base_url: str):
     obs_lines = extract_section_texts(soup, r"(Observaciones|Descripci\u00F3n|Descripción)")
     descripcion = "\n".join(obs_lines).strip() if obs_lines else None
 
+    # --- Vendedor ---
     vend_lines = extract_section_texts(soup, r"(Vendedor|Contacto\s+Vendedor|Contacto\s+Dealer|Datos\s+del\s+Vendedor)")
     vend_kv = parse_keyvals_from_block(vend_lines)
     vendedor_text = " \n ".join(vend_lines) if vend_lines else None
 
     phones = sorted(set(PHONE_RE.findall(vendedor_text or "")))
     primary_phone = phones[0] if phones else None
+
     emails_in_vendor = EMAIL_RE.findall(vendedor_text or "")
 
     vendor_name = (
@@ -400,8 +438,13 @@ def parse_detail_page(html: str, base_url: str):
         if emails_all:
             vendor_name = _name_from_email(emails_all[0])
 
+    # --- CIUDAD ---------------------------------------
     city = None
+
+    # 1) JSON-LD / microdatos
     city = _find_city_in_structured_data(soup) or city
+
+    # 2) Claves explícitas
     if not city and datos:
         for k, v in datos.items():
             if re.search(r"(?i)(ciudad|ubicaci[oó]n|provincia|sector|localidad|zona)", k):
@@ -412,19 +455,23 @@ def parse_detail_page(html: str, base_url: str):
             if re.search(r"(?i)(ciudad|ubicaci[oó]n|provincia|sector|localidad|zona)", k):
                 c = _find_city_in_text(v)
                 if c: city = c; break
+
+    # 3) “Tail” alrededor del primer teléfono
     if not city and idx is not None:
         lo = max(0, idx - 8); hi = min(len(tail), idx + 8)
         ctx = "\n".join(tail[lo:hi])
         city = _find_city_in_text(ctx) or city
+
+    # 4) Búsqueda global
     if not city:
         city = _find_city_in_text(soup.get_text(" ", strip=True)) or city
 
+    # --- Imágenes
     imgs = []
     for im in soup.select("img"):
         src = (im.get("src") or "").strip()
         if "AdsPhotos" in src:
-            absu = normalize_url(src, base_root)
-            if absu: imgs.append(absu)
+            imgs.append(src)
     imgs = sorted(set(imgs))
 
     return {
@@ -445,32 +492,34 @@ def enrich_with_details(item: dict, ua: str, base_url: str, sleep_s: float) -> d
     murl = to_mobile(url, base_url)
     try:
         html = fetch(murl, ua)
-        detail = parse_detail_page(html, base_url)
+        detail = parse_detail_page(html)
         item["detail"] = detail
+        # Atajos top-level (opcionales)
         item["seller_name"]   = detail.get("vendor_name")
         item["primary_phone"] = detail.get("primary_phone") or (detail.get("phones") or [None])[0]
         item["city"]          = detail.get("city")
     except Exception as e:
         item.setdefault("detail_error", str(e))
-    time.sleep(max(0.0, sleep_s))
+    time.sleep(sleep_s if sleep_s >= 0 else 0)
     return item
 
-# ---------- Scrape por cada fuente ----------
+# =====================================================
+# Scrape fuente
+# =====================================================
 def scrape_source(source_url: str, cfg: dict, seen_ids: set, all_items: list):
     pages      = int(cfg["pages"])
     sleep_s    = float(cfg["sleep_seconds"])
     ua         = cfg["user_agent"]
+    base_root  = get_base_root(source_url)
 
     order_col  = cfg.get("order_column", "Id")
     order_dir  = cfg.get("order_direction", "DESC")
     ipp        = int(cfg.get("items_per_page", 24))
 
     page = 0
-    zero_new_streak = 0
-    ZERO_NEW_LIMIT = 3  # seguridad: 3 páginas seguidas sin nuevos → parar
-
     while True:
-        if pages > 0 and page >= pages: break
+        if pages > 0 and page >= pages:
+            break
 
         page_url = add_or_replace_query(
             source_url,
@@ -486,7 +535,7 @@ def scrape_source(source_url: str, cfg: dict, seen_ids: set, all_items: list):
             print(f"[WARN] ({source_url}) Error al descargar página {page}: {e}", file=sys.stderr)
             break
 
-        items = parse_listings(html, page_url, get_base_root(source_url))
+        items = parse_listings(html, page_url, base_root)
         print(f"[INFO] ({source_url}) Página {page}: {len(items)} items (antes de dedupe)")
 
         if not items:
@@ -500,7 +549,8 @@ def scrape_source(source_url: str, cfg: dict, seen_ids: set, all_items: list):
         now_iso = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
         for it in items:
             _id = it.get("id")
-            if not _id or _id in seen_ids: continue
+            if not _id or _id in seen_ids:
+                continue
             seen_ids.add(_id)
             it["scraped_at"] = now_iso
             it["source"] = source_url
@@ -509,35 +559,24 @@ def scrape_source(source_url: str, cfg: dict, seen_ids: set, all_items: list):
 
         print(f"[INFO] ({source_url}) Página {page}: nuevos {nuevos}, acumulado {len(all_items)}")
 
-        # 🔁 Ya NO cortamos si nuevos == 0; seguimos hasta tope de páginas o página vacía
         if nuevos == 0:
-            zero_new_streak += 1
-            if zero_new_streak >= ZERO_NEW_LIMIT:
-                print(f"[INFO] ({source_url}) {ZERO_NEW_LIMIT} páginas seguidas sin IDs nuevos → fin")
-                break
-        else:
-            zero_new_streak = 0
+            print(f"[INFO] ({source_url}) Sin nuevos IDs en esta página → fin")
+            break
 
         page += 1
-        time.sleep(max(0.0, sleep_s))
+        time.sleep(sleep_s if sleep_s >= 0 else 0)
 
+# =====================================================
+# main
+# =====================================================
 def main():
     cfg = load_config()
+    print_cfg(cfg)
+
     base_url = cfg["base_url"]
     if not base_url:
         print("[ERROR] Define 'base_url' en config.json (p. ej. https://www.supercarros.com/buscar)", file=sys.stderr)
         sys.exit(1)
-
-    # Log de configuración efectiva
-    print("[CFG]", json.dumps({
-        "base_url": base_url,
-        "pages": cfg["pages"],
-        "items_per_page": cfg["items_per_page"],
-        "details": cfg["details"],
-        "max_details": cfg["max_details"],
-        "sleep_seconds": cfg["sleep_seconds"],
-        "detail_sleep_seconds": cfg["detail_sleep_seconds"]
-    }, ensure_ascii=False))
 
     sources = [base_url] + EXTRA_CATALOG_URLS
 
@@ -548,25 +587,31 @@ def main():
         print(f"[INFO] >>> Iniciando scrape de fuente: {src}")
         scrape_source(src, cfg, seen_ids, all_items)
 
+    # -------- Detalles --------
     if cfg.get("details", True) and all_items:
         max_details = int(cfg.get("max_details", 0))
-        d_sleep = float(cfg.get("detail_sleep_seconds", 0.8))
-        ua = cfg["user_agent"]
+        d_sleep     = float(cfg.get("detail_sleep_seconds", 0.8))
+        ua          = cfg["user_agent"]
 
         if max_details <= 0:
-            items_to_enrich = all_items
-            print(f"[INFO] Descargando detalles para TODOS los {len(all_items)} anuncios (sin límite).")
+            target = len(all_items)
+            print(f"[INFO] Detalles: sin límite → objetivo = {target}")
+            iterable = all_items
         else:
-            items_to_enrich = all_items[:max_details]
-            print(f"[INFO] Descargando detalles para los primeros {len(items_to_enrich)} anuncios (max_details={max_details}).")
+            target = min(max_details, len(all_items))
+            print(f"[INFO] Detalles: límite = {max_details} → objetivo = {target}")
+            iterable = all_items[:target]
 
-        for idx, it in enumerate(items_to_enrich, 1):
-            src_base = it.get("source") or base_url
-            print(f"[DETAIL] ({idx}/{len(items_to_enrich)}) ID={it.get('id')} …")
-            enrich_with_details(it, ua, src_base, d_sleep)
+        count = 0
+        for it in iterable:
+            enrich_with_details(it, ua, it.get("source") or base_url, d_sleep)
+            count += 1
+            if count % 50 == 0 or count == target:
+                print(f"[INFO] Detalles descargados: {count}/{target}")
 
-        print(f"[INFO] Detalles descargados: {len(items_to_enrich)}")
+        print(f"[INFO] Detalles descargados: {count}")
 
+    # -------- Persistencia --------
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     (DATA_DIR / "listings.json").write_text(json.dumps(all_items, ensure_ascii=False, indent=2), encoding="utf-8")
     today = dt.datetime.utcnow().date().isoformat()

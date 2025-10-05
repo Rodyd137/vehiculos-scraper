@@ -5,15 +5,24 @@ from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode, urljoin
 import requests
 from bs4 import BeautifulSoup
 
+# ==============================
+# Paths / Config
+# ==============================
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
+
+# Archivos/dirs incrementales (sharded)
+ITEMS_DIR = DATA_DIR / "items"                         # un archivo por anuncio: items/<id>.json
+ACTIVE_IDS_PATH = DATA_DIR / "active_ids.json"         # IDs activos detectados en la corrida
+ACTIVE_LISTINGS_PATH = DATA_DIR / "listings_active.json"  # objetos activos (reconstruido desde items/)
+PRUNE_REMOVED = True                                   # si True, borra archivos de anuncios que ya no están
 
 CONFIG_PATH = ROOT / "config.json"
 DEFAULT_CONFIG = {
     "base_url": "",                 # ej: "https://www.supercarros.com/buscar"
     "pages": 120,                   # máx. páginas; si <=0 hace auto hasta agotar
     "sleep_seconds": 2.0,           # pausa entre páginas
-    "user_agent": "Mozilla/5.0 (compatible; VehiculosScraper/1.2)",
+    "user_agent": "Mozilla/5.0 (compatible; VehiculosScraper/1.3)",
     "details": True,
     "detail_sleep_seconds": 0.8,
     "max_details": 120,
@@ -22,18 +31,21 @@ DEFAULT_CONFIG = {
     "items_per_page": 24
 }
 
-# ✅ Nuevas fuentes adicionales (categorías)
+# ✅ Fuentes adicionales (catálogos)
 EXTRA_CATALOG_URLS = [
     "https://www.supercarros.com/v.pesados/",
     "https://www.supercarros.com/motores/",
 ]
 
+# ==============================
+# Config
+# ==============================
 def load_config():
     cfg = DEFAULT_CONFIG.copy()
     if CONFIG_PATH.exists():
         with open(CONFIG_PATH, "r", encoding="utf-8") as f:
             cfg.update(json.load(f))
-    # Overrides por env vars (opcional)
+    # Overrides por env vars
     if "SC_MAX_PAGES" in os.environ:      cfg["pages"] = int(os.getenv("SC_MAX_PAGES", cfg["pages"]))
     if "SC_SLEEP_SECONDS" in os.environ:  cfg["sleep_seconds"] = float(os.getenv("SC_SLEEP_SECONDS", cfg["sleep_seconds"]))
     if "SC_DETAILS" in os.environ:        cfg["details"] = os.getenv("SC_DETAILS", "1") not in ("0","false","False")
@@ -51,12 +63,17 @@ def add_or_replace_query(url: str, **params):
     new = p._replace(query=urlencode(q, doseq=True))
     return urlunparse(new)
 
+# ==============================
+# Parsers / Helpers
+# ==============================
 PRICE_RE = re.compile(r"(?i)\s*(US\$|RD\$|\$)\s*([0-9\.\,]+)")
 
 def parse_price(text: str):
-    if not text: return (None, None)
+    if not text:
+        return (None, None)
     m = PRICE_RE.search(text.replace("\xa0", " ").strip())
-    if not m: return (None, None)
+    if not m:
+        return (None, None)
     currency_raw, amount_raw = m.groups()
     currency = "USD" if "US" in currency_raw.upper() else "DOP"
     amount = float(re.sub(r"[^0-9\.]", "", amount_raw.replace(",", "")))
@@ -108,18 +125,25 @@ def fetch(url: str, ua: str, retries: int = 2, backoff: float = 1.5) -> str:
             time.sleep(backoff * (attempt + 1))
     raise last_err
 
+# ==============================
+# Listing page
+# ==============================
 def parse_listings(html: str, page_url: str, base_root: str):
     soup = BeautifulSoup(html, "lxml")
+
+    # Contenedor estándar
     cont = soup.select_one("#bigsearch-results-inner-results ul")
+
+    # Fallback (v.pesados, motores): buscar li[data-id]
     if not cont:
         candidates = soup.select("li[data-id]")
         if not candidates:
             return []
+
         class FakeCont:
             def __init__(self, nodes): self._nodes = nodes
             def select(self, sel):
-                if sel == "li":
-                    return self._nodes
+                if sel == "li": return self._nodes
                 return []
         cont = FakeCont(candidates)
 
@@ -129,6 +153,7 @@ def parse_listings(html: str, page_url: str, base_root: str):
         if not ad_id:
             continue
 
+        # badges (compat)
         classes = set(li.get("class", []))
         classes.discard("normal")
         badges = sorted([c for c in classes if c.startswith("promo-") or c.startswith("featured-")])
@@ -174,7 +199,9 @@ def parse_listings(html: str, page_url: str, base_root: str):
         })
     return results
 
-# --------- Detalle ---------
+# ==============================
+# Detail page (m.*)
+# ==============================
 def to_mobile(url: str, base_url: str) -> str:
     if not url: return url
     p = urlparse(url)
@@ -185,16 +212,7 @@ def to_mobile(url: str, base_url: str) -> str:
     return p._replace(scheme="https", netloc=m_netloc).geturl()
 
 PHONE_RE = re.compile(r"(?:\+?1?\s?(?:809|829|849))[\-\s\.]?\d{3}[\-\s\.]?\d{4}")
-EMAIL_RE = re.compile(r"[A-Z0-9._%+\-]+@[A-Z0-9.\-]+\.[A-Z]{2,}", re.I)
-
-# Palabras que delatan líneas de contacto/labels (no nombre)
-BAN_WORDS = {
-    "tel", "tel.", "teléfono", "telefono", "whatsapp", "whatsap", "cel", "celular",
-    "movil", "móvil", "email", "correo", "contacto", "vendedor", "dealer", "empresa",
-    "concesionario", "horario", "dirección", "direccion", "ubicación", "ubicacion",
-    "provincia", "ciudad", "sector", "localidad", "zona", "website", "web", "sitio",
-    "santo domingo", "rd$", "us$", "precio", "id", "anuncio"
-}
+EMAIL_RE = re.compile(r"[^@\s]+@[^@\s]+\.[^@\s]+")
 
 def extract_section_texts(soup: BeautifulSoup, title_regex: str):
     title = None
@@ -232,169 +250,109 @@ def parse_keyvals_from_block(text_lines):
         if k and v: out[k] = v
     return out
 
-def _is_probable_name(t: str) -> bool:
-    if not t: return False
-    tt = t.strip()
-    if not tt: return False
-    if tt.endswith(":"): return False
-    low = tt.lower()
-
-    # Palabras vetadas (labels de contacto)
-    if any(w in low for w in BAN_WORDS):
-        return False
-
-    # Evitar dígitos (si quieres permitir marcas con números, comenta esta línea)
-    if re.search(r"\d", tt):
-        return False
-
-    # Longitud y número de palabras razonable
-    words = [w for w in re.split(r"\s+", tt) if w]
-    if len(words) == 0 or len(words) > 8:  # evita textos largos tipo direcciones
-        return False
-    if len(tt) < 3 or len(tt) > 64:
-        return False
-
-    # Tiene letras
-    if not re.search(r"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]", tt):
-        return False
-
-    return True
-
-def _pick_human_name(candidates: list[str]) -> str | None:
-    for line in candidates:
-        t = line.strip().strip("•").strip("-").strip()
-        if _is_probable_name(t):
+def pick_first_non_phone_line(lines: list[str]) -> str | None:
+    for ln in lines:
+        t = ln.strip()
+        if not t:
+            continue
+        tl = t.lower()
+        if PHONE_RE.search(t) or EMAIL_RE.search(t):
+            continue
+        if any(w in tl for w in ["tel", "tel.", "teléfono", "telefono", "whatsapp", "llamar", "llámanos"]):
+            continue
+        # Evitar direcciones obvias
+        if any(w in tl for w in ["calle", "av.", "ave", "km", "sector", "provincia", "ciudad", "ubicación", "ubicacion", "dirección", "direccion"]):
+            continue
+        # Nombre “razonable”
+        if len(t) <= 60 and re.search(r"[A-Za-zÁÉÍÓÚÑáéíóúñ]", t):
             return t
     return None
 
-def _name_from_email(email: str) -> str | None:
-    try:
-        local = email.split("@",1)[0]
-    except Exception:
-        return None
-    local = re.sub(r"[\._\-]+", " ", local)
-    local = re.sub(r"\d+", "", local).strip()
-    if not local:
-        return None
-    # Capitaliza palabras
-    parts = [p for p in local.split() if p]
-    if not parts: return None
-    parts = [p.capitalize() for p in parts]
-    name = " ".join(parts)
-    # Validación rápida
-    return name if _is_probable_name(name) else None
+def extract_vendor_name(datos: dict, vend_lines: list[str]) -> str | None:
+    # 1) Claves directas en "Datos Generales"
+    for k in ["Vendedor","Nombre","Nombre del vendedor","Contacto","Contacto Vendedor","Propietario","Dealer"]:
+        for key in list(datos.keys()):
+            if k.lower() in key.lower():
+                val = datos.get(key)
+                if val and not PHONE_RE.search(val) and not EMAIL_RE.search(val):
+                    return val.strip()
+    # 2) En el bloque del vendedor
+    #    Preferir "Nombre: X"
+    for ln in vend_lines:
+        if ":" in ln:
+            k, v = ln.split(":", 1)
+            if any(w in k.lower() for w in ["vendedor","nombre","contacto","propietario"]):
+                v = v.strip()
+                if v and not PHONE_RE.search(v) and not EMAIL_RE.search(v):
+                    return v
+    # 3) Primera línea no-telefono/ni-email/ni-dirección
+    return pick_first_non_phone_line(vend_lines)
 
-def _tail_lines(soup: BeautifulSoup, n: int = 50):
-    text = soup.get_text("\n", strip=True)
-    lines = [ln for ln in text.splitlines() if ln.strip()]
-    return lines[-n:]
-
-def _guess_from_bottom(soup: BeautifulSoup):
-    tail = _tail_lines(soup, n=60)
-    first_phone = None
-    phone_idx = None
-    for idx, ln in enumerate(tail):
-        m = PHONE_RE.search(ln)
-        if m:
-            first_phone = m.group(0)
-            phone_idx = idx
-            break
-    vendor_name = None
-    if first_phone is not None:
-        prev_slice = list(reversed(tail[:phone_idx]))
-        vendor_name = _pick_human_name(prev_slice)
-    return vendor_name, first_phone, tail, phone_idx
+def extract_city(datos: dict, vend_lines: list[str], soup: BeautifulSoup) -> str | None:
+    # 1) Claves típicas
+    for k in ["Ciudad","Localidad","Ubicación","Ubicacion","Provincia","Sector"]:
+        for key in list(datos.keys()):
+            if k.lower() in key.lower():
+                val = datos.get(key)
+                if val and len(val.strip()) >= 2:
+                    return val.strip()
+    # 2) Líneas del bloque de vendedor con "Ciudad:" o "Ubicación:"
+    for ln in vend_lines:
+        if ":" in ln:
+            k, v = ln.split(":", 1)
+            if any(w in k.lower() for w in ["ciudad","ubicación","ubicacion","provincia","sector"]):
+                v = v.strip()
+                if v: return v
+    # 3) Fallback: mirar spans/labels que contengan esas palabras
+    txt = soup.get_text(" ", strip=True)
+    m = re.search(r"(?i)(?:Ciudad|Ubicaci[oó]n|Provincia)\s*:\s*([A-Za-zÁÉÍÓÚÑáéíóúñ\.\-\s]+)", txt)
+    if m:
+        cand = m.group(1).strip()
+        # Limpiar si hay trailing "Tel" etc
+        cand = re.split(r"(?i)\b(Tel|Tel\.|Teléfono|Telefono)\b", cand)[0].strip(" -•:")
+        if cand:
+            return cand
+    return None
 
 def parse_detail_page(html: str):
     soup = BeautifulSoup(html, "lxml")
 
-    # --- Datos generales / accesorios / descripción ---
     datos_lines = extract_section_texts(soup, r"Datos\s+Generales")
     datos = parse_keyvals_from_block(datos_lines)
+
     acc_lines = extract_section_texts(soup, r"(Accesorios|Caracter\u00EDsticas|Características)")
     accesorios = sorted({re.sub(r"\s+", " ", t).strip("• ").strip() for t in acc_lines if t})
+
     obs_lines = extract_section_texts(soup, r"(Observaciones|Descripci\u00F3n|Descripción)")
     descripcion = "\n".join(obs_lines).strip() if obs_lines else None
 
-    # --- Vendedor: nombre / teléfonos / ciudad ---
-    vend_lines = extract_section_texts(soup, r"(Vendedor|Contacto\s+Vendedor|Contacto\s+Dealer|Datos\s+del\s+Vendedor)")
-    vend_kv = parse_keyvals_from_block(vend_lines)
+    vend_lines = extract_section_texts(soup, r"(Vendedor|Contacto\s+Vendedor|Contacto\s+Dealer|Datos\s+del\s+Vendedor|Contacto)")
     vendedor_text = " \n ".join(vend_lines) if vend_lines else None
 
-    # Teléfonos de esa sección
-    phones = sorted(set(PHONE_RE.findall(vendedor_text or "")))
+    phones = sorted(set(PHONE_RE.findall(vendedor_text or ""))) or None
     primary_phone = phones[0] if phones else None
 
-    # Correos detectados para posible fallback de nombre
-    emails_in_vendor = EMAIL_RE.findall(vendedor_text or "")
+    vendor_name = extract_vendor_name(datos, vend_lines) if vend_lines or datos else None
+    city = extract_city(datos, vend_lines, soup)
 
-    # Nombre directo por claves
-    vendor_name = (
-        vend_kv.get("Nombre")
-        or vend_kv.get("Vendedor")
-        or vend_kv.get("Contacto")
-        or vend_kv.get("Dealer")
-        or vend_kv.get("Empresa")
-        or vend_kv.get("Concesionario")
-    )
-    if not vendor_name and vend_lines:
-        vendor_name = _pick_human_name(vend_lines)
-
-    # Fallback móvil: buscar en el "tail"
-    if not vendor_name or not primary_phone:
-        name_guess, phone_guess, tail, idx = _guess_from_bottom(soup)
-        if not vendor_name and name_guess:
-            vendor_name = name_guess
-        if not primary_phone and phone_guess:
-            primary_phone = phone_guess
-            phones = [primary_phone] + [p for p in phones if p != primary_phone]
-        # Si no tenemos vendor_text, intenta armar contexto alrededor del teléfono
-        if vendedor_text is None and idx is not None:
-            lo = max(0, idx - 6); hi = min(len(tail), idx + 6)
-            vendedor_text = "\n".join(tail[lo:hi])
-
-    # Fallback por email → nombre (juan.perez → Juan Perez)
-    if not vendor_name:
-        # Usa emails de sección; si no, busca en todo el documento
-        emails_all = emails_in_vendor or EMAIL_RE.findall(soup.get_text(" ", strip=True))
-        if emails_all:
-            vendor_name = _name_from_email(emails_all[0])
-
-    # Ciudad (de 'Datos Generales' o de la sección de vendedor)
-    city = None
-    if datos:
-        for k, v in datos.items():
-            if re.search(r"(?i)(ciudad|ubicaci[oó]n|provincia|sector|localidad|zona)", k):
-                city = v.split(",")[0].strip() if v else None
-                if city: break
-    if not city and vend_kv:
-        for k, v in vend_kv.items():
-            if re.search(r"(?i)(ciudad|ubicaci[oó]n|provincia|sector|localidad|zona)", k):
-                city = v.split(",")[0].strip() if v else None
-                if city: break
-    if not city and vendedor_text:
-        m = re.search(r"(?i)(?:Ciudad|Ubicaci[oó]n|Provincia)\s*:\s*([A-Za-zÁÉÍÓÚÜÑáéíóúüñ\-\s]+)", vendedor_text)
-        if m:
-            city = m.group(1).strip()
-
-    # Imágenes
+    # Fotos
     imgs = []
     for im in soup.select("img"):
         src = (im.get("src") or "").strip()
         if "AdsPhotos" in src:
             imgs.append(src)
-    imgs = sorted(set(imgs))
+    imgs = sorted(set(imgs)) or None
 
     return {
         "general": datos or None,
         "accessories": accesorios or None,
         "description": descripcion or None,
         "vendor_text": vendedor_text or None,
-        "vendor_name": vendor_name or None,     # ← nombre más robusto
-        "phones": phones or None,
-        "primary_phone": primary_phone or None,
-        "city": city or None,
-        "images": imgs or None
+        "vendor_name": vendor_name,
+        "phones": phones,
+        "primary_phone": primary_phone,
+        "city": city,
+        "images": imgs
     }
 
 def enrich_with_details(item: dict, ua: str, base_url: str, sleep_s: float) -> dict:
@@ -405,17 +363,96 @@ def enrich_with_details(item: dict, ua: str, base_url: str, sleep_s: float) -> d
         html = fetch(murl, ua)
         detail = parse_detail_page(html)
         item["detail"] = detail
-
-        # Campos de conveniencia a nivel item
-        item["seller_name"]   = detail.get("vendor_name")
-        item["primary_phone"] = detail.get("primary_phone") or (detail.get("phones") or [None])[0]
-        item["city"]          = detail.get("city")
     except Exception as e:
         item.setdefault("detail_error", str(e))
-    time.sleep(sleep_s)
+    time.sleep(sleep_s if sleep_s >= 0 else 0)
     return item
 
-# ---------- Scrape por cada fuente ----------
+# ==============================
+# Incremental (sharded)
+# ==============================
+def safe_write_json(path: pathlib.Path, obj) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(json.dumps(obj, ensure_ascii=False, indent=2), encoding="utf-8")
+    tmp.replace(path)
+
+def load_json_or(path: pathlib.Path, default):
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return default
+
+def write_item_file(item: dict) -> None:
+    """Guarda el anuncio en data/items/<id>.json si no existía o cambió."""
+    _id = item.get("id")
+    if not _id:
+        return
+    p = ITEMS_DIR / f"{_id}.json"
+    if p.exists():
+        try:
+            old = json.loads(p.read_text(encoding="utf-8"))
+            if old == item:
+                return
+        except Exception:
+            pass
+    safe_write_json(p, item)
+
+def build_active_exports(active_ids: set[str]) -> None:
+    """Genera índices de activos sin tocar los archivos por-id."""
+    # 1) IDs
+    safe_write_json(ACTIVE_IDS_PATH, sorted(active_ids))
+    # 2) Objetos activos (leer cada <id>.json existente)
+    listings = []
+    for _id in sorted(active_ids):
+        p = ITEMS_DIR / f"{_id}.json"
+        if p.exists():
+            try:
+                listings.append(json.loads(p.read_text(encoding="utf-8")))
+            except Exception:
+                pass
+    safe_write_json(ACTIVE_LISTINGS_PATH, listings)
+
+def update_items_incremental(scraped_items: list[dict]) -> None:
+    """
+    Crea/actualiza solo archivos de anuncios nuevos y elimina los que ya no están
+    (si PRUNE_REMOVED=True). Los que "vuelven activos" no se tocan.
+    """
+    ITEMS_DIR.mkdir(parents=True, exist_ok=True)
+
+    # IDs activos detectados
+    active_ids = {it.get("id") for it in scraped_items if it.get("id")}
+    # IDs ya presentes en disco
+    existing_ids = {p.stem for p in ITEMS_DIR.glob("*.json")}
+
+    # Nuevos
+    new_ids = active_ids - existing_ids
+    # (también actualiza si cambió, por si quieres re-escritura mínima)
+    for it in scraped_items:
+        _id = it.get("id")
+        if not _id:
+            continue
+        if _id in new_ids:
+            write_item_file(it)
+        else:
+            # Si ya existe, opcionalmente compara y guarda si cambió
+            write_item_file(it)
+
+    # Removidos (no activos en esta corrida)
+    if PRUNE_REMOVED:
+        removed_ids = existing_ids - active_ids
+        for _id in removed_ids:
+            try:
+                (ITEMS_DIR / f"{_id}.json").unlink(missing_ok=True)
+            except Exception:
+                pass
+
+    # Índices de activos
+    build_active_exports(active_ids)
+
+# ==============================
+# Scrape runner
+# ==============================
 def scrape_source(source_url: str, cfg: dict, seen_ids: set, all_items: list):
     pages      = int(cfg["pages"])
     sleep_s    = float(cfg["sleep_seconds"])
@@ -493,7 +530,7 @@ def main():
         print(f"[INFO] >>> Iniciando scrape de fuente: {src}")
         scrape_source(src, cfg, seen_ids, all_items)
 
-    # Detalles (opcional)
+    # Detalles (opcional, limitado)
     if cfg.get("details", True) and all_items:
         max_details = int(cfg.get("max_details", 120))
         d_sleep = float(cfg.get("detail_sleep_seconds", 0.8))
@@ -505,12 +542,20 @@ def main():
             count += 1
         print(f"[INFO] Detalles descargados: {count}")
 
+    # === Salida incremental por archivos ===
+    update_items_incremental(all_items)
+
+    # (Opcional) snapshot monolítico de lo scrapeado en esta corrida:
+    # DATA_DIR.mkdir(parents=True, exist_ok=True)
+    # safe_write_json(DATA_DIR / "listings.json", all_items)
+
+    # Snapshot diario
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    (DATA_DIR / "listings.json").write_text(json.dumps(all_items, ensure_ascii=False, indent=2), encoding="utf-8")
     today = dt.datetime.utcnow().date().isoformat()
     (DATA_DIR / "daily").mkdir(parents=True, exist_ok=True)
-    (DATA_DIR / "daily" / f"{today}.json").write_text(json.dumps(all_items, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"[DONE] Total anuncios: {len(all_items)} → data/listings.json")
+    safe_write_json(DATA_DIR / "daily" / f"{today}.json", all_items)
+
+    print(f"[DONE] Incremental: items/ actualizado, activos → {ACTIVE_LISTINGS_PATH.name}")
 
 if __name__ == "__main__":
     main()

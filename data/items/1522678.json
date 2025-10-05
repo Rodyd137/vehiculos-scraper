@@ -1,0 +1,29 @@
+{
+  "id": "1522678",
+  "url": "https://www.supercarros.com/geely-cityray/1522678/",
+  "title": "Geely CITYRAY GK",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 29500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13536368.jpg",
+  "photo_ids": [
+    "13536368",
+    "13536369",
+    "13536370",
+    "13536371",
+    "13536372",
+    "13536373",
+    "13536374",
+    "13536375",
+    "13536376",
+    "13536377",
+    "13536378"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "1478353",
+  "url": "https://www.supercarros.com/lexus-gs/1478353/",
+  "title": "Lexus GS 350",
+  "year": 2016,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 25700.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13041048.jpg",
+  "photo_ids": [
+    "13041048",
+    "13041049",
+    "13041050",
+    "13041051",
+    "13041052",
+    "13041053",
+    "13041054",
+    "13041055",
+    "13041056",
+    "13041057",
+    "13041058"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:18Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

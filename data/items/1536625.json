@@ -1,0 +1,26 @@
+{
+  "id": "1536625",
+  "url": "https://www.supercarros.com/changan-cs85/1536625/",
+  "title": "Changan CS 85",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 30000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13684595.jpg",
+  "photo_ids": [
+    "13684595",
+    "13684596",
+    "13684597",
+    "13684598",
+    "13684599",
+    "13684600",
+    "13684601",
+    "13684602",
+    "13684603",
+    "13684604"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:52Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

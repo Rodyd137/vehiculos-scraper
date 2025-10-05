@@ -1,0 +1,27 @@
+{
+  "id": "1535103",
+  "url": "https://www.supercarros.com/toyota-fortuner/1535103/",
+  "title": "Toyota Fortuner",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 34500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13667257.jpg",
+  "photo_ids": [
+    "13667257",
+    "13667258",
+    "13667259",
+    "13667260",
+    "13667261",
+    "13667262",
+    "13667263",
+    "13667264",
+    "13667265",
+    "13667266",
+    "13667267"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:16Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1557796",
+  "url": "https://www.supercarros.com/nissan-murano/1557796/",
+  "title": "Nissan Murano",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 25600.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13921565.jpg",
+  "photo_ids": [
+    "13921555",
+    "13921556",
+    "13921557",
+    "13921558",
+    "13921559",
+    "13921560",
+    "13921561",
+    "13921562",
+    "13921563",
+    "13921564",
+    "13921565",
+    "13921566"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:05Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "1395490",
+  "url": "https://www.supercarros.com/lexus-lx/1395490/",
+  "title": "Lexus LX 600 URBAN",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 197900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12123904.jpg",
+  "photo_ids": [
+    "12123898",
+    "12123899",
+    "12123900",
+    "12123901",
+    "12123902",
+    "12123903",
+    "12123904",
+    "12123905",
+    "12123906",
+    "12123907"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:18Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

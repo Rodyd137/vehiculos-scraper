@@ -1,0 +1,26 @@
+{
+  "id": "1493774",
+  "url": "https://www.supercarros.com/toyota-hilux/1493774/",
+  "title": "Toyota Hilux GR Sport",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 74900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13212963.jpg",
+  "photo_ids": [
+    "13212957",
+    "13212958",
+    "13212959",
+    "13212960",
+    "13212961",
+    "13212962",
+    "13212963",
+    "13212964",
+    "13212965",
+    "13212966"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

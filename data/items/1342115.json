@@ -1,0 +1,25 @@
+{
+  "id": "1342115",
+  "url": "https://www.supercarros.com/honda-crv/1342115/",
+  "title": "Honda CR-V LX",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 45900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11549393.jpg",
+  "photo_ids": [
+    "11549385",
+    "11549386",
+    "11549387",
+    "11549388",
+    "11549389",
+    "11549390",
+    "11549391",
+    "11549392",
+    "11549393"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:39Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

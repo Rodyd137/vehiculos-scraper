@@ -1,0 +1,29 @@
+{
+  "id": "1468107",
+  "url": "https://www.supercarros.com/lexus-lx/1468107/",
+  "title": "Lexus LX 600 Premium",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 190000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12928729.jpg",
+  "photo_ids": [
+    "12928729",
+    "12928730",
+    "12928731",
+    "12928732",
+    "12928733",
+    "12928734",
+    "12928735",
+    "12928736",
+    "12928737",
+    "12928738",
+    "12928739"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:47Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

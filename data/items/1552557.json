@@ -1,0 +1,28 @@
+{
+  "id": "1552557",
+  "url": "https://www.supercarros.com/ford-f150/1552557/",
+  "title": "Ford F 150 Lariat",
+  "year": 2014,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1150000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13863283.jpg",
+  "photo_ids": [
+    "13863283",
+    "13863284",
+    "13863285",
+    "13863286",
+    "13863287",
+    "13863288",
+    "13863289",
+    "13863290",
+    "13863291",
+    "13863292",
+    "13863293",
+    "13863294"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:39:03Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

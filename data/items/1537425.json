@@ -1,0 +1,27 @@
+{
+  "id": "1537425",
+  "url": "https://www.supercarros.com/landrover-rangerover/1537425/",
+  "title": "Land Rover Range Rover Sport",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 128000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13693902.jpg",
+  "photo_ids": [
+    "13693902",
+    "13693903",
+    "13693904",
+    "13693905",
+    "13693906",
+    "13693907",
+    "13693908",
+    "13693909",
+    "13693910",
+    "13693911",
+    "13693912"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:52Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

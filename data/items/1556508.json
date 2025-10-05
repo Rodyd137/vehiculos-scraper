@@ -1,0 +1,27 @@
+{
+  "id": "1556508",
+  "url": "https://www.supercarros.com/landrover-rangerover/1556508/",
+  "title": "Land Rover Range Rover EVOQUE",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 29500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13907255.jpg",
+  "photo_ids": [
+    "13907258",
+    "13907255",
+    "13907260",
+    "13907262",
+    "13907261",
+    "13907265",
+    "13907264",
+    "13907263",
+    "13907256",
+    "13907257",
+    "13907259"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:39:03Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

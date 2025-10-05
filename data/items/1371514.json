@@ -1,0 +1,27 @@
+{
+  "id": "1371514",
+  "url": "https://www.supercarros.com/mercedesbenz-claseglc/1371514/",
+  "title": "Mercedes-Benz Clase GLC 300 4MATIC",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 99900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11864493.jpg",
+  "photo_ids": [
+    "11864493",
+    "11864494",
+    "11864495",
+    "11864496",
+    "11864497",
+    "11864498",
+    "11864499",
+    "11864500",
+    "11864501"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

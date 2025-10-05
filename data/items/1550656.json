@@ -1,0 +1,29 @@
+{
+  "id": "1550656",
+  "url": "https://www.supercarros.com/jetour-t1/1550656/",
+  "title": "Jetour T1",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 48900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13842119.jpg",
+  "photo_ids": [
+    "13842119",
+    "13842120",
+    "13842121",
+    "13842122",
+    "13842123",
+    "13842124",
+    "13842125",
+    "13842126",
+    "13842127",
+    "13842128",
+    "13842129"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:58Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

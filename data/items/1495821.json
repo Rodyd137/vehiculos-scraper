@@ -1,0 +1,23 @@
+{
+  "id": "1495821",
+  "url": "https://www.supercarros.com/hyundai-santafe/1495821/",
+  "title": "Hyundai Santa Fe SE",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 27900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13235503.jpg",
+  "photo_ids": [
+    "13235503",
+    "13235504",
+    "13235505",
+    "13235506",
+    "13235507",
+    "13235508",
+    "13235509"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:39:05Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

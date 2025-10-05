@@ -1,0 +1,26 @@
+{
+  "id": "1544661",
+  "url": "https://www.supercarros.com/suzuki-dzire/1544661/",
+  "title": "Suzuki Dzire GLX",
+  "year": 2026,
+  "fuel": "Híbrido",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 19900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13774604.jpg",
+  "photo_ids": [
+    "13774604",
+    "13774605",
+    "13774606",
+    "13774607",
+    "13774608",
+    "13774609",
+    "13774610",
+    "13774611",
+    "13774612",
+    "13774613"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:34Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

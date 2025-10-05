@@ -1,0 +1,29 @@
+{
+  "id": "1512057",
+  "url": "https://www.supercarros.com/mg-4/1512057/",
+  "title": "MG 4",
+  "year": 2024,
+  "fuel": "Eléctrico",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 49900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13445373.jpg",
+  "photo_ids": [
+    "13445373",
+    "13445374",
+    "13445375",
+    "13445376",
+    "13445377",
+    "13445378",
+    "13445379",
+    "13445380",
+    "13445381",
+    "13445382",
+    "13445383"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

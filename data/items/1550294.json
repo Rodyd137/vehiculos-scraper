@@ -1,0 +1,30 @@
+{
+  "id": "1550294",
+  "url": "https://www.supercarros.com/kia-soluto/1550294/",
+  "title": "Kia Soluto",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 18990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13837880.jpg",
+  "photo_ids": [
+    "13837880",
+    "13837881",
+    "13837882",
+    "13837883",
+    "13837884",
+    "13837885",
+    "13837886",
+    "13837887",
+    "13837888",
+    "13837889",
+    "13837890",
+    "13837891"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:52Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

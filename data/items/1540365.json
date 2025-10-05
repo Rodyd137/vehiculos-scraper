@@ -1,0 +1,27 @@
+{
+  "id": "1540365",
+  "url": "https://www.supercarros.com/mitsubishi-outlander/1540365/",
+  "title": "Mitsubishi Outlander Sport SE",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 18900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13815967.jpg",
+  "photo_ids": [
+    "13815967",
+    "13815968",
+    "13815969",
+    "13815970",
+    "13815973",
+    "13815984",
+    "13815993",
+    "13815996",
+    "13815997",
+    "13815998",
+    "13815999"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:05Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

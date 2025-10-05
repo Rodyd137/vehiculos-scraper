@@ -1,0 +1,26 @@
+{
+  "id": "1546047",
+  "url": "https://www.supercarros.com/toyota-landcruiser/1546047/",
+  "title": "Toyota Land Cruiser VXR",
+  "year": 2016,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 79900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13790706.jpg",
+  "photo_ids": [
+    "13790706",
+    "13790707",
+    "13790708",
+    "13790711",
+    "13790719",
+    "13790720",
+    "13790721",
+    "13790722",
+    "13790723",
+    "13790724"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:21Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

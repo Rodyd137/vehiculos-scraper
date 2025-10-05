@@ -1,0 +1,25 @@
+{
+  "id": "1555993",
+  "url": "https://www.supercarros.com/hyundai-cantus/1555993/",
+  "title": "Hyundai Cantus",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 18500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13901313.jpg",
+  "photo_ids": [
+    "13901306",
+    "13901307",
+    "13901308",
+    "13901309",
+    "13901310",
+    "13901311",
+    "13901312",
+    "13901313",
+    "13901314"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:50Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

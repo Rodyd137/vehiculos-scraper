@@ -1,0 +1,25 @@
+{
+  "id": "1460581",
+  "url": "https://www.supercarros.com/mitsubishi-l200/1460581/",
+  "title": "Mitsubishi L 200",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 58900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12844428.jpg",
+  "photo_ids": [
+    "12844428",
+    "12844430",
+    "12844433",
+    "12844445",
+    "12844446",
+    "12844447",
+    "12844448",
+    "12844450",
+    "12844451"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:43Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

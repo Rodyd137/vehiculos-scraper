@@ -1,0 +1,26 @@
+{
+  "id": "1473056",
+  "url": "https://www.supercarros.com/chevrolet-n400/1473056/",
+  "title": "Chevrolet N400 Cargo",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 17700.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12982985.jpg",
+  "photo_ids": [
+    "12982985",
+    "12982986",
+    "12982987",
+    "12982988",
+    "12982989",
+    "12982990",
+    "12982991",
+    "12982992",
+    "12982993",
+    "12982994"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:36Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1406761",
+  "url": "https://www.supercarros.com/mazda-cx-90/1406761/",
+  "title": "Mazda CX-90  High Plus MHEV",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 75990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12246159.jpg",
+  "photo_ids": [
+    "12246159",
+    "12246160",
+    "12246161",
+    "12246162",
+    "12246163",
+    "12246164",
+    "12246165",
+    "12246166",
+    "12246167",
+    "12246168"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:09Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

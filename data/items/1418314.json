@@ -1,0 +1,23 @@
+{
+  "id": "1418314",
+  "url": "https://www.supercarros.com/toyota-yaris/1418314/",
+  "title": "Toyota Yaris Cross Full Híbrido",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 34900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12379754.jpg",
+  "photo_ids": [
+    "12379754",
+    "12379755",
+    "12379756",
+    "12379757",
+    "12379758",
+    "12379759",
+    "12379760"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:25Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

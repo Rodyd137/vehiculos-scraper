@@ -1,0 +1,28 @@
+{
+  "id": "1528820",
+  "url": "https://www.supercarros.com/chevrolet-corvette/1528820/",
+  "title": "Chevrolet Corvette Stingray",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 110000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13606327.jpg",
+  "photo_ids": [
+    "13606327",
+    "13606328",
+    "13606343",
+    "13606344",
+    "13606345",
+    "13606346",
+    "13606347",
+    "13606348",
+    "13606349",
+    "13606350"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

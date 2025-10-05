@@ -1,0 +1,28 @@
+{
+  "id": "1557890",
+  "url": "https://www.supercarros.com/toyota-landcruiser/1557890/",
+  "title": "Toyota Land Cruiser 300 VX-R",
+  "year": 2013,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 41500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13922566.jpg",
+  "photo_ids": [
+    "13922566",
+    "13922567",
+    "13922568",
+    "13922569",
+    "13922570",
+    "13922571",
+    "13922572",
+    "13922573",
+    "13922574",
+    "13922575",
+    "13922576",
+    "13922577"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:32Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

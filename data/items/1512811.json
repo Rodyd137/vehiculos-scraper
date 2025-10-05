@@ -1,0 +1,30 @@
+{
+  "id": "1512811",
+  "url": "https://www.supercarros.com/mercedesbenz-clase gle/1512811/",
+  "title": "Mercedes-Benz Clase GLE 63S AMG 4Matic",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 130000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13445427.jpg",
+  "photo_ids": [
+    "13445427",
+    "13445428",
+    "13445429",
+    "13445430",
+    "13445431",
+    "13445432",
+    "13445433",
+    "13445434",
+    "13445435",
+    "13445436",
+    "13445437",
+    "13445438"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:52Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

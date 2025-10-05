@@ -1,0 +1,23 @@
+{
+  "id": "1479903",
+  "url": "https://www.supercarros.com/toyota-hilux/1479903/",
+  "title": "Toyota Hilux WIDE TREAD",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 67500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13058220.jpg",
+  "photo_ids": [
+    "13058220",
+    "13058221",
+    "13058222",
+    "13058223",
+    "13058224",
+    "13058225",
+    "13058226"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:23Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

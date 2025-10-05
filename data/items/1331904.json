@@ -1,0 +1,28 @@
+{
+  "id": "1331904",
+  "url": "https://www.supercarros.com/mitsubishi-rosa/1331904/",
+  "title": "Mitsubishi Rosa",
+  "year": 2026,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 92500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13836365.jpg",
+  "photo_ids": [
+    "11439898",
+    "11439901",
+    "13836364",
+    "13836365",
+    "13836366",
+    "13836367",
+    "13836368",
+    "13836369",
+    "13836370",
+    "13836371"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:16Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

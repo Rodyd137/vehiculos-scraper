@@ -1,0 +1,28 @@
+{
+  "id": "1546944",
+  "url": "https://www.supercarros.com/fiat-500/1546944/",
+  "title": "Fiat 500",
+  "year": 2013,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 330000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13800748.jpg",
+  "photo_ids": [
+    "13800748",
+    "13800749",
+    "13800750",
+    "13800751",
+    "13800752",
+    "13800753",
+    "13800754",
+    "13800755",
+    "13800756",
+    "13800757",
+    "13800758",
+    "13800759"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:45Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1499317",
+  "url": "https://www.supercarros.com/jeep-grandcherokee/1499317/",
+  "title": "Jeep Grand Cherokee Altitude",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 27900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13273968.jpg",
+  "photo_ids": [
+    "13273960",
+    "13273961",
+    "13273962",
+    "13273963",
+    "13273964",
+    "13273965",
+    "13273966",
+    "13273967",
+    "13273968",
+    "13273969",
+    "13273970",
+    "13273971"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:12Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

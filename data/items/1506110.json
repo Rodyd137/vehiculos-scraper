@@ -1,0 +1,26 @@
+{
+  "id": "1506110",
+  "url": "https://www.supercarros.com/lexus-rx/1506110/",
+  "title": "Lexus RX 350 F Sport",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 82000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13349541.jpg",
+  "photo_ids": [
+    "13349541",
+    "13349543",
+    "13349544",
+    "13349547",
+    "13349549",
+    "13349551",
+    "13349552",
+    "13349553",
+    "13349554",
+    "13349555"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

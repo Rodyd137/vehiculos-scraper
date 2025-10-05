@@ -1,0 +1,21 @@
+{
+  "id": "1552852",
+  "url": "https://www.supercarros.com/chevrolet-suburban/1552852/",
+  "title": "Chevrolet Suburban",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 65000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13866598.jpg",
+  "photo_ids": [
+    "13866598",
+    "13866599",
+    "13866600",
+    "13866601",
+    "13866602"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:39:03Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "1428958",
+  "url": "https://www.supercarros.com/mercedesbenz-clase gle/1428958/",
+  "title": "Mercedes-Benz Clase GLE 450 4MATIC",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 129900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12492915.jpg",
+  "photo_ids": [
+    "12492913",
+    "12492915",
+    "12492916",
+    "12492917",
+    "12492918",
+    "12492919",
+    "12492920",
+    "12492921",
+    "12492922"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

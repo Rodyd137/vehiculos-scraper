@@ -1,0 +1,26 @@
+{
+  "id": "1552886",
+  "url": "https://www.supercarros.com/mini-cooper/1552886/",
+  "title": "Mini Cooper Hardtop",
+  "year": 2015,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 900000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13866981.jpg",
+  "photo_ids": [
+    "13866981",
+    "13866982",
+    "13866983",
+    "13866984",
+    "13866985",
+    "13866986",
+    "13866987",
+    "13866988",
+    "13866989",
+    "13866990"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:32Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

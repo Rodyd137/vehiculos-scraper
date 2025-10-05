@@ -1,0 +1,25 @@
+{
+  "id": "1336136",
+  "url": "https://www.supercarros.com/lexus-rx/1336136/",
+  "title": "Lexus RX 350",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 98900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11485295.jpg",
+  "photo_ids": [
+    "11485294",
+    "11485295",
+    "11485296",
+    "11485297",
+    "11485298",
+    "11485299",
+    "11485300",
+    "11485301",
+    "11485302"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:21Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

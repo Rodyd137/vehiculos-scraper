@@ -1,0 +1,25 @@
+{
+  "id": "1381844",
+  "url": "https://www.supercarros.com/sany-mixer/1381844/",
+  "title": "Sany  Mixer",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 139900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11975254.jpg",
+  "photo_ids": [
+    "11975254",
+    "11975255",
+    "11975256",
+    "11975257",
+    "11975258",
+    "11975259",
+    "11975260"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

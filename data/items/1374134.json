@@ -1,0 +1,30 @@
+{
+  "id": "1374134",
+  "url": "https://www.supercarros.com/gac-gs8/1374134/",
+  "title": "GAC GS8 FULL",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 48900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11892943.jpg",
+  "photo_ids": [
+    "11892943",
+    "11892944",
+    "11892945",
+    "11892946",
+    "11892947",
+    "11892948",
+    "11892949",
+    "11892950",
+    "11892951",
+    "11892952",
+    "11892953",
+    "11892954"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:52Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

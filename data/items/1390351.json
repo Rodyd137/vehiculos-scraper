@@ -1,0 +1,29 @@
+{
+  "id": "1390351",
+  "url": "https://www.supercarros.com/peugeot-5008/1390351/",
+  "title": "Peugeot 5008 GT Line",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 48400.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12067695.jpg",
+  "photo_ids": [
+    "12067695",
+    "12067696",
+    "12067697",
+    "12067698",
+    "12067699",
+    "12067700",
+    "12067701",
+    "12067702",
+    "12067703",
+    "12067704",
+    "12067705"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:50Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

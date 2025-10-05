@@ -1,0 +1,24 @@
+{
+  "id": "1381001",
+  "url": "https://www.supercarros.com/kia-k2700/1381001/",
+  "title": "Kia K-2700",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 21990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11966154.jpg",
+  "photo_ids": [
+    "11966154",
+    "11966155",
+    "11966156",
+    "11966157",
+    "11966158",
+    "11966159",
+    "11966160",
+    "11966161"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:32Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

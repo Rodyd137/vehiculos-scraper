@@ -1,0 +1,30 @@
+{
+  "id": "1546622",
+  "url": "https://www.supercarros.com/ford-bronco/1546622/",
+  "title": "Ford Bronco Raptor",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 129950.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13797070.jpg",
+  "photo_ids": [
+    "13797070",
+    "13797071",
+    "13797072",
+    "13797073",
+    "13797074",
+    "13797075",
+    "13797076",
+    "13797077",
+    "13797078",
+    "13797079",
+    "13797080",
+    "13797081"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:50Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

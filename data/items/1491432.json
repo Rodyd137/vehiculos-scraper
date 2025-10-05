@@ -1,0 +1,26 @@
+{
+  "id": "1491432",
+  "url": "https://www.supercarros.com/mercedesbenz-clasegls/1491432/",
+  "title": "Mercedes-Benz Clase GLS 63 AMG",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 150000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13186905.jpg",
+  "photo_ids": [
+    "13186905",
+    "13186906",
+    "13186907",
+    "13186908",
+    "13186909",
+    "13186910",
+    "13186911",
+    "13186912",
+    "13186913",
+    "13186914"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

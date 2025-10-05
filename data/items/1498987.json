@@ -1,0 +1,28 @@
+{
+  "id": "1498987",
+  "url": "https://www.supercarros.com/ford-explorer/1498987/",
+  "title": "Ford Explorer XLT 4WD",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 28900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13592415.jpg",
+  "photo_ids": [
+    "13592414",
+    "13592415",
+    "13592416",
+    "13592417",
+    "13592418",
+    "13592419",
+    "13592420",
+    "13592421",
+    "13592422",
+    "13592423",
+    "13592424",
+    "13592425"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:12Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

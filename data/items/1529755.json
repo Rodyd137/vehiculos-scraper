@@ -1,0 +1,26 @@
+{
+  "id": "1529755",
+  "url": "https://www.supercarros.com/suzuki-grandvitara/1529755/",
+  "title": "Suzuki Grand Vitara GLX",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 35900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13617105.jpg",
+  "photo_ids": [
+    "13617105",
+    "13617106",
+    "13617107",
+    "13617108",
+    "13617109",
+    "13617110",
+    "13617111",
+    "13617112",
+    "13617113",
+    "13617114"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:41Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

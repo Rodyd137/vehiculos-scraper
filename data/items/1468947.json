@@ -1,0 +1,23 @@
+{
+  "id": "1468947",
+  "url": "https://www.supercarros.com/chevrolet-tahoe/1468947/",
+  "title": "Chevrolet Tahoe Highcountry",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 105900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13376949.jpg",
+  "photo_ids": [
+    "13376949",
+    "13376950",
+    "13376951",
+    "13376952",
+    "13376953",
+    "13376954",
+    "13376955"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:34Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "1454291",
+  "url": "https://www.supercarros.com/suzuki-apv/1454291/",
+  "title": "Suzuki APV Carga",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 19900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12774364.jpg",
+  "photo_ids": [
+    "12774361",
+    "12774362",
+    "12774363",
+    "12774364",
+    "12774365",
+    "12774366",
+    "12774367",
+    "12774368",
+    "12774369",
+    "12774370"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:39Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

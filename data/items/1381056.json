@@ -1,0 +1,25 @@
+{
+  "id": "1381056",
+  "url": "https://www.supercarros.com/toyota-rav4/1381056/",
+  "title": "Toyota RAV4 Hybrid TSS",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 49900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11966786.jpg",
+  "photo_ids": [
+    "11966778",
+    "11966779",
+    "11966780",
+    "11966781",
+    "11966782",
+    "11966783",
+    "11966784",
+    "11966785",
+    "11966786"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:23Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

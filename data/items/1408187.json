@@ -1,0 +1,29 @@
+{
+  "id": "1408187",
+  "url": "https://www.supercarros.com/kia-sportage/1408187/",
+  "title": "Kia Sportage Sport",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 35990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13450832.jpg",
+  "photo_ids": [
+    "13450832",
+    "13450833",
+    "13450834",
+    "13450835",
+    "13450836",
+    "13450837",
+    "13450838",
+    "13450839",
+    "13450840",
+    "13450841",
+    "13450842"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:58Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

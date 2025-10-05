@@ -1,0 +1,28 @@
+{
+  "id": "1541297",
+  "url": "https://www.supercarros.com/honda-accord/1541297/",
+  "title": "Honda Accord Sport Hybrid",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 21900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13778572.jpg",
+  "photo_ids": [
+    "13778563",
+    "13778564",
+    "13778565",
+    "13778566",
+    "13778567",
+    "13778568",
+    "13778569",
+    "13778570",
+    "13778571",
+    "13778572",
+    "13778573",
+    "13778574"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:12Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

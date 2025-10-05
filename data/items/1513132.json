@@ -1,0 +1,29 @@
+{
+  "id": "1513132",
+  "url": "https://www.supercarros.com/jac-t8/1513132/",
+  "title": "Jac T8",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 30990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13445439.jpg",
+  "photo_ids": [
+    "13445439",
+    "13445440",
+    "13445441",
+    "13445442",
+    "13445443",
+    "13445444",
+    "13445445",
+    "13445446",
+    "13445447",
+    "13445448",
+    "13445449"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:03Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

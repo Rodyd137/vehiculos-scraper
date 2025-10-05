@@ -1,0 +1,28 @@
+{
+  "id": "1557911",
+  "url": "https://www.supercarros.com/toyota-townace/1557911/",
+  "title": "Toyota Town-Ace",
+  "year": 2016,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 850000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13922792.jpg",
+  "photo_ids": [
+    "13922785",
+    "13922786",
+    "13922787",
+    "13922788",
+    "13922789",
+    "13922790",
+    "13922791",
+    "13922792",
+    "13922793",
+    "13922794",
+    "13922795",
+    "13922796"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:14Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

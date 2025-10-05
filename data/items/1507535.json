@@ -1,0 +1,25 @@
+{
+  "id": "1507535",
+  "url": "https://www.supercarros.com/toyota-landcruiser/1507535/",
+  "title": "Toyota Land Cruiser 70 ANIVERSARIO",
+  "year": 2023,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 133900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13365694.jpg",
+  "photo_ids": [
+    "13365694",
+    "13365695",
+    "13365696",
+    "13365697",
+    "13365698",
+    "13365699",
+    "13365700",
+    "13365701",
+    "13365702"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:21Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

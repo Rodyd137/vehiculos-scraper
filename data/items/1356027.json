@@ -1,0 +1,27 @@
+{
+  "id": "1356027",
+  "url": "https://www.supercarros.com/jac-t6/1356027/",
+  "title": "Jac T6",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 27990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13462600.jpg",
+  "photo_ids": [
+    "13462599",
+    "13462600",
+    "13462601",
+    "13462602",
+    "13462603",
+    "13462604",
+    "13462605",
+    "13462606",
+    "13462607"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:03Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

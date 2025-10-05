@@ -1,0 +1,26 @@
+{
+  "id": "1545834",
+  "url": "https://www.supercarros.com/mini-cooper/1545834/",
+  "title": "Mini Cooper Countryman S ALL4",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 20900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13788233.jpg",
+  "photo_ids": [
+    "13788231",
+    "13788232",
+    "13788233",
+    "13788234",
+    "13788235",
+    "13788236",
+    "13788237",
+    "13788238"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:39:01Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

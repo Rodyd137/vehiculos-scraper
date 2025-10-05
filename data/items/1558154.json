@@ -1,0 +1,24 @@
+{
+  "id": "1558154",
+  "url": "https://www.supercarros.com/mitsubishi-l200/1558154/",
+  "title": "Mitsubishi L 200 Sportero",
+  "year": 2014,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1100000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13925358.jpg",
+  "photo_ids": [
+    "13925358",
+    "13925359",
+    "13925360",
+    "13925361",
+    "13925362",
+    "13925363",
+    "13925364",
+    "13925365"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:39:01Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

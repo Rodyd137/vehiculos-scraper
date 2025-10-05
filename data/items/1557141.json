@@ -1,0 +1,21 @@
+{
+  "id": "1557141",
+  "url": "https://www.supercarros.com/toyota-hilux/1557141/",
+  "title": "Toyota Hilux CONQUEST",
+  "year": 2023,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 56000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13914205.jpg",
+  "photo_ids": [
+    "13914205",
+    "13914206",
+    "13914207",
+    "13914208",
+    "13914209"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:58Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "1316239",
+  "url": "https://www.supercarros.com/toyota-corollacross/1316239/",
+  "title": "Toyota Corolla Cross Full Hibrid",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 41200.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13025833.jpg",
+  "photo_ids": [
+    "13025833",
+    "13025834",
+    "13025835",
+    "13025836",
+    "13025837",
+    "13025838",
+    "13025839",
+    "13025840",
+    "13025841"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:27Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

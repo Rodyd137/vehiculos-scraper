@@ -1,0 +1,28 @@
+{
+  "id": "1443944",
+  "url": "https://www.supercarros.com/tesla-model3/1443944/",
+  "title": "Tesla Model 3",
+  "year": 2021,
+  "fuel": "Eléctrico",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 39000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12659624.jpg",
+  "photo_ids": [
+    "12659617",
+    "12659618",
+    "12659619",
+    "12659620",
+    "12659621",
+    "12659622",
+    "12659623",
+    "12659624",
+    "12659625",
+    "12659626"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:50Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

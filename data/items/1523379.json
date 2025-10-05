@@ -1,0 +1,28 @@
+{
+  "id": "1523379",
+  "url": "https://www.supercarros.com/seat-ateca/1523379/",
+  "title": "Seat Ateca",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 31900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13544166.jpg",
+  "photo_ids": [
+    "13544166",
+    "13544167",
+    "13544168",
+    "13544169",
+    "13544170",
+    "13544171",
+    "13544172",
+    "13544173",
+    "13544174",
+    "13544176"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

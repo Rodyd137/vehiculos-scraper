@@ -1,0 +1,25 @@
+{
+  "id": "1467654",
+  "url": "https://www.supercarros.com/toyota-4runner/1467654/",
+  "title": "Toyota 4 Runner SR5",
+  "year": 2014,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 23900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12923508.jpg",
+  "photo_ids": [
+    "12923508",
+    "12923514",
+    "12923515",
+    "12923516",
+    "12923521",
+    "12923541",
+    "12923544",
+    "12923555",
+    "12923569"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:23Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

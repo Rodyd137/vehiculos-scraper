@@ -1,0 +1,26 @@
+{
+  "id": "1481567",
+  "url": "https://www.supercarros.com/jeep-gladiator/1481567/",
+  "title": "Jeep Gladiator",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 65000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13076765.jpg",
+  "photo_ids": [
+    "13076761",
+    "13076762",
+    "13076763",
+    "13076764",
+    "13076765",
+    "13076766",
+    "13076767",
+    "13076768",
+    "13076769",
+    "13076770"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:16Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "1553676",
+  "url": "https://www.supercarros.com/jeep-gladiator/1553676/",
+  "title": "Jeep Gladiator Overland",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 55900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13875680.jpg",
+  "photo_ids": [
+    "13875680",
+    "13875681",
+    "13875682",
+    "13875683",
+    "13878787",
+    "13878788",
+    "13878789",
+    "13878790"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:34Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

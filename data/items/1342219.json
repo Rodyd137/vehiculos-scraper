@@ -1,0 +1,25 @@
+{
+  "id": "1342219",
+  "url": "https://www.supercarros.com/isuzu-dmax/1342219/",
+  "title": "Isuzu DMAX LSE",
+  "year": 2026,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 59900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12764690.jpg",
+  "photo_ids": [
+    "12764689",
+    "12764690",
+    "12764691",
+    "12764692",
+    "12764694",
+    "12764695",
+    "12764696",
+    "12764697",
+    "12764698"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:43Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

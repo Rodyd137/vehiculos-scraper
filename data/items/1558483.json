@@ -1,0 +1,28 @@
+{
+  "id": "1558483",
+  "url": "https://www.supercarros.com/kia-sorento/1558483/",
+  "title": "Kia Sorento S",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 29500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13929119.jpg",
+  "photo_ids": [
+    "13929119",
+    "13929120",
+    "13929121",
+    "13929122",
+    "13929123",
+    "13929124",
+    "13929125",
+    "13929126",
+    "13929127",
+    "13929128",
+    "13929129",
+    "13929130"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:58Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1455299",
+  "url": "https://www.supercarros.com/mercedesbenz-clasee/1455299/",
+  "title": "Mercedes-Benz Clase E 300 4MATIC",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 30500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12811903.jpg",
+  "photo_ids": [
+    "12811897",
+    "12811898",
+    "12811899",
+    "12811900",
+    "12811901",
+    "12811902",
+    "12811903",
+    "12811904",
+    "12811905",
+    "12811906",
+    "12811907",
+    "12811908"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

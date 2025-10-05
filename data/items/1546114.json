@@ -1,0 +1,30 @@
+{
+  "id": "1546114",
+  "url": "https://www.supercarros.com/peugeot-3008/1546114/",
+  "title": "Peugeot 3008  GT Line",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 52900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13791414.jpg",
+  "photo_ids": [
+    "13791414",
+    "13791416",
+    "13791419",
+    "13791421",
+    "13791422",
+    "13791424",
+    "13791427",
+    "13791431",
+    "13791434",
+    "13791435",
+    "13791436",
+    "13791437"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:50Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

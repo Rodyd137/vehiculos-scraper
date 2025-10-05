@@ -1,0 +1,28 @@
+{
+  "id": "1553861",
+  "url": "https://www.supercarros.com/honda-crv/1553861/",
+  "title": "Honda CR-V EXL",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 22000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13877691.jpg",
+  "photo_ids": [
+    "13877691",
+    "13877692",
+    "13877693",
+    "13877694",
+    "13877695",
+    "13877696",
+    "13877697",
+    "13877698",
+    "13877699",
+    "13877700",
+    "13877701",
+    "13877702"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:37:52Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1529875",
+  "url": "https://www.supercarros.com/toyota-landcruiserprado/1529875/",
+  "title": "Toyota Land Cruiser Prado All Rounder Launch Edition",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 96400.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13618376.jpg",
+  "photo_ids": [
+    "13618376",
+    "13618377",
+    "13618378",
+    "13618379",
+    "13618380",
+    "13618381",
+    "13618382",
+    "13618383",
+    "13618384",
+    "13618385"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

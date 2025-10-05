@@ -1,0 +1,25 @@
+{
+  "id": "1293398",
+  "url": "https://www.supercarros.com/toyota-yaris/1293398/",
+  "title": "Toyota Yaris",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 23900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11323684.jpg",
+  "photo_ids": [
+    "11323679",
+    "11323680",
+    "11323681",
+    "11323682",
+    "11323683",
+    "11323684",
+    "11323685",
+    "11323686",
+    "11323687"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:32Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

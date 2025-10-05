@@ -1,0 +1,30 @@
+{
+  "id": "1515879",
+  "url": "https://www.supercarros.com/jetour-x50/1515879/",
+  "title": "Jetour X50",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 25900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13460311.jpg",
+  "photo_ids": [
+    "13460311",
+    "13460312",
+    "13460313",
+    "13460314",
+    "13460315",
+    "13460316",
+    "13460317",
+    "13460318",
+    "13460319",
+    "13460320",
+    "13460321",
+    "13460322"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:09Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

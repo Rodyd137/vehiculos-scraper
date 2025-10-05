@@ -1,0 +1,22 @@
+{
+  "id": "1546367",
+  "url": "https://www.supercarros.com/landrover-discovery/1546367/",
+  "title": "Land Rover Discovery",
+  "year": 1999,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 11500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13794405.jpg",
+  "photo_ids": [
+    "13794405",
+    "13794400",
+    "13794401",
+    "13794402",
+    "13794403",
+    "13794404"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:39:01Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

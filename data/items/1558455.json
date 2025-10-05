@@ -1,0 +1,29 @@
+{
+  "id": "1558455",
+  "url": "https://www.supercarros.com/volkswagen-amarok/1558455/",
+  "title": "Volkswagen Amarok Extreme",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 64900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13928764.jpg",
+  "photo_ids": [
+    "13928764",
+    "13928765",
+    "13928766",
+    "13928767",
+    "13928768",
+    "13928769",
+    "13928770",
+    "13928771",
+    "13928772",
+    "13928773",
+    "13928774"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:47Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

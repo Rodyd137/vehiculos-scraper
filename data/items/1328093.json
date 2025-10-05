@@ -1,0 +1,26 @@
+{
+  "id": "1328093",
+  "url": "https://www.supercarros.com/shineray-t30/1328093/",
+  "title": "Shineray T-30  Box  Truck",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 15990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11398490.jpg",
+  "photo_ids": [
+    "11398490",
+    "11398491",
+    "11398492",
+    "11398493",
+    "11398494",
+    "11398495",
+    "11398496",
+    "11398497"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

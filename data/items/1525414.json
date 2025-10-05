@@ -1,0 +1,28 @@
+{
+  "id": "1525414",
+  "url": "https://www.supercarros.com/chevrolet-tahoe/1525414/",
+  "title": "Chevrolet Tahoe LS",
+  "year": 2021,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 63000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13567424.jpg",
+  "photo_ids": [
+    "13567424",
+    "13567425",
+    "13567426",
+    "13567427",
+    "13567428",
+    "13567429",
+    "13567430",
+    "13567431",
+    "13567432",
+    "13567435",
+    "13567438",
+    "13567440"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:56Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

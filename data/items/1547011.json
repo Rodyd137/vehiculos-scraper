@@ -1,0 +1,30 @@
+{
+  "id": "1547011",
+  "url": "https://www.supercarros.com/greatwall-tank300/1547011/",
+  "title": "Great Wall Tank 300",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 49900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13801565.jpg",
+  "photo_ids": [
+    "13801493",
+    "13801495",
+    "13801507",
+    "13801516",
+    "13801520",
+    "13801525",
+    "13801526",
+    "13801527",
+    "13801533",
+    "13801548",
+    "13801564",
+    "13801565"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:16Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

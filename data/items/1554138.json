@@ -1,0 +1,25 @@
+{
+  "id": "1554138",
+  "url": "https://www.supercarros.com/chevrolet-traverse/1554138/",
+  "title": "Chevrolet Traverse LT",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 55500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13880720.jpg",
+  "photo_ids": [
+    "13880720",
+    "13880721",
+    "13880722",
+    "13880724",
+    "13880725",
+    "13880726",
+    "13880727",
+    "13880728",
+    "13880729"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:36Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

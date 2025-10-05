@@ -1,0 +1,24 @@
+{
+  "id": "1558207",
+  "url": "https://www.supercarros.com/audi-q3/1558207/",
+  "title": "Audi Q3",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 26500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13926014.jpg",
+  "photo_ids": [
+    "13926014",
+    "13926015",
+    "13926011",
+    "13926017",
+    "13926016",
+    "13926013",
+    "13926012",
+    "13926010"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:37:52Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

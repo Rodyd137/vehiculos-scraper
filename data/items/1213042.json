@@ -1,0 +1,28 @@
+{
+  "id": "1213042",
+  "url": "https://www.supercarros.com/citroen-berlingo/1213042/",
+  "title": "Citroen Berlingo",
+  "year": 2026,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 31900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/10138369.jpg",
+  "photo_ids": [
+    "10138344",
+    "10138369",
+    "10138370",
+    "10138372",
+    "10138374",
+    "10138388",
+    "10138389",
+    "10138391",
+    "10138393",
+    "10138394"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

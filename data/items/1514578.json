@@ -1,0 +1,29 @@
+{
+  "id": "1514578",
+  "url": "https://www.supercarros.com/kia-carens/1514578/",
+  "title": "Kia Carens",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 29990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13445483.jpg",
+  "photo_ids": [
+    "13445483",
+    "13445484",
+    "13445485",
+    "13445486",
+    "13445487",
+    "13445488",
+    "13445489",
+    "13445490",
+    "13445491",
+    "13445492",
+    "13445493"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:03Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

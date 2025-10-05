@@ -1,0 +1,26 @@
+{
+  "id": "1498986",
+  "url": "https://www.supercarros.com/ford-explorer/1498986/",
+  "title": "Ford Explorer XLT",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 26900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13273887.jpg",
+  "photo_ids": [
+    "13273878",
+    "13273879",
+    "13273880",
+    "13273881",
+    "13273882",
+    "13273883",
+    "13273884",
+    "13273885",
+    "13273886",
+    "13273887"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:12Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

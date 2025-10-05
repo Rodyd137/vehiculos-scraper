@@ -1,0 +1,25 @@
+{
+  "id": "1555435",
+  "url": "https://www.supercarros.com/hyundai-santafe/1555435/",
+  "title": "Hyundai Santa Fe",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 19900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13895089.jpg",
+  "photo_ids": [
+    "13895083",
+    "13895089",
+    "13895107",
+    "13895108",
+    "13895109",
+    "13895110",
+    "13895111",
+    "13895112",
+    "13895170"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:36Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

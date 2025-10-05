@@ -1,0 +1,27 @@
+{
+  "id": "1385581",
+  "url": "https://www.supercarros.com/geely-gx3/1385581/",
+  "title": "Geely GX3 PRO",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 18990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13462819.jpg",
+  "photo_ids": [
+    "13462819",
+    "13462820",
+    "13462821",
+    "13462822",
+    "13462823",
+    "13462824",
+    "13462825",
+    "13462826",
+    "13462827"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

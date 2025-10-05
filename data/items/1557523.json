@@ -1,0 +1,26 @@
+{
+  "id": "1557523",
+  "url": "https://www.supercarros.com/landrover-discovery/1557523/",
+  "title": "Land Rover Discovery 4",
+  "year": 2011,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 18000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13918477.jpg",
+  "photo_ids": [
+    "13918477",
+    "13918478",
+    "13918479",
+    "13918480",
+    "13918481",
+    "13918482",
+    "13918483",
+    "13918484",
+    "13918485",
+    "13918486"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:50Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

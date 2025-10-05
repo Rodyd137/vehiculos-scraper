@@ -1,0 +1,30 @@
+{
+  "id": "1536375",
+  "url": "https://www.supercarros.com/lexus-lx/1536375/",
+  "title": "Lexus LX 700 H Luxury",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 197000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13681901.jpg",
+  "photo_ids": [
+    "13681901",
+    "13681902",
+    "13681903",
+    "13681904",
+    "13681905",
+    "13681906",
+    "13681907",
+    "13681908",
+    "13681909",
+    "13681910",
+    "13681911",
+    "13681912"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:47Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

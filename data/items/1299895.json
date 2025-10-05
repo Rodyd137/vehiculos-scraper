@@ -1,0 +1,25 @@
+{
+  "id": "1299895",
+  "url": "https://www.supercarros.com/toyota-fortuner/1299895/",
+  "title": "Toyota Fortuner Diamond TSS",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 78500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11095863.jpg",
+  "photo_ids": [
+    "11095859",
+    "11095860",
+    "11095861",
+    "11095862",
+    "11095863",
+    "11095864",
+    "11095865",
+    "11095866",
+    "11095867"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:27Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

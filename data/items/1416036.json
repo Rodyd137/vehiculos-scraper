@@ -1,0 +1,29 @@
+{
+  "id": "1416036",
+  "url": "https://www.supercarros.com/renault-arkana/1416036/",
+  "title": "Renault Arkana",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 29990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12350534.jpg",
+  "photo_ids": [
+    "12350534",
+    "12350535",
+    "12350536",
+    "12350537",
+    "12350538",
+    "12350539",
+    "12350540",
+    "12350541",
+    "12350542",
+    "12350543",
+    "12350544"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

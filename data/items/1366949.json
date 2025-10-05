@@ -1,0 +1,26 @@
+{
+  "id": "1366949",
+  "url": "https://www.supercarros.com/toyota-landcruiser/1366949/",
+  "title": "Toyota Land Cruiser GR SPORT",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 169900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11814783.jpg",
+  "photo_ids": [
+    "11814783",
+    "11814784",
+    "11814785",
+    "11814786",
+    "11814787",
+    "11814788",
+    "11814789",
+    "11814790",
+    "11814791",
+    "11814792"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:21Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

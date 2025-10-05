@@ -1,0 +1,29 @@
+{
+  "id": "1545923",
+  "url": "https://www.supercarros.com/jeep-grandcherokee/1545923/",
+  "title": "Jeep Grand Cherokee SRT8",
+  "year": 2015,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 35900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13789234.jpg",
+  "photo_ids": [
+    "13789233",
+    "13789234",
+    "13789235",
+    "13789236",
+    "13789237",
+    "13789238",
+    "13789239",
+    "13789240",
+    "13789241",
+    "13789242",
+    "13789243"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:03Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

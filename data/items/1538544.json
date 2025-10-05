@@ -1,0 +1,26 @@
+{
+  "id": "1538544",
+  "url": "https://www.supercarros.com/ford-ranger/1538544/",
+  "title": "Ford Ranger Wildtrak",
+  "year": 2024,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 59900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13706362.jpg",
+  "photo_ids": [
+    "13706362",
+    "13706363",
+    "13706364",
+    "13706365",
+    "13706366",
+    "13706367",
+    "13706368",
+    "13706369",
+    "13706370",
+    "13706371"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:56Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

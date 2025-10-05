@@ -1,0 +1,29 @@
+{
+  "id": "1552452",
+  "url": "https://www.supercarros.com/212-t01/1552452/",
+  "title": "212 T01 Adventure",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 47900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13862085.jpg",
+  "photo_ids": [
+    "13862085",
+    "13862086",
+    "13862087",
+    "13862088",
+    "13862089",
+    "13862090",
+    "13862091",
+    "13862092",
+    "13862093",
+    "13862094",
+    "13862095"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:56Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

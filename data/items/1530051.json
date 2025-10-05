@@ -1,0 +1,28 @@
+{
+  "id": "1530051",
+  "url": "https://www.supercarros.com/tesla-modelx/1530051/",
+  "title": "Tesla Model X Long Range",
+  "year": 2017,
+  "fuel": "Eléctrico",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 45000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13620330.jpg",
+  "photo_ids": [
+    "13620330",
+    "13620331",
+    "13620332",
+    "13620333",
+    "13620334",
+    "13620335",
+    "13620336",
+    "13620337",
+    "13620338",
+    "13620339"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:50Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

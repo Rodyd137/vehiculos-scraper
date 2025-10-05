@@ -1,0 +1,25 @@
+{
+  "id": "1505465",
+  "url": "https://www.supercarros.com/mercedesbenz-clases/1505465/",
+  "title": "Mercedes-Benz Clase S 580 4Matic",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 148000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13342190.jpg",
+  "photo_ids": [
+    "13342161",
+    "13342162",
+    "13342163",
+    "13342164",
+    "13342189",
+    "13342190",
+    "13342191",
+    "13342192",
+    "13342193"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

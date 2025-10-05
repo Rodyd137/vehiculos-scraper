@@ -1,0 +1,26 @@
+{
+  "id": "1511136",
+  "url": "https://www.supercarros.com/toyota-landcruiser/1511136/",
+  "title": "Toyota Land Cruiser VX",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 119900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13406670.jpg",
+  "photo_ids": [
+    "13406661",
+    "13406662",
+    "13406663",
+    "13406664",
+    "13406665",
+    "13406666",
+    "13406667",
+    "13406668",
+    "13406669",
+    "13406670"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:30Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

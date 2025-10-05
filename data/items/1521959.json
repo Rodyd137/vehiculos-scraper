@@ -1,0 +1,26 @@
+{
+  "id": "1521959",
+  "url": "https://www.supercarros.com/jeep-wrangler/1521959/",
+  "title": "Jeep Wrangler Ultimate Rubicon",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 42500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13528504.jpg",
+  "photo_ids": [
+    "13528504",
+    "13528505",
+    "13528506",
+    "13528507",
+    "13528508",
+    "13528509",
+    "13528510",
+    "13528511",
+    "13528512",
+    "13528513"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

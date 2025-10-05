@@ -1,0 +1,28 @@
+{
+  "id": "1555794",
+  "url": "https://www.supercarros.com/bmw-x/1555794/",
+  "title": "BMW X 3 SDrive 30i",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 29500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13898958.jpg",
+  "photo_ids": [
+    "13898958",
+    "13898959",
+    "13898960",
+    "13898961",
+    "13898962",
+    "13898963",
+    "13898964",
+    "13898965",
+    "13898966",
+    "13898967",
+    "13898968",
+    "13898969"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:18Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

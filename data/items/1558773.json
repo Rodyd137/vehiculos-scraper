@@ -1,0 +1,28 @@
+{
+  "id": "1558773",
+  "url": "https://www.supercarros.com/toyota-corolla/1558773/",
+  "title": "Toyota Corolla LE",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 970000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13932416.jpg",
+  "photo_ids": [
+    "13932416",
+    "13932417",
+    "13932418",
+    "13932419",
+    "13932420",
+    "13932421",
+    "13932422",
+    "13932423",
+    "13932424",
+    "13932425",
+    "13932426",
+    "13932427"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:16Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

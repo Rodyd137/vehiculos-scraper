@@ -1,0 +1,27 @@
+{
+  "id": "1552492",
+  "url": "https://www.supercarros.com/ford-mustang/1552492/",
+  "title": "Ford Mustang Ecoboost Premium",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 19900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13862534.jpg",
+  "photo_ids": [
+    "13862534",
+    "13862535",
+    "13862536",
+    "13862537",
+    "13862538",
+    "13862539",
+    "13862540",
+    "13862541",
+    "13862542"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:39:01Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

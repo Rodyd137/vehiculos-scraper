@@ -1,0 +1,22 @@
+{
+  "id": "1549198",
+  "url": "https://www.supercarros.com/toyota-vitz/1549198/",
+  "title": "Toyota VITZ",
+  "year": 2003,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 230000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13826565.jpg",
+  "photo_ids": [
+    "13825784",
+    "13825785",
+    "13825786",
+    "13826565",
+    "13826566",
+    "13826567"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:39:01Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "1381846",
+  "url": "https://www.supercarros.com/toyota-agya/1381846/",
+  "title": "Toyota Agya",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 19900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11975271.jpg",
+  "photo_ids": [
+    "11975263",
+    "11975264",
+    "11975265",
+    "11975266",
+    "11975267",
+    "11975268",
+    "11975269",
+    "11975270",
+    "11975271"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:25Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

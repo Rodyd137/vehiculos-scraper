@@ -1,0 +1,27 @@
+{
+  "id": "1519778",
+  "url": "https://www.supercarros.com/honda-pilot/1519778/",
+  "title": "Honda Pilot",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 25900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13848264.jpg",
+  "photo_ids": [
+    "13504356",
+    "13504357",
+    "13504358",
+    "13504359",
+    "13504360",
+    "13504361",
+    "13504362",
+    "13848262",
+    "13848263",
+    "13848264",
+    "13848265"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:12Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

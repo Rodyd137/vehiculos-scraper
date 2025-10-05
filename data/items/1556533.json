@@ -1,0 +1,28 @@
+{
+  "id": "1556533",
+  "url": "https://www.supercarros.com/nissan-note/1556533/",
+  "title": "Nissan Note",
+  "year": 2014,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 430000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13907558.jpg",
+  "photo_ids": [
+    "13907558",
+    "13907559",
+    "13907560",
+    "13907561",
+    "13907562",
+    "13907563",
+    "13907564",
+    "13907565",
+    "13907566",
+    "13907567",
+    "13907568",
+    "13907569"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:18Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

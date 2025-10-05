@@ -1,0 +1,30 @@
+{
+  "id": "1525785",
+  "url": "https://www.supercarros.com/jetour-x70/1525785/",
+  "title": "Jetour X70 FL",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 32900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13571814.jpg",
+  "photo_ids": [
+    "13571814",
+    "13571815",
+    "13571816",
+    "13571817",
+    "13571818",
+    "13571819",
+    "13571820",
+    "13571821",
+    "13571822",
+    "13571823",
+    "13571824",
+    "13571825"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:09Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

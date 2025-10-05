@@ -1,0 +1,25 @@
+{
+  "id": "1507749",
+  "url": "https://www.supercarros.com/nissan-frontier/1507749/",
+  "title": "Nissan Frontier Pro-4X",
+  "year": 2022,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 44900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13368129.jpg",
+  "photo_ids": [
+    "13368128",
+    "13368129",
+    "13368130",
+    "13368131",
+    "13368132",
+    "13368133",
+    "13368134",
+    "13368135",
+    "13368136"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:43Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

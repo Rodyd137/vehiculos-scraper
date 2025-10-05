@@ -1,0 +1,27 @@
+{
+  "id": "1364741",
+  "url": "https://www.supercarros.com/jmc-n822/1364741/",
+  "title": "JMC N822",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 33900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13539404.jpg",
+  "photo_ids": [
+    "13539404",
+    "13539405",
+    "13539406",
+    "13539407",
+    "13539408",
+    "13539409",
+    "13539410",
+    "13539411",
+    "13539412"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:52Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

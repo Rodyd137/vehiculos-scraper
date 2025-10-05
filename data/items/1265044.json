@@ -1,0 +1,25 @@
+{
+  "id": "1265044",
+  "url": "https://www.supercarros.com/toyota-hiace/1265044/",
+  "title": "Toyota Hiace",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 65400.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/10715794.jpg",
+  "photo_ids": [
+    "10715794",
+    "10715795",
+    "10715796",
+    "10715797",
+    "10715798",
+    "10715799",
+    "10715800",
+    "10715801",
+    "10715802"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:25Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

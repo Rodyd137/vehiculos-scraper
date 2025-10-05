@@ -1,0 +1,25 @@
+{
+  "id": "1509090",
+  "url": "https://www.supercarros.com/suzuki-scross/1509090/",
+  "title": "Suzuki S-Cross GLX",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 29900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13383447.jpg",
+  "photo_ids": [
+    "13383447",
+    "13383448",
+    "13383449",
+    "13383450",
+    "13383451",
+    "13383453",
+    "13383454",
+    "13383456",
+    "13383458"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:41Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

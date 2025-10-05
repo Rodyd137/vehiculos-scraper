@@ -1,0 +1,30 @@
+{
+  "id": "1369354",
+  "url": "https://www.supercarros.com/jetour-dashing/1369354/",
+  "title": "Jetour Dashing",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 28900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11840930.jpg",
+  "photo_ids": [
+    "11840930",
+    "11840931",
+    "11840932",
+    "11840933",
+    "11840934",
+    "11840935",
+    "11840936",
+    "11840937",
+    "11840938",
+    "11840939",
+    "11840940",
+    "11840941"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:47Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

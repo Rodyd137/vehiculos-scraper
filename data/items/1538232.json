@@ -1,0 +1,24 @@
+{
+  "id": "1538232",
+  "url": "https://www.supercarros.com/toyota-4runner/1538232/",
+  "title": "Toyota 4 Runner SR5",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 74900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13703043.jpg",
+  "photo_ids": [
+    "13703043",
+    "13703044",
+    "13703045",
+    "13703046",
+    "13703047",
+    "13703048",
+    "13703049",
+    "13703050"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:21Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

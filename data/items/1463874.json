@@ -1,0 +1,28 @@
+{
+  "id": "1463874",
+  "url": "https://www.supercarros.com/geely-starray/1463874/",
+  "title": "Geely Starray GK",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 33990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12881509.jpg",
+  "photo_ids": [
+    "12881509",
+    "12881510",
+    "12881511",
+    "12881512",
+    "12881513",
+    "12881514",
+    "12881515",
+    "12881516",
+    "12881517",
+    "12881518"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:01Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

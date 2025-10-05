@@ -1,0 +1,25 @@
+{
+  "id": "1526100",
+  "url": "https://www.supercarros.com/chevrolet-colorado/1526100/",
+  "title": "Chevrolet Colorado LTZ",
+  "year": 2026,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 58500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13575384.jpg",
+  "photo_ids": [
+    "13575384",
+    "13575385",
+    "13575386",
+    "13575387",
+    "13575388",
+    "13575389",
+    "13575390",
+    "13575391",
+    "13575392"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:36Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

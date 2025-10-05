@@ -1,0 +1,28 @@
+{
+  "id": "1518874",
+  "url": "https://www.supercarros.com/maserati-levante/1518874/",
+  "title": "Maserati Levante SQ4",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 79900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13562174.jpg",
+  "photo_ids": [
+    "13494011",
+    "13562164",
+    "13562165",
+    "13562166",
+    "13562167",
+    "13562168",
+    "13562169",
+    "13562170",
+    "13562171",
+    "13562172",
+    "13562173",
+    "13562174"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:05Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

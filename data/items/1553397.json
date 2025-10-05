@@ -1,0 +1,24 @@
+{
+  "id": "1553397",
+  "url": "https://www.supercarros.com/lexus-lx/1553397/",
+  "title": "Lexus LX 700 H Urban",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 197900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13872448.jpg",
+  "photo_ids": [
+    "13872443",
+    "13872444",
+    "13872445",
+    "13872446",
+    "13872447",
+    "13872448",
+    "13872449",
+    "13872450"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:18Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

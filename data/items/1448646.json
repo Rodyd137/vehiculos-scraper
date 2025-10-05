@@ -1,0 +1,26 @@
+{
+  "id": "1448646",
+  "url": "https://www.supercarros.com/lexus-lbx/1448646/",
+  "title": "Lexus LBX ActiveFull",
+  "year": 2025,
+  "fuel": "Híbrido",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 52900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12711554.jpg",
+  "photo_ids": [
+    "12711554",
+    "12711555",
+    "12711556",
+    "12711557",
+    "12711558",
+    "12711559",
+    "12711560",
+    "12711561",
+    "12711562",
+    "12711563"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:21Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

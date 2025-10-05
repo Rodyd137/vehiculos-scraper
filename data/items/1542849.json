@@ -1,0 +1,24 @@
+{
+  "id": "1542849",
+  "url": "https://www.supercarros.com/citroen-berlingo/1542849/",
+  "title": "Citroen Berlingo Carga",
+  "year": 2022,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 21900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13754137.jpg",
+  "photo_ids": [
+    "13754137",
+    "13754138",
+    "13754139",
+    "13754140",
+    "13754141",
+    "13754142",
+    "13754143",
+    "13754144"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:39Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

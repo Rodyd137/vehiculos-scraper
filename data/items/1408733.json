@@ -1,0 +1,29 @@
+{
+  "id": "1408733",
+  "url": "https://www.supercarros.com/kia-picanto/1408733/",
+  "title": "Kia Picanto",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 16990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12268457.jpg",
+  "photo_ids": [
+    "12268457",
+    "12268458",
+    "12268459",
+    "12268460",
+    "12268461",
+    "12268462",
+    "12268463",
+    "12268464",
+    "12268465",
+    "12268466",
+    "12268467"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:56Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

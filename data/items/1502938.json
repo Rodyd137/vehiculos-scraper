@@ -1,0 +1,30 @@
+{
+  "id": "1502938",
+  "url": "https://www.supercarros.com/maxus-d60/1502938/",
+  "title": "Maxus D60 Premiun",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 30900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13445556.jpg",
+  "photo_ids": [
+    "13445556",
+    "13445557",
+    "13445558",
+    "13445559",
+    "13445560",
+    "13445561",
+    "13445562",
+    "13445563",
+    "13445564",
+    "13445565",
+    "13445566",
+    "13445567"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

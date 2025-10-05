@@ -1,0 +1,30 @@
+{
+  "id": "1552444",
+  "url": "https://www.supercarros.com/212-t01/1552444/",
+  "title": "212 T01 Officer",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 52900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13861997.jpg",
+  "photo_ids": [
+    "13861997",
+    "13861998",
+    "13861999",
+    "13862000",
+    "13862001",
+    "13862002",
+    "13862003",
+    "13862004",
+    "13862005",
+    "13862006",
+    "13862007",
+    "13862008"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:56Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

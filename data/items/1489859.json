@@ -1,0 +1,25 @@
+{
+  "id": "1489859",
+  "url": "https://www.supercarros.com/nissan-frontier/1489859/",
+  "title": "Nissan Frontier",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 950000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13169293.jpg",
+  "photo_ids": [
+    "13169293",
+    "13169294",
+    "13169295",
+    "13169296",
+    "13169297",
+    "13169298",
+    "13169299",
+    "13169300",
+    "13169301"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:14Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

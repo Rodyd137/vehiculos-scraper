@@ -1,0 +1,25 @@
+{
+  "id": "1439169",
+  "url": "https://www.supercarros.com/toyota-rav4/1439169/",
+  "title": "Toyota RAV4 Limited Hybrid",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 61900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12606728.jpg",
+  "photo_ids": [
+    "12606728",
+    "12606729",
+    "12606739",
+    "12606740",
+    "12606753",
+    "12606766",
+    "12606767",
+    "12606785",
+    "12606786"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:23Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

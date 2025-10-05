@@ -1,0 +1,30 @@
+{
+  "id": "1546095",
+  "url": "https://www.supercarros.com/dodge-journey/1546095/",
+  "title": "Dodge Journey SXT",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 799000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13791213.jpg",
+  "photo_ids": [
+    "13791213",
+    "13791214",
+    "13791215",
+    "13791216",
+    "13791217",
+    "13791228",
+    "13791229",
+    "13791230",
+    "13791231",
+    "13791232",
+    "13791233",
+    "13791234"
+  ],
+  "badges": [
+    "promo-ASOCIVU"
+  ],
+  "scraped_at": "2025-10-05T20:39:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

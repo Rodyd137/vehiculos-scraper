@@ -1,0 +1,26 @@
+{
+  "id": "1537982",
+  "url": "https://www.supercarros.com/landrover-rangerover/1537982/",
+  "title": "Land Rover Range Rover Sport HSE DYNAMIC",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 38900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13933570.jpg",
+  "photo_ids": [
+    "13700222",
+    "13700223",
+    "13700224",
+    "13700226",
+    "13933570",
+    "13933571",
+    "13933572",
+    "13933573",
+    "13933574",
+    "13933575"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:50Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

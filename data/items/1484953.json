@@ -1,0 +1,24 @@
+{
+  "id": "1484953",
+  "url": "https://www.supercarros.com/toyota-yaris/1484953/",
+  "title": "Toyota Yaris Cross Full",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 29900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13114559.jpg",
+  "photo_ids": [
+    "13114559",
+    "13114560",
+    "13114561",
+    "13114562",
+    "13114563",
+    "13114564",
+    "13114565",
+    "13114566"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:25Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

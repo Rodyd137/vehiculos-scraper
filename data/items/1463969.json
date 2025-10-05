@@ -1,0 +1,28 @@
+{
+  "id": "1463969",
+  "url": "https://www.supercarros.com/geely-coolray/1463969/",
+  "title": "Geely COOLRAY  GF",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 29990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12882593.jpg",
+  "photo_ids": [
+    "12882593",
+    "12882594",
+    "12882595",
+    "12882596",
+    "12882597",
+    "12882598",
+    "12882599",
+    "12882600",
+    "12882601",
+    "12882602"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:09Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

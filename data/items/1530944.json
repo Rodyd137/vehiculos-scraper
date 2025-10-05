@@ -1,0 +1,26 @@
+{
+  "id": "1530944",
+  "url": "https://www.supercarros.com/infiniti-qx80/1530944/",
+  "title": "Infiniti QX-80",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 149900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13645024.jpg",
+  "photo_ids": [
+    "13645024",
+    "13645025",
+    "13645026",
+    "13645027",
+    "13645028",
+    "13645029",
+    "13645030",
+    "13645031",
+    "13645032",
+    "13645033"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:43Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

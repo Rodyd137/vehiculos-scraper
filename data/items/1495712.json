@@ -1,0 +1,27 @@
+{
+  "id": "1495712",
+  "url": "https://www.supercarros.com/toyota-chr/1495712/",
+  "title": "Toyota C-HR XLE",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 20900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13234283.jpg",
+  "photo_ids": [
+    "13234283",
+    "13234284",
+    "13234285",
+    "13234286",
+    "13234287",
+    "13234288",
+    "13234289",
+    "13234290",
+    "13234291"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T20:38:47Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

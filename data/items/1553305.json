@@ -1,0 +1,30 @@
+{
+  "id": "1553305",
+  "url": "https://www.supercarros.com/jac-js2/1553305/",
+  "title": "Jac JS2 Pro",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 17990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13871451.jpg",
+  "photo_ids": [
+    "13871451",
+    "13871452",
+    "13871453",
+    "13871454",
+    "13871455",
+    "13871456",
+    "13871457",
+    "13871458",
+    "13871459",
+    "13871460",
+    "13871461",
+    "13871462"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:03Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

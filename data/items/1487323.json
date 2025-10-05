@@ -1,0 +1,25 @@
+{
+  "id": "1487323",
+  "url": "https://www.supercarros.com/toyota-hilux/1487323/",
+  "title": "Toyota Hilux limited TSS",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 66900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13140950.jpg",
+  "photo_ids": [
+    "13140950",
+    "13140951",
+    "13140952",
+    "13140953",
+    "13140954",
+    "13140955",
+    "13140956",
+    "13140957",
+    "13140958"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:23Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

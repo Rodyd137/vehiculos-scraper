@@ -1,0 +1,27 @@
+{
+  "id": "1454910",
+  "url": "https://www.supercarros.com/mitsubishi-outlander/1454910/",
+  "title": "Mitsubishi Outlander",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 54000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13462753.jpg",
+  "photo_ids": [
+    "13462753",
+    "13462754",
+    "13462755",
+    "13462756",
+    "13462757",
+    "13462758",
+    "13462759",
+    "13462760",
+    "13462761"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:50Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

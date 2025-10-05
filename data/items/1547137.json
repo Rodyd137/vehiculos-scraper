@@ -1,0 +1,25 @@
+{
+  "id": "1547137",
+  "url": "https://www.supercarros.com/nissan-frontier/1547137/",
+  "title": "Nissan Frontier SE",
+  "year": 2022,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 39900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13802941.jpg",
+  "photo_ids": [
+    "13802941",
+    "13802942",
+    "13802943",
+    "13802944",
+    "13802945",
+    "13802946",
+    "13802947",
+    "13802948",
+    "13802949"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:43Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

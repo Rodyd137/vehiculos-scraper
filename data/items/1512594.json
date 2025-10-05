@@ -1,0 +1,28 @@
+{
+  "id": "1512594",
+  "url": "https://www.supercarros.com/dodge-durango/1512594/",
+  "title": "Dodge Durango SXT",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 25900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13723359.jpg",
+  "photo_ids": [
+    "13423117",
+    "13515461",
+    "13723349",
+    "13723350",
+    "13723351",
+    "13723352",
+    "13723353",
+    "13723354",
+    "13723356",
+    "13723357",
+    "13723358",
+    "13723359"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:09Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

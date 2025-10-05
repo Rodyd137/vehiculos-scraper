@@ -1,0 +1,26 @@
+{
+  "id": "1446310",
+  "url": "https://www.supercarros.com/lincoln-corsair/1446310/",
+  "title": "Lincoln Corsair",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 59900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12685682.jpg",
+  "photo_ids": [
+    "12685677",
+    "12685678",
+    "12685679",
+    "12685680",
+    "12685681",
+    "12685682",
+    "12685683",
+    "12685684"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:03Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

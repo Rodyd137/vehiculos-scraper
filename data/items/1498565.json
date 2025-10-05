@@ -1,0 +1,28 @@
+{
+  "id": "1498565",
+  "url": "https://www.supercarros.com/cadillac-escalade/1498565/",
+  "title": "Cadillac Escalade Premium Luxury",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 133900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13265628.jpg",
+  "photo_ids": [
+    "13265628",
+    "13265629",
+    "13265630",
+    "13265631",
+    "13265632",
+    "13265633",
+    "13265634",
+    "13265635",
+    "13265636",
+    "13265637",
+    "13265638",
+    "13265639"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:34Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "1464020",
+  "url": "https://www.supercarros.com/riddara-rd6/1464020/",
+  "title": "Riddara  RD6 Pro",
+  "year": 2026,
+  "fuel": "Eléctrico",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 58990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13462675.jpg",
+  "photo_ids": [
+    "13462672",
+    "13462673",
+    "13462674",
+    "13462675",
+    "13462676",
+    "13462677",
+    "13462678",
+    "13462679",
+    "13462680"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

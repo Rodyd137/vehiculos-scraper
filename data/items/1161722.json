@@ -1,0 +1,30 @@
+{
+  "id": "1161722",
+  "url": "https://www.supercarros.com/tesla-model3/1161722/",
+  "title": "Tesla Model 3",
+  "year": 2024,
+  "fuel": "Eléctrico",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 64900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/9551516.jpg",
+  "photo_ids": [
+    "9551508",
+    "9551505",
+    "9551506",
+    "9551507",
+    "9551509",
+    "9551510",
+    "9551511",
+    "9551512",
+    "9551513",
+    "9551514",
+    "9551515",
+    "9551516"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:50Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

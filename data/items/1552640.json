@@ -1,0 +1,30 @@
+{
+  "id": "1552640",
+  "url": "https://www.supercarros.com/jeep-gladiator/1552640/",
+  "title": "Jeep Gladiator Willys",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 47900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13864270.jpg",
+  "photo_ids": [
+    "13864270",
+    "13864271",
+    "13864272",
+    "13864273",
+    "13864274",
+    "13864275",
+    "13864276",
+    "13864277",
+    "13864278",
+    "13864279",
+    "13864280",
+    "13864281"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T20:38:47Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

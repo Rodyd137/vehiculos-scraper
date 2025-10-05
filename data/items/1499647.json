@@ -1,0 +1,27 @@
+{
+  "id": "1499647",
+  "url": "https://www.supercarros.com/chevrolet-silverado/1499647/",
+  "title": "Chevrolet Silverado High Country Duramax",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 90900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13277575.jpg",
+  "photo_ids": [
+    "13277575",
+    "13277576",
+    "13277577",
+    "13277578",
+    "13277579",
+    "13277580",
+    "13277581",
+    "13277582",
+    "13277583",
+    "13277584",
+    "13277585"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:34Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

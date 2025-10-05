@@ -1,0 +1,26 @@
+{
+  "id": "1488454",
+  "url": "https://www.supercarros.com/jeep-cherokee/1488454/",
+  "title": "Jeep Cherokee Latitude",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 850000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13153597.jpg",
+  "photo_ids": [
+    "13153594",
+    "13153595",
+    "13153596",
+    "13153597",
+    "13153598",
+    "13153599",
+    "13153600",
+    "13153601"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T20:38:47Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

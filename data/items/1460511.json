@@ -1,0 +1,25 @@
+{
+  "id": "1460511",
+  "url": "https://www.supercarros.com/suzuki-jimny/1460511/",
+  "title": "Suzuki Jimny GLX",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 27900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12843605.jpg",
+  "photo_ids": [
+    "12843605",
+    "12843606",
+    "12843607",
+    "12843608",
+    "12843609",
+    "12843610",
+    "12843611",
+    "12843612",
+    "12843613"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:43Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

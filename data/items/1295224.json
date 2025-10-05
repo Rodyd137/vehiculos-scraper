@@ -1,0 +1,27 @@
+{
+  "id": "1295224",
+  "url": "https://www.supercarros.com/toyota-townace/1295224/",
+  "title": "Toyota Town-Ace",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 22200.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11045950.jpg",
+  "photo_ids": [
+    "11045941",
+    "11045942",
+    "11045943",
+    "11045944",
+    "11045945",
+    "11045946",
+    "11045947",
+    "11045948",
+    "11045949",
+    "11045950",
+    "11045951"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:27Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

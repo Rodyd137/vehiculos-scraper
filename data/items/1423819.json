@@ -1,0 +1,30 @@
+{
+  "id": "1423819",
+  "url": "https://www.supercarros.com/forthing-t5/1423819/",
+  "title": "Forthing  T5 HEV",
+  "year": 2025,
+  "fuel": "Híbrido",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 33900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12437326.jpg",
+  "photo_ids": [
+    "12437326",
+    "12437327",
+    "12437328",
+    "12437329",
+    "12437330",
+    "12437331",
+    "12437332",
+    "12437333",
+    "12437334",
+    "12437335",
+    "12437336",
+    "12437337"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

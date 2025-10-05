@@ -1,0 +1,27 @@
+{
+  "id": "1410855",
+  "url": "https://www.supercarros.com/leapmotors-c11/1410855/",
+  "title": "Leapmotors C11",
+  "year": 2024,
+  "fuel": "Eléctrico",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 62000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13462841.jpg",
+  "photo_ids": [
+    "13462840",
+    "13462841",
+    "13462842",
+    "13462843",
+    "13462844",
+    "13462845",
+    "13462846",
+    "13462847",
+    "13462848"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

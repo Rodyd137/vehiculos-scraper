@@ -1,0 +1,26 @@
+{
+  "id": "1553200",
+  "url": "https://www.supercarros.com/lexus-ux/1553200/",
+  "title": "Lexus UX 200",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 30900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13870341.jpg",
+  "photo_ids": [
+    "13870341",
+    "13870342",
+    "13870343",
+    "13870344",
+    "13870345",
+    "13870346",
+    "13870347",
+    "13870348",
+    "13870349",
+    "13870350"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:18Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

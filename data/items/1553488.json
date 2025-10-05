@@ -1,0 +1,28 @@
+{
+  "id": "1553488",
+  "url": "https://www.supercarros.com/hyundai-tucson/1553488/",
+  "title": "Hyundai Tucson SEL",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 18500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13873468.jpg",
+  "photo_ids": [
+    "13873468",
+    "13873469",
+    "13873470",
+    "13873471",
+    "13873472",
+    "13873473",
+    "13873474",
+    "13873475",
+    "13873476",
+    "13873477",
+    "13873478",
+    "13873479"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:14Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

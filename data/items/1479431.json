@@ -1,0 +1,30 @@
+{
+  "id": "1479431",
+  "url": "https://www.supercarros.com/mazda-cx9/1479431/",
+  "title": "Mazda CX-9 GRAND TOURING",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 29000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13053032.jpg",
+  "photo_ids": [
+    "13053032",
+    "13053033",
+    "13053034",
+    "13053035",
+    "13053036",
+    "13053037",
+    "13053038",
+    "13053039",
+    "13053040",
+    "13053041",
+    "13053042",
+    "13053043"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:58Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

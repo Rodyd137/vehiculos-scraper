@@ -1,0 +1,30 @@
+{
+  "id": "1517476",
+  "url": "https://www.supercarros.com/volkswagen-teramont/1517476/",
+  "title": "Volkswagen Teramont",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 69900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13478438.jpg",
+  "photo_ids": [
+    "13478438",
+    "13478439",
+    "13478440",
+    "13478441",
+    "13478442",
+    "13478443",
+    "13478444",
+    "13478445",
+    "13478446",
+    "13478447",
+    "13478448",
+    "13478449"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

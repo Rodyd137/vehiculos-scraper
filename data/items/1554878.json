@@ -1,0 +1,26 @@
+{
+  "id": "1554878",
+  "url": "https://www.supercarros.com/honda-crv/1554878/",
+  "title": "Honda CR-V EX",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 36500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13888976.jpg",
+  "photo_ids": [
+    "13888976",
+    "13888977",
+    "13888978",
+    "13888979",
+    "13888980",
+    "13888981",
+    "13888982",
+    "13888983",
+    "13888984",
+    "13888985"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:58Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

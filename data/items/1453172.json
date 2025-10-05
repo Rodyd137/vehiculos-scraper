@@ -1,0 +1,27 @@
+{
+  "id": "1453172",
+  "url": "https://www.supercarros.com/isuzu-dmax/1453172/",
+  "title": "Isuzu DMAX",
+  "year": 2026,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 59900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13462778.jpg",
+  "photo_ids": [
+    "13462778",
+    "13462779",
+    "13462780",
+    "13462781",
+    "13462782",
+    "13462783",
+    "13462784",
+    "13462785",
+    "13462786"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:56Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

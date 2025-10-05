@@ -1,0 +1,26 @@
+{
+  "id": "1421648",
+  "url": "https://www.supercarros.com/lexus-lx/1421648/",
+  "title": "Lexus LX 600 F Sport",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 189900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12545798.jpg",
+  "photo_ids": [
+    "12545790",
+    "12545791",
+    "12545792",
+    "12545793",
+    "12545794",
+    "12545795",
+    "12545796",
+    "12545797",
+    "12545798",
+    "12545799"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:21Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

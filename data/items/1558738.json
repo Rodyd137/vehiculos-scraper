@@ -1,0 +1,24 @@
+{
+  "id": "1558738",
+  "url": "https://www.supercarros.com/porsche-macan/1558738/",
+  "title": "Porsche Macan S",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 88000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13932008.jpg",
+  "photo_ids": [
+    "13932008",
+    "13932009",
+    "13932010",
+    "13932011",
+    "13932012",
+    "13932013",
+    "13932014",
+    "13932015"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:14Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

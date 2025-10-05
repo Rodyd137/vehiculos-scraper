@@ -1,0 +1,25 @@
+{
+  "id": "1434471",
+  "url": "https://www.supercarros.com/toyota-landcruiserprado/1434471/",
+  "title": "Toyota Land Cruiser Prado Adventure",
+  "year": 2026,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 113400.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12554323.jpg",
+  "photo_ids": [
+    "12554323",
+    "12554324",
+    "12554325",
+    "12554326",
+    "12554327",
+    "12554328",
+    "12554330",
+    "12554331",
+    "12554332"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:32Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "1548473",
+  "url": "https://www.supercarros.com/mercedesbenz-clase gle/1548473/",
+  "title": "Mercedes-Benz Clase GLE 53 AMG",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 91000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13817806.jpg",
+  "photo_ids": [
+    "13817806",
+    "13817807",
+    "13817808",
+    "13817809",
+    "13817810",
+    "13817811",
+    "13817812",
+    "13817813",
+    "13817814",
+    "13817815",
+    "13817816"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:52Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

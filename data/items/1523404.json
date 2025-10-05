@@ -1,0 +1,29 @@
+{
+  "id": "1523404",
+  "url": "https://www.supercarros.com/volkswagen-tcross/1523404/",
+  "title": "Volkswagen T- Cross",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 28900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13544416.jpg",
+  "photo_ids": [
+    "13544416",
+    "13544417",
+    "13544418",
+    "13544419",
+    "13544420",
+    "13544422",
+    "13544423",
+    "13544424",
+    "13544426",
+    "13544427",
+    "13544429"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:05Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "1552635",
+  "url": "https://www.supercarros.com/mitsubishi-l200/1552635/",
+  "title": "Mitsubishi L 200",
+  "year": 2016,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 23500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13933549.jpg",
+  "photo_ids": [
+    "13933549",
+    "13933550",
+    "13933551",
+    "13933552",
+    "13933553",
+    "13933554",
+    "13933555",
+    "13933556",
+    "13933557"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:50Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

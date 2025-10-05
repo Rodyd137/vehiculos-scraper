@@ -1,0 +1,27 @@
+{
+  "id": "1515817",
+  "url": "https://www.supercarros.com/kia-stinger/1515817/",
+  "title": "Kia Stinger GT",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 34900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13459675.jpg",
+  "photo_ids": [
+    "13459675",
+    "13459676",
+    "13459677",
+    "13459678",
+    "13459679",
+    "13459680",
+    "13459681",
+    "13459682",
+    "13459683",
+    "13459684",
+    "13459685"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:14Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

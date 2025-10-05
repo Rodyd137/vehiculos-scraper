@@ -1,0 +1,26 @@
+{
+  "id": "1557521",
+  "url": "https://www.supercarros.com/fiat-500/1557521/",
+  "title": "Fiat 500 Gucci",
+  "year": 2013,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 499999.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13918437.jpg",
+  "photo_ids": [
+    "13918432",
+    "13918433",
+    "13918434",
+    "13918435",
+    "13918436",
+    "13918437",
+    "13918438",
+    "13918439",
+    "13918440",
+    "13918441"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:39:01Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

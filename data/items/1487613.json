@@ -1,0 +1,25 @@
+{
+  "id": "1487613",
+  "url": "https://www.supercarros.com/suzuki-xl7/1487613/",
+  "title": "Suzuki XL7 Hybrid",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 26900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13144227.jpg",
+  "photo_ids": [
+    "13144223",
+    "13144224",
+    "13144225",
+    "13144226",
+    "13144227",
+    "13144228",
+    "13144229",
+    "13144230",
+    "13144231"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:41Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

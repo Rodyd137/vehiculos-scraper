@@ -1,0 +1,24 @@
+{
+  "id": "1554162",
+  "url": "https://www.supercarros.com/mercedesbenz-claseg/1554162/",
+  "title": "Mercedes-Benz Clase G",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 57000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13881001.jpg",
+  "photo_ids": [
+    "13881000",
+    "13881001",
+    "13881002",
+    "13881003",
+    "13881004",
+    "13881005",
+    "13881006",
+    "13881007"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:47Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

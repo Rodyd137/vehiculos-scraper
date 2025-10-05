@@ -1,0 +1,30 @@
+{
+  "id": "1515800",
+  "url": "https://www.supercarros.com/renault-austral/1515800/",
+  "title": "Renault Austral Esprit Alpine.",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 42900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13459462.jpg",
+  "photo_ids": [
+    "13459462",
+    "13459463",
+    "13459464",
+    "13459465",
+    "13459466",
+    "13459467",
+    "13459468",
+    "13459469",
+    "13459471",
+    "13459472",
+    "13459473",
+    "13459474"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

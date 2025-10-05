@@ -1,0 +1,25 @@
+{
+  "id": "1538053",
+  "url": "https://www.supercarros.com/toyota-corolla/1538053/",
+  "title": "Toyota Corolla LE",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 21500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13701002.jpg",
+  "photo_ids": [
+    "13700996",
+    "13700998",
+    "13700999",
+    "13701000",
+    "13701001",
+    "13701002",
+    "13701004",
+    "13701005",
+    "13701006"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:21Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

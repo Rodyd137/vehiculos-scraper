@@ -1,0 +1,26 @@
+{
+  "id": "1556889",
+  "url": "https://www.supercarros.com/toyota-rav4/1556889/",
+  "title": "Toyota RAV4 XLE",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1735000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13920920.jpg",
+  "photo_ids": [
+    "13920920",
+    "13920918",
+    "13920919",
+    "13920917",
+    "13920924",
+    "13920921",
+    "13920926",
+    "13920925",
+    "13920923",
+    "13920922"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:39:05Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

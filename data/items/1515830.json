@@ -1,0 +1,28 @@
+{
+  "id": "1515830",
+  "url": "https://www.supercarros.com/gac-emzoom/1515830/",
+  "title": "GAC Emzoom",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 24900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13459795.jpg",
+  "photo_ids": [
+    "13459795",
+    "13459796",
+    "13459797",
+    "13459798",
+    "13459799",
+    "13459800",
+    "13459801",
+    "13459802",
+    "13459803",
+    "13459804"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:09Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

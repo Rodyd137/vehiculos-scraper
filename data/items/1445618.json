@@ -1,0 +1,28 @@
+{
+  "id": "1445618",
+  "url": "https://www.supercarros.com/greatwall-kingkongpoer/1445618/",
+  "title": "Great Wall Kingkong Poer",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 31900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13462608.jpg",
+  "photo_ids": [
+    "13462608",
+    "13462609",
+    "13462610",
+    "13462611",
+    "13462612",
+    "13462613",
+    "13462614",
+    "13462615",
+    "13462616",
+    "13462617"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:47Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

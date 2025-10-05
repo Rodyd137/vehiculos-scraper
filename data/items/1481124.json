@@ -1,0 +1,30 @@
+{
+  "id": "1481124",
+  "url": "https://www.supercarros.com/gac-m6/1481124/",
+  "title": "GAC M6 PRO 270 T",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 34900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13071806.jpg",
+  "photo_ids": [
+    "13071806",
+    "13071807",
+    "13071808",
+    "13071809",
+    "13071810",
+    "13071811",
+    "13071812",
+    "13071813",
+    "13071814",
+    "13071815",
+    "13071816",
+    "13071817"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:09Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

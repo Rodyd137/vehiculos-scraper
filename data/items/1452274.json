@@ -1,0 +1,24 @@
+{
+  "id": "1452274",
+  "url": "https://www.supercarros.com/suzuki-dzire/1452274/",
+  "title": "Suzuki Dzire GLX",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 16900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12751734.jpg",
+  "photo_ids": [
+    "12751733",
+    "12751734",
+    "12751735",
+    "12751736",
+    "12751737",
+    "12751738",
+    "12751739",
+    "12751740"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:39Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

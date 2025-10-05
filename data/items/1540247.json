@@ -1,0 +1,30 @@
+{
+  "id": "1540247",
+  "url": "https://www.supercarros.com/jetour-t2/1540247/",
+  "title": "Jetour T2",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 57900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13725555.jpg",
+  "photo_ids": [
+    "13725555",
+    "13725567",
+    "13725568",
+    "13725569",
+    "13725570",
+    "13725571",
+    "13725572",
+    "13725573",
+    "13725574",
+    "13725575",
+    "13725576",
+    "13725596"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:47Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

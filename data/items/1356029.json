@@ -1,0 +1,30 @@
+{
+  "id": "1356029",
+  "url": "https://www.supercarros.com/jac-frison/1356029/",
+  "title": "Jac FRISON FRISON T8 PRO",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 36990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11697679.jpg",
+  "photo_ids": [
+    "11697679",
+    "11697680",
+    "11697681",
+    "11697682",
+    "11697683",
+    "11697684",
+    "11697685",
+    "11697686",
+    "11697687",
+    "11697688",
+    "11697689",
+    "11697690"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:03Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

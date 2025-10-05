@@ -1,0 +1,28 @@
+{
+  "id": "1412191",
+  "url": "https://www.supercarros.com/mercedesbenz-clasegls/1412191/",
+  "title": "Mercedes-Benz Clase GLS 450 4MATIC",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 165000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12307585.jpg",
+  "photo_ids": [
+    "12307585",
+    "12307586",
+    "12307587",
+    "12307588",
+    "12307589",
+    "12307590",
+    "12307591",
+    "12307592",
+    "12307593",
+    "12307594"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "1558245",
+  "url": "https://www.supercarros.com/lexus-rx/1558245/",
+  "title": "Lexus RX 350H",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 89900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13926444.jpg",
+  "photo_ids": [
+    "13926444",
+    "13926445",
+    "13926446",
+    "13926447",
+    "13926448",
+    "13926449",
+    "13926450",
+    "13926451",
+    "13926452"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:47Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

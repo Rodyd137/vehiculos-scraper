@@ -1,0 +1,25 @@
+{
+  "id": "1556082",
+  "url": "https://www.supercarros.com/kia-seltos/1556082/",
+  "title": "Kia Seltos",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 21900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13902338.jpg",
+  "photo_ids": [
+    "13902338",
+    "13902339",
+    "13902340",
+    "13902341",
+    "13902342",
+    "13902343",
+    "13902344",
+    "13902345",
+    "13902346"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:14Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

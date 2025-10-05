@@ -1,0 +1,27 @@
+{
+  "id": "1555878",
+  "url": "https://www.supercarros.com/chevrolet-silverado/1555878/",
+  "title": "Chevrolet Silverado LTZ",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 25900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13899990.jpg",
+  "photo_ids": [
+    "13899990",
+    "13899991",
+    "13899992",
+    "13899993",
+    "13899994",
+    "13899995",
+    "13899996",
+    "13899997",
+    "13899998",
+    "13899999",
+    "13900000"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:36Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "1411334",
+  "url": "https://www.supercarros.com/jeep-commander/1411334/",
+  "title": "Jeep Commander Overland",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 59900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12297813.jpg",
+  "photo_ids": [
+    "12297813",
+    "12297815",
+    "12297817",
+    "12297819",
+    "12297820",
+    "12297821",
+    "12297823",
+    "12297824",
+    "12297825",
+    "12297826",
+    "12297827"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:03Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

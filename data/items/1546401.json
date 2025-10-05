@@ -1,0 +1,25 @@
+{
+  "id": "1546401",
+  "url": "https://www.supercarros.com/suzuki-swift/1546401/",
+  "title": "Suzuki Swift GLX Hybrid",
+  "year": 2026,
+  "fuel": "Híbrido",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 22900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13794752.jpg",
+  "photo_ids": [
+    "13794751",
+    "13794752",
+    "13794753",
+    "13794754",
+    "13794755",
+    "13794756",
+    "13794757",
+    "13794759",
+    "13794760"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:34Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

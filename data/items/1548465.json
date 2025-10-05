@@ -1,0 +1,27 @@
+{
+  "id": "1548465",
+  "url": "https://www.supercarros.com/jeep-grandcherokee/1548465/",
+  "title": "Jeep Grand Cherokee Trackhawk",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 79500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13817704.jpg",
+  "photo_ids": [
+    "13817704",
+    "13817705",
+    "13817706",
+    "13817707",
+    "13817708",
+    "13817709",
+    "13817710",
+    "13817711",
+    "13817712",
+    "13817713",
+    "13817714"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:52Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

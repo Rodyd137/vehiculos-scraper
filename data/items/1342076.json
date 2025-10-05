@@ -1,0 +1,25 @@
+{
+  "id": "1342076",
+  "url": "https://www.supercarros.com/jeep-wrangler/1342076/",
+  "title": "Jeep Wrangler Rubicon",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 89900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11548972.jpg",
+  "photo_ids": [
+    "11548970",
+    "11548971",
+    "11548972",
+    "11548973",
+    "11548974",
+    "11548975",
+    "11548976",
+    "11548977",
+    "11548978"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:32Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

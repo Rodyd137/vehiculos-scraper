@@ -1,0 +1,25 @@
+{
+  "id": "1555708",
+  "url": "https://www.supercarros.com/volvo-xc60/1555708/",
+  "title": "Volvo XC60 B5 Inscription",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 30900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13898007.jpg",
+  "photo_ids": [
+    "13898007",
+    "13898008",
+    "13898009",
+    "13898010",
+    "13898011",
+    "13898012",
+    "13898013"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:39:01Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

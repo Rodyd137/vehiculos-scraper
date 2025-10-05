@@ -1,0 +1,25 @@
+{
+  "id": "1310262",
+  "url": "https://www.supercarros.com/toyota-raize/1310262/",
+  "title": "Toyota Raize FULL",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 24900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11206376.jpg",
+  "photo_ids": [
+    "11206376",
+    "11206377",
+    "11206378",
+    "11206379",
+    "11206380",
+    "11206381",
+    "11206382",
+    "11206383",
+    "11206384"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:21Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

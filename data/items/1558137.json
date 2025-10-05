@@ -1,0 +1,22 @@
+{
+  "id": "1558137",
+  "url": "https://www.supercarros.com/infiniti-qx56/1558137/",
+  "title": "Infiniti QX-56",
+  "year": 2013,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 795000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13925188.jpg",
+  "photo_ids": [
+    "13925188",
+    "13925191",
+    "13925187",
+    "13925189",
+    "13925190",
+    "13925192"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:39:03Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "1509209",
+  "url": "https://www.supercarros.com/jeep-grandcherokee/1509209/",
+  "title": "Jeep Grand Cherokee Limited",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 37500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13384784.jpg",
+  "photo_ids": [
+    "13384784",
+    "13384785",
+    "13384786",
+    "13384795",
+    "13384800",
+    "13384803",
+    "13384806",
+    "13384809",
+    "13384812",
+    "13384817"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

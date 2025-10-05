@@ -1,0 +1,25 @@
+{
+  "id": "1394895",
+  "url": "https://www.supercarros.com/toyota-hilux/1394895/",
+  "title": "Toyota Hilux",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 44900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12117549.jpg",
+  "photo_ids": [
+    "12117546",
+    "12117547",
+    "12117548",
+    "12117549",
+    "12117550",
+    "12117551",
+    "12117552",
+    "12117553",
+    "12117554"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:23Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

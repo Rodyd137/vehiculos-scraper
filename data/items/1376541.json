@@ -1,0 +1,29 @@
+{
+  "id": "1376541",
+  "url": "https://www.supercarros.com/gac-emkoo/1376541/",
+  "title": "GAC Emkoo Elite",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 30900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11918533.jpg",
+  "photo_ids": [
+    "11918533",
+    "11918534",
+    "11918536",
+    "11918538",
+    "11918539",
+    "11918540",
+    "11918541",
+    "11918542",
+    "11918543",
+    "11918544",
+    "11918545"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:52Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

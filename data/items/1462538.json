@@ -1,0 +1,28 @@
+{
+  "id": "1462538",
+  "url": "https://www.supercarros.com/maserati-ghibli/1462538/",
+  "title": "Maserati Ghibli",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 85900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12866504.jpg",
+  "photo_ids": [
+    "12866504",
+    "12866505",
+    "12866506",
+    "12866507",
+    "12866508",
+    "12866509",
+    "12866510",
+    "12866511",
+    "12866512",
+    "12866513"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:50Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "1537021",
+  "url": "https://www.supercarros.com/chevrolet-equinox/1537021/",
+  "title": "Chevrolet Equinox LT",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 915000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13689250.jpg",
+  "photo_ids": [
+    "13689250",
+    "13689251",
+    "13689252",
+    "13689253",
+    "13689254",
+    "13689255",
+    "13689256",
+    "13689257"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T20:38:47Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

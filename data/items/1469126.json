@@ -1,0 +1,27 @@
+{
+  "id": "1469126",
+  "url": "https://www.supercarros.com/mazda-cx5/1469126/",
+  "title": "Mazda CX-5 CE",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 34990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13462554.jpg",
+  "photo_ids": [
+    "13462546",
+    "13462547",
+    "13462548",
+    "13462549",
+    "13462550",
+    "13462551",
+    "13462552",
+    "13462553",
+    "13462554"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:56Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

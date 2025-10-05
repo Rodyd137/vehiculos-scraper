@@ -1,0 +1,23 @@
+{
+  "id": "1544391",
+  "url": "https://www.supercarros.com/chevrolet-captiva/1544391/",
+  "title": "Chevrolet Captiva Premier",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 29900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13771482.jpg",
+  "photo_ids": [
+    "13771482",
+    "13771483",
+    "13771484",
+    "13771485",
+    "13771486",
+    "13771487",
+    "13771488"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:36Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

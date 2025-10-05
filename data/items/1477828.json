@@ -1,0 +1,29 @@
+{
+  "id": "1477828",
+  "url": "https://www.supercarros.com/jeep-grandcherokeel/1477828/",
+  "title": "Jeep Grand Cherokee L Summit Reserve",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 115900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13035141.jpg",
+  "photo_ids": [
+    "13035141",
+    "13035142",
+    "13035143",
+    "13035144",
+    "13035145",
+    "13035146",
+    "13035147",
+    "13035148",
+    "13035149",
+    "13035150",
+    "13035151"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:01Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

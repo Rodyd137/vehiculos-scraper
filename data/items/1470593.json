@@ -1,0 +1,29 @@
+{
+  "id": "1470593",
+  "url": "https://www.supercarros.com/honda-crv/1470593/",
+  "title": "Honda CR-V EX",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 49900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12956010.jpg",
+  "photo_ids": [
+    "12956010",
+    "12956011",
+    "12956012",
+    "12956013",
+    "12956014",
+    "12956015",
+    "12956017",
+    "12956019",
+    "12956020",
+    "12956022",
+    "12956024"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:47Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

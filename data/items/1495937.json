@@ -1,0 +1,30 @@
+{
+  "id": "1495937",
+  "url": "https://www.supercarros.com/maxus-d90/1495937/",
+  "title": "Maxus D90",
+  "year": 2026,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 56900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13445862.jpg",
+  "photo_ids": [
+    "13445862",
+    "13445863",
+    "13445864",
+    "13445865",
+    "13445866",
+    "13445867",
+    "13445868",
+    "13445869",
+    "13445870",
+    "13445871",
+    "13445872",
+    "13445873"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:09Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

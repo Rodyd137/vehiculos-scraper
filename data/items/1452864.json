@@ -1,0 +1,25 @@
+{
+  "id": "1452864",
+  "url": "https://www.supercarros.com/suzuki-eeco/1452864/",
+  "title": "Suzuki EECO",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 13900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12758329.jpg",
+  "photo_ids": [
+    "12758329",
+    "12758333",
+    "12758335",
+    "12758336",
+    "12758337",
+    "12758338",
+    "12758339",
+    "12758340",
+    "12758341"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:41Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

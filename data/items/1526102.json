@@ -1,0 +1,25 @@
+{
+  "id": "1526102",
+  "url": "https://www.supercarros.com/chevrolet-colorado/1526102/",
+  "title": "Chevrolet Colorado Z71",
+  "year": 2026,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 55500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13575404.jpg",
+  "photo_ids": [
+    "13575404",
+    "13575405",
+    "13575406",
+    "13575407",
+    "13575408",
+    "13575409",
+    "13575410",
+    "13575411",
+    "13575412"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:34Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

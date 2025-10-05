@@ -1,0 +1,29 @@
+{
+  "id": "1423774",
+  "url": "https://www.supercarros.com/peugeot-2008/1423774/",
+  "title": "Peugeot 2008 Allure",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 32900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12436888.jpg",
+  "photo_ids": [
+    "12436888",
+    "12436889",
+    "12436890",
+    "12436891",
+    "12436892",
+    "12436893",
+    "12436894",
+    "12436895",
+    "12436896",
+    "12436897",
+    "12436898"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:50Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1187611",
+  "url": "https://www.supercarros.com/peugeot-landtrek/1187611/",
+  "title": "Peugeot Landtrek Action",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 44900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11478828.jpg",
+  "photo_ids": [
+    "11478827",
+    "11478828",
+    "11478829",
+    "11478830",
+    "11478831",
+    "11478832",
+    "11478833",
+    "11478834",
+    "11478835",
+    "11478836"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:50Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

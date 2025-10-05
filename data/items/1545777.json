@@ -1,0 +1,26 @@
+{
+  "id": "1545777",
+  "url": "https://www.supercarros.com/mazda-cx5/1545777/",
+  "title": "Mazda CX-5 Touring",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 24400.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13787631.jpg",
+  "photo_ids": [
+    "13787630",
+    "13787631",
+    "13787632",
+    "13787633",
+    "13787634",
+    "13787635",
+    "13787636",
+    "13787637",
+    "13787638",
+    "13787639"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:39:03Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

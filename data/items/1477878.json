@@ -1,0 +1,25 @@
+{
+  "id": "1477878",
+  "url": "https://www.supercarros.com/toyota-corollacross/1477878/",
+  "title": "Toyota Corolla Cross Full",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 35900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13035727.jpg",
+  "photo_ids": [
+    "13035726",
+    "13035727",
+    "13035728",
+    "13035729",
+    "13035730",
+    "13035731",
+    "13035732",
+    "13035733",
+    "13035734"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:27Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

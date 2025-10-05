@@ -1,0 +1,26 @@
+{
+  "id": "1342248",
+  "url": "https://www.supercarros.com/lexus-lx/1342248/",
+  "title": "Lexus LX 570",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 67900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11550705.jpg",
+  "photo_ids": [
+    "11550705",
+    "11550706",
+    "11550707",
+    "11550708",
+    "11550709",
+    "11550710",
+    "11550711",
+    "11550712",
+    "11550713",
+    "11550714"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:18Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

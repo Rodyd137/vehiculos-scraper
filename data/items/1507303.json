@@ -1,0 +1,24 @@
+{
+  "id": "1507303",
+  "url": "https://www.supercarros.com/dodge-journey/1507303/",
+  "title": "Dodge Journey SXT",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 865000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13363111.jpg",
+  "photo_ids": [
+    "13363105",
+    "13363106",
+    "13363107",
+    "13363108",
+    "13363109",
+    "13363110",
+    "13363111",
+    "13363112"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:12Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "1552652",
+  "url": "https://www.supercarros.com/mg-zs/1552652/",
+  "title": "MG ZS",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 28500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13864406.jpg",
+  "photo_ids": [
+    "13864406",
+    "13864407",
+    "13864408",
+    "13864409",
+    "13864410",
+    "13864411",
+    "13864412",
+    "13864413",
+    "13864414",
+    "13864415",
+    "13864416"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:01Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

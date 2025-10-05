@@ -1,0 +1,27 @@
+{
+  "id": "1504317",
+  "url": "https://www.supercarros.com/neta-x500/1504317/",
+  "title": "Neta X 500",
+  "year": 2025,
+  "fuel": "Eléctrico",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 35000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13329407.jpg",
+  "photo_ids": [
+    "13329407",
+    "13329408",
+    "13329409",
+    "13329410",
+    "13329411",
+    "13329412",
+    "13329413",
+    "13329414",
+    "13329415"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:52Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

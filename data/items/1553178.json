@@ -1,0 +1,25 @@
+{
+  "id": "1553178",
+  "url": "https://www.supercarros.com/mg-bgt/1553178/",
+  "title": "MG B GT",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 30500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13870104.jpg",
+  "photo_ids": [
+    "13870104",
+    "13870105",
+    "13870106",
+    "13870107",
+    "13870108",
+    "13870109",
+    "13870110",
+    "13870111",
+    "13870112"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:47Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

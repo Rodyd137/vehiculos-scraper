@@ -1,0 +1,28 @@
+{
+  "id": "1558709",
+  "url": "https://www.supercarros.com/toyota-landcruiserprado/1558709/",
+  "title": "Toyota Land Cruiser Prado VXL",
+  "year": 2019,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 72500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13931794.jpg",
+  "photo_ids": [
+    "13931797",
+    "13931798",
+    "13931794",
+    "13931799",
+    "13931795",
+    "13931796",
+    "13931716",
+    "13931718",
+    "13931715",
+    "13931717",
+    "13931719",
+    "13931720"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:45Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

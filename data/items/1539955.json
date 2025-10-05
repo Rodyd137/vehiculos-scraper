@@ -1,0 +1,27 @@
+{
+  "id": "1539955",
+  "url": "https://www.supercarros.com/goelectric-ev/1539955/",
+  "title": "Go Electric EV",
+  "year": 2025,
+  "fuel": "Eléctrico",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 14800.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13722211.jpg",
+  "photo_ids": [
+    "13722211",
+    "13722212",
+    "13722213",
+    "13722214",
+    "13722215",
+    "13722216",
+    "13722217",
+    "13722218",
+    "13722219"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:58Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

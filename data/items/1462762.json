@@ -1,0 +1,28 @@
+{
+  "id": "1462762",
+  "url": "https://www.supercarros.com/lincoln-nautilus/1462762/",
+  "title": "Lincoln Nautilus",
+  "year": 2025,
+  "fuel": "Híbrido",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 89900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12869088.jpg",
+  "photo_ids": [
+    "12869088",
+    "12869089",
+    "12869090",
+    "12869091",
+    "12869092",
+    "12869093",
+    "12869094",
+    "12869095",
+    "12869096",
+    "12869097"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:03Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

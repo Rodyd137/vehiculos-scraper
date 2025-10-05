@@ -1,0 +1,25 @@
+{
+  "id": "1345563",
+  "url": "https://www.supercarros.com/toyota-raize/1345563/",
+  "title": "Toyota Raize Turbo",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 30750.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11585867.jpg",
+  "photo_ids": [
+    "11585867",
+    "11585868",
+    "11585869",
+    "11585870",
+    "11585871",
+    "11585872",
+    "11585873",
+    "11585874",
+    "11585875"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:25Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

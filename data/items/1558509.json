@@ -1,0 +1,28 @@
+{
+  "id": "1558509",
+  "url": "https://www.supercarros.com/mazda-cx5/1558509/",
+  "title": "Mazda CX-5 Touring",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 21900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13929432.jpg",
+  "photo_ids": [
+    "13929432",
+    "13929433",
+    "13929434",
+    "13929435",
+    "13929436",
+    "13929437",
+    "13929438",
+    "13929439",
+    "13929440",
+    "13929441",
+    "13929442",
+    "13929443"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:14Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

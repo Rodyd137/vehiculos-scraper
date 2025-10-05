@@ -1,0 +1,29 @@
+{
+  "id": "1514497",
+  "url": "https://www.supercarros.com/bmw-x/1514497/",
+  "title": "BMW X 7 XDRIVE 40i",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 114500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13445064.jpg",
+  "photo_ids": [
+    "13445059",
+    "13445060",
+    "13445061",
+    "13445062",
+    "13445063",
+    "13445064",
+    "13445065",
+    "13445066",
+    "13445067",
+    "13445068",
+    "13445069"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:58Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

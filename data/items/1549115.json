@@ -1,0 +1,26 @@
+{
+  "id": "1549115",
+  "url": "https://www.supercarros.com/chevrolet-colorado/1549115/",
+  "title": "Chevrolet Colorado Z71",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 24500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13824805.jpg",
+  "photo_ids": [
+    "13824804",
+    "13824805",
+    "13824800",
+    "13824801",
+    "13824802",
+    "13824803",
+    "13824806",
+    "13824807",
+    "13824808",
+    "13824809"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:39:03Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

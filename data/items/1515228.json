@@ -1,0 +1,27 @@
+{
+  "id": "1515228",
+  "url": "https://www.supercarros.com/changan-unik/1515228/",
+  "title": "Changan Uni-K",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 32500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13797670.jpg",
+  "photo_ids": [
+    "13797670",
+    "13797671",
+    "13797672",
+    "13797673",
+    "13797674",
+    "13797676",
+    "13797678",
+    "13797680",
+    "13797681",
+    "13797683",
+    "13797685"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "1357016",
+  "url": "https://www.supercarros.com/jetour-x70/1357016/",
+  "title": "Jetour X70 PLUS",
+  "year": 2026,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 39900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11708005.jpg",
+  "photo_ids": [
+    "11708005",
+    "11708006",
+    "11708007",
+    "11708008",
+    "11708009",
+    "11708010",
+    "11708011",
+    "11708012",
+    "11708013",
+    "11708014",
+    "11708015",
+    "11708016"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:58Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

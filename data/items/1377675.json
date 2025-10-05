@@ -1,0 +1,30 @@
+{
+  "id": "1377675",
+  "url": "https://www.supercarros.com/forthing-heatwave/1377675/",
+  "title": "Forthing  HEATWAVE",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 30900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11930600.jpg",
+  "photo_ids": [
+    "11930600",
+    "11930601",
+    "11930602",
+    "11930603",
+    "11930604",
+    "11930605",
+    "11930606",
+    "11930607",
+    "11930608",
+    "11930609",
+    "11930610",
+    "11930611"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

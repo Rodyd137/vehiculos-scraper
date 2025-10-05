@@ -1,0 +1,28 @@
+{
+  "id": "1527136",
+  "url": "https://www.supercarros.com/hyundai-tucson/1527136/",
+  "title": "Hyundai Tucson LIMITED",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 22900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13587113.jpg",
+  "photo_ids": [
+    "13587112",
+    "13587113",
+    "13587114",
+    "13587115",
+    "13587116",
+    "13587117",
+    "13587118",
+    "13587119",
+    "13587120",
+    "13587121",
+    "13587122",
+    "13587123"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:58Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "1554432",
+  "url": "https://www.supercarros.com/landrover-discovery/1554432/",
+  "title": "Land Rover Discovery Sport SE",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 93499.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13884107.jpg",
+  "photo_ids": [
+    "13884107",
+    "13884108",
+    "13884109",
+    "13884110",
+    "13884111",
+    "13884112",
+    "13884113",
+    "13884114",
+    "13884115",
+    "13884116",
+    "13884117",
+    "13884118"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "1540045",
+  "url": "https://www.supercarros.com/volkswagen-tiguan/1540045/",
+  "title": "Volkswagen Tiguan Life",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 43900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13723238.jpg",
+  "photo_ids": [
+    "13723238",
+    "13723239",
+    "13723240",
+    "13723241",
+    "13723242",
+    "13723243",
+    "13723244",
+    "13723245",
+    "13723246",
+    "13723247",
+    "13723248"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:38:05Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

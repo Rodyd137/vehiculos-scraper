@@ -1,0 +1,30 @@
+{
+  "id": "1425327",
+  "url": "https://www.supercarros.com/renault-austral/1425327/",
+  "title": "Renault Austral",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 39900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12453829.jpg",
+  "photo_ids": [
+    "12453829",
+    "12453830",
+    "12453831",
+    "12453832",
+    "12453833",
+    "12453834",
+    "12453835",
+    "12453836",
+    "12453837",
+    "12453838",
+    "12453839",
+    "12453840"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T20:37:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

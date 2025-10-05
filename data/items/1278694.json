@@ -1,0 +1,26 @@
+{
+  "id": "1278694",
+  "url": "https://www.supercarros.com/toyota-corollacross/1278694/",
+  "title": "Toyota Corolla Cross Limited Hibrid",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 42900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/10866655.jpg",
+  "photo_ids": [
+    "10866655",
+    "10866656",
+    "10866657",
+    "10866658",
+    "10866659",
+    "10866660",
+    "10866661",
+    "10866662",
+    "10866663",
+    "10866664"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:27Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

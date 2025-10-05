@@ -1,0 +1,25 @@
+{
+  "id": "1525961",
+  "url": "https://www.supercarros.com/chevrolet-tahoe/1525961/",
+  "title": "Chevrolet Tahoe Highcountry Duramax",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 105900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13573769.jpg",
+  "photo_ids": [
+    "13573769",
+    "13573770",
+    "13573771",
+    "13573772",
+    "13573773",
+    "13573774",
+    "13573775",
+    "13573776",
+    "13573777"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:38:36Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

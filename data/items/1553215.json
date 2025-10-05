@@ -1,0 +1,26 @@
+{
+  "id": "1553215",
+  "url": "https://www.supercarros.com/mazda-cx5/1553215/",
+  "title": "Mazda CX-5",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 21500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13870503.jpg",
+  "photo_ids": [
+    "13870503",
+    "13870504",
+    "13870505",
+    "13870506",
+    "13870507",
+    "13870508",
+    "13870509",
+    "13870510",
+    "13870511",
+    "13870512"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T20:37:52Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

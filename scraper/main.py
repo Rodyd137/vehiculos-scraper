@@ -5,17 +5,8 @@ from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode, urljoin
 import requests
 from bs4 import BeautifulSoup
 
-# ==============================
-# Paths / Config
-# ==============================
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
-
-# Archivos/dirs incrementales (sharded)
-ITEMS_DIR = DATA_DIR / "items"                         # un archivo por anuncio: items/<id>.json
-ACTIVE_IDS_PATH = DATA_DIR / "active_ids.json"         # IDs activos detectados en la corrida
-ACTIVE_LISTINGS_PATH = DATA_DIR / "listings_active.json"  # objetos activos (reconstruido desde items/)
-PRUNE_REMOVED = True                                   # si True, borra archivos de anuncios que ya no están
 
 CONFIG_PATH = ROOT / "config.json"
 DEFAULT_CONFIG = {
@@ -31,21 +22,21 @@ DEFAULT_CONFIG = {
     "items_per_page": 24
 }
 
-# ✅ Fuentes adicionales (catálogos)
+MASTER_PATH  = DATA_DIR / "listings_master.json"   # ← estado incremental
+REMOVED_PATH = DATA_DIR / "listings_removed.json"  # ← tombstones
+
+# ✅ Nuevas fuentes adicionales (categorías)
 EXTRA_CATALOG_URLS = [
     "https://www.supercarros.com/v.pesados/",
     "https://www.supercarros.com/motores/",
 ]
 
-# ==============================
-# Config
-# ==============================
 def load_config():
     cfg = DEFAULT_CONFIG.copy()
     if CONFIG_PATH.exists():
         with open(CONFIG_PATH, "r", encoding="utf-8") as f:
             cfg.update(json.load(f))
-    # Overrides por env vars
+    # Overrides por env vars (opcional)
     if "SC_MAX_PAGES" in os.environ:      cfg["pages"] = int(os.getenv("SC_MAX_PAGES", cfg["pages"]))
     if "SC_SLEEP_SECONDS" in os.environ:  cfg["sleep_seconds"] = float(os.getenv("SC_SLEEP_SECONDS", cfg["sleep_seconds"]))
     if "SC_DETAILS" in os.environ:        cfg["details"] = os.getenv("SC_DETAILS", "1") not in ("0","false","False")
@@ -57,23 +48,17 @@ def add_or_replace_query(url: str, **params):
     p = urlparse(url)
     q = dict(parse_qsl(p.query, keep_blank_values=True))
     for k, v in params.items():
-        if v is None:
-            continue
+        if v is None: continue
         q[k] = str(v)
     new = p._replace(query=urlencode(q, doseq=True))
     return urlunparse(new)
 
-# ==============================
-# Parsers / Helpers
-# ==============================
 PRICE_RE = re.compile(r"(?i)\s*(US\$|RD\$|\$)\s*([0-9\.\,]+)")
 
 def parse_price(text: str):
-    if not text:
-        return (None, None)
+    if not text: return (None, None)
     m = PRICE_RE.search(text.replace("\xa0", " ").strip())
-    if not m:
-        return (None, None)
+    if not m: return (None, None)
     currency_raw, amount_raw = m.groups()
     currency = "USD" if "US" in currency_raw.upper() else "DOP"
     amount = float(re.sub(r"[^0-9\.]", "", amount_raw.replace(",", "")))
@@ -125,35 +110,24 @@ def fetch(url: str, ua: str, retries: int = 2, backoff: float = 1.5) -> str:
             time.sleep(backoff * (attempt + 1))
     raise last_err
 
-# ==============================
-# Listing page
-# ==============================
 def parse_listings(html: str, page_url: str, base_root: str):
     soup = BeautifulSoup(html, "lxml")
 
-    # Contenedor estándar
     cont = soup.select_one("#bigsearch-results-inner-results ul")
-
-    # Fallback (v.pesados, motores): buscar li[data-id]
     if not cont:
         candidates = soup.select("li[data-id]")
         if not candidates:
             return []
-
         class FakeCont:
             def __init__(self, nodes): self._nodes = nodes
-            def select(self, sel):
-                if sel == "li": return self._nodes
-                return []
+            def select(self, sel): return self._nodes if sel == "li" else []
         cont = FakeCont(candidates)
 
     results = []
     for li in cont.select("li"):
         ad_id = li.get("data-id") or ""
-        if not ad_id:
-            continue
+        if not ad_id: continue
 
-        # badges (compat)
         classes = set(li.get("class", []))
         classes.discard("normal")
         badges = sorted([c for c in classes if c.startswith("promo-") or c.startswith("featured-")])
@@ -199,9 +173,7 @@ def parse_listings(html: str, page_url: str, base_root: str):
         })
     return results
 
-# ==============================
-# Detail page (m.*)
-# ==============================
+# --------- Detalle ---------
 def to_mobile(url: str, base_url: str) -> str:
     if not url: return url
     p = urlparse(url)
@@ -212,7 +184,35 @@ def to_mobile(url: str, base_url: str) -> str:
     return p._replace(scheme="https", netloc=m_netloc).geturl()
 
 PHONE_RE = re.compile(r"(?:\+?1?\s?(?:809|829|849))[\-\s\.]?\d{3}[\-\s\.]?\d{4}")
-EMAIL_RE = re.compile(r"[^@\s]+@[^@\s]+\.[^@\s]+")
+
+CITY_ALIASES = {
+    # canónicas → variantes
+    "Santo Domingo Este": {"santo domingo este"},
+    "Santo Domingo Norte": {"santo domingo norte"},
+    "Santo Domingo Oeste": {"santo domingo oeste"},
+    "Santo Domingo": {"santo domingo", "d.n.", "distrito nacional", "dn"},
+    "Santiago": {"santiago"},
+    "San Cristóbal": {"san cristobal", "san cristóbal"},
+    "San Pedro de Macorís": {"san pedro de macoris", "san pedro de macorís"},
+    "La Vega": {"la vega"},
+    "San Francisco de Macorís": {"san francisco de macoris", "san francisco de macorís"},
+    "Bávaro": {"bavaro", "bávaro"},
+    "Higüey": {"higuey", "higüey"},
+    "La Romana": {"la romana"},
+    "Puerto Plata": {"puerto plata"},
+    "Moca": {"moca"},
+}
+
+def normalize_city(text: str) -> str | None:
+    if not text: return None
+    low = text.lower()
+    for canon, variants in CITY_ALIASES.items():
+        for v in variants:
+            if v in low:
+                return canon
+    # fallback: palabra con mayúscula inicial + posible ‘de …’
+    m = re.search(r"([A-ZÁÉÍÓÚÑ][a-záéíóúñ]+(?:\s+de\s+[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+)*)", text)
+    return m.group(1) if m else None
 
 def extract_section_texts(soup: BeautifulSoup, title_regex: str):
     title = None
@@ -250,68 +250,24 @@ def parse_keyvals_from_block(text_lines):
         if k and v: out[k] = v
     return out
 
-def pick_first_non_phone_line(lines: list[str]) -> str | None:
-    for ln in lines:
-        t = ln.strip()
-        if not t:
+def guess_vendor_name(block_lines: list[str]) -> str | None:
+    # 1) clave exacta
+    for line in block_lines:
+        m = re.search(r"(?i)^(?:vendedor|contacto|nombre)\s*:\s*(.+)$", line.strip())
+        if m:
+            cand = m.group(1).strip()
+            if cand and not any(x in cand.lower() for x in ["tel", "cel", "correo", "email"]):
+                return cand
+    # 2) línea limpia (sin dígitos ni “tel/correo”)
+    for line in block_lines:
+        s = line.strip()
+        if not s: continue
+        if any(x in s.lower() for x in ["tel", "cel", "correo", "email", "ubicación", "ciudad", "sector", "dirección"]):
             continue
-        tl = t.lower()
-        if PHONE_RE.search(t) or EMAIL_RE.search(t):
+        if re.search(r"\d", s):  # tiene números → no es buen nombre
             continue
-        if any(w in tl for w in ["tel", "tel.", "teléfono", "telefono", "whatsapp", "llamar", "llámanos"]):
-            continue
-        # Evitar direcciones obvias
-        if any(w in tl for w in ["calle", "av.", "ave", "km", "sector", "provincia", "ciudad", "ubicación", "ubicacion", "dirección", "direccion"]):
-            continue
-        # Nombre “razonable”
-        if len(t) <= 60 and re.search(r"[A-Za-zÁÉÍÓÚÑáéíóúñ]", t):
-            return t
-    return None
-
-def extract_vendor_name(datos: dict, vend_lines: list[str]) -> str | None:
-    # 1) Claves directas en "Datos Generales"
-    for k in ["Vendedor","Nombre","Nombre del vendedor","Contacto","Contacto Vendedor","Propietario","Dealer"]:
-        for key in list(datos.keys()):
-            if k.lower() in key.lower():
-                val = datos.get(key)
-                if val and not PHONE_RE.search(val) and not EMAIL_RE.search(val):
-                    return val.strip()
-    # 2) En el bloque del vendedor
-    #    Preferir "Nombre: X"
-    for ln in vend_lines:
-        if ":" in ln:
-            k, v = ln.split(":", 1)
-            if any(w in k.lower() for w in ["vendedor","nombre","contacto","propietario"]):
-                v = v.strip()
-                if v and not PHONE_RE.search(v) and not EMAIL_RE.search(v):
-                    return v
-    # 3) Primera línea no-telefono/ni-email/ni-dirección
-    return pick_first_non_phone_line(vend_lines)
-
-def extract_city(datos: dict, vend_lines: list[str], soup: BeautifulSoup) -> str | None:
-    # 1) Claves típicas
-    for k in ["Ciudad","Localidad","Ubicación","Ubicacion","Provincia","Sector"]:
-        for key in list(datos.keys()):
-            if k.lower() in key.lower():
-                val = datos.get(key)
-                if val and len(val.strip()) >= 2:
-                    return val.strip()
-    # 2) Líneas del bloque de vendedor con "Ciudad:" o "Ubicación:"
-    for ln in vend_lines:
-        if ":" in ln:
-            k, v = ln.split(":", 1)
-            if any(w in k.lower() for w in ["ciudad","ubicación","ubicacion","provincia","sector"]):
-                v = v.strip()
-                if v: return v
-    # 3) Fallback: mirar spans/labels que contengan esas palabras
-    txt = soup.get_text(" ", strip=True)
-    m = re.search(r"(?i)(?:Ciudad|Ubicaci[oó]n|Provincia)\s*:\s*([A-Za-zÁÉÍÓÚÑáéíóúñ\.\-\s]+)", txt)
-    if m:
-        cand = m.group(1).strip()
-        # Limpiar si hay trailing "Tel" etc
-        cand = re.split(r"(?i)\b(Tel|Tel\.|Teléfono|Telefono)\b", cand)[0].strip(" -•:")
-        if cand:
-            return cand
+        if 2 <= len(s) <= 60:
+            return s
     return None
 
 def parse_detail_page(html: str):
@@ -326,22 +282,35 @@ def parse_detail_page(html: str):
     obs_lines = extract_section_texts(soup, r"(Observaciones|Descripci\u00F3n|Descripción)")
     descripcion = "\n".join(obs_lines).strip() if obs_lines else None
 
-    vend_lines = extract_section_texts(soup, r"(Vendedor|Contacto\s+Vendedor|Contacto\s+Dealer|Datos\s+del\s+Vendedor|Contacto)")
+    vend_lines = extract_section_texts(soup, r"(Vendedor|Contacto\s+Vendedor|Contacto\s+Dealer|Datos\s+del\s+Vendedor)")
     vendedor_text = " \n ".join(vend_lines) if vend_lines else None
+    phones = sorted(set(PHONE_RE.findall(vendedor_text or "")))
 
-    phones = sorted(set(PHONE_RE.findall(vendedor_text or ""))) or None
+    # nombre vendedor
+    vendor_name = guess_vendor_name(vend_lines or []) or None
+
+    # city por bloque vendedor o por datos generales
+    city = None
+    for line in (vend_lines or []):
+        c = normalize_city(line)
+        if c: city = c; break
+    if not city:
+        # buscar claves típicas en "Datos Generales"
+        for k in ("Ciudad", "Ubicación", "Provincia", "Sector"):
+            v = datos.get(k)
+            c = normalize_city(v or "")
+            if c:
+                city = c; break
+
     primary_phone = phones[0] if phones else None
 
-    vendor_name = extract_vendor_name(datos, vend_lines) if vend_lines or datos else None
-    city = extract_city(datos, vend_lines, soup)
-
-    # Fotos
+    # imágenes
     imgs = []
     for im in soup.select("img"):
         src = (im.get("src") or "").strip()
         if "AdsPhotos" in src:
             imgs.append(src)
-    imgs = sorted(set(imgs)) or None
+    imgs = sorted(set(imgs))
 
     return {
         "general": datos or None,
@@ -349,10 +318,10 @@ def parse_detail_page(html: str):
         "description": descripcion or None,
         "vendor_text": vendedor_text or None,
         "vendor_name": vendor_name,
-        "phones": phones,
+        "phones": phones or None,
         "primary_phone": primary_phone,
         "city": city,
-        "images": imgs
+        "images": imgs or None
     }
 
 def enrich_with_details(item: dict, ua: str, base_url: str, sleep_s: float) -> dict:
@@ -365,94 +334,34 @@ def enrich_with_details(item: dict, ua: str, base_url: str, sleep_s: float) -> d
         item["detail"] = detail
     except Exception as e:
         item.setdefault("detail_error", str(e))
-    time.sleep(sleep_s if sleep_s >= 0 else 0)
+    time.sleep(sleep_s)
     return item
 
-# ==============================
-# Incremental (sharded)
-# ==============================
-def safe_write_json(path: pathlib.Path, obj) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    tmp = path.with_suffix(path.suffix + ".tmp")
-    tmp.write_text(json.dumps(obj, ensure_ascii=False, indent=2), encoding="utf-8")
-    tmp.replace(path)
-
-def load_json_or(path: pathlib.Path, default):
+# ---------- Helpers estado incremental ----------
+def load_state_dict(path: pathlib.Path) -> dict[str, dict]:
+    if not path.exists(): return {}
     try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except Exception:
-        return default
+        data = json.loads(path.read_text(encoding="utf-8"))
+        # Permitimos tanto lista como dict (back-compat)
+        if isinstance(data, list):
+            return {str(x.get("id")): x for x in data if isinstance(x, dict) and x.get("id")}
+        elif isinstance(data, dict):
+            return {str(k): v for k, v in data.items() if isinstance(v, dict)}
+    except Exception as e:
+        print(f"[WARN] No se pudo leer {path.name}: {e}", file=sys.stderr)
+    return {}
 
-def write_item_file(item: dict) -> None:
-    """Guarda el anuncio en data/items/<id>.json si no existía o cambió."""
-    _id = item.get("id")
-    if not _id:
-        return
-    p = ITEMS_DIR / f"{_id}.json"
-    if p.exists():
-        try:
-            old = json.loads(p.read_text(encoding="utf-8"))
-            if old == item:
-                return
-        except Exception:
-            pass
-    safe_write_json(p, item)
+def save_json(path: pathlib.Path, payload):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
-def build_active_exports(active_ids: set[str]) -> None:
-    """Genera índices de activos sin tocar los archivos por-id."""
-    # 1) IDs
-    safe_write_json(ACTIVE_IDS_PATH, sorted(active_ids))
-    # 2) Objetos activos (leer cada <id>.json existente)
-    listings = []
-    for _id in sorted(active_ids):
-        p = ITEMS_DIR / f"{_id}.json"
-        if p.exists():
-            try:
-                listings.append(json.loads(p.read_text(encoding="utf-8")))
-            except Exception:
-                pass
-    safe_write_json(ACTIVE_LISTINGS_PATH, listings)
+def compute_fingerprint(item: dict) -> str:
+    # Campos “volátiles” de listado para detectar cambios relevantes
+    keys = ["title","year","fuel","condition","price_currency","price_amount","thumbnail","url","badges","photo_ids"]
+    snap = {k: item.get(k) for k in keys}
+    return json.dumps(snap, sort_keys=True, ensure_ascii=False)
 
-def update_items_incremental(scraped_items: list[dict]) -> None:
-    """
-    Crea/actualiza solo archivos de anuncios nuevos y elimina los que ya no están
-    (si PRUNE_REMOVED=True). Los que "vuelven activos" no se tocan.
-    """
-    ITEMS_DIR.mkdir(parents=True, exist_ok=True)
-
-    # IDs activos detectados
-    active_ids = {it.get("id") for it in scraped_items if it.get("id")}
-    # IDs ya presentes en disco
-    existing_ids = {p.stem for p in ITEMS_DIR.glob("*.json")}
-
-    # Nuevos
-    new_ids = active_ids - existing_ids
-    # (también actualiza si cambió, por si quieres re-escritura mínima)
-    for it in scraped_items:
-        _id = it.get("id")
-        if not _id:
-            continue
-        if _id in new_ids:
-            write_item_file(it)
-        else:
-            # Si ya existe, opcionalmente compara y guarda si cambió
-            write_item_file(it)
-
-    # Removidos (no activos en esta corrida)
-    if PRUNE_REMOVED:
-        removed_ids = existing_ids - active_ids
-        for _id in removed_ids:
-            try:
-                (ITEMS_DIR / f"{_id}.json").unlink(missing_ok=True)
-            except Exception:
-                pass
-
-    # Índices de activos
-    build_active_exports(active_ids)
-
-# ==============================
-# Scrape runner
-# ==============================
+# ---------- Scrape por cada fuente ----------
 def scrape_source(source_url: str, cfg: dict, seen_ids: set, all_items: list):
     pages      = int(cfg["pages"])
     sleep_s    = float(cfg["sleep_seconds"])
@@ -513,6 +422,94 @@ def scrape_source(source_url: str, cfg: dict, seen_ids: set, all_items: list):
         page += 1
         time.sleep(sleep_s if sleep_s >= 0 else 0)
 
+def update_master_incremental(current_items: list[dict], cfg: dict):
+    """Actualiza listings_master.json y listings_removed.json de forma incremental."""
+    now_iso = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
+
+    # Índices actuales
+    current_by_id = {str(x["id"]): x for x in current_items if x.get("id")}
+
+    # Estado previo
+    master = load_state_dict(MASTER_PATH)
+    removed = load_state_dict(REMOVED_PATH)
+
+    changed_ids: list[str] = []  # nuevos o con fingerprint distinto
+
+    # 1) Altas / Reapariciones / Actualizaciones
+    for _id, cur in current_by_id.items():
+        cur_fp = compute_fingerprint(cur)
+        if _id in master:
+            rec = master[_id]
+            prev_fp = rec.get("fingerprint")
+            if prev_fp != cur_fp:
+                # Solo actualizamos campos de listado (no tocamos 'detail' ni primeras fechas)
+                keys = ["title","year","fuel","condition","price_currency","price_amount","thumbnail","url","badges","photo_ids","source","scraped_at"]
+                for k in keys:
+                    rec[k] = cur.get(k)
+                rec["fingerprint"] = cur_fp
+                changed_ids.append(_id)
+            rec["last_seen"] = now_iso
+            rec["active"] = True
+            master[_id] = rec
+            if _id in removed:
+                # Por si estaba en removed (no debería, pero por consistencia)
+                removed.pop(_id, None)
+
+        elif _id in removed:
+            # Reaparece: NO TOCAMOS el payload salvo flags/fechas
+            rec = removed.pop(_id)
+            rec["active"] = True
+            rec["reactivated_at"] = now_iso
+            rec["last_seen"] = now_iso
+            master[_id] = rec
+            # No se agrega a changed_ids (no se vuelve a enriquecer)
+
+        else:
+            # Nuevo
+            rec = cur.copy()
+            rec["first_seen"] = now_iso
+            rec["last_seen"] = now_iso
+            rec["active"] = True
+            rec["fingerprint"] = cur_fp
+            master[_id] = rec
+            changed_ids.append(_id)
+
+    # 2) Bajas (mover al removed)
+    missing_ids = [mid for mid in list(master.keys()) if mid not in current_by_id]
+    for mid in missing_ids:
+        rec = master.pop(mid)
+        rec["active"] = False
+        rec["inactive_since"] = now_iso
+        removed[mid] = rec
+
+    # 3) Enriquecer SOLO nuevos/cambiados (si procede)
+    if cfg.get("details", True) and changed_ids:
+        max_details = int(cfg.get("max_details", 120))
+        d_sleep = float(cfg.get("detail_sleep_seconds", 0.8))
+        ua = cfg["user_agent"]
+
+        n = 0
+        for mid in changed_ids:
+            if n >= max_details: break
+            try:
+                base_url = master[mid].get("source") or cfg["base_url"]
+                enriched = enrich_with_details(master[mid], ua, base_url, d_sleep)
+                master[mid] = enriched
+            except Exception as e:
+                master[mid].setdefault("detail_error", str(e))
+            n += 1
+        print(f"[INFO] Detalles (incrementales) descargados: {n}")
+
+    # 4) Guardar estado
+    # Ordenar por last_seen desc para legibilidad
+    master_list = sorted(master.values(), key=lambda x: x.get("last_seen",""), reverse=True)
+    removed_list = sorted(removed.values(), key=lambda x: x.get("inactive_since",""), reverse=True)
+
+    save_json(MASTER_PATH, master_list)
+    save_json(REMOVED_PATH, removed_list)
+
+    print(f"[STATE] master: {len(master_list)} activos+hist, removed: {len(removed_list)}")
+
 def main():
     cfg = load_config()
     base_url   = cfg["base_url"]
@@ -530,7 +527,11 @@ def main():
         print(f"[INFO] >>> Iniciando scrape de fuente: {src}")
         scrape_source(src, cfg, seen_ids, all_items)
 
-    # Detalles (opcional, limitado)
+    # === Estado incremental (master/removed) ===
+    update_master_incremental(all_items, cfg)
+
+    # === Detalles "legacy" (opcional): mantenemos tu salida clásica ===
+    # Nota: esto en adelante no afecta al master incremental, solo a listados de la corrida
     if cfg.get("details", True) and all_items:
         max_details = int(cfg.get("max_details", 120))
         d_sleep = float(cfg.get("detail_sleep_seconds", 0.8))
@@ -540,22 +541,15 @@ def main():
             if count >= max_details: break
             enrich_with_details(it, ua, it.get("source") or base_url, d_sleep)
             count += 1
-        print(f"[INFO] Detalles descargados: {count}")
+        print(f"[INFO] Detalles descargados (salida corrida): {count}")
 
-    # === Salida incremental por archivos ===
-    update_items_incremental(all_items)
-
-    # (Opcional) snapshot monolítico de lo scrapeado en esta corrida:
-    # DATA_DIR.mkdir(parents=True, exist_ok=True)
-    # safe_write_json(DATA_DIR / "listings.json", all_items)
-
-    # Snapshot diario
+    # === Salidas de la corrida (compatibilidad) ===
     DATA_DIR.mkdir(parents=True, exist_ok=True)
+    (DATA_DIR / "listings.json").write_text(json.dumps(all_items, ensure_ascii=False, indent=2), encoding="utf-8")
     today = dt.datetime.utcnow().date().isoformat()
     (DATA_DIR / "daily").mkdir(parents=True, exist_ok=True)
-    safe_write_json(DATA_DIR / "daily" / f"{today}.json", all_items)
-
-    print(f"[DONE] Incremental: items/ actualizado, activos → {ACTIVE_LISTINGS_PATH.name}")
+    (DATA_DIR / "daily" / f"{today}.json").write_text(json.dumps(all_items, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"[DONE] Total anuncios descargados (corrida): {len(all_items)} → data/listings.json")
 
 if __name__ == "__main__":
     main()

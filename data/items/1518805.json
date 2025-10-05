@@ -1,0 +1,28 @@
+{
+  "id": "1518805",
+  "url": "https://www.supercarros.com/nissan-kicks/1518805/",
+  "title": "Nissan Kicks",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1045000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13493236.jpg",
+  "photo_ids": [
+    "13493235",
+    "13493236",
+    "13493237",
+    "13493238",
+    "13493239",
+    "13493240",
+    "13493241",
+    "13493242",
+    "13493243",
+    "13493244"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:26Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

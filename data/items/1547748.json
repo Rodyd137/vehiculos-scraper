@@ -1,0 +1,24 @@
+{
+  "id": "1547748",
+  "url": "https://www.supercarros.com/tesla-models/1547748/",
+  "title": "Tesla Model S",
+  "year": 2017,
+  "fuel": "Eléctrico",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 30000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13809602.jpg",
+  "photo_ids": [
+    "13809602",
+    "13809603",
+    "13809604",
+    "13809605",
+    "13809609",
+    "13809608",
+    "13809606",
+    "13809607"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:09Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

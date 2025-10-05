@@ -1,0 +1,28 @@
+{
+  "id": "1548510",
+  "url": "https://www.supercarros.com/nissan-kicks/1548510/",
+  "title": "Nissan Kicks",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 880000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13818268.jpg",
+  "photo_ids": [
+    "13818268",
+    "13818269",
+    "13818270",
+    "13818271",
+    "13818272",
+    "13818273",
+    "13818274",
+    "13818275",
+    "13818276",
+    "13818277",
+    "13818278",
+    "13818279"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:43Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

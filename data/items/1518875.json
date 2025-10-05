@@ -1,0 +1,26 @@
+{
+  "id": "1518875",
+  "url": "https://www.supercarros.com/porsche-cayenne/1518875/",
+  "title": "Porsche Cayenne GTS",
+  "year": 2016,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 42999.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13494013.jpg",
+  "photo_ids": [
+    "13494013",
+    "13494014",
+    "13494015",
+    "13494016",
+    "13494017",
+    "13494018",
+    "13494019",
+    "13494020",
+    "13494021",
+    "13494022"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:24Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

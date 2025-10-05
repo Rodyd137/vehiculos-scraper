@@ -1,0 +1,26 @@
+{
+  "id": "1541521",
+  "url": "https://www.supercarros.com/mercedesbenz-clasec/1541521/",
+  "title": "Mercedes-Benz Clase C 300 AMG 4Matic",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 34999.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13739319.jpg",
+  "photo_ids": [
+    "13739319",
+    "13739320",
+    "13739321",
+    "13739322",
+    "13739323",
+    "13739324",
+    "13739325",
+    "13739326",
+    "13739327",
+    "13739328"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:24Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

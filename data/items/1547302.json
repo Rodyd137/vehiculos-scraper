@@ -1,0 +1,26 @@
+{
+  "id": "1547302",
+  "url": "https://www.supercarros.com/landrover-rangerover/1547302/",
+  "title": "Land Rover Range Rover",
+  "year": 2015,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 29900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13804787.jpg",
+  "photo_ids": [
+    "13804787",
+    "13804788",
+    "13804789",
+    "13804790",
+    "13804791",
+    "13804792",
+    "13804793",
+    "13804794"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:21:52Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

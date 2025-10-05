@@ -1,0 +1,23 @@
+{
+  "id": "1410509",
+  "url": "https://www.supercarros.com/honda-navi/1410509/",
+  "title": "Honda Navi",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 1875.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12288651.jpg",
+  "photo_ids": [
+    "12288651",
+    "12288652",
+    "12288653",
+    "12288654",
+    "12288655"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:24:16Z",
+  "source": "https://www.supercarros.com/motores/"
+}

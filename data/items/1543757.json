@@ -1,0 +1,26 @@
+{
+  "id": "1543757",
+  "url": "https://www.supercarros.com/ford-edge/1543757/",
+  "title": "Ford EDGE SEL",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1095000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13764384.jpg",
+  "photo_ids": [
+    "13764384",
+    "13764385",
+    "13764386",
+    "13764387",
+    "13764388",
+    "13764389",
+    "13764390",
+    "13764391"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:22:17Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

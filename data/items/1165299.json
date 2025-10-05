@@ -1,0 +1,30 @@
+{
+  "id": "1165299",
+  "url": "https://www.supercarros.com/bmw-x/1165299/",
+  "title": "BMW X 3",
+  "year": 2016,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 18900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/9594646.jpg",
+  "photo_ids": [
+    "9594646",
+    "9594647",
+    "9594648",
+    "9594649",
+    "9594651",
+    "9594652",
+    "9594653",
+    "9594654",
+    "9594655",
+    "9594656",
+    "9594657",
+    "9594658"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:22:17Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "1556223",
+  "url": "https://www.supercarros.com/nissan-advan/1556223/",
+  "title": "Nissan Ad Van",
+  "year": 2016,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 395000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13903879.jpg",
+  "photo_ids": [
+    "13903879",
+    "13903880",
+    "13903881",
+    "13903882",
+    "13903883",
+    "13903884",
+    "13903885",
+    "13903886"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:24Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

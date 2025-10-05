@@ -1,0 +1,28 @@
+{
+  "id": "1548508",
+  "url": "https://www.supercarros.com/chevrolet-corvette/1548508/",
+  "title": "Chevrolet Corvette Stingray 3LT",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 95000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13818247.jpg",
+  "photo_ids": [
+    "13818246",
+    "13818247",
+    "13818248",
+    "13818249",
+    "13818250",
+    "13818251",
+    "13818252",
+    "13818253",
+    "13818254",
+    "13818255",
+    "13818256",
+    "13818257"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:45Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

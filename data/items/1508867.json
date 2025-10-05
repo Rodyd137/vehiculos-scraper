@@ -1,0 +1,28 @@
+{
+  "id": "1508867",
+  "url": "https://www.supercarros.com/porsche-cayenne/1508867/",
+  "title": "Porsche Cayenne",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 49500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13766641.jpg",
+  "photo_ids": [
+    "13668052",
+    "13668043",
+    "13668046",
+    "13668049",
+    "13668023",
+    "13668021",
+    "13668022",
+    "13668024",
+    "13668025",
+    "13766641",
+    "13766642",
+    "13766643"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:45Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

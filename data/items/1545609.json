@@ -1,0 +1,27 @@
+{
+  "id": "1545609",
+  "url": "https://www.supercarros.com/mercedesbenz-clasec/1545609/",
+  "title": "Mercedes-Benz Clase C 300 AMG",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1260000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13785586.jpg",
+  "photo_ids": [
+    "13785586",
+    "13785587",
+    "13785588",
+    "13785589",
+    "13785590",
+    "13785591",
+    "13785592",
+    "13785593",
+    "13785594",
+    "13785595",
+    "13785596"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:47Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "1483897",
+  "url": "https://www.supercarros.com/gac-gs8/1483897/",
+  "title": "GAC GS8 ELITE",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 54900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13628114.jpg",
+  "photo_ids": [
+    "13102957",
+    "13102958",
+    "13102959",
+    "13102960",
+    "13102961",
+    "13102962",
+    "13102963",
+    "13102964",
+    "13102965",
+    "13102966",
+    "13628114",
+    "13628115"
+  ],
+  "badges": [
+    "promo-ASOCIVU"
+  ],
+  "scraped_at": "2025-10-05T19:21:22Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

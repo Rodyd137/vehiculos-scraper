@@ -1,0 +1,26 @@
+{
+  "id": "1551344",
+  "url": "https://www.supercarros.com/honda-civic/1551344/",
+  "title": "Honda Civic EX Turbo",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1040000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13849604.jpg",
+  "photo_ids": [
+    "13849604",
+    "13849607",
+    "13849611",
+    "13849614",
+    "13849615",
+    "13849617",
+    "13849621",
+    "13849623",
+    "13849624",
+    "13849625"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:13Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

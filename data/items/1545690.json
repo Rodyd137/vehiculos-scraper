@@ -1,0 +1,28 @@
+{
+  "id": "1545690",
+  "url": "https://www.supercarros.com/chevrolet-colorado/1545690/",
+  "title": "Chevrolet Colorado",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1075000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13786562.jpg",
+  "photo_ids": [
+    "13786564",
+    "13786563",
+    "13786562",
+    "13786565",
+    "13786566",
+    "13786567",
+    "13786568",
+    "13786569",
+    "13786570",
+    "13786571",
+    "13786572",
+    "13786584"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:28Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

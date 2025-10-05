@@ -1,0 +1,22 @@
+{
+  "id": "1539008",
+  "url": "https://www.supercarros.com/chevrolet-sonic/1539008/",
+  "title": "Chevrolet Sonic Premier",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 575000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13711696.jpg",
+  "photo_ids": [
+    "13711696",
+    "13711698",
+    "13711699",
+    "13711700",
+    "13711701",
+    "13711702"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:13Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

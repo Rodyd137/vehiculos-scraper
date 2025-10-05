@@ -1,0 +1,28 @@
+{
+  "id": "1498549",
+  "url": "https://www.supercarros.com/freightliner-m2106/1498549/",
+  "title": "Freightliner M2-106",
+  "year": 2017,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 2050000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13265437.jpg",
+  "photo_ids": [
+    "13265437",
+    "13265438",
+    "13265439",
+    "13265440",
+    "13265441",
+    "13265442",
+    "13265443",
+    "13265444",
+    "13265445",
+    "13265446",
+    "13265447",
+    "13265448"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:13Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

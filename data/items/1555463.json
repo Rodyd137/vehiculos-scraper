@@ -1,0 +1,28 @@
+{
+  "id": "1555463",
+  "url": "https://www.supercarros.com/bmw-x/1555463/",
+  "title": "BMW X 5 XDRIVE 40i M PACKAGE",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 77800.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13895398.jpg",
+  "photo_ids": [
+    "13895398",
+    "13895409",
+    "13895399",
+    "13895425",
+    "13895402",
+    "13895403",
+    "13895424",
+    "13895404",
+    "13895407",
+    "13895422",
+    "13895400",
+    "13895423"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:24Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

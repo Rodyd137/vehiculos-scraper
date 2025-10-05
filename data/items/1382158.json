@@ -1,0 +1,27 @@
+{
+  "id": "1382158",
+  "url": "https://www.supercarros.com/mg-hs/1382158/",
+  "title": "MG HS Trophy",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 25900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11978519.jpg",
+  "photo_ids": [
+    "11978509",
+    "11978510",
+    "11978511",
+    "11978512",
+    "11978513",
+    "11978514",
+    "11978515",
+    "11978516",
+    "11978517",
+    "11978518",
+    "11978519"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:26Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "1550744",
+  "url": "https://www.supercarros.com/chevrolet-trax/1550744/",
+  "title": "Chevrolet Trax LS",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 770000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13843032.jpg",
+  "photo_ids": [
+    "13843032",
+    "13843033",
+    "13843034",
+    "13843035",
+    "13843036",
+    "13843037",
+    "13843038",
+    "13843039",
+    "13843040",
+    "13843041",
+    "13843042"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:30Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "1554684",
+  "url": "https://www.supercarros.com/ford-escape/1554684/",
+  "title": "Ford Escape SE",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 19500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13886941.jpg",
+  "photo_ids": [
+    "13886941",
+    "13886942",
+    "13886943",
+    "13886944",
+    "13886945",
+    "13886946",
+    "13886947",
+    "13886948"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:13Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

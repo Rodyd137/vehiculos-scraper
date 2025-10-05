@@ -1,0 +1,27 @@
+{
+  "id": "1554809",
+  "url": "https://www.supercarros.com/mitsubishi-outlander/1554809/",
+  "title": "Mitsubishi Outlander Sport",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 965000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13888261.jpg",
+  "photo_ids": [
+    "13888259",
+    "13888260",
+    "13888261",
+    "13888262",
+    "13888263",
+    "13888264",
+    "13888265",
+    "13888266",
+    "13888267"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:32Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

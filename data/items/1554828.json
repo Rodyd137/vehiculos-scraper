@@ -1,0 +1,28 @@
+{
+  "id": "1554828",
+  "url": "https://www.supercarros.com/toyota-hilux/1554828/",
+  "title": "Toyota Hilux SRV",
+  "year": 2018,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 43500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13888454.jpg",
+  "photo_ids": [
+    "13888452",
+    "13888453",
+    "13888454",
+    "13888455",
+    "13888456",
+    "13888457",
+    "13888458",
+    "13888459",
+    "13888460",
+    "13888461",
+    "13888462",
+    "13888463"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:49Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

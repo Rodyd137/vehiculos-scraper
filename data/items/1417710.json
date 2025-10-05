@@ -1,0 +1,28 @@
+{
+  "id": "1417710",
+  "url": "https://www.supercarros.com/ford-expedition/1417710/",
+  "title": "Ford Expedition Limited",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 27900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12369560.jpg",
+  "photo_ids": [
+    "12369560",
+    "12369561",
+    "12369562",
+    "12369563",
+    "12369564",
+    "12369565",
+    "12369566",
+    "12369567",
+    "12369568",
+    "12369569"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:22:17Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "1540515",
+  "url": "https://www.supercarros.com/montacarga-clark/1540515/",
+  "title": "Montacarga Clark",
+  "year": 1951,
+  "fuel": "GLP",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 250000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13728345.jpg",
+  "photo_ids": [
+    "13728345",
+    "13728347",
+    "13728349",
+    "13728350",
+    "13728351",
+    "13728353",
+    "13728354",
+    "13728356"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:52Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

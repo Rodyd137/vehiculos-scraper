@@ -1,0 +1,26 @@
+{
+  "id": "1530526",
+  "url": "https://www.supercarros.com/hyundai-santafe/1530526/",
+  "title": "Hyundai Santa Fe Calligraphy",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 38900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13625938.jpg",
+  "photo_ids": [
+    "13625938",
+    "13625939",
+    "13625940",
+    "13625941",
+    "13625942",
+    "13625943",
+    "13625944",
+    "13625945",
+    "13625946",
+    "13625947"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:45Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

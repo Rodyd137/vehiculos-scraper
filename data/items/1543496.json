@@ -1,0 +1,26 @@
+{
+  "id": "1543496",
+  "url": "https://www.supercarros.com/tesla-modely/1543496/",
+  "title": "Tesla Model Y Long Range",
+  "year": 2021,
+  "fuel": "Eléctrico",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 38900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13761626.jpg",
+  "photo_ids": [
+    "13761627",
+    "13761622",
+    "13761626",
+    "13761623",
+    "13761624",
+    "13761618",
+    "13761621",
+    "13761625",
+    "13761619",
+    "13761620"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:05Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

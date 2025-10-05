@@ -1,0 +1,30 @@
+{
+  "id": "1485972",
+  "url": "https://www.supercarros.com/mercedesbenz-clasegls/1485972/",
+  "title": "Mercedes-Benz Clase GLS 600 Maybach",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 138000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13760885.jpg",
+  "photo_ids": [
+    "13760885",
+    "13760886",
+    "13760887",
+    "13760888",
+    "13760889",
+    "13760890",
+    "13760891",
+    "13760892",
+    "13760893",
+    "13760894",
+    "13760895",
+    "13760896"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:21:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "1557799",
+  "url": "https://www.supercarros.com/chevrolet-corvette/1557799/",
+  "title": "Chevrolet Corvette Stingray 3LT",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 119500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13921577.jpg",
+  "photo_ids": [
+    "13921577",
+    "13921578",
+    "13921579",
+    "13921580",
+    "13921582",
+    "13921583",
+    "13921584",
+    "13921585",
+    "13921587",
+    "13921588",
+    "13921589",
+    "13921590"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:21:56Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

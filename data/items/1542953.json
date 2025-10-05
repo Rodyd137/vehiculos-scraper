@@ -1,0 +1,25 @@
+{
+  "id": "1542953",
+  "url": "https://www.supercarros.com/porsche-cayenne/1542953/",
+  "title": "Porsche Cayenne GTS",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 110000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13755412.jpg",
+  "photo_ids": [
+    "13755412",
+    "13755411",
+    "13755413",
+    "13755419",
+    "13755417",
+    "13755418",
+    "13755415",
+    "13755416",
+    "13755414"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:02Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

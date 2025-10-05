@@ -1,0 +1,28 @@
+{
+  "id": "1556418",
+  "url": "https://www.supercarros.com/toyota-4runner/1556418/",
+  "title": "Toyota 4 Runner Limited",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 45000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13906299.jpg",
+  "photo_ids": [
+    "13906299",
+    "13906308",
+    "13906305",
+    "13906302",
+    "13906303",
+    "13906301",
+    "13906304",
+    "13906306",
+    "13906307",
+    "13906309",
+    "13906310",
+    "13906311"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

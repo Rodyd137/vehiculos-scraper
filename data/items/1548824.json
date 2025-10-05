@@ -1,0 +1,28 @@
+{
+  "id": "1548824",
+  "url": "https://www.supercarros.com/nissan-sentra/1548824/",
+  "title": "Nissan Sentra SV",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 714000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13828261.jpg",
+  "photo_ids": [
+    "13828259",
+    "13828261",
+    "13828262",
+    "13828263",
+    "13828265",
+    "13828266",
+    "13828267",
+    "13828268",
+    "13828269",
+    "13828270"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:35Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

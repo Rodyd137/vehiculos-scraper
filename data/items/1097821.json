@@ -1,0 +1,26 @@
+{
+  "id": "1097821",
+  "url": "https://www.supercarros.com/nissan-nv/1097821/",
+  "title": "Nissan NV 200",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 890000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13487313.jpg",
+  "photo_ids": [
+    "13487313",
+    "13487314",
+    "13487315",
+    "13487316",
+    "13487317",
+    "13487318",
+    "13487319",
+    "13487320",
+    "13487321",
+    "13487322"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:00Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

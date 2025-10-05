@@ -1,0 +1,26 @@
+{
+  "id": "1508697",
+  "url": "https://www.supercarros.com/kia-sorento/1508697/",
+  "title": "Kia Sorento LX",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 845000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13381477.jpg",
+  "photo_ids": [
+    "13378979",
+    "13381474",
+    "13381475",
+    "13381476",
+    "13381477",
+    "13381478",
+    "13381479",
+    "13381480",
+    "13381481",
+    "13381482"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

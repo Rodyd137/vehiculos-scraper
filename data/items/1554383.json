@@ -1,0 +1,28 @@
+{
+  "id": "1554383",
+  "url": "https://www.supercarros.com/hyundai-tucson/1554383/",
+  "title": "Hyundai Tucson SEL Plus",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 26900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13883615.jpg",
+  "photo_ids": [
+    "13883615",
+    "13883617",
+    "13883618",
+    "13883619",
+    "13883620",
+    "13883628",
+    "13883633",
+    "13883634",
+    "13883635",
+    "13883636",
+    "13883637",
+    "13883638"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:22Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

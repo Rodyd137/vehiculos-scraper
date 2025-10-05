@@ -1,0 +1,26 @@
+{
+  "id": "1518230",
+  "url": "https://www.supercarros.com/honda-accord/1518230/",
+  "title": "Honda Accord Sport",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 22900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13486644.jpg",
+  "photo_ids": [
+    "13486644",
+    "13486645",
+    "13486646",
+    "13486647",
+    "13486648",
+    "13486649",
+    "13486650",
+    "13486651",
+    "13486652",
+    "13486653"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:43Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

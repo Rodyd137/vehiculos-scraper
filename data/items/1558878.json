@@ -1,0 +1,30 @@
+{
+  "id": "1558878",
+  "url": "https://www.supercarros.com/mini-cooper/1558878/",
+  "title": "Mini Cooper Countryman S",
+  "year": 2011,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 544990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13933723.jpg",
+  "photo_ids": [
+    "13933722",
+    "13933723",
+    "13933724",
+    "13933725",
+    "13933726",
+    "13933727",
+    "13933728",
+    "13933729",
+    "13933730",
+    "13933731",
+    "13933732",
+    "13933733"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:35Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1499685",
+  "url": "https://www.supercarros.com/landrover-rangerover/1499685/",
+  "title": "Land Rover Range Rover Sport HSE",
+  "year": 2016,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 26900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13277989.jpg",
+  "photo_ids": [
+    "13277989",
+    "13277990",
+    "13277991",
+    "13277992",
+    "13277993",
+    "13277994",
+    "13277995",
+    "13277996",
+    "13277997",
+    "13277998"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:22:22Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "1541956",
+  "url": "https://www.supercarros.com/audi-q8/1541956/",
+  "title": "Audi Q8",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 75000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13744189.jpg",
+  "photo_ids": [
+    "13744189",
+    "13744190",
+    "13744188",
+    "13744192",
+    "13744191"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

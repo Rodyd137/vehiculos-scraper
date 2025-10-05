@@ -1,0 +1,28 @@
+{
+  "id": "1513199",
+  "url": "https://www.supercarros.com/mitsubishi-eclipse/1513199/",
+  "title": "Mitsubishi Eclipse",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 895000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13429911.jpg",
+  "photo_ids": [
+    "13429911",
+    "13429912",
+    "13429913",
+    "13429914",
+    "13429915",
+    "13429916",
+    "13429917",
+    "13429918",
+    "13429919",
+    "13429924"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:22:19Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "1556502",
+  "url": "https://www.supercarros.com/kia-morning/1556502/",
+  "title": "Kia Morning",
+  "year": 2020,
+  "fuel": "GLP",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 620000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13907193.jpg",
+  "photo_ids": [
+    "13907193",
+    "13907194",
+    "13907195",
+    "13907196",
+    "13907197",
+    "13907198",
+    "13907199",
+    "13907200",
+    "13907201"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:22Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

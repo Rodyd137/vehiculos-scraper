@@ -1,0 +1,23 @@
+{
+  "id": "1543858",
+  "url": "https://www.supercarros.com/kia-morning/1543858/",
+  "title": "Kia Morning",
+  "year": 2018,
+  "fuel": "GLP",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 680000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13765499.jpg",
+  "photo_ids": [
+    "13765499",
+    "13765500",
+    "13765498",
+    "13765501",
+    "13765502",
+    "13765503",
+    "13765504"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:20Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

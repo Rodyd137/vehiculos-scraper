@@ -1,0 +1,27 @@
+{
+  "id": "1549930",
+  "url": "https://www.supercarros.com/toyota-rav4/1549930/",
+  "title": "Toyota RAV4 LE",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1690000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13833771.jpg",
+  "photo_ids": [
+    "13833771",
+    "13833772",
+    "13833773",
+    "13833774",
+    "13833775",
+    "13833776",
+    "13833777",
+    "13833778",
+    "13833779",
+    "13833780",
+    "13833781"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:47Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "1543178",
+  "url": "https://www.supercarros.com/mercedesbenz-clase gle/1543178/",
+  "title": "Mercedes-Benz Clase GLE 350 4Matic",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 42900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13757981.jpg",
+  "photo_ids": [
+    "13757978",
+    "13757981",
+    "13757980",
+    "13757989",
+    "13757976",
+    "13757983",
+    "13757988",
+    "13757986",
+    "13757984"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "1558831",
+  "url": "https://www.supercarros.com/porsche-carrera/1558831/",
+  "title": "Porsche Carrera S",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 175500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13933147.jpg",
+  "photo_ids": [
+    "13933147",
+    "13933148",
+    "13933149",
+    "13933150",
+    "13933151",
+    "13933152",
+    "13933153",
+    "13933154",
+    "13933155",
+    "13933156",
+    "13933157",
+    "13933158"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:21:56Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

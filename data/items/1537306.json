@@ -1,0 +1,26 @@
+{
+  "id": "1537306",
+  "url": "https://www.supercarros.com/chevrolet-camaro/1537306/",
+  "title": "Chevrolet Camaro 2 SS",
+  "year": 2016,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 29900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13692541.jpg",
+  "photo_ids": [
+    "13692541",
+    "13692542",
+    "13692543",
+    "13692544",
+    "13692545",
+    "13692546",
+    "13692547",
+    "13692548",
+    "13692549",
+    "13692550"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

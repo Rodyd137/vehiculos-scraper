@@ -1,0 +1,23 @@
+{
+  "id": "1557280",
+  "url": "https://www.supercarros.com/porsche-macan/1557280/",
+  "title": "Porsche Macan T",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 85500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13916234.jpg",
+  "photo_ids": [
+    "13915766",
+    "13915767",
+    "13915768",
+    "13916234",
+    "13916236",
+    "13916238",
+    "13916239"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:49Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

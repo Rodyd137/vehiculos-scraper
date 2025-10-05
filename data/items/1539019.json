@@ -1,0 +1,28 @@
+{
+  "id": "1539019",
+  "url": "https://www.supercarros.com/mazda-demio/1539019/",
+  "title": "Mazda Demio Sport",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 799900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13711807.jpg",
+  "photo_ids": [
+    "13711807",
+    "13711808",
+    "13711809",
+    "13711810",
+    "13711811",
+    "13711812",
+    "13711813",
+    "13711814",
+    "13711815",
+    "13711816",
+    "13711817",
+    "13711818"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:30Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

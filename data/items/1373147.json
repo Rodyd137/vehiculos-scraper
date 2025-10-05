@@ -1,0 +1,28 @@
+{
+  "id": "1373147",
+  "url": "https://www.supercarros.com/hyundai-h1/1373147/",
+  "title": "Hyundai H 1",
+  "year": 2020,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1650000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12524403.jpg",
+  "photo_ids": [
+    "11882296",
+    "11882297",
+    "11882298",
+    "11882299",
+    "11882300",
+    "11882301",
+    "11882312",
+    "12524403",
+    "12524404",
+    "12524405",
+    "12524406",
+    "12525488"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:11Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

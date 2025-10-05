@@ -1,0 +1,28 @@
+{
+  "id": "1531251",
+  "url": "https://www.supercarros.com/ford-explorer/1531251/",
+  "title": "Ford Explorer Platinum",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 36900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13634147.jpg",
+  "photo_ids": [
+    "13634139",
+    "13634140",
+    "13634141",
+    "13634142",
+    "13634143",
+    "13634144",
+    "13634145",
+    "13634146",
+    "13634147",
+    "13634148",
+    "13634149",
+    "13634150"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

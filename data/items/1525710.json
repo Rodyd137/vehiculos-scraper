@@ -1,0 +1,28 @@
+{
+  "id": "1525710",
+  "url": "https://www.supercarros.com/toyota-camry/1525710/",
+  "title": "Toyota Camry",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 23995.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13570951.jpg",
+  "photo_ids": [
+    "13570951",
+    "13570952",
+    "13570953",
+    "13570954",
+    "13570955",
+    "13570956",
+    "13570957",
+    "13570958",
+    "13570959",
+    "13570960",
+    "13570961",
+    "13570962"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:49Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

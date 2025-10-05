@@ -1,0 +1,30 @@
+{
+  "id": "1556021",
+  "url": "https://www.supercarros.com/chevrolet-traverse/1556021/",
+  "title": "Chevrolet Traverse",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 21800.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13901598.jpg",
+  "photo_ids": [
+    "13901598",
+    "13901599",
+    "13901600",
+    "13901601",
+    "13901602",
+    "13901603",
+    "13901604",
+    "13901605",
+    "13901606",
+    "13901607",
+    "13901608",
+    "13901609"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:30Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

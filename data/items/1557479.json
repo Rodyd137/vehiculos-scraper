@@ -1,0 +1,23 @@
+{
+  "id": "1557479",
+  "url": "https://www.supercarros.com/suzuki-swift/1557479/",
+  "title": "Suzuki Swift",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 20000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13917960.jpg",
+  "photo_ids": [
+    "13917960",
+    "13917961",
+    "13917962",
+    "13917963",
+    "13917964",
+    "13917965",
+    "13917966"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:58Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

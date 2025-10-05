@@ -1,0 +1,27 @@
+{
+  "id": "1529849",
+  "url": "https://www.supercarros.com/toyota-rav4/1529849/",
+  "title": "Toyota RAV4 LE",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1645000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13618058.jpg",
+  "photo_ids": [
+    "13618058",
+    "13618059",
+    "13618060",
+    "13618061",
+    "13618062",
+    "13618063",
+    "13618064",
+    "13618065",
+    "13618066",
+    "13618067",
+    "13618068"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:45Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

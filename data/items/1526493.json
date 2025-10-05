@@ -1,0 +1,24 @@
+{
+  "id": "1526493",
+  "url": "https://www.supercarros.com/toyota-grandhighlander/1526493/",
+  "title": "Toyota Grand Highlander Platinum",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 87900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13579707.jpg",
+  "photo_ids": [
+    "13579707",
+    "13579708",
+    "13579709",
+    "13579710",
+    "13579711",
+    "13579712",
+    "13579713",
+    "13579714"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:41Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

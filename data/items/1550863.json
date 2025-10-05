@@ -1,0 +1,28 @@
+{
+  "id": "1550863",
+  "url": "https://www.supercarros.com/hyundai-tucson/1550863/",
+  "title": "Hyundai Tucson SEL",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 26500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13844372.jpg",
+  "photo_ids": [
+    "13844372",
+    "13844373",
+    "13844374",
+    "13844375",
+    "13844376",
+    "13844377",
+    "13844378",
+    "13844379",
+    "13844380",
+    "13844381",
+    "13844382",
+    "13844383"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:43Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

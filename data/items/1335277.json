@@ -1,0 +1,26 @@
+{
+  "id": "1335277",
+  "url": "https://www.supercarros.com/maxus-t90/1335277/",
+  "title": "Maxus T90  EV",
+  "year": 2024,
+  "fuel": "Eléctrico",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 69900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11476293.jpg",
+  "photo_ids": [
+    "11476293",
+    "11477627",
+    "11477628",
+    "11477629",
+    "11477630",
+    "11477631",
+    "11477632",
+    "11477633",
+    "11477634",
+    "11477635"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:26Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

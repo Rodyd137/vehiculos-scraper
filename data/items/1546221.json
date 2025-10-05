@@ -1,0 +1,28 @@
+{
+  "id": "1546221",
+  "url": "https://www.supercarros.com/kia-sorento/1546221/",
+  "title": "Kia Sorento EX",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 22500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13792672.jpg",
+  "photo_ids": [
+    "13792672",
+    "13792673",
+    "13792674",
+    "13792675",
+    "13792676",
+    "13792677",
+    "13792678",
+    "13792679",
+    "13792680",
+    "13792681",
+    "13792682",
+    "13792683"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:13Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

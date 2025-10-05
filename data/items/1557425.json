@@ -1,0 +1,25 @@
+{
+  "id": "1557425",
+  "url": "https://www.supercarros.com/lexus-lx/1557425/",
+  "title": "Lexus LX 570",
+  "year": 2014,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 36000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13917405.jpg",
+  "photo_ids": [
+    "13917405",
+    "13917406",
+    "13917407",
+    "13917408",
+    "13917409",
+    "13917410",
+    "13917411",
+    "13917412",
+    "13917413"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:26Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

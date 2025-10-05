@@ -1,0 +1,25 @@
+{
+  "id": "1555986",
+  "url": "https://www.supercarros.com/mini-cooper/1555986/",
+  "title": "Mini Cooper Hardtop",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 21500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13901249.jpg",
+  "photo_ids": [
+    "13901247",
+    "13901248",
+    "13901249",
+    "13901250",
+    "13901251",
+    "13901252",
+    "13901253",
+    "13901254",
+    "13901255"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:20Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

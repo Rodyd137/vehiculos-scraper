@@ -1,0 +1,27 @@
+{
+  "id": "1449618",
+  "url": "https://www.supercarros.com/nissan-caravan/1449618/",
+  "title": "Nissan Caravan",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1500000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13878290.jpg",
+  "photo_ids": [
+    "13878290",
+    "13878291",
+    "13878292",
+    "13878293",
+    "13878294",
+    "13878295",
+    "13878296",
+    "13878297",
+    "13878298",
+    "13878309",
+    "13878311"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:02Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

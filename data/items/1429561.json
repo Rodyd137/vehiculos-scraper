@@ -1,0 +1,26 @@
+{
+  "id": "1429561",
+  "url": "https://www.supercarros.com/hyundai-porter/1429561/",
+  "title": "Hyundai Porter II",
+  "year": 2012,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 445000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12499894.jpg",
+  "photo_ids": [
+    "12499894",
+    "12499895",
+    "12499896",
+    "12499897",
+    "12499898",
+    "12499899",
+    "12499900",
+    "12499901"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:37Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

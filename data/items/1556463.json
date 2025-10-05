@@ -1,0 +1,28 @@
+{
+  "id": "1556463",
+  "url": "https://www.supercarros.com/honda-civic/1556463/",
+  "title": "Honda Civic EX Turbo",
+  "year": 2016,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 850000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13906779.jpg",
+  "photo_ids": [
+    "13906771",
+    "13906772",
+    "13906773",
+    "13906774",
+    "13906775",
+    "13906776",
+    "13906777",
+    "13906778",
+    "13906779",
+    "13906780",
+    "13906781",
+    "13906782"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:58Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

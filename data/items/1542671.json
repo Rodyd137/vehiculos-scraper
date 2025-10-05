@@ -1,0 +1,28 @@
+{
+  "id": "1542671",
+  "url": "https://www.supercarros.com/chevrolet-traverse/1542671/",
+  "title": "Chevrolet Traverse RS",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1450000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13752119.jpg",
+  "photo_ids": [
+    "13752119",
+    "13752120",
+    "13752121",
+    "13752122",
+    "13752123",
+    "13752124",
+    "13752125",
+    "13752126",
+    "13752127",
+    "13752128",
+    "13752129",
+    "13752130"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:47Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

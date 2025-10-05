@@ -1,0 +1,26 @@
+{
+  "id": "1529511",
+  "url": "https://www.supercarros.com/jeep-cherokee/1529511/",
+  "title": "Jeep Cherokee Latitude Plus",
+  "year": 2015,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 595000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13614219.jpg",
+  "photo_ids": [
+    "13614218",
+    "13614219",
+    "13614220",
+    "13614221",
+    "13614222",
+    "13614223",
+    "13614224",
+    "13614225",
+    "13614229",
+    "13614234"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:43Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

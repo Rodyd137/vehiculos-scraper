@@ -1,0 +1,26 @@
+{
+  "id": "1554609",
+  "url": "https://www.supercarros.com/ford-f150/1554609/",
+  "title": "Ford F 150 XLT",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 26900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13886109.jpg",
+  "photo_ids": [
+    "13886109",
+    "13886110",
+    "13886111",
+    "13886112",
+    "13886113",
+    "13886114",
+    "13886115",
+    "13886116"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:22:15Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

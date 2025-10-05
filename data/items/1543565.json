@@ -1,0 +1,28 @@
+{
+  "id": "1543565",
+  "url": "https://www.supercarros.com/mazda-demio/1543565/",
+  "title": "Mazda Demio",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 715000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13762260.jpg",
+  "photo_ids": [
+    "13762254",
+    "13762255",
+    "13762256",
+    "13762257",
+    "13762258",
+    "13762259",
+    "13762260",
+    "13762261",
+    "13762262",
+    "13762263",
+    "13762264",
+    "13762265"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:30Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

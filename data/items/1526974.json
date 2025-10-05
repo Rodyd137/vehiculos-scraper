@@ -1,0 +1,26 @@
+{
+  "id": "1526974",
+  "url": "https://www.supercarros.com/mercedesbenz-clase gle/1526974/",
+  "title": "Mercedes-Benz Clase GLE 43 AMG COUPE 4MATIC",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 47900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13585314.jpg",
+  "photo_ids": [
+    "13585305",
+    "13585306",
+    "13585307",
+    "13585308",
+    "13585309",
+    "13585310",
+    "13585311",
+    "13585312",
+    "13585313",
+    "13585314"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

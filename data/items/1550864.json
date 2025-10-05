@@ -1,0 +1,28 @@
+{
+  "id": "1550864",
+  "url": "https://www.supercarros.com/bmw-x/1550864/",
+  "title": "BMW X 5 XDRIVE 40i",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 51500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13844384.jpg",
+  "photo_ids": [
+    "13844384",
+    "13844385",
+    "13844386",
+    "13844387",
+    "13844388",
+    "13844389",
+    "13844390",
+    "13844391",
+    "13844392",
+    "13844393",
+    "13844394",
+    "13844395"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:43Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "1472507",
+  "url": "https://www.supercarros.com/maxus-t60/1472507/",
+  "title": "Maxus T60 MT Cabina Sencilla",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 30900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12976941.jpg",
+  "photo_ids": [
+    "12976937",
+    "12976938",
+    "12976939",
+    "12976940",
+    "12976941"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:28Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

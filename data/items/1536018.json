@@ -1,0 +1,27 @@
+{
+  "id": "1536018",
+  "url": "https://www.supercarros.com/ford-focus/1536018/",
+  "title": "Ford Focus SE",
+  "year": 2015,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 345000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13677799.jpg",
+  "photo_ids": [
+    "13677799",
+    "13677800",
+    "13677801",
+    "13677802",
+    "13677803",
+    "13677804",
+    "13677805",
+    "13677806",
+    "13677807",
+    "13677808",
+    "13677809"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:22Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

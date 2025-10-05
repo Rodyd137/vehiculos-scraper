@@ -1,0 +1,28 @@
+{
+  "id": "1557496",
+  "url": "https://www.supercarros.com/mazda-6/1557496/",
+  "title": "Mazda 6 Touring",
+  "year": 2013,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 575000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13919822.jpg",
+  "photo_ids": [
+    "13919822",
+    "13919823",
+    "13919824",
+    "13919825",
+    "13919826",
+    "13919827",
+    "13919828",
+    "13919829",
+    "13919830",
+    "13919833",
+    "13919835",
+    "13919836"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:13Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

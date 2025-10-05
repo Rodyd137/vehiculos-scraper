@@ -1,0 +1,29 @@
+{
+  "id": "1547232",
+  "url": "https://www.supercarros.com/hyundai-tucson/1547232/",
+  "title": "Hyundai Tucson SEL",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 20550.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13804021.jpg",
+  "photo_ids": [
+    "13804021",
+    "13804022",
+    "13804023",
+    "13804025",
+    "13804041",
+    "13804046",
+    "13804050",
+    "13804051",
+    "13804052",
+    "13804053",
+    "13804054"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:28Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

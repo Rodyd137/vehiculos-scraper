@@ -1,0 +1,30 @@
+{
+  "id": "1543668",
+  "url": "https://www.supercarros.com/landrover-rangerover/1543668/",
+  "title": "Land Rover Range Rover Sport SE",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 133500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13763684.jpg",
+  "photo_ids": [
+    "13763684",
+    "13763685",
+    "13763686",
+    "13763687",
+    "13763688",
+    "13763689",
+    "13763690",
+    "13763691",
+    "13763692",
+    "13763693",
+    "13763694",
+    "13763695"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:21:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

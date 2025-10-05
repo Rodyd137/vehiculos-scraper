@@ -1,0 +1,22 @@
+{
+  "id": "1436243",
+  "url": "https://www.supercarros.com/cola-fontaine/1436243/",
+  "title": "Cola Fontaine",
+  "year": 1990,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 10000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12574220.jpg",
+  "photo_ids": [
+    "12574220",
+    "12574221",
+    "12574222",
+    "12574223"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:22:43Z",
+  "source": "https://www.supercarros.com/v.pesados/"
+}

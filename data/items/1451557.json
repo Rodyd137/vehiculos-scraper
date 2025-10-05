@@ -1,0 +1,28 @@
+{
+  "id": "1451557",
+  "url": "https://www.supercarros.com/honda-fit/1451557/",
+  "title": "Honda Fit",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 835000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13587076.jpg",
+  "photo_ids": [
+    "13587076",
+    "13587077",
+    "13587078",
+    "13587079",
+    "13587080",
+    "13587081",
+    "13587082",
+    "13587083",
+    "13587084",
+    "13587091",
+    "13587098",
+    "13587099"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:00Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

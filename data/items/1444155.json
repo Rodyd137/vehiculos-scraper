@@ -1,0 +1,24 @@
+{
+  "id": "1444155",
+  "url": "https://www.supercarros.com/kia-sportage/1444155/",
+  "title": "Kia Sportage",
+  "year": 2016,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 780000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12661946.jpg",
+  "photo_ids": [
+    "12661946",
+    "12661948",
+    "12661949",
+    "12661950",
+    "12661951",
+    "12661952",
+    "12661953",
+    "12661954"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:22Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

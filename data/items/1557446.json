@@ -1,0 +1,25 @@
+{
+  "id": "1557446",
+  "url": "https://www.supercarros.com/toyota-rav4/1557446/",
+  "title": "Toyota RAV4",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 29000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13917630.jpg",
+  "photo_ids": [
+    "13917630",
+    "13917631",
+    "13917632",
+    "13917633",
+    "13917634",
+    "13917635",
+    "13917636",
+    "13917637",
+    "13917638"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:09Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

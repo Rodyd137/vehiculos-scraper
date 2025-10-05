@@ -1,0 +1,22 @@
+{
+  "id": "1425294",
+  "url": "https://www.supercarros.com/maxus-d60/1425294/",
+  "title": "Maxus D60 Luxury",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 36900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12453468.jpg",
+  "photo_ids": [
+    "12453464",
+    "12453465",
+    "12453466",
+    "12453467",
+    "12453468",
+    "12453469"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:26Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

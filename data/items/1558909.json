@@ -1,0 +1,27 @@
+{
+  "id": "1558909",
+  "url": "https://www.supercarros.com/ford-escape/1558909/",
+  "title": "Ford Escape SEL Ecoboost",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 695000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13934023.jpg",
+  "photo_ids": [
+    "13934023",
+    "13934025",
+    "13934026",
+    "13934027",
+    "13934028",
+    "13934029",
+    "13934030",
+    "13934031",
+    "13934032",
+    "13934033",
+    "13934034"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:05Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

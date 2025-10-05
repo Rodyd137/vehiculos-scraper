@@ -1,0 +1,30 @@
+{
+  "id": "1517099",
+  "url": "https://www.supercarros.com/jeep-wrangler/1517099/",
+  "title": "Jeep Wrangler Unlimited Sport",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 40990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13474197.jpg",
+  "photo_ids": [
+    "13474196",
+    "13474197",
+    "13474198",
+    "13474199",
+    "13474200",
+    "13474201",
+    "13474202",
+    "13474203",
+    "13474204",
+    "13474205",
+    "13474206",
+    "13474207"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:26Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

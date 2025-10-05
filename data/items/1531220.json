@@ -1,0 +1,28 @@
+{
+  "id": "1531220",
+  "url": "https://www.supercarros.com/mazda-cx5/1531220/",
+  "title": "Mazda CX-5 Grand Touring Reserve",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 24000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13633799.jpg",
+  "photo_ids": [
+    "13633799",
+    "13633800",
+    "13633801",
+    "13633802",
+    "13633803",
+    "13633804",
+    "13633805",
+    "13633806",
+    "13633807",
+    "13633808",
+    "13633809",
+    "13633810"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:49Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

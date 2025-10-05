@@ -1,0 +1,28 @@
+{
+  "id": "1553674",
+  "url": "https://www.supercarros.com/lincoln-navigator/1553674/",
+  "title": "Lincoln Navigator Reserve I",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 59900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13875660.jpg",
+  "photo_ids": [
+    "13875658",
+    "13875659",
+    "13875660",
+    "13875662",
+    "13875663",
+    "13875664",
+    "13875665",
+    "13875661",
+    "13875666",
+    "13875667",
+    "13875668",
+    "13875669"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:24Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "1515202",
+  "url": "https://www.supercarros.com/subaru-legacy/1515202/",
+  "title": "Subaru Legacy",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 885000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13452841.jpg",
+  "photo_ids": [
+    "13452839",
+    "13452840",
+    "13452841",
+    "13452842",
+    "13452843",
+    "13452844",
+    "13452845",
+    "13452846",
+    "13452847",
+    "13452848",
+    "13452849"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:32Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

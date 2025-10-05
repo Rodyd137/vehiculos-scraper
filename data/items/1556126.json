@@ -1,0 +1,28 @@
+{
+  "id": "1556126",
+  "url": "https://www.supercarros.com/jmc-carrying/1556126/",
+  "title": "JMC Carrying PLUS",
+  "year": 2021,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1150000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13902743.jpg",
+  "photo_ids": [
+    "13902742",
+    "13902743",
+    "13902744",
+    "13902745",
+    "13902746",
+    "13902747",
+    "13902748",
+    "13902749",
+    "13902750",
+    "13902751",
+    "13902752",
+    "13902753"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:09Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

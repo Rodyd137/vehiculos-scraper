@@ -1,0 +1,30 @@
+{
+  "id": "1542033",
+  "url": "https://www.supercarros.com/goldendragon-xml/1542033/",
+  "title": "Golden Dragon XML",
+  "year": 2023,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1750000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13745107.jpg",
+  "photo_ids": [
+    "13745107",
+    "13745108",
+    "13745109",
+    "13745110",
+    "13745111",
+    "13745112",
+    "13745113",
+    "13745114",
+    "13745115",
+    "13745116",
+    "13745117",
+    "13745118"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:23:30Z",
+  "source": "https://www.supercarros.com/v.pesados/"
+}

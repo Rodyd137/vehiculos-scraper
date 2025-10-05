@@ -1,0 +1,28 @@
+{
+  "id": "1547346",
+  "url": "https://www.supercarros.com/porsche-panamera/1547346/",
+  "title": "Porsche Panamera",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 84900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13805335.jpg",
+  "photo_ids": [
+    "13805341",
+    "13805335",
+    "13805334",
+    "13805337",
+    "13805340",
+    "13805343",
+    "13805344",
+    "13805342",
+    "13842884",
+    "13842885",
+    "13842886",
+    "13842887"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:49Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

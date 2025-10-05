@@ -1,0 +1,28 @@
+{
+  "id": "1540615",
+  "url": "https://www.supercarros.com/ford-mustang/1540615/",
+  "title": "Ford Mustang Convertible",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 18990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13729531.jpg",
+  "photo_ids": [
+    "13729531",
+    "13729532",
+    "13729533",
+    "13729534",
+    "13729535",
+    "13729536",
+    "13729537",
+    "13729538",
+    "13729539",
+    "13729540"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:35Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

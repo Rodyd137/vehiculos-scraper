@@ -1,0 +1,26 @@
+{
+  "id": "1492220",
+  "url": "https://www.supercarros.com/kia-optima/1492220/",
+  "title": "Kia Optima S",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 849000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13195810.jpg",
+  "photo_ids": [
+    "13195810",
+    "13195811",
+    "13195812",
+    "13195813",
+    "13195814",
+    "13195815",
+    "13195816",
+    "13195817"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:22:19Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

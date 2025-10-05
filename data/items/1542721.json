@@ -1,0 +1,28 @@
+{
+  "id": "1542721",
+  "url": "https://www.supercarros.com/changan-unit/1542721/",
+  "title": "Changan UNI-T",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 28990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13752709.jpg",
+  "photo_ids": [
+    "13752709",
+    "13752718",
+    "13752712",
+    "13752713",
+    "13752715",
+    "13752717",
+    "13752719",
+    "13752720",
+    "13754924",
+    "13754925",
+    "13754926",
+    "13754927"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:35Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

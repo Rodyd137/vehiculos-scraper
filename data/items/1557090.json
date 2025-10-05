@@ -1,0 +1,26 @@
+{
+  "id": "1557090",
+  "url": "https://www.supercarros.com/kia-sportage/1557090/",
+  "title": "Kia Sportage LX",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 19200.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13913655.jpg",
+  "photo_ids": [
+    "13913655",
+    "13913656",
+    "13913657",
+    "13913658",
+    "13913659",
+    "13913660",
+    "13913661",
+    "13913662",
+    "13913663",
+    "13913664"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:02Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

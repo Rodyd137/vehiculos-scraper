@@ -1,0 +1,30 @@
+{
+  "id": "1501610",
+  "url": "https://www.supercarros.com/mercedesbenz-claseg/1501610/",
+  "title": "Mercedes-Benz Clase G 63 AMG",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 255000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13312123.jpg",
+  "photo_ids": [
+    "13312123",
+    "13312124",
+    "13312125",
+    "13312126",
+    "13312127",
+    "13312128",
+    "13312129",
+    "13312130",
+    "13312131",
+    "13312132",
+    "13312133",
+    "13312134"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:21:56Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

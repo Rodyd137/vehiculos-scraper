@@ -1,0 +1,23 @@
+{
+  "id": "1553253",
+  "url": "https://www.supercarros.com/hyundai-santafe/1553253/",
+  "title": "Hyundai Santa Fe SE",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 28900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13870895.jpg",
+  "photo_ids": [
+    "13870895",
+    "13870896",
+    "13870897",
+    "13870898",
+    "13870900"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:21:52Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1497842",
+  "url": "https://www.supercarros.com/jeep-wrangler/1497842/",
+  "title": "Jeep Wrangler Unlimited Sport",
+  "year": 2016,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 27900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13257536.jpg",
+  "photo_ids": [
+    "13257535",
+    "13257536",
+    "13257537",
+    "13257538",
+    "13257539",
+    "13257540",
+    "13257541",
+    "13257542",
+    "13257543",
+    "13257544"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:21:35Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

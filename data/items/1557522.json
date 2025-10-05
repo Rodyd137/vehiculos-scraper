@@ -1,0 +1,28 @@
+{
+  "id": "1557522",
+  "url": "https://www.supercarros.com/toyota-4runner/1557522/",
+  "title": "Toyota 4 Runner TRD Pro",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 59900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13918474.jpg",
+  "photo_ids": [
+    "13918465",
+    "13918466",
+    "13918467",
+    "13918468",
+    "13918469",
+    "13918470",
+    "13918471",
+    "13918472",
+    "13918473",
+    "13918474",
+    "13918475",
+    "13918476"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:13Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

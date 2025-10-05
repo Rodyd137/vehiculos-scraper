@@ -1,0 +1,27 @@
+{
+  "id": "1553458",
+  "url": "https://www.supercarros.com/toyota-landcruiserprado/1553458/",
+  "title": "Toyota Land Cruiser Prado",
+  "year": 2008,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 699000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13873139.jpg",
+  "photo_ids": [
+    "13873135",
+    "13873139",
+    "13873136",
+    "13873133",
+    "13873134",
+    "13873137",
+    "13873138",
+    "13873140",
+    "13873141",
+    "13873142",
+    "13873143"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:24Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

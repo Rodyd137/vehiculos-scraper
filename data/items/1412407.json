@@ -1,0 +1,19 @@
+{
+  "id": "1412407",
+  "url": "https://www.supercarros.com/mg-350/1412407/",
+  "title": "MG 350",
+  "year": 2013,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 15000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12310092.jpg",
+  "photo_ids": [
+    "12310091",
+    "12310092",
+    "12310093"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:26Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

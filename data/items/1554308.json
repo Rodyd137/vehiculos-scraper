@@ -1,0 +1,28 @@
+{
+  "id": "1554308",
+  "url": "https://www.supercarros.com/ford-explorer/1554308/",
+  "title": "Ford Explorer Platinum",
+  "year": 2016,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 18250.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13882812.jpg",
+  "photo_ids": [
+    "13882812",
+    "13882813",
+    "13882814",
+    "13882815",
+    "13882816",
+    "13882817",
+    "13882818",
+    "13882819",
+    "13882820",
+    "13882821",
+    "13882822",
+    "13882823"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:05Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

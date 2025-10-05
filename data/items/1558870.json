@@ -1,0 +1,29 @@
+{
+  "id": "1558870",
+  "url": "https://www.supercarros.com/chevrolet-sonic/1558870/",
+  "title": "Chevrolet Sonic LT",
+  "year": 2016,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 413000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13933620.jpg",
+  "photo_ids": [
+    "13933620",
+    "13933622",
+    "13933623",
+    "13933624",
+    "13933625",
+    "13933626",
+    "13933627",
+    "13933628",
+    "13933629",
+    "13933630",
+    "13933631"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:35Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1552996",
+  "url": "https://www.supercarros.com/hyundai-venue/1552996/",
+  "title": "Hyundai Venue",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 995000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13868204.jpg",
+  "photo_ids": [
+    "13868204",
+    "13868205",
+    "13868206",
+    "13868207",
+    "13868208",
+    "13868209",
+    "13868210",
+    "13868211",
+    "13868212",
+    "13868213",
+    "13868214",
+    "13868215"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:28Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

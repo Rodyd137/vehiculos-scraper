@@ -1,0 +1,26 @@
+{
+  "id": "1530347",
+  "url": "https://www.supercarros.com/mercedesbenz-clase gle/1530347/",
+  "title": "Mercedes-Benz Clase GLE 350 4Matic AMG",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 109500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13623861.jpg",
+  "photo_ids": [
+    "13623860",
+    "13623861",
+    "13623862",
+    "13623863",
+    "13623864",
+    "13623865",
+    "13623866",
+    "13623867"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:21:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

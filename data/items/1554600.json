@@ -1,0 +1,22 @@
+{
+  "id": "1554600",
+  "url": "https://www.supercarros.com/volkswagen-passat/1554600/",
+  "title": "Volkswagen Passat",
+  "year": 2016,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 650000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13885992.jpg",
+  "photo_ids": [
+    "13885992",
+    "13885993",
+    "13885994",
+    "13885995",
+    "13885996",
+    "13885997"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:35Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

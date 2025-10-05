@@ -1,0 +1,26 @@
+{
+  "id": "1553469",
+  "url": "https://www.supercarros.com/mercedesbenz-clasea/1553469/",
+  "title": "Mercedes-Benz Clase A 35 AMG",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 46900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13873239.jpg",
+  "photo_ids": [
+    "13873237",
+    "13873236",
+    "13873239",
+    "13873238",
+    "13873230",
+    "13873231",
+    "13873232",
+    "13873233",
+    "13873234",
+    "13873235"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:17Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

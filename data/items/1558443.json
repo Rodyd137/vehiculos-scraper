@@ -1,0 +1,26 @@
+{
+  "id": "1558443",
+  "url": "https://www.supercarros.com/toyota-corolla/1558443/",
+  "title": "Toyota Corolla S",
+  "year": 2009,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 555000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13928665.jpg",
+  "photo_ids": [
+    "13928665",
+    "13928666",
+    "13928667",
+    "13928668",
+    "13928669",
+    "13928670",
+    "13928672",
+    "13928673",
+    "13928674",
+    "13928671"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:20Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

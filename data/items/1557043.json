@@ -1,0 +1,22 @@
+{
+  "id": "1557043",
+  "url": "https://www.supercarros.com/toyota-highlander/1557043/",
+  "title": "Toyota Highlander",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 41900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13913202.jpg",
+  "photo_ids": [
+    "13913202",
+    "13913201",
+    "13913198",
+    "13913197",
+    "13913200",
+    "13913199"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:15Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

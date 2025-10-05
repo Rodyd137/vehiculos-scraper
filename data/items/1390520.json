@@ -1,0 +1,29 @@
+{
+  "id": "1390520",
+  "url": "https://www.supercarros.com/chevrolet-camaro/1390520/",
+  "title": "Chevrolet Camaro RS",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 22900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13698638.jpg",
+  "photo_ids": [
+    "13698595",
+    "13698596",
+    "13698597",
+    "13698598",
+    "13698599",
+    "13698600",
+    "13698601",
+    "13698602",
+    "13698605",
+    "13698606",
+    "13698638"
+  ],
+  "badges": [
+    "promo-ASOCIVU"
+  ],
+  "scraped_at": "2025-10-05T19:21:22Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

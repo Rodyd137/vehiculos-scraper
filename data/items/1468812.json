@@ -1,0 +1,26 @@
+{
+  "id": "1468812",
+  "url": "https://www.supercarros.com/maxus-t60/1468812/",
+  "title": "Maxus T60",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 41500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12936615.jpg",
+  "photo_ids": [
+    "12936606",
+    "12936607",
+    "12936608",
+    "12936609",
+    "12936610",
+    "12936611",
+    "12936612",
+    "12936613",
+    "12936614",
+    "12936615"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:26Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

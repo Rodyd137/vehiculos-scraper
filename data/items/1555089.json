@@ -1,0 +1,27 @@
+{
+  "id": "1555089",
+  "url": "https://www.supercarros.com/hyundai-sonata/1555089/",
+  "title": "Hyundai Sonata SE",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 695000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13891234.jpg",
+  "photo_ids": [
+    "13891234",
+    "13891235",
+    "13891236",
+    "13891237",
+    "13891238",
+    "13891239",
+    "13891240",
+    "13891241",
+    "13891242"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:35Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

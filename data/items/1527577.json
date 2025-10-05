@@ -1,0 +1,28 @@
+{
+  "id": "1527577",
+  "url": "https://www.supercarros.com/toyota-4runner/1527577/",
+  "title": "Toyota 4 Runner Limited Nightshade",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 45800.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13592322.jpg",
+  "photo_ids": [
+    "13592322",
+    "13592329",
+    "13592330",
+    "13592331",
+    "13592332",
+    "13592333",
+    "13592334",
+    "13592335",
+    "13592336",
+    "13592337"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:28Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

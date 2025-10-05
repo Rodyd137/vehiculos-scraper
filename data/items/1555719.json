@@ -1,0 +1,26 @@
+{
+  "id": "1555719",
+  "url": "https://www.supercarros.com/toyota-4runner/1555719/",
+  "title": "Toyota 4 Runner",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 36000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13898146.jpg",
+  "photo_ids": [
+    "13898146",
+    "13898147",
+    "13898148",
+    "13898149",
+    "13898150",
+    "13898151",
+    "13898152",
+    "13898153",
+    "13898154",
+    "13898155"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:47Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

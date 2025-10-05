@@ -1,0 +1,25 @@
+{
+  "id": "1544764",
+  "url": "https://www.supercarros.com/chevrolet-camaro/1544764/",
+  "title": "Chevrolet Camaro RS",
+  "year": 2016,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1035000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13775827.jpg",
+  "photo_ids": [
+    "13775827",
+    "13775828",
+    "13775829",
+    "13775830",
+    "13775831",
+    "13775832",
+    "13775833",
+    "13775834",
+    "13775835"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:13Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

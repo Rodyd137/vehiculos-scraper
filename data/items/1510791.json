@@ -1,0 +1,29 @@
+{
+  "id": "1510791",
+  "url": "https://www.supercarros.com/honda-crv/1510791/",
+  "title": "Honda CR-V EX",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 27990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13402681.jpg",
+  "photo_ids": [
+    "13402681",
+    "13402682",
+    "13402683",
+    "13402684",
+    "13402685",
+    "13402686",
+    "13402687",
+    "13402688",
+    "13402689",
+    "13402690",
+    "13402691"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:28Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

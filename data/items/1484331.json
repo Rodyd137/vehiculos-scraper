@@ -1,0 +1,28 @@
+{
+  "id": "1484331",
+  "url": "https://www.supercarros.com/toyota-highlander/1484331/",
+  "title": "Toyota Highlander LE",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 29500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13779448.jpg",
+  "photo_ids": [
+    "13779448",
+    "13779449",
+    "13779450",
+    "13779451",
+    "13779452",
+    "13779453",
+    "13779454",
+    "13779455",
+    "13779456",
+    "13779457"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:26Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

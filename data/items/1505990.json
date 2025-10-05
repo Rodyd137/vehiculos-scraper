@@ -1,0 +1,25 @@
+{
+  "id": "1505990",
+  "url": "https://www.supercarros.com/honda-fit/1505990/",
+  "title": "Honda Fit",
+  "year": 2011,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 410000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13880616.jpg",
+  "photo_ids": [
+    "13880616",
+    "13880617",
+    "13880618",
+    "13880619",
+    "13880620",
+    "13880621",
+    "13880622",
+    "13880623",
+    "13880625"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:02Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

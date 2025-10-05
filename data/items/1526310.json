@@ -1,0 +1,49 @@
+{
+  "id": "1526310",
+  "url": "https://www.supercarros.com/ktm-300/1526310/",
+  "title": "KTM 300",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 8300.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13645207.jpg",
+  "photo_ids": [
+    "13577723",
+    "13645206",
+    "13645207"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:05Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24",
+  "detail": {
+    "general": {
+      "Anuncio": "#1526310",
+      "Precio": "US$ 8,300",
+      "Uso": "N/D Mi",
+      "Tipo": "Motocicleta",
+      "Motor": "300cc, 2 cilindros",
+      "Combustible": "Gasolina",
+      "Transmisión": "Mecánica",
+      "Tracción": "Trasera",
+      "Interior": "Blanco",
+      "Exterior": "Naranja",
+      "Carga": "N/D Lb",
+      "Puertas": "N/D",
+      "Pasajeros": "2",
+      "Condición": "Usado"
+    },
+    "accessories": null,
+    "description": "Marca KTM \nAño 2023 \n300 cc \nEnduro \nModelo EXC \n2 tiempos \n\nÚnico dueño \nTodos sus papeles \n102 hora de uso \n\nNunca a hecho enduro de verdad con ese motor esa horas son aquí en la calle que se usa más",
+    "vendor_text": null,
+    "vendor_name": null,
+    "phones": null,
+    "primary_phone": null,
+    "city": null,
+    "images": [
+      "https://img.supercarros.com/AdsPhotos/1024x768/0/13645207.jpg?wmo=13ff66d511cdd10d385e9182c43600eddecf56f2e1b726ba032b0cf44f076c5ccb72d43e4e34463d86a918a80bc97d0630fa5fd03b5d69fb2da9a18491bc728f",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13577723.jpg",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13645206.jpg"
+    ]
+  }
+}

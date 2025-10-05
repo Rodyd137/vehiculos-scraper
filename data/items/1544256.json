@@ -1,0 +1,30 @@
+{
+  "id": "1544256",
+  "url": "https://www.supercarros.com/chevrolet-traverse/1544256/",
+  "title": "Chevrolet Traverse LS",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 999000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13770025.jpg",
+  "photo_ids": [
+    "13770024",
+    "13770025",
+    "13770026",
+    "13770027",
+    "13770028",
+    "13770029",
+    "13770030",
+    "13770031",
+    "13770032",
+    "13770033",
+    "13770034",
+    "13770035"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:21:52Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

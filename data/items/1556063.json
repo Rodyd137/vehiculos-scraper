@@ -1,0 +1,28 @@
+{
+  "id": "1556063",
+  "url": "https://www.supercarros.com/mazda-cx30/1556063/",
+  "title": "Mazda CX-30 GT",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 30200.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13902125.jpg",
+  "photo_ids": [
+    "13902125",
+    "13902126",
+    "13902127",
+    "13902128",
+    "13902129",
+    "13902130",
+    "13902131",
+    "13902132",
+    "13902133",
+    "13902134",
+    "13902135",
+    "13902136"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:52Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

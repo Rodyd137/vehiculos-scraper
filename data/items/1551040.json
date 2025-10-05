@@ -1,0 +1,28 @@
+{
+  "id": "1551040",
+  "url": "https://www.supercarros.com/kia-k7/1551040/",
+  "title": "Kia K-7",
+  "year": 2020,
+  "fuel": "GLP",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1145000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13846331.jpg",
+  "photo_ids": [
+    "13846331",
+    "13846332",
+    "13846333",
+    "13846334",
+    "13846335",
+    "13846336",
+    "13846337",
+    "13846338",
+    "13846339",
+    "13846340",
+    "13846341",
+    "13846342"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:28Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

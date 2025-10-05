@@ -1,0 +1,28 @@
+{
+  "id": "1524712",
+  "url": "https://www.supercarros.com/mercedesbenz-clase gle/1524712/",
+  "title": "Mercedes-Benz Clase GLE 53 4matic Coupe AMG Plus",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 145000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13559270.jpg",
+  "photo_ids": [
+    "13559270",
+    "13559271",
+    "13559272",
+    "13559273",
+    "13559274",
+    "13559275",
+    "13559276",
+    "13559277",
+    "13559278",
+    "13559279",
+    "13559280",
+    "13559281"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:39Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

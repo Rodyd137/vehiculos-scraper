@@ -1,0 +1,30 @@
+{
+  "id": "1555619",
+  "url": "https://www.supercarros.com/kia-sorento/1555619/",
+  "title": "Kia Sorento SX",
+  "year": 2016,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 891000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13897057.jpg",
+  "photo_ids": [
+    "13897056",
+    "13897057",
+    "13897058",
+    "13897059",
+    "13897060",
+    "13897061",
+    "13897062",
+    "13897063",
+    "13897064",
+    "13897065",
+    "13897066",
+    "13897067"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:32Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

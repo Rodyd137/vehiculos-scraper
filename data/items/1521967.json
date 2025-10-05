@@ -1,0 +1,28 @@
+{
+  "id": "1521967",
+  "url": "https://www.supercarros.com/ford-explorer/1521967/",
+  "title": "Ford Explorer",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 815000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13528590.jpg",
+  "photo_ids": [
+    "13528590",
+    "13528591",
+    "13528592",
+    "13528593",
+    "13528594",
+    "13528595",
+    "13528596",
+    "13528597",
+    "13528598",
+    "13528599"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:30Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

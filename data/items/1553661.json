@@ -1,0 +1,29 @@
+{
+  "id": "1553661",
+  "url": "https://www.supercarros.com/jeep-grandcherokeel/1553661/",
+  "title": "Jeep Grand Cherokee L Limited",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 38900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13875511.jpg",
+  "photo_ids": [
+    "13875511",
+    "13875512",
+    "13875513",
+    "13875514",
+    "13875515",
+    "13875516",
+    "13875517",
+    "13875518",
+    "13875519",
+    "13875520",
+    "13875521"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:22:15Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

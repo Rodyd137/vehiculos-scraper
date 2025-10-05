@@ -1,0 +1,30 @@
+{
+  "id": "1532503",
+  "url": "https://www.supercarros.com/mercedesbenz-clasec/1532503/",
+  "title": "Mercedes-Benz Clase C 300 4 Matic",
+  "year": 2015,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 22900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13648417.jpg",
+  "photo_ids": [
+    "13648406",
+    "13648407",
+    "13648408",
+    "13648409",
+    "13648410",
+    "13648411",
+    "13648412",
+    "13648413",
+    "13648414",
+    "13648415",
+    "13648416",
+    "13648417"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:21:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

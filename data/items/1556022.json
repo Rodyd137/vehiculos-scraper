@@ -1,0 +1,30 @@
+{
+  "id": "1556022",
+  "url": "https://www.supercarros.com/chevrolet-traverse/1556022/",
+  "title": "Chevrolet Traverse",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 26900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13901611.jpg",
+  "photo_ids": [
+    "13901610",
+    "13901611",
+    "13901612",
+    "13901613",
+    "13901614",
+    "13901615",
+    "13901616",
+    "13901617",
+    "13901618",
+    "13901619",
+    "13901620",
+    "13901621"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:32Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

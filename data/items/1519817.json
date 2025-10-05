@@ -1,0 +1,25 @@
+{
+  "id": "1519817",
+  "url": "https://www.supercarros.com/chevrolet-trax/1519817/",
+  "title": "Chevrolet Trax LT",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 705000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13504650.jpg",
+  "photo_ids": [
+    "13504649",
+    "13504650",
+    "13504651",
+    "13504652",
+    "13504653",
+    "13504654",
+    "13504655",
+    "13504656",
+    "13504657"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:24Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

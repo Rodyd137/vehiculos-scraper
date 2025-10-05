@@ -1,0 +1,22 @@
+{
+  "id": "1555700",
+  "url": "https://www.supercarros.com/kawasaki-1200stx12f/1555700/",
+  "title": "Kawasaki 1200 stx-12f",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 9500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13897927.jpg",
+  "photo_ids": [
+    "13897924",
+    "13897925",
+    "13897926",
+    "13897927",
+    "13897928",
+    "13897929"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:02Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

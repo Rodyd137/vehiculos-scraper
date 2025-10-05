@@ -1,0 +1,24 @@
+{
+  "id": "1554944",
+  "url": "https://www.supercarros.com/mitsubishi-outlander/1554944/",
+  "title": "Mitsubishi Outlander",
+  "year": 2009,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 495000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13889671.jpg",
+  "photo_ids": [
+    "13889671",
+    "13889672",
+    "13889673",
+    "13889674",
+    "13889675",
+    "13889676",
+    "13889677",
+    "13889678"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:13Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

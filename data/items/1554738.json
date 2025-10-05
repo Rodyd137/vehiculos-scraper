@@ -1,0 +1,27 @@
+{
+  "id": "1554738",
+  "url": "https://www.supercarros.com/toyota-corolla/1554738/",
+  "title": "Toyota Corolla LE",
+  "year": 2010,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 629000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13887463.jpg",
+  "photo_ids": [
+    "13887462",
+    "13887463",
+    "13887464",
+    "13887465",
+    "13887466",
+    "13887467",
+    "13887468",
+    "13887469",
+    "13887470"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:35Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

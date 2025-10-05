@@ -1,0 +1,28 @@
+{
+  "id": "1554625",
+  "url": "https://www.supercarros.com/bmw-serie4/1554625/",
+  "title": "BMW Serie 4 420i Gran Coupe",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 28500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13886301.jpg",
+  "photo_ids": [
+    "13886301",
+    "13886302",
+    "13886303",
+    "13886304",
+    "13886305",
+    "13886306",
+    "13886307",
+    "13886308",
+    "13886309",
+    "13886310",
+    "13886311",
+    "13886312"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:41Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

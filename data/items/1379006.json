@@ -1,0 +1,27 @@
+{
+  "id": "1379006",
+  "url": "https://www.supercarros.com/mg-4/1379006/",
+  "title": "MG 4",
+  "year": 2025,
+  "fuel": "Eléctrico",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 43900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11944616.jpg",
+  "photo_ids": [
+    "11944616",
+    "11944617",
+    "11944618",
+    "11944619",
+    "11944620",
+    "11944621",
+    "11944622",
+    "11944623",
+    "11944624",
+    "11944625",
+    "11944626"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:26Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

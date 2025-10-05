@@ -1,0 +1,25 @@
+{
+  "id": "1506771",
+  "url": "https://www.supercarros.com/hyundai-santafe/1506771/",
+  "title": "Hyundai Santa Fe SEL",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 22500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13357175.jpg",
+  "photo_ids": [
+    "13357175",
+    "13357176",
+    "13357177",
+    "13357178",
+    "13357179",
+    "13357180",
+    "13357181",
+    "13357182",
+    "13357183"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:20Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

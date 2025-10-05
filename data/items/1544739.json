@@ -1,0 +1,26 @@
+{
+  "id": "1544739",
+  "url": "https://www.supercarros.com/peugeot-3008/1544739/",
+  "title": "Peugeot 3008  GT Line",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 18900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13775569.jpg",
+  "photo_ids": [
+    "13775569",
+    "13775570",
+    "13775571",
+    "13775572",
+    "13775573",
+    "13775574",
+    "13775575",
+    "13775576",
+    "13775577",
+    "13775578"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:45Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

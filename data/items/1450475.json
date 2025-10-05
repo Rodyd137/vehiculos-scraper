@@ -1,0 +1,28 @@
+{
+  "id": "1450475",
+  "url": "https://www.supercarros.com/toyota-vitz/1450475/",
+  "title": "Toyota VITZ",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 725000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13521118.jpg",
+  "photo_ids": [
+    "13521118",
+    "13521119",
+    "13521120",
+    "13521121",
+    "13521122",
+    "13521123",
+    "13521124",
+    "13521125",
+    "13521126",
+    "13521127",
+    "13521128",
+    "13521129"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:00Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

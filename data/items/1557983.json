@@ -1,0 +1,27 @@
+{
+  "id": "1557983",
+  "url": "https://www.supercarros.com/kia-sportage/1557983/",
+  "title": "Kia Sportage LX",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 27490.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13923490.jpg",
+  "photo_ids": [
+    "13923490",
+    "13923491",
+    "13923492",
+    "13923493",
+    "13923494",
+    "13923495",
+    "13923496",
+    "13923497",
+    "13923498"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:32Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

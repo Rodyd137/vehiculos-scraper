@@ -1,0 +1,30 @@
+{
+  "id": "1542339",
+  "url": "https://www.supercarros.com/t-king-t3/1542339/",
+  "title": "T-King T3",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 12500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13904025.jpg",
+  "photo_ids": [
+    "13904024",
+    "13904025",
+    "13904026",
+    "13904027",
+    "13904028",
+    "13904029",
+    "13904030",
+    "13904031",
+    "13904032",
+    "13904033",
+    "13904034",
+    "13904035"
+  ],
+  "badges": [
+    "promo-ASOCIVU"
+  ],
+  "scraped_at": "2025-10-05T19:23:04Z",
+  "source": "https://www.supercarros.com/v.pesados/"
+}

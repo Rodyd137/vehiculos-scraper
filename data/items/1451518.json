@@ -1,0 +1,25 @@
+{
+  "id": "1451518",
+  "url": "https://www.supercarros.com/toyota-passo/1451518/",
+  "title": "Toyota Passo MODA",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 645000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13841436.jpg",
+  "photo_ids": [
+    "13841436",
+    "13841461",
+    "13841462",
+    "13841463",
+    "13841464",
+    "13841465",
+    "13841466",
+    "13841467",
+    "13841468"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:00Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

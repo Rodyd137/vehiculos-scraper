@@ -1,0 +1,28 @@
+{
+  "id": "1558864",
+  "url": "https://www.supercarros.com/honda-crv/1558864/",
+  "title": "Honda CR-V EXL",
+  "year": 2014,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 845000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13933525.jpg",
+  "photo_ids": [
+    "13933525",
+    "13933526",
+    "13933527",
+    "13933529",
+    "13933530",
+    "13933531",
+    "13933533",
+    "13933534",
+    "13933535",
+    "13933537"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:28Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

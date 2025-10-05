@@ -1,0 +1,22 @@
+{
+  "id": "1555378",
+  "url": "https://www.supercarros.com/chevrolet-tahoe/1555378/",
+  "title": "Chevrolet Tahoe LTZ",
+  "year": 2008,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 480000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13894433.jpg",
+  "photo_ids": [
+    "13894433",
+    "13894431",
+    "13894432",
+    "13894434",
+    "13894435",
+    "13894436"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:05Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

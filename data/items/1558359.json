@@ -1,0 +1,28 @@
+{
+  "id": "1558359",
+  "url": "https://www.supercarros.com/landrover-rangerover/1558359/",
+  "title": "Land Rover Range Rover EVOQUE",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 37000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13927691.jpg",
+  "photo_ids": [
+    "13927691",
+    "13927692",
+    "13927693",
+    "13927694",
+    "13927695",
+    "13927696",
+    "13927697",
+    "13927698",
+    "13927699",
+    "13927700",
+    "13927701",
+    "13927702"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:09Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "1543352",
+  "url": "https://www.supercarros.com/mazda-cx5/1543352/",
+  "title": "Mazda CX-5 Signature",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 27500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13759853.jpg",
+  "photo_ids": [
+    "13759862",
+    "13759852",
+    "13759853",
+    "13759854",
+    "13759855",
+    "13759856",
+    "13759857",
+    "13759858",
+    "13759859",
+    "13759860",
+    "13759861"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:22Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

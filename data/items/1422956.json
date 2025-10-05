@@ -1,0 +1,26 @@
+{
+  "id": "1422956",
+  "url": "https://www.supercarros.com/chevrolet-express/1422956/",
+  "title": "Chevrolet Express G3500",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1075000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13267488.jpg",
+  "photo_ids": [
+    "13267486",
+    "13267487",
+    "13267488",
+    "13267489",
+    "13267490",
+    "13267491",
+    "13267492",
+    "13267493"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:37Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

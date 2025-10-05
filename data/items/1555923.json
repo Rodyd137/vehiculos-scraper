@@ -1,0 +1,25 @@
+{
+  "id": "1555923",
+  "url": "https://www.supercarros.com/volkswagen-amarok/1555923/",
+  "title": "Volkswagen Amarok",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 59000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13900518.jpg",
+  "photo_ids": [
+    "13900518",
+    "13900519",
+    "13900520",
+    "13900521",
+    "13900522",
+    "13900523",
+    "13900524",
+    "13900525",
+    "13900526"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:09Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

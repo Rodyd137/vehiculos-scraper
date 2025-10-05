@@ -1,0 +1,30 @@
+{
+  "id": "1551510",
+  "url": "https://www.supercarros.com/honda-crv/1551510/",
+  "title": "Honda CR-V LX AWD",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 39850.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13851488.jpg",
+  "photo_ids": [
+    "13851487",
+    "13851488",
+    "13851489",
+    "13851490",
+    "13851491",
+    "13851492",
+    "13851493",
+    "13851494",
+    "13851495",
+    "13851496",
+    "13851497",
+    "13851498"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:28Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

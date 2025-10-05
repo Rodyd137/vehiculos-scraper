@@ -1,0 +1,20 @@
+{
+  "id": "1556108",
+  "url": "https://www.supercarros.com/suzuki-swift/1556108/",
+  "title": "Suzuki Swift",
+  "year": 2008,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 375000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13902596.jpg",
+  "photo_ids": [
+    "13902594",
+    "13902595",
+    "13902596",
+    "13902597"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:15Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

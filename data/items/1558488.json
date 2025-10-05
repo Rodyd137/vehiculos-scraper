@@ -1,0 +1,27 @@
+{
+  "id": "1558488",
+  "url": "https://www.supercarros.com/ford-explorer/1558488/",
+  "title": "Ford Explorer XLT",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 25500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13929189.jpg",
+  "photo_ids": [
+    "13929189",
+    "13929190",
+    "13929191",
+    "13929192",
+    "13929193",
+    "13929194",
+    "13929195",
+    "13929196",
+    "13929197",
+    "13929198",
+    "13929199"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:11Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

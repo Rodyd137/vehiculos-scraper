@@ -1,0 +1,26 @@
+{
+  "id": "1514541",
+  "url": "https://www.supercarros.com/dodge-journey/1514541/",
+  "title": "Dodge Journey Crossroad",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 675000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13444957.jpg",
+  "photo_ids": [
+    "13444957",
+    "13444958",
+    "13444959",
+    "13444960",
+    "13444961",
+    "13444962",
+    "13444963",
+    "13444964",
+    "13444965",
+    "13444966"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:24Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

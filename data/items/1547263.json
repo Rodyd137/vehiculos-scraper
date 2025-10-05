@@ -1,0 +1,28 @@
+{
+  "id": "1547263",
+  "url": "https://www.supercarros.com/toyota-4runner/1547263/",
+  "title": "Toyota 4 Runner Limited",
+  "year": 2008,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 860000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13804346.jpg",
+  "photo_ids": [
+    "13804345",
+    "13804346",
+    "13804347",
+    "13804348",
+    "13804349",
+    "13804350",
+    "13804351",
+    "13804352",
+    "13804353",
+    "13804354",
+    "13804355",
+    "13804356"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:13Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

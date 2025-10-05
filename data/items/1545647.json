@@ -1,0 +1,27 @@
+{
+  "id": "1545647",
+  "url": "https://www.supercarros.com/hyundai-kona/1545647/",
+  "title": "Hyundai KONA  Limited",
+  "year": 2021,
+  "fuel": "Eléctrico",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 31000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13786079.jpg",
+  "photo_ids": [
+    "13786079",
+    "13786080",
+    "13786081",
+    "13786082",
+    "13786083",
+    "13786084",
+    "13786085",
+    "13786086",
+    "13786087",
+    "13786088",
+    "13786089"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:41Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

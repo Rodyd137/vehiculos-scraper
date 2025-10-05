@@ -1,0 +1,30 @@
+{
+  "id": "1530950",
+  "url": "https://www.supercarros.com/mercedesbenz-clase gle/1530950/",
+  "title": "Mercedes-Benz Clase GLE 350 AMG",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 63500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13662040.jpg",
+  "photo_ids": [
+    "13630815",
+    "13630817",
+    "13662040",
+    "13662041",
+    "13662042",
+    "13662043",
+    "13662044",
+    "13662045",
+    "13662046",
+    "13662047",
+    "13662048",
+    "13662049"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:21:56Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

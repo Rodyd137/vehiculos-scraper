@@ -1,0 +1,28 @@
+{
+  "id": "1556587",
+  "url": "https://www.supercarros.com/honda-fit/1556587/",
+  "title": "Honda Fit LX",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 895000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13908167.jpg",
+  "photo_ids": [
+    "13908167",
+    "13908168",
+    "13908169",
+    "13908170",
+    "13908171",
+    "13908172",
+    "13908173",
+    "13908174",
+    "13908175",
+    "13908176",
+    "13908177",
+    "13908178"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:28Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

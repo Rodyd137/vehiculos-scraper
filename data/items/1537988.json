@@ -1,0 +1,61 @@
+{
+  "id": "1537988",
+  "url": "https://www.supercarros.com/toyota-landcruiserprado/1537988/",
+  "title": "Toyota Land Cruiser Prado",
+  "year": 2013,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 35900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13700296.jpg",
+  "photo_ids": [
+    "13700296",
+    "13700297",
+    "13700298",
+    "13700299",
+    "13700300",
+    "13700301",
+    "13700302",
+    "13700303",
+    "13700304"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:05Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24",
+  "detail": {
+    "general": {
+      "Anuncio": "#1537988",
+      "Precio": "US$ 35,900",
+      "Uso": "N/D Mi",
+      "Tipo": "Jeepeta",
+      "Motor": "3000, 4 cilindros, Turbo",
+      "Combustible": "Diesel",
+      "Transmisión": "Automática",
+      "Tracción": "4WD",
+      "Interior": "Beige",
+      "Exterior": "Gris",
+      "Carga": "N/D Lb",
+      "Puertas": "5",
+      "Pasajeros": "7",
+      "Condición": "Usado"
+    },
+    "accessories": null,
+    "description": "Toyota Land Cruiser Prado año 2013\nFinanciamiento disponible INMEDIATO\n\nPrecio: US35,900 dólares\n\nInterior en piel\n3 filas de asientos\nMotor Diesel\n4x4\nOptimas condiciones\n\nENTRE OTROS EXTRAS MÁS.\n\nContáctanos para más información:\n829-766-7889 [email protected]",
+    "vendor_text": null,
+    "vendor_name": null,
+    "phones": null,
+    "primary_phone": null,
+    "city": "Santo Domingo",
+    "images": [
+      "https://img.supercarros.com/AdsPhotos/1024x768/0/13700296.jpg?wmo=3d3965c30776f0e5139f03da32693e80cd45c0c0b46fe217116dd3f02e715177601cb0778981c98512772422253e6eb0efd2053f7aea08d866099abca35ebac9",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13700297.jpg",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13700298.jpg",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13700299.jpg",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13700300.jpg",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13700301.jpg",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13700302.jpg",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13700303.jpg",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13700304.jpg"
+    ]
+  }
+}

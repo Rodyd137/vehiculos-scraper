@@ -1,0 +1,20 @@
+{
+  "id": "1335414",
+  "url": "https://www.supercarros.com/maxus-m100/1335414/",
+  "title": "Maxus M100",
+  "year": 2026,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 116900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11477800.jpg",
+  "photo_ids": [
+    "11477799",
+    "11477800",
+    "11477801",
+    "11477802"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:26Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "1518877",
+  "url": "https://www.supercarros.com/isuzu-npr/1518877/",
+  "title": "Isuzu NPR 14 pies",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 60000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13494043.jpg",
+  "photo_ids": [
+    "13494036",
+    "13494037",
+    "13494038",
+    "13494039",
+    "13494041",
+    "13494042",
+    "13494043",
+    "13494044"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:24Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

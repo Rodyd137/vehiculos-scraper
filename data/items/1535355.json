@@ -1,0 +1,27 @@
+{
+  "id": "1535355",
+  "url": "https://www.supercarros.com/hyundai-santafe/1535355/",
+  "title": "Hyundai Santa Fe Ultimate",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1349000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13670219.jpg",
+  "photo_ids": [
+    "13670219",
+    "13670220",
+    "13670221",
+    "13670222",
+    "13670223",
+    "13670224",
+    "13670225",
+    "13670226",
+    "13670227",
+    "13670228",
+    "13670229"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:41Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

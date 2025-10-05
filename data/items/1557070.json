@@ -1,0 +1,18 @@
+{
+  "id": "1557070",
+  "url": "https://www.supercarros.com/toyota-landcruiser/1557070/",
+  "title": "Toyota Land Cruiser",
+  "year": 2024,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 141500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13913428.jpg",
+  "photo_ids": [
+    "13913428",
+    "13913426"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:09Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

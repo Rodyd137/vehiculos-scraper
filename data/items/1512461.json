@@ -1,0 +1,28 @@
+{
+  "id": "1512461",
+  "url": "https://www.supercarros.com/chevrolet-sonic/1512461/",
+  "title": "Chevrolet Sonic Ls",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 590000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13421611.jpg",
+  "photo_ids": [
+    "13421611",
+    "13421612",
+    "13421613",
+    "13421614",
+    "13421615",
+    "13421616",
+    "13421617",
+    "13421618",
+    "13421619",
+    "13421620",
+    "13421621",
+    "13421622"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:49Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

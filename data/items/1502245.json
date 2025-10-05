@@ -1,0 +1,22 @@
+{
+  "id": "1502245",
+  "url": "https://www.supercarros.com/bmw-serie3/1502245/",
+  "title": "BMW Serie 3 320i",
+  "year": 2014,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 590000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13306796.jpg",
+  "photo_ids": [
+    "13306796",
+    "13306806",
+    "13306807",
+    "13306808",
+    "13306809",
+    "13306810"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:20Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

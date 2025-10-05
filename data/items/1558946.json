@@ -1,0 +1,25 @@
+{
+  "id": "1558946",
+  "url": "https://www.supercarros.com/changan-cs75/1558946/",
+  "title": "Changan CS 75 Plus Semi Full",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1375000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13935467.jpg",
+  "photo_ids": [
+    "13934464",
+    "13935467",
+    "13935468",
+    "13935469",
+    "13935470",
+    "13935471",
+    "13935472",
+    "13935473",
+    "13935474"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:22Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

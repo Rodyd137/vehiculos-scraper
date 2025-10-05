@@ -1,0 +1,27 @@
+{
+  "id": "1531735",
+  "url": "https://www.supercarros.com/ford-f150/1531735/",
+  "title": "Ford F 150 XL",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 21900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13639578.jpg",
+  "photo_ids": [
+    "13639578",
+    "13639579",
+    "13639580",
+    "13639581",
+    "13639582",
+    "13639583",
+    "13639584",
+    "13639585",
+    "13639586"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:22:19Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

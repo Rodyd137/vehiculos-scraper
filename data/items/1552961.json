@@ -1,0 +1,26 @@
+{
+  "id": "1552961",
+  "url": "https://www.supercarros.com/mercedesbenz-clase gle/1552961/",
+  "title": "Mercedes-Benz Clase GLE 450 4Matic AMG",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 59900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13867861.jpg",
+  "photo_ids": [
+    "13867857",
+    "13867858",
+    "13867859",
+    "13867860",
+    "13867861",
+    "13867862",
+    "13867863",
+    "13867864"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:21:15Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

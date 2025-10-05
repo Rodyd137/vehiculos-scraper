@@ -1,0 +1,30 @@
+{
+  "id": "1543444",
+  "url": "https://www.supercarros.com/porsche-cayenne/1543444/",
+  "title": "Porsche Cayenne Coupe",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 86800.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13867688.jpg",
+  "photo_ids": [
+    "13867688",
+    "13867689",
+    "13867691",
+    "13867692",
+    "13867693",
+    "13867694",
+    "13867695",
+    "13867696",
+    "13867697",
+    "13867698",
+    "13867699",
+    "13867700"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:21:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

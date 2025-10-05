@@ -1,0 +1,27 @@
+{
+  "id": "1452428",
+  "url": "https://www.supercarros.com/nissan-serena/1452428/",
+  "title": "Nissan Serena",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 915000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13878278.jpg",
+  "photo_ids": [
+    "13878278",
+    "13878279",
+    "13878280",
+    "13878281",
+    "13878282",
+    "13878283",
+    "13878284",
+    "13878285",
+    "13878286",
+    "13878287",
+    "13878288"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:00Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "1557805",
+  "url": "https://www.supercarros.com/mazda-demio/1557805/",
+  "title": "Mazda Demio Sport",
+  "year": 2016,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 560000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13921644.jpg",
+  "photo_ids": [
+    "13921644",
+    "13921645",
+    "13921646",
+    "13921647",
+    "13921648",
+    "13921649",
+    "13921650"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:52Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

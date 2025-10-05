@@ -1,0 +1,61 @@
+{
+  "id": "1524414",
+  "url": "https://www.supercarros.com/mercedesbenz-clasea/1524414/",
+  "title": "Mercedes-Benz Clase A 35 AMG",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 42990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13933605.jpg",
+  "photo_ids": [
+    "13933605",
+    "13933606",
+    "13933607",
+    "13933608",
+    "13933609",
+    "13933760",
+    "13933761",
+    "13933762",
+    "13933763"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:05Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24",
+  "detail": {
+    "general": {
+      "Anuncio": "#1524414",
+      "Precio": "US$ 42,990",
+      "Uso": "N/D Mi",
+      "Tipo": "Sedán",
+      "Motor": "4 cilindros, Turbo",
+      "Combustible": "Gasolina",
+      "Transmisión": "Automática",
+      "Tracción": "2WD",
+      "Interior": "Blanco",
+      "Exterior": "Negro",
+      "Carga": "N/D Lb",
+      "Puertas": "5",
+      "Pasajeros": "5",
+      "Condición": "Usado"
+    },
+    "accessories": null,
+    "description": "Mercedes Benz A35 AMG año 2021.\n\nLLÉVATELO CON TAN SOLO RD$620,000 PESOS DE INICIAL.\n\nMotor 2.0, 4 cilindros Turbo.\nInterior combinado piel y tela\nTecho panorámico \nLlave inteligente \nPush button\nCamara de reversa\nRadio Pantalla\nSensores de reversa\nAros 19\nEXCELENTES CONDICIONES\nENTRE OTROS EXTRÁS MÁS.\n\nContáctanos para más información:\n829-766-7889. [email protected]",
+    "vendor_text": null,
+    "vendor_name": null,
+    "phones": null,
+    "primary_phone": null,
+    "city": "Santo Domingo",
+    "images": [
+      "https://img.supercarros.com/AdsPhotos/1024x768/0/13933605.jpg?wmo=8611caed054cfc72e571c2e4d1eb448050299e0a7628ccac5703250700ac8d4a75484bc954f8be907d2d99cc459ee938d4adedcfdc22cf2821460d8e0a8609f2",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13933606.jpg",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13933607.jpg",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13933608.jpg",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13933609.jpg",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13933760.jpg",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13933761.jpg",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13933762.jpg",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13933763.jpg"
+    ]
+  }
+}

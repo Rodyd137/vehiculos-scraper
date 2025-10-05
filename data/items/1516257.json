@@ -1,0 +1,27 @@
+{
+  "id": "1516257",
+  "url": "https://www.supercarros.com/subaru-outback/1516257/",
+  "title": "Subaru Outback",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 18200.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13465098.jpg",
+  "photo_ids": [
+    "13465098",
+    "13465099",
+    "13465100",
+    "13465101",
+    "13465102",
+    "13465103",
+    "13465104",
+    "13465105",
+    "13465106"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:32Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1373443",
+  "url": "https://www.supercarros.com/toyota-hiace/1373443/",
+  "title": "Toyota Hiace GL",
+  "year": 2024,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 64500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12519018.jpg",
+  "photo_ids": [
+    "12519016",
+    "12519017",
+    "12519018",
+    "12519019",
+    "12519020",
+    "12519021",
+    "12519032",
+    "12519034",
+    "12519035",
+    "12519036",
+    "12519039",
+    "12519040"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:11Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "1489914",
+  "url": "https://www.supercarros.com/kia-sorento/1489914/",
+  "title": "Kia Sorento",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 995000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13649108.jpg",
+  "photo_ids": [
+    "13649108",
+    "13649109",
+    "13649110",
+    "13649111",
+    "13649112",
+    "13649113",
+    "13649114",
+    "13649115",
+    "13649116",
+    "13649117",
+    "13649118",
+    "13649119"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:32Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

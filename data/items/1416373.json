@@ -1,0 +1,27 @@
+{
+  "id": "1416373",
+  "url": "https://www.supercarros.com/bmw-serie3/1416373/",
+  "title": "BMW Serie 3 316i",
+  "year": 2015,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 885000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12354244.jpg",
+  "photo_ids": [
+    "12354244",
+    "12354245",
+    "12354246",
+    "12354247",
+    "12354248",
+    "12354249",
+    "12354250",
+    "12354251",
+    "12354252"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:22:15Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

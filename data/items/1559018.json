@@ -1,0 +1,26 @@
+{
+  "id": "1559018",
+  "url": "https://www.supercarros.com/lexus-gx/1559018/",
+  "title": "Lexus GX 470",
+  "year": 2005,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 600000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13935325.jpg",
+  "photo_ids": [
+    "13935325",
+    "13935326",
+    "13935327",
+    "13935328",
+    "13935329",
+    "13935330",
+    "13935331",
+    "13935332",
+    "13935333",
+    "13935334"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

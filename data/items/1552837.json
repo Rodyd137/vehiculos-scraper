@@ -1,0 +1,28 @@
+{
+  "id": "1552837",
+  "url": "https://www.supercarros.com/bmw-x/1552837/",
+  "title": "BMW X 5 M Package",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 97000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13866584.jpg",
+  "photo_ids": [
+    "13866590",
+    "13866584",
+    "13866586",
+    "13866582",
+    "13866588",
+    "13866583",
+    "13866581",
+    "13866587",
+    "13866591",
+    "13866589",
+    "13866564",
+    "13866585"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:22Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

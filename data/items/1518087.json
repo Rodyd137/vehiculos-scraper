@@ -1,0 +1,28 @@
+{
+  "id": "1518087",
+  "url": "https://www.supercarros.com/ford-transit/1518087/",
+  "title": "Ford Transit",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1455000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13485063.jpg",
+  "photo_ids": [
+    "13485063",
+    "13485064",
+    "13485065",
+    "13485066",
+    "13485067",
+    "13485068",
+    "13485069",
+    "13485070",
+    "13485071",
+    "13485072"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:37Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

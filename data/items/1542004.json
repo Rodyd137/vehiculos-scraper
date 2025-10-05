@@ -1,0 +1,25 @@
+{
+  "id": "1542004",
+  "url": "https://www.supercarros.com/dodge-caravan/1542004/",
+  "title": "Dodge Caravan SXT",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 650000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13744841.jpg",
+  "photo_ids": [
+    "13744780",
+    "13744783",
+    "13744785",
+    "13744788",
+    "13744790",
+    "13744792",
+    "13744795",
+    "13744797",
+    "13744841"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:45Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

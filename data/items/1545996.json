@@ -1,0 +1,25 @@
+{
+  "id": "1545996",
+  "url": "https://www.supercarros.com/ram-1500/1545996/",
+  "title": "Ram 1500",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 21900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13790092.jpg",
+  "photo_ids": [
+    "13790092",
+    "13790093",
+    "13790094",
+    "13790095",
+    "13790096",
+    "13790097",
+    "13790098"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:22:17Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

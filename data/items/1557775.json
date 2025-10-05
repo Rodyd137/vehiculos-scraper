@@ -1,0 +1,28 @@
+{
+  "id": "1557775",
+  "url": "https://www.supercarros.com/kia-sonet/1557775/",
+  "title": "Kia Sonet",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 19900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13921318.jpg",
+  "photo_ids": [
+    "13921324",
+    "13921318",
+    "13921313",
+    "13921314",
+    "13921315",
+    "13921316",
+    "13921322",
+    "13921320",
+    "13921317",
+    "13921319",
+    "13921321",
+    "13921323"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:05Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

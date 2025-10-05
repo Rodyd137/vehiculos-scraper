@@ -1,0 +1,27 @@
+{
+  "id": "1549903",
+  "url": "https://www.supercarros.com/lexus-lx/1549903/",
+  "title": "Lexus LX 570",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 76000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13833444.jpg",
+  "photo_ids": [
+    "13833444",
+    "13833445",
+    "13833446",
+    "13833447",
+    "13833448",
+    "13833449",
+    "13833450",
+    "13833451",
+    "13833452",
+    "13833453",
+    "13833454"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:49Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

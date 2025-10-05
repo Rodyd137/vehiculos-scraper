@@ -1,0 +1,28 @@
+{
+  "id": "1546003",
+  "url": "https://www.supercarros.com/bmw-x/1546003/",
+  "title": "BMW X 7 XDrive 30d",
+  "year": 2022,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 119000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13790177.jpg",
+  "photo_ids": [
+    "13790177",
+    "13790173",
+    "13790176",
+    "13790180",
+    "13790179",
+    "13790172",
+    "13790174",
+    "13790188",
+    "13790189",
+    "13790190",
+    "13790191",
+    "13790192"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:58Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

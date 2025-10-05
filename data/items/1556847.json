@@ -1,0 +1,25 @@
+{
+  "id": "1556847",
+  "url": "https://www.supercarros.com/toyota-landcruiserprado/1556847/",
+  "title": "Toyota Land Cruiser Prado",
+  "year": 2012,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 37000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13911083.jpg",
+  "photo_ids": [
+    "13911079",
+    "13911080",
+    "13911081",
+    "13911082",
+    "13911083",
+    "13911084",
+    "13911085",
+    "13911086",
+    "13911087"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:49Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

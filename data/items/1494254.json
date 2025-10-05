@@ -1,0 +1,25 @@
+{
+  "id": "1494254",
+  "url": "https://www.supercarros.com/maxus-d90/1494254/",
+  "title": "Maxus D90 LUX",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 56900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13218308.jpg",
+  "photo_ids": [
+    "13218307",
+    "13218308",
+    "13218309",
+    "13218310",
+    "13218311",
+    "13218312",
+    "13218313",
+    "13218314",
+    "13218315"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:26Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

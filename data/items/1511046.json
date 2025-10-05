@@ -1,0 +1,26 @@
+{
+  "id": "1511046",
+  "url": "https://www.supercarros.com/ram-rebel/1511046/",
+  "title": "Ram REBEL",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 47900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13405565.jpg",
+  "photo_ids": [
+    "13405565",
+    "13405566",
+    "13405567",
+    "13405568",
+    "13405569",
+    "13405570",
+    "13405571",
+    "13405572"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:22:19Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

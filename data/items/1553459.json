@@ -1,0 +1,26 @@
+{
+  "id": "1553459",
+  "url": "https://www.supercarros.com/kia-sorento/1553459/",
+  "title": "Kia Sorento Luxury",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 31900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13873144.jpg",
+  "photo_ids": [
+    "13873144",
+    "13873145",
+    "13873146",
+    "13873147",
+    "13873148",
+    "13873149",
+    "13873150",
+    "13873151",
+    "13873152",
+    "13873153"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:22Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

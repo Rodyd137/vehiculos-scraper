@@ -1,0 +1,30 @@
+{
+  "id": "1552863",
+  "url": "https://www.supercarros.com/mercedesbenz-claseglb/1552863/",
+  "title": "Mercedes-Benz Clase GLB 250 AMG",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 43800.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13896961.jpg",
+  "photo_ids": [
+    "13896961",
+    "13896962",
+    "13896963",
+    "13896964",
+    "13896965",
+    "13896966",
+    "13896967",
+    "13896968",
+    "13896969",
+    "13896970",
+    "13896971",
+    "13896972"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:21:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "1495919",
+  "url": "https://www.supercarros.com/chevrolet-silverado/1495919/",
+  "title": "Chevrolet Silverado 1500 LTZ Duramax",
+  "year": 2021,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 42500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13236581.jpg",
+  "photo_ids": [
+    "13236581",
+    "13236582",
+    "13236583",
+    "13236584",
+    "13236585",
+    "13236586",
+    "13236587",
+    "13236588"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:20Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "1538765",
+  "url": "https://www.supercarros.com/hyundai-tucson/1538765/",
+  "title": "Hyundai Tucson Value",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 20400.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13708969.jpg",
+  "photo_ids": [
+    "13708969",
+    "13708970",
+    "13708971",
+    "13708972",
+    "13708973",
+    "13708974",
+    "13708975",
+    "13708976",
+    "13708977",
+    "13708978",
+    "13708979"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:28Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

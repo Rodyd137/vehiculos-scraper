@@ -1,0 +1,25 @@
+{
+  "id": "1553752",
+  "url": "https://www.supercarros.com/jeep-renegade/1553752/",
+  "title": "Jeep Renegade",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 19500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13876455.jpg",
+  "photo_ids": [
+    "13876455",
+    "13876456",
+    "13876457",
+    "13876458",
+    "13876463",
+    "13876462",
+    "13876459",
+    "13876460",
+    "13876461"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:02Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

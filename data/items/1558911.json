@@ -1,0 +1,27 @@
+{
+  "id": "1558911",
+  "url": "https://www.supercarros.com/ford-escape/1558911/",
+  "title": "Ford Escape SE",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 695000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13934072.jpg",
+  "photo_ids": [
+    "13934072",
+    "13934073",
+    "13934074",
+    "13934089",
+    "13934090",
+    "13934091",
+    "13934096",
+    "13934105",
+    "13934106",
+    "13934107",
+    "13934108"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:05Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

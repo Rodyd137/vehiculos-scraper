@@ -1,0 +1,24 @@
+{
+  "id": "1556814",
+  "url": "https://www.supercarros.com/nissan-frontier/1556814/",
+  "title": "Nissan Frontier SV",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 17000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13910742.jpg",
+  "photo_ids": [
+    "13910745",
+    "13910742",
+    "13910741",
+    "13910748",
+    "13910747",
+    "13910743",
+    "13910746",
+    "13910744"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:02Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

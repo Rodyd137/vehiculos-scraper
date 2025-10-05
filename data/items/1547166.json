@@ -1,0 +1,28 @@
+{
+  "id": "1547166",
+  "url": "https://www.supercarros.com/changan-cs55/1547166/",
+  "title": "Changan CS 55 Plus Touring",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 27900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13803286.jpg",
+  "photo_ids": [
+    "13803286",
+    "13803287",
+    "13803288",
+    "13803289",
+    "13803290",
+    "13803291",
+    "13803292",
+    "13803293",
+    "13803294",
+    "13803295"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:22:22Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

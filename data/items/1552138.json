@@ -1,0 +1,28 @@
+{
+  "id": "1552138",
+  "url": "https://www.supercarros.com/ford-edge/1552138/",
+  "title": "Ford EDGE SE",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 25500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13858621.jpg",
+  "photo_ids": [
+    "13858621",
+    "13858622",
+    "13858623",
+    "13858624",
+    "13858625",
+    "13858626",
+    "13858627",
+    "13858628",
+    "13858629",
+    "13858630",
+    "13858631",
+    "13858632"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:11Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

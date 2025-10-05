@@ -1,0 +1,25 @@
+{
+  "id": "1405389",
+  "url": "https://www.supercarros.com/mg-zs/1405389/",
+  "title": "MG ZS EV",
+  "year": 2021,
+  "fuel": "Eléctrico",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 23900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12230817.jpg",
+  "photo_ids": [
+    "12230809",
+    "12230810",
+    "12230811",
+    "12230812",
+    "12230813",
+    "12230814",
+    "12230815",
+    "12230816",
+    "12230817"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:26Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1294836",
+  "url": "https://www.supercarros.com/volvo-xc90/1294836/",
+  "title": "Volvo XC90 R-design T5",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 33995.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11715001.jpg",
+  "photo_ids": [
+    "11041841",
+    "11041844",
+    "11041846",
+    "11715001",
+    "11715002",
+    "11715003",
+    "11715004",
+    "11715005",
+    "11715006",
+    "11715017",
+    "11715018",
+    "11715019"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:13Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

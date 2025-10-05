@@ -1,0 +1,28 @@
+{
+  "id": "1554597",
+  "url": "https://www.supercarros.com/bmw-x/1554597/",
+  "title": "BMW X 6 xDrive 35i",
+  "year": 2016,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 37500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13885967.jpg",
+  "photo_ids": [
+    "13885956",
+    "13885957",
+    "13885958",
+    "13885959",
+    "13885960",
+    "13885961",
+    "13885962",
+    "13885963",
+    "13885964",
+    "13885965",
+    "13885966",
+    "13885967"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:39Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

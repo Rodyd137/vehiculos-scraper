@@ -1,0 +1,25 @@
+{
+  "id": "1551431",
+  "url": "https://www.supercarros.com/ford-focus/1551431/",
+  "title": "Ford Focus SE",
+  "year": 2012,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 250000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13850605.jpg",
+  "photo_ids": [
+    "13850603",
+    "13850604",
+    "13850605",
+    "13850606",
+    "13850607",
+    "13850608",
+    "13850609",
+    "13850610",
+    "13850611"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:28Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

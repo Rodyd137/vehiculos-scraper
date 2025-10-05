@@ -1,0 +1,28 @@
+{
+  "id": "1448356",
+  "url": "https://www.supercarros.com/honda-hrv/1448356/",
+  "title": "Honda HR-V EX",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 17800.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13612271.jpg",
+  "photo_ids": [
+    "13612270",
+    "13612271",
+    "13612272",
+    "13612273",
+    "13612274",
+    "13612275",
+    "13612276",
+    "13612277",
+    "13612278",
+    "13612279"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:28Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "1451450",
+  "url": "https://www.supercarros.com/suzuki-swift/1451450/",
+  "title": "Suzuki Swift RS Sport",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 780000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13036720.jpg",
+  "photo_ids": [
+    "13036716",
+    "13036717",
+    "13036718",
+    "13036719",
+    "13036720",
+    "13036721",
+    "13036722",
+    "13036723",
+    "13036724",
+    "13036725",
+    "13036726"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:58Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1559027",
+  "url": "https://www.supercarros.com/mercedesbenz-claseml/1559027/",
+  "title": "Mercedes-Benz Clase ML 350 4 Matic",
+  "year": 2013,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 17800.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13935432.jpg",
+  "photo_ids": [
+    "13935432",
+    "13935433",
+    "13935434",
+    "13935435",
+    "13935436",
+    "13935437",
+    "13935438",
+    "13935439",
+    "13935440",
+    "13935441",
+    "13935442",
+    "13935443"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:39Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

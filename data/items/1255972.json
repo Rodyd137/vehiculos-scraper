@@ -1,0 +1,26 @@
+{
+  "id": "1255972",
+  "url": "https://www.supercarros.com/maxus-euniq 6/1255972/",
+  "title": "Maxus Euniq 6",
+  "year": 2024,
+  "fuel": "Eléctrico",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 59900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/10615862.jpg",
+  "photo_ids": [
+    "10615862",
+    "10615863",
+    "10615864",
+    "10615865",
+    "10615866",
+    "10615867",
+    "10615868",
+    "10615869",
+    "10615870",
+    "10615871"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:26Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

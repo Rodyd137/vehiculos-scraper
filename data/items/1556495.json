@@ -1,0 +1,24 @@
+{
+  "id": "1556495",
+  "url": "https://www.supercarros.com/toyota-camry/1556495/",
+  "title": "Toyota Camry SE",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 19000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13907116.jpg",
+  "photo_ids": [
+    "13907116",
+    "13907117",
+    "13907118",
+    "13907119",
+    "13907120",
+    "13907121",
+    "13907122",
+    "13907123"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:35Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

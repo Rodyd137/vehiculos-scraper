@@ -1,0 +1,28 @@
+{
+  "id": "1509842",
+  "url": "https://www.supercarros.com/kia-soul/1509842/",
+  "title": "Kia Soul LX",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 818000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13391947.jpg",
+  "photo_ids": [
+    "13391947",
+    "13391948",
+    "13391949",
+    "13391950",
+    "13391951",
+    "13391952",
+    "13391953",
+    "13391954",
+    "13391955",
+    "13391956"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:32Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

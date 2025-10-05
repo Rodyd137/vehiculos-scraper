@@ -1,0 +1,24 @@
+{
+  "id": "1553722",
+  "url": "https://www.supercarros.com/nissan-note/1553722/",
+  "title": "Nissan Note",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 645000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13876141.jpg",
+  "photo_ids": [
+    "13876141",
+    "13876142",
+    "13876143",
+    "13876144",
+    "13876145",
+    "13876146",
+    "13876147",
+    "13876148"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:20Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

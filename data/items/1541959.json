@@ -1,0 +1,21 @@
+{
+  "id": "1541959",
+  "url": "https://www.supercarros.com/toyota-landcruiser/1541959/",
+  "title": "Toyota Land Cruiser 300 VX-R",
+  "year": 2023,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 135000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13744206.jpg",
+  "photo_ids": [
+    "13744206",
+    "13744211",
+    "13744210",
+    "13744208",
+    "13744204"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

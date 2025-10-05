@@ -1,0 +1,28 @@
+{
+  "id": "1026216",
+  "url": "https://www.supercarros.com/toyota-hiace/1026216/",
+  "title": "Toyota Hiace VIP GL",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 76900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12518679.jpg",
+  "photo_ids": [
+    "12518679",
+    "12518680",
+    "12518681",
+    "12518682",
+    "12518683",
+    "12518684",
+    "12518685",
+    "12518686",
+    "12518687",
+    "12518688",
+    "12518689",
+    "12518690"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:11Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

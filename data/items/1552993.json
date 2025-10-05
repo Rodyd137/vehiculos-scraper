@@ -1,0 +1,22 @@
+{
+  "id": "1552993",
+  "url": "https://www.supercarros.com/volvo-xc90/1552993/",
+  "title": "Volvo XC90 Inscription T6",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 24900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13868183.jpg",
+  "photo_ids": [
+    "13868183",
+    "13868184",
+    "13868185",
+    "13868186",
+    "13868187",
+    "13868188"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:24Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "1550746",
+  "url": "https://www.supercarros.com/nissan-rogue/1550746/",
+  "title": "Nissan Rogue SV",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 24000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13843086.jpg",
+  "photo_ids": [
+    "13843086",
+    "13843087",
+    "13843088",
+    "13843089",
+    "13843090",
+    "13843091",
+    "13843092",
+    "13843093",
+    "13843094",
+    "13843095",
+    "13843096"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:26Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

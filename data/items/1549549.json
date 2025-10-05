@@ -1,0 +1,29 @@
+{
+  "id": "1549549",
+  "url": "https://www.supercarros.com/honda-crv/1549549/",
+  "title": "Honda CR-V EXL",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 56900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13829537.jpg",
+  "photo_ids": [
+    "13829537",
+    "13829538",
+    "13829539",
+    "13829540",
+    "13829541",
+    "13829542",
+    "13829543",
+    "13829544",
+    "13829545",
+    "13829546",
+    "13829547"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:21:56Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

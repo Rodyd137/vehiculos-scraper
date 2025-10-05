@@ -1,0 +1,28 @@
+{
+  "id": "1518330",
+  "url": "https://www.supercarros.com/mazda-cx5/1518330/",
+  "title": "Mazda CX-5 GRAND TOURING",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 26000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13487814.jpg",
+  "photo_ids": [
+    "13487812",
+    "13487813",
+    "13487814",
+    "13487815",
+    "13487816",
+    "13487817",
+    "13487818",
+    "13487819",
+    "13487820",
+    "13487821",
+    "13487822",
+    "13487823"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:13Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

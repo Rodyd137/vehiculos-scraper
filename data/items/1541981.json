@@ -1,0 +1,26 @@
+{
+  "id": "1541981",
+  "url": "https://www.supercarros.com/volvo-s90/1541981/",
+  "title": "Volvo S90 T-6 R-Desing",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 34500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13744500.jpg",
+  "photo_ids": [
+    "13744500",
+    "13744501",
+    "13744502",
+    "13744503",
+    "13744504",
+    "13744505",
+    "13744506",
+    "13744507",
+    "13744508",
+    "13744509"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:20Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

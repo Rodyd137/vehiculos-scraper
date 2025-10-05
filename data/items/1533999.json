@@ -1,0 +1,28 @@
+{
+  "id": "1533999",
+  "url": "https://www.supercarros.com/ford-f150/1533999/",
+  "title": "Ford F 150 XLT",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 35900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13886285.jpg",
+  "photo_ids": [
+    "13777854",
+    "13777855",
+    "13886285",
+    "13886286",
+    "13886287",
+    "13886288",
+    "13886289",
+    "13886290",
+    "13886291",
+    "13886292",
+    "13886293",
+    "13886294"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:41Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

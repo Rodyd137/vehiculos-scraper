@@ -1,0 +1,26 @@
+{
+  "id": "1553150",
+  "url": "https://www.supercarros.com/honda-fit/1553150/",
+  "title": "Honda Fit",
+  "year": 2013,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 495000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13869804.jpg",
+  "photo_ids": [
+    "13869804",
+    "13869805",
+    "13869806",
+    "13869807",
+    "13869808",
+    "13869809",
+    "13869812",
+    "13869803",
+    "13869810",
+    "13869811"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:24Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "1558871",
+  "url": "https://www.supercarros.com/nissan-nv/1558871/",
+  "title": "Nissan NV 350",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1130000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13933638.jpg",
+  "photo_ids": [
+    "13933638",
+    "13933639",
+    "13933640",
+    "13933641",
+    "13933642",
+    "13933643",
+    "13933644",
+    "13933645"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:05Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24",
+  "detail": {
+    "general": {
+      "Anuncio": "#1558871",
+      "Precio": "RD$ 1,130,000",
+      "Uso": "N/D Mi",
+      "Tipo": "Furgoneta",
+      "Motor": "0",
+      "Combustible": "Gasolina",
+      "Transmisión": "Automática",
+      "Tracción": "2WD",
+      "Interior": "Gris oscuro",
+      "Exterior": "Blanco",
+      "Carga": "N/D Lb",
+      "Puertas": "5",
+      "Pasajeros": "3",
+      "Condición": "Usado"
+    },
+    "accessories": null,
+    "description": null,
+    "vendor_text": null,
+    "vendor_name": null,
+    "phones": null,
+    "primary_phone": null,
+    "city": "Santo Domingo",
+    "images": [
+      "https://img.supercarros.com/AdsPhotos/1024x768/0/13933638.jpg?wmo=aa18369e2b357cefbe4cf185dd90819fa5d43bef0ce41c8d5c4f4d9457e2865d203235e4f1bae93a03cdeb43499887364c217479317d430bd676846fd851af50",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13933639.jpg",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13933640.jpg",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13933641.jpg",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13933642.jpg",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13933643.jpg",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13933644.jpg",
+      "https://img.supercarros.com/AdsPhotos/282x188/5/13933645.jpg"
+    ]
+  }
+}

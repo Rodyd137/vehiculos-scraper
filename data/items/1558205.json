@@ -1,0 +1,23 @@
+{
+  "id": "1558205",
+  "url": "https://www.supercarros.com/mitsubishi-montero/1558205/",
+  "title": "Mitsubishi Montero",
+  "year": 2022,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 43500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13925981.jpg",
+  "photo_ids": [
+    "13925981",
+    "13925986",
+    "13925987",
+    "13925988",
+    "13925989",
+    "13925990",
+    "13925991"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:20Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

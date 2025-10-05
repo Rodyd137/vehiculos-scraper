@@ -1,0 +1,22 @@
+{
+  "id": "1553142",
+  "url": "https://www.supercarros.com/mercedesbenz-clase gle/1553142/",
+  "title": "Mercedes-Benz Clase GLE 450 AMG",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 69000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13869717.jpg",
+  "photo_ids": [
+    "13869717",
+    "13869718",
+    "13869719",
+    "13869720",
+    "13869721",
+    "13869722"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:39Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

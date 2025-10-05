@@ -1,0 +1,28 @@
+{
+  "id": "1373928",
+  "url": "https://www.supercarros.com/lexus-rx/1373928/",
+  "title": "Lexus RX 350",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 31900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11890703.jpg",
+  "photo_ids": [
+    "11890703",
+    "11890704",
+    "11890705",
+    "11890706",
+    "11890707",
+    "11890708",
+    "11890709",
+    "11890710",
+    "11890711",
+    "11890712"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:22:22Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

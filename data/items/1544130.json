@@ -1,0 +1,28 @@
+{
+  "id": "1544130",
+  "url": "https://www.supercarros.com/honda-civic/1544130/",
+  "title": "Honda Civic EXL",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1175000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13768575.jpg",
+  "photo_ids": [
+    "13768575",
+    "13768576",
+    "13768577",
+    "13768578",
+    "13768579",
+    "13768580",
+    "13768581",
+    "13768582",
+    "13768583",
+    "13768584",
+    "13768585",
+    "13768586"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:30Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1547192",
+  "url": "https://www.supercarros.com/mazda-cx-90/1547192/",
+  "title": "Mazda CX-90  High Plus MHEV",
+  "year": 2024,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 69990.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13803535.jpg",
+  "photo_ids": [
+    "13803534",
+    "13803545",
+    "13803535",
+    "13803536",
+    "13803537",
+    "13803538",
+    "13803544",
+    "13803542",
+    "13803541",
+    "13888183",
+    "13888184",
+    "13888185"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:02Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

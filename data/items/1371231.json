@@ -1,0 +1,27 @@
+{
+  "id": "1371231",
+  "url": "https://www.supercarros.com/nissan-navara/1371231/",
+  "title": "Nissan Navara PRO X4",
+  "year": 2025,
+  "fuel": "Diesel",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 57900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11861485.jpg",
+  "photo_ids": [
+    "11861485",
+    "11861486",
+    "11861487",
+    "11861488",
+    "11861489",
+    "11861490",
+    "11861491",
+    "11861492",
+    "11861493",
+    "11861494",
+    "11861495"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:11Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

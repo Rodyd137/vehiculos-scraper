@@ -1,0 +1,26 @@
+{
+  "id": "1554803",
+  "url": "https://www.supercarros.com/ford-f150/1554803/",
+  "title": "Ford F 150 XL",
+  "year": 2016,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1000000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13888194.jpg",
+  "photo_ids": [
+    "13888186",
+    "13888195",
+    "13888194",
+    "13888191",
+    "13888188",
+    "13888187",
+    "13888189",
+    "13888190",
+    "13888192",
+    "13888193"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:02Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

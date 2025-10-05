@@ -1,0 +1,24 @@
+{
+  "id": "1557271",
+  "url": "https://www.supercarros.com/jac-s3/1557271/",
+  "title": "Jac S3",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 510000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13915661.jpg",
+  "photo_ids": [
+    "13915661",
+    "13915662",
+    "13915663",
+    "13915664",
+    "13915665",
+    "13915666",
+    "13915667",
+    "13915668"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:02Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

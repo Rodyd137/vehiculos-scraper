@@ -1,0 +1,28 @@
+{
+  "id": "1553821",
+  "url": "https://www.supercarros.com/ford-escape/1553821/",
+  "title": "Ford Escape SE",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 16500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13877250.jpg",
+  "photo_ids": [
+    "13877250",
+    "13877251",
+    "13877252",
+    "13877253",
+    "13877254",
+    "13877255",
+    "13877256",
+    "13877257",
+    "13877258",
+    "13877259",
+    "13877260",
+    "13877261"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:13Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

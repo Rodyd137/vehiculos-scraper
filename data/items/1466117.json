@@ -1,0 +1,28 @@
+{
+  "id": "1466117",
+  "url": "https://www.supercarros.com/mercedesbenz-clase gle/1466117/",
+  "title": "Mercedes-Benz Clase GLE 43 AMG",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 40900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12906455.jpg",
+  "photo_ids": [
+    "12906455",
+    "12906464",
+    "12906465",
+    "12906466",
+    "12906467",
+    "12906468",
+    "12906469",
+    "12906470",
+    "12906471",
+    "12906472",
+    "12906473",
+    "12906474"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:22Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

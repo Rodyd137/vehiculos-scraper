@@ -1,0 +1,23 @@
+{
+  "id": "1554270",
+  "url": "https://www.supercarros.com/chevrolet-colorado/1554270/",
+  "title": "Chevrolet Colorado LT",
+  "year": 2019,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 32000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13882358.jpg",
+  "photo_ids": [
+    "13882358",
+    "13882359",
+    "13882360",
+    "13882361",
+    "13882362",
+    "13882363",
+    "13882364"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:22Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

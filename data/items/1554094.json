@@ -1,0 +1,29 @@
+{
+  "id": "1554094",
+  "url": "https://www.supercarros.com/hyundai-venue/1554094/",
+  "title": "Hyundai Venue",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1039000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13880322.jpg",
+  "photo_ids": [
+    "13880322",
+    "13880323",
+    "13880324",
+    "13880325",
+    "13880326",
+    "13880327",
+    "13880328",
+    "13880329",
+    "13880330",
+    "13880331",
+    "13880332"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:21:15Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

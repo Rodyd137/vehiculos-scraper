@@ -1,0 +1,25 @@
+{
+  "id": "1556780",
+  "url": "https://www.supercarros.com/jaguar-fpace/1556780/",
+  "title": "Jaguar F-Pace",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 27500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13910389.jpg",
+  "photo_ids": [
+    "13910389",
+    "13910390",
+    "13910391",
+    "13910392",
+    "13910393",
+    "13910394",
+    "13910395",
+    "13910396",
+    "13910397"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:11Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

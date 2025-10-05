@@ -1,0 +1,30 @@
+{
+  "id": "1540810",
+  "url": "https://www.supercarros.com/maserati-grecale/1540810/",
+  "title": "Maserati Grecale Modena",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 108000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13731543.jpg",
+  "photo_ids": [
+    "13731543",
+    "13731544",
+    "13731545",
+    "13731546",
+    "13731547",
+    "13731548",
+    "13731549",
+    "13731550",
+    "13731551",
+    "13731552",
+    "13731553",
+    "13731554"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:21:54Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

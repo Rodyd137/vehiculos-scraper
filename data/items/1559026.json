@@ -1,0 +1,28 @@
+{
+  "id": "1559026",
+  "url": "https://www.supercarros.com/volvo-xc90/1559026/",
+  "title": "Volvo XC90 B6 Plus",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 45000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13935420.jpg",
+  "photo_ids": [
+    "13935420",
+    "13935421",
+    "13935422",
+    "13935423",
+    "13935424",
+    "13935425",
+    "13935426",
+    "13935427",
+    "13935428",
+    "13935429",
+    "13935430",
+    "13935431"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:39Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

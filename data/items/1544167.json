@@ -1,0 +1,28 @@
+{
+  "id": "1544167",
+  "url": "https://www.supercarros.com/audi-q8/1544167/",
+  "title": "Audi Q8 Sline Quattro",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 57000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13769004.jpg",
+  "photo_ids": [
+    "13769004",
+    "13769005",
+    "13769006",
+    "13769007",
+    "13769008",
+    "13769009",
+    "13769010",
+    "13769011",
+    "13769012",
+    "13769013"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:21:56Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

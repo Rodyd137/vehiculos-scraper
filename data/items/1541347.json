@@ -1,0 +1,27 @@
+{
+  "id": "1541347",
+  "url": "https://www.supercarros.com/nissan-caravan/1541347/",
+  "title": "Nissan Caravan",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1380000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13737571.jpg",
+  "photo_ids": [
+    "13737571",
+    "13737574",
+    "13737576",
+    "13737579",
+    "13737580",
+    "13737582",
+    "13737585",
+    "13737587",
+    "13737588",
+    "13737590",
+    "13737594"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:02Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1451940",
+  "url": "https://www.supercarros.com/suzuki-alto/1451940/",
+  "title": "Suzuki Alto",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 565000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13521087.jpg",
+  "photo_ids": [
+    "13521087",
+    "13521088",
+    "13521089",
+    "13521090",
+    "13521091",
+    "13521092",
+    "13521093",
+    "13521094",
+    "13521095",
+    "13521096",
+    "13521097",
+    "13521098"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:00Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

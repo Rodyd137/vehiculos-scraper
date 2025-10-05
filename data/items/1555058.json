@@ -1,0 +1,25 @@
+{
+  "id": "1555058",
+  "url": "https://www.supercarros.com/toyota-4runner/1555058/",
+  "title": "Toyota 4 Runner Limited",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 49900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13890869.jpg",
+  "photo_ids": [
+    "13890869",
+    "13890870",
+    "13890871",
+    "13890872",
+    "13890873",
+    "13890874",
+    "13890875",
+    "13890876",
+    "13890877"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:09Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

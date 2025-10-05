@@ -1,0 +1,28 @@
+{
+  "id": "1557110",
+  "url": "https://www.supercarros.com/honda-accord/1557110/",
+  "title": "Honda Accord Sport",
+  "year": 2015,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 785000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13913865.jpg",
+  "photo_ids": [
+    "13913865",
+    "13913866",
+    "13913867",
+    "13913868",
+    "13913869",
+    "13913870",
+    "13913871",
+    "13913872",
+    "13913873",
+    "13913874",
+    "13913875",
+    "13913876"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:45Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

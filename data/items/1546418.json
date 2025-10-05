@@ -1,0 +1,28 @@
+{
+  "id": "1546418",
+  "url": "https://www.supercarros.com/jeep-grandcherokee/1546418/",
+  "title": "Jeep Grand Cherokee Laredo",
+  "year": 2014,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 649000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13794940.jpg",
+  "photo_ids": [
+    "13794940",
+    "13794951",
+    "13794954",
+    "13794955",
+    "13794956",
+    "13794975",
+    "13794976",
+    "13794977",
+    "13794978",
+    "13794979",
+    "13794980",
+    "13794981"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:22Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

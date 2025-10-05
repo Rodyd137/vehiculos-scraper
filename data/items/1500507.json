@@ -1,0 +1,28 @@
+{
+  "id": "1500507",
+  "url": "https://www.supercarros.com/mg-one/1500507/",
+  "title": "MG One",
+  "year": 2025,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 29900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13286932.jpg",
+  "photo_ids": [
+    "13286922",
+    "13286923",
+    "13286924",
+    "13286925",
+    "13286926",
+    "13286927",
+    "13286928",
+    "13286929",
+    "13286930",
+    "13286931",
+    "13286932",
+    "13286933"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:28Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

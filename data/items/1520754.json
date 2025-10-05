@@ -1,0 +1,25 @@
+{
+  "id": "1520754",
+  "url": "https://www.supercarros.com/volkswagen-golf/1520754/",
+  "title": "Volkswagen Golf GTI Turbo",
+  "year": 2015,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 18500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13514989.jpg",
+  "photo_ids": [
+    "13514989",
+    "13514990",
+    "13514991",
+    "13514992",
+    "13514993",
+    "13514994",
+    "13514995",
+    "13514996",
+    "13514997"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:13Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

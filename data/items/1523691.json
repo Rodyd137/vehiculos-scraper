@@ -1,0 +1,27 @@
+{
+  "id": "1523691",
+  "url": "https://www.supercarros.com/ford-transit/1523691/",
+  "title": "Ford Transit 250 Cargo",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1595000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13547602.jpg",
+  "photo_ids": [
+    "13547597",
+    "13547598",
+    "13547599",
+    "13547600",
+    "13547601",
+    "13547602",
+    "13547603",
+    "13547604",
+    "13547605"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:37Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1542949",
+  "url": "https://www.supercarros.com/mercedesbenz-clasec/1542949/",
+  "title": "Mercedes-Benz Clase C 300 AMG 4Matic",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 68500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13755380.jpg",
+  "photo_ids": [
+    "13755380",
+    "13755381",
+    "13755382",
+    "13755383",
+    "13755384",
+    "13755385",
+    "13755386",
+    "13755387",
+    "13755388",
+    "13755389",
+    "13755390",
+    "13755391"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:45Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

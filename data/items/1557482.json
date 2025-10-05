@@ -1,0 +1,24 @@
+{
+  "id": "1557482",
+  "url": "https://www.supercarros.com/ford-explorer/1557482/",
+  "title": "Ford Explorer Limited",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 28500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13917984.jpg",
+  "photo_ids": [
+    "13917979",
+    "13917980",
+    "13917981",
+    "13917982",
+    "13917983",
+    "13917984",
+    "13917985",
+    "13917986"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:52Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

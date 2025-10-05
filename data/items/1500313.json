@@ -1,0 +1,28 @@
+{
+  "id": "1500313",
+  "url": "https://www.supercarros.com/jeep-wrangler/1500313/",
+  "title": "Jeep Wrangler Sahara Unlimited",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 34995.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13284910.jpg",
+  "photo_ids": [
+    "13284910",
+    "13284911",
+    "13284912",
+    "13284913",
+    "13284914",
+    "13284915",
+    "13284916",
+    "13284917",
+    "13284918",
+    "13284919",
+    "13284920",
+    "13284921"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:49Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "1552306",
+  "url": "https://www.supercarros.com/ford-mustang/1552306/",
+  "title": "Ford Mustang GT Convertible",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 25900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13860441.jpg",
+  "photo_ids": [
+    "13860441",
+    "13860443",
+    "13860444",
+    "13860445",
+    "13860446"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:21:15Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

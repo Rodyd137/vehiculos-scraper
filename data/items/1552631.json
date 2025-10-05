@@ -1,0 +1,26 @@
+{
+  "id": "1552631",
+  "url": "https://www.supercarros.com/audi-a4/1552631/",
+  "title": "Audi A4",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 18800.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13864145.jpg",
+  "photo_ids": [
+    "13864145",
+    "13864146",
+    "13864147",
+    "13864148",
+    "13864149",
+    "13864150",
+    "13864151",
+    "13864152",
+    "13864153",
+    "13864154"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:41Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "1529119",
+  "url": "https://www.supercarros.com/hyundai-tucson/1529119/",
+  "title": "Hyundai Tucson SE",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 17500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13609761.jpg",
+  "photo_ids": [
+    "13609761",
+    "13609762",
+    "13609763",
+    "13609764",
+    "13609765",
+    "13609766",
+    "13609767",
+    "13609768"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:13Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

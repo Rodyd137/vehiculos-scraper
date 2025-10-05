@@ -1,0 +1,28 @@
+{
+  "id": "1553798",
+  "url": "https://www.supercarros.com/lexus-gx/1553798/",
+  "title": "Lexus GX 460 Luxury",
+  "year": 2015,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 39393.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13876984.jpg",
+  "photo_ids": [
+    "13876984",
+    "13876985",
+    "13876986",
+    "13876987",
+    "13876988",
+    "13876989",
+    "13876990",
+    "13876991",
+    "13876992",
+    "13876993",
+    "13876994",
+    "13876995"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:39Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

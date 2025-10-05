@@ -1,0 +1,27 @@
+{
+  "id": "1554725",
+  "url": "https://www.supercarros.com/ford-f150/1554725/",
+  "title": "Ford F 150 STX",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 26900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13887355.jpg",
+  "photo_ids": [
+    "13887355",
+    "13887356",
+    "13887357",
+    "13887358",
+    "13887359",
+    "13887360",
+    "13887361",
+    "13887362",
+    "13887363"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:22:22Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

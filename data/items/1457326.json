@@ -1,0 +1,24 @@
+{
+  "id": "1457326",
+  "url": "https://www.supercarros.com/jeep-gladiator/1457326/",
+  "title": "Jeep Gladiator Rubicon",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 38500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13263873.jpg",
+  "photo_ids": [
+    "13263873",
+    "13263874",
+    "13263875",
+    "13263876",
+    "13263877",
+    "13263878",
+    "13263879",
+    "13263880"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:43Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

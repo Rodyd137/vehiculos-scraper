@@ -1,0 +1,29 @@
+{
+  "id": "1474691",
+  "url": "https://www.supercarros.com/chevrolet-colorado/1474691/",
+  "title": "Chevrolet Colorado",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 21500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13000544.jpg",
+  "photo_ids": [
+    "13000543",
+    "13000544",
+    "13000545",
+    "13000546",
+    "13000547",
+    "13000548",
+    "13000549",
+    "13000550",
+    "13000551",
+    "13000552",
+    "13000553"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:37Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

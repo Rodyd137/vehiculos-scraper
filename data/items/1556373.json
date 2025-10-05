@@ -1,0 +1,23 @@
+{
+  "id": "1556373",
+  "url": "https://www.supercarros.com/nissan-xtrail/1556373/",
+  "title": "Nissan X-Trail",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 28000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13905781.jpg",
+  "photo_ids": [
+    "13905788",
+    "13905785",
+    "13905781",
+    "13905787",
+    "13905789",
+    "13905782",
+    "13905790"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:22Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

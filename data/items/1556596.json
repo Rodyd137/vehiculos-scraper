@@ -1,0 +1,28 @@
+{
+  "id": "1556596",
+  "url": "https://www.supercarros.com/hyundai-grandstarex/1556596/",
+  "title": "Hyundai Grand Starex",
+  "year": 2020,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1695000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13908273.jpg",
+  "photo_ids": [
+    "13908273",
+    "13908274",
+    "13908275",
+    "13908276",
+    "13908277",
+    "13908278",
+    "13908279",
+    "13908280",
+    "13908281",
+    "13908282",
+    "13908283",
+    "13908284"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:28Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

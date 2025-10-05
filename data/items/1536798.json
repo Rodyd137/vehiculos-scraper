@@ -1,0 +1,28 @@
+{
+  "id": "1536798",
+  "url": "https://www.supercarros.com/toyota-corollacross/1536798/",
+  "title": "Toyota Corolla Cross",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 32900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13686600.jpg",
+  "photo_ids": [
+    "13686600",
+    "13686601",
+    "13686602",
+    "13686603",
+    "13686604",
+    "13686605",
+    "13686606",
+    "13686607",
+    "13686608",
+    "13686609",
+    "13686610",
+    "13686611"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:30Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

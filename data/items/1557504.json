@@ -1,0 +1,25 @@
+{
+  "id": "1557504",
+  "url": "https://www.supercarros.com/jeep-wrangler/1557504/",
+  "title": "Jeep Wrangler",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 32500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13918245.jpg",
+  "photo_ids": [
+    "13918238",
+    "13918239",
+    "13918240",
+    "13918241",
+    "13918242",
+    "13918243",
+    "13918244",
+    "13918245",
+    "13918246"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:17Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

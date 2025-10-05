@@ -1,0 +1,22 @@
+{
+  "id": "1557518",
+  "url": "https://www.supercarros.com/nissan-cabstar/1557518/",
+  "title": "Nissan Cabstar",
+  "year": 2000,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1600000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13918402.jpg",
+  "photo_ids": [
+    "13918402",
+    "13918403",
+    "13918404",
+    "13918405",
+    "13918406",
+    "13918407"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:15Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

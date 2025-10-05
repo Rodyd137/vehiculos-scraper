@@ -1,0 +1,26 @@
+{
+  "id": "1467524",
+  "url": "https://www.supercarros.com/ram-promaster/1467524/",
+  "title": "Ram Promaster",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 829000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12921991.jpg",
+  "photo_ids": [
+    "12921991",
+    "12921992",
+    "12921993",
+    "12921994",
+    "12921995",
+    "12921996",
+    "12921997",
+    "12921998"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:22:19Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

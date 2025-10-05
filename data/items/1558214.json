@@ -1,0 +1,29 @@
+{
+  "id": "1558214",
+  "url": "https://www.supercarros.com/landrover-rangerover/1558214/",
+  "title": "Land Rover Range Rover Vogue",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 205000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13926087.jpg",
+  "photo_ids": [
+    "13926087",
+    "13926088",
+    "13926089",
+    "13926090",
+    "13926091",
+    "13926092",
+    "13926093",
+    "13926094",
+    "13926095",
+    "13926096",
+    "13926097"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:21:56Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

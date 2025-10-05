@@ -1,0 +1,29 @@
+{
+  "id": "1467171",
+  "url": "https://www.supercarros.com/ram-promaster/1467171/",
+  "title": "Ram Promaster",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 625000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12917964.jpg",
+  "photo_ids": [
+    "12917964",
+    "12917966",
+    "12917967",
+    "12917968",
+    "12917969",
+    "12917970",
+    "12917971",
+    "12917972",
+    "12917973",
+    "12917974",
+    "12917975"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:37Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "1555118",
+  "url": "https://www.supercarros.com/chrysler-pacifica/1555118/",
+  "title": "Chrysler Pacifica Touring",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 16000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13891560.jpg",
+  "photo_ids": [
+    "13891551",
+    "13891552",
+    "13891553",
+    "13891554",
+    "13891555",
+    "13891556",
+    "13891557",
+    "13891558",
+    "13891559",
+    "13891560",
+    "13891561"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:39Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

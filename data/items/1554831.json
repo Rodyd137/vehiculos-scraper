@@ -1,0 +1,24 @@
+{
+  "id": "1554831",
+  "url": "https://www.supercarros.com/landrover-rangerover/1554831/",
+  "title": "Land Rover Range Rover",
+  "year": 2013,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 16500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13888473.jpg",
+  "photo_ids": [
+    "13888473",
+    "13888474",
+    "13888475",
+    "13888476",
+    "13888477",
+    "13888478",
+    "13888479",
+    "13888480"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:47Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

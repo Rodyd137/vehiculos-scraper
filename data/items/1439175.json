@@ -1,0 +1,29 @@
+{
+  "id": "1439175",
+  "url": "https://www.supercarros.com/dodge-grandcaravan/1439175/",
+  "title": "Dodge Grand Caravan SXT",
+  "year": 2016,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 465000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13861075.jpg",
+  "photo_ids": [
+    "13861075",
+    "13861076",
+    "13861077",
+    "13861078",
+    "13861079",
+    "13861080",
+    "13861081",
+    "13861082",
+    "13861083",
+    "13861084",
+    "13861085"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:37Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

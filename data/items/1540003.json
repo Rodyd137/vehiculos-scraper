@@ -1,0 +1,27 @@
+{
+  "id": "1540003",
+  "url": "https://www.supercarros.com/toyota-rav4/1540003/",
+  "title": "Toyota RAV4 XLE",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1686000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13722766.jpg",
+  "photo_ids": [
+    "13722766",
+    "13722767",
+    "13722768",
+    "13722769",
+    "13722770",
+    "13722771",
+    "13722772",
+    "13722773",
+    "13722774",
+    "13722775",
+    "13722776"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:45Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

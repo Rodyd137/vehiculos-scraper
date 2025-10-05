@@ -1,0 +1,26 @@
+{
+  "id": "1555662",
+  "url": "https://www.supercarros.com/honda-crv/1555662/",
+  "title": "Honda CR-V EXL",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 30999.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13897512.jpg",
+  "photo_ids": [
+    "13897512",
+    "13897513",
+    "13897514",
+    "13897515",
+    "13897516",
+    "13897517",
+    "13897518",
+    "13897519",
+    "13897520",
+    "13897521"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:24Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

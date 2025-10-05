@@ -1,0 +1,23 @@
+{
+  "id": "1558122",
+  "url": "https://www.supercarros.com/lexus-gs/1558122/",
+  "title": "Lexus GS 350 F-Sport",
+  "year": 2015,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 20000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13925032.jpg",
+  "photo_ids": [
+    "13925032",
+    "13925033",
+    "13925034",
+    "13925035",
+    "13925036",
+    "13925037",
+    "13925038"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:24Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

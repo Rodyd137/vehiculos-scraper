@@ -1,0 +1,28 @@
+{
+  "id": "1553941",
+  "url": "https://www.supercarros.com/mitsubishi-outlander/1553941/",
+  "title": "Mitsubishi Outlander SEL",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 24900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13878723.jpg",
+  "photo_ids": [
+    "13878721",
+    "13878722",
+    "13878723",
+    "13878724",
+    "13878725",
+    "13878726",
+    "13878727",
+    "13878728",
+    "13878729",
+    "13878730"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:22:15Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

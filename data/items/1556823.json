@@ -1,0 +1,26 @@
+{
+  "id": "1556823",
+  "url": "https://www.supercarros.com/porsche-cayman/1556823/",
+  "title": "Porsche Cayman",
+  "year": 2007,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 31000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13910819.jpg",
+  "photo_ids": [
+    "13910819",
+    "13910820",
+    "13910821",
+    "13910822",
+    "13910823",
+    "13910824",
+    "13910825",
+    "13910826",
+    "13910827",
+    "13910828"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:02Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

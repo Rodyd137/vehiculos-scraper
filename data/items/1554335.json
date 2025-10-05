@@ -1,0 +1,28 @@
+{
+  "id": "1554335",
+  "url": "https://www.supercarros.com/mercedesbenz-clasegls/1554335/",
+  "title": "Mercedes-Benz Clase GLS 450 4MATIC AMG",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 65000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13883104.jpg",
+  "photo_ids": [
+    "13883104",
+    "13883105",
+    "13883106",
+    "13883107",
+    "13883108",
+    "13883109",
+    "13883110",
+    "13883111",
+    "13883112",
+    "13883113",
+    "13883114",
+    "13883115"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:49Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

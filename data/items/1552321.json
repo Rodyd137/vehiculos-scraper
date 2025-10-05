@@ -1,0 +1,24 @@
+{
+  "id": "1552321",
+  "url": "https://www.supercarros.com/hyundai-santafe/1552321/",
+  "title": "Hyundai Santa Fe Limited Ultimate",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 18900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13860612.jpg",
+  "photo_ids": [
+    "13860612",
+    "13860613",
+    "13860614",
+    "13860615",
+    "13860616",
+    "13860617",
+    "13860618",
+    "13860619"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:22Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

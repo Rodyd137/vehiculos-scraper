@@ -1,0 +1,28 @@
+{
+  "id": "1554617",
+  "url": "https://www.supercarros.com/honda-civic/1554617/",
+  "title": "Honda Civic",
+  "year": 2014,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 635000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13886212.jpg",
+  "photo_ids": [
+    "13886212",
+    "13886213",
+    "13886214",
+    "13886215",
+    "13886216",
+    "13886217",
+    "13886218",
+    "13886219",
+    "13886220",
+    "13886221",
+    "13886222",
+    "13886223"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:17Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1546217",
+  "url": "https://www.supercarros.com/hyundai-santafe/1546217/",
+  "title": "Hyundai Santa Fe Sport",
+  "year": 2014,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 835000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13792625.jpg",
+  "photo_ids": [
+    "13792625",
+    "13792626",
+    "13792627",
+    "13792628",
+    "13792629",
+    "13792630",
+    "13792631",
+    "13792632",
+    "13792633",
+    "13792634",
+    "13792635",
+    "13792636"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:13Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

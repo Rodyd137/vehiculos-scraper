@@ -1,0 +1,29 @@
+{
+  "id": "1392740",
+  "url": "https://www.supercarros.com/ford-transit/1392740/",
+  "title": "Ford Transit Connect",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 765000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/12094125.jpg",
+  "photo_ids": [
+    "12094105",
+    "12094106",
+    "12094107",
+    "12094108",
+    "12094109",
+    "12094110",
+    "12094117",
+    "12094122",
+    "12094124",
+    "12094125",
+    "12094126"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:37Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

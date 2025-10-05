@@ -1,0 +1,29 @@
+{
+  "id": "1559022",
+  "url": "https://www.supercarros.com/mercedesbenz-clase gle/1559022/",
+  "title": "Mercedes-Benz Clase GLE 350 4Matic",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 25500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13935369.jpg",
+  "photo_ids": [
+    "13935367",
+    "13935368",
+    "13935369",
+    "13935370",
+    "13935371",
+    "13935372",
+    "13935373",
+    "13935374",
+    "13935375",
+    "13935376",
+    "13935377"
+  ],
+  "badges": [
+    "promo-ASOCIVU"
+  ],
+  "scraped_at": "2025-10-05T19:21:49Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

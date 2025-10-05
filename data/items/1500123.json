@@ -1,0 +1,27 @@
+{
+  "id": "1500123",
+  "url": "https://www.supercarros.com/dodge-durango/1500123/",
+  "title": "Dodge Durango Crew",
+  "year": 2012,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 550000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13282694.jpg",
+  "photo_ids": [
+    "13282694",
+    "13282697",
+    "13282699",
+    "13282702",
+    "13282703",
+    "13282704",
+    "13282705",
+    "13282706",
+    "13282707",
+    "13282708",
+    "13282709"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:13Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1556690",
+  "url": "https://www.supercarros.com/ford-escape/1556690/",
+  "title": "Ford Escape XLS",
+  "year": 2009,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 365000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13909383.jpg",
+  "photo_ids": [
+    "13909383",
+    "13909384",
+    "13909385",
+    "13909386",
+    "13909387",
+    "13909388",
+    "13909389",
+    "13909390",
+    "13909391",
+    "13909392",
+    "13909393",
+    "13909394"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:20Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

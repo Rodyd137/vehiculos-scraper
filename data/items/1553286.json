@@ -1,0 +1,29 @@
+{
+  "id": "1553286",
+  "url": "https://www.supercarros.com/subaru-forester/1553286/",
+  "title": "Subaru Forester Premium",
+  "year": 2018,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 993000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13871243.jpg",
+  "photo_ids": [
+    "13871242",
+    "13871243",
+    "13871244",
+    "13871245",
+    "13871246",
+    "13871247",
+    "13871248",
+    "13871249",
+    "13871250",
+    "13871251",
+    "13871252"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:32Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

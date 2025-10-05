@@ -1,0 +1,27 @@
+{
+  "id": "1375193",
+  "url": "https://www.supercarros.com/chrysler-pacifica/1375193/",
+  "title": "Chrysler Pacifica Touring",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 795000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11904137.jpg",
+  "photo_ids": [
+    "11904137",
+    "11904138",
+    "11904139",
+    "11904140",
+    "11904141",
+    "11904142",
+    "11904143",
+    "11904144",
+    "11904145"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:22:17Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "1552282",
+  "url": "https://www.supercarros.com/ford-mustangmache/1552282/",
+  "title": "Ford Mustang Mach-E",
+  "year": 2021,
+  "fuel": "Eléctrico",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 57900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13860164.jpg",
+  "photo_ids": [
+    "13860164",
+    "13860165",
+    "13860166",
+    "13860167",
+    "13860168",
+    "13860169",
+    "13860170"
+  ],
+  "badges": [
+    "promo-ASOCIVU"
+  ],
+  "scraped_at": "2025-10-05T19:22:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

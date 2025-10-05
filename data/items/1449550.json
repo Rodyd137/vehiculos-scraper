@@ -1,0 +1,28 @@
+{
+  "id": "1449550",
+  "url": "https://www.supercarros.com/honda-fit/1449550/",
+  "title": "Honda Fit",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 825000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13758118.jpg",
+  "photo_ids": [
+    "13757945",
+    "13758062",
+    "13758114",
+    "13758115",
+    "13758118",
+    "13758129",
+    "13758130",
+    "13758131",
+    "13758132",
+    "13758133",
+    "13758134",
+    "13758135"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:58Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

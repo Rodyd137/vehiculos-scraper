@@ -1,0 +1,26 @@
+{
+  "id": "1555376",
+  "url": "https://www.supercarros.com/mercedesbenz-clasec/1555376/",
+  "title": "Mercedes-Benz Clase C 300 4 Matic",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 29900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13894402.jpg",
+  "photo_ids": [
+    "13894402",
+    "13894403",
+    "13894404",
+    "13894405",
+    "13894406",
+    "13894407",
+    "13894408",
+    "13894409",
+    "13894410",
+    "13894411"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:05Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

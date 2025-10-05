@@ -1,0 +1,29 @@
+{
+  "id": "1502132",
+  "url": "https://www.supercarros.com/nissan-nv/1502132/",
+  "title": "Nissan NV 2500",
+  "year": 2021,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1245000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13305461.jpg",
+  "photo_ids": [
+    "13305461",
+    "13305462",
+    "13305463",
+    "13305464",
+    "13305465",
+    "13305466",
+    "13305467",
+    "13305468",
+    "13305469",
+    "13305470",
+    "13305471"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:37Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

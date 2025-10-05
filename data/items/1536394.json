@@ -1,0 +1,22 @@
+{
+  "id": "1536394",
+  "url": "https://www.supercarros.com/mercedesbenz-claseglc/1536394/",
+  "title": "Mercedes-Benz Clase GLC 200",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 29000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13682079.jpg",
+  "photo_ids": [
+    "13682080",
+    "13682079",
+    "13682076",
+    "13682078",
+    "13682077",
+    "13682081"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:02Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

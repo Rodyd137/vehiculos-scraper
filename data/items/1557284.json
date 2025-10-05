@@ -1,0 +1,25 @@
+{
+  "id": "1557284",
+  "url": "https://www.supercarros.com/kia-sportage/1557284/",
+  "title": "Kia Sportage",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1050000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13916145.jpg",
+  "photo_ids": [
+    "13915804",
+    "13915805",
+    "13915806",
+    "13915807",
+    "13915808",
+    "13915809",
+    "13916145",
+    "13916146",
+    "13916147"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:47Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

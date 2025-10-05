@@ -1,0 +1,26 @@
+{
+  "id": "1558623",
+  "url": "https://www.supercarros.com/honda-accord/1558623/",
+  "title": "Honda Accord LX",
+  "year": 2016,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 16000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13930733.jpg",
+  "photo_ids": [
+    "13930733",
+    "13930734",
+    "13930735",
+    "13930736",
+    "13930737",
+    "13930738",
+    "13930739",
+    "13930740",
+    "13930741",
+    "13930742"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:05Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

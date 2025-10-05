@@ -1,0 +1,26 @@
+{
+  "id": "1556172",
+  "url": "https://www.supercarros.com/ford-explorer/1556172/",
+  "title": "Ford Explorer Limited",
+  "year": 2016,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 795000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13903312.jpg",
+  "photo_ids": [
+    "13903314",
+    "13903312",
+    "13903315",
+    "13903313",
+    "13903316",
+    "13903317",
+    "13903319",
+    "13903320",
+    "13903321",
+    "13903318"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:58Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

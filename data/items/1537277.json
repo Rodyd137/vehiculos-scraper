@@ -1,0 +1,25 @@
+{
+  "id": "1537277",
+  "url": "https://www.supercarros.com/kia-sorento/1537277/",
+  "title": "Kia Sorento LX",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1050000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13692519.jpg",
+  "photo_ids": [
+    "13692499",
+    "13692500",
+    "13692501",
+    "13692502",
+    "13692503",
+    "13692504",
+    "13692505",
+    "13692506",
+    "13692519"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:07Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

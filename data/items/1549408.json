@@ -1,0 +1,28 @@
+{
+  "id": "1549408",
+  "url": "https://www.supercarros.com/kia-sportage/1549408/",
+  "title": "Kia Sportage",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1395000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13827963.jpg",
+  "photo_ids": [
+    "13827963",
+    "13827964",
+    "13827965",
+    "13827966",
+    "13827967",
+    "13827968",
+    "13827969",
+    "13827970",
+    "13827971",
+    "13827972",
+    "13827973",
+    "13827974"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:30Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1450497",
+  "url": "https://www.supercarros.com/nissan-march/1450497/",
+  "title": "Nissan March",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 585000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13037306.jpg",
+  "photo_ids": [
+    "12732329",
+    "13037304",
+    "13037305",
+    "13037306",
+    "13037307",
+    "13037308",
+    "13037309",
+    "13037310",
+    "13037311",
+    "13037312",
+    "13037313",
+    "13037314"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:00Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

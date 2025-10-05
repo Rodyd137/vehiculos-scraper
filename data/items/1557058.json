@@ -1,0 +1,26 @@
+{
+  "id": "1557058",
+  "url": "https://www.supercarros.com/mercedesbenz-clase gle/1557058/",
+  "title": "Mercedes-Benz Clase GLE 43",
+  "year": 2019,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 47500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13913340.jpg",
+  "photo_ids": [
+    "13913339",
+    "13913341",
+    "13913340",
+    "13913332",
+    "13913334",
+    "13913338",
+    "13913336",
+    "13913337",
+    "13913335",
+    "13913333"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:09Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

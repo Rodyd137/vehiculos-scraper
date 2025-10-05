@@ -1,0 +1,26 @@
+{
+  "id": "1557397",
+  "url": "https://www.supercarros.com/mitsubishi-monterosport/1557397/",
+  "title": "Mitsubishi Montero Sport",
+  "year": 2002,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 187000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13917024.jpg",
+  "photo_ids": [
+    "13917024",
+    "13917025",
+    "13917026",
+    "13917027",
+    "13917028",
+    "13917029",
+    "13917030",
+    "13917031"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:37Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

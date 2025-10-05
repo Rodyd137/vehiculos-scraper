@@ -1,0 +1,24 @@
+{
+  "id": "1432650",
+  "url": "https://www.supercarros.com/international-camion/1432650/",
+  "title": "International Camion",
+  "year": 2009,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1250000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13630692.jpg",
+  "photo_ids": [
+    "13630691",
+    "13630692",
+    "13630693",
+    "13630694",
+    "13630695",
+    "13630696"
+  ],
+  "badges": [
+    "promo-ASOCIVU"
+  ],
+  "scraped_at": "2025-10-05T19:21:22Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

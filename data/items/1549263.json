@@ -1,0 +1,26 @@
+{
+  "id": "1549263",
+  "url": "https://www.supercarros.com/chevrolet-tahoe/1549263/",
+  "title": "Chevrolet Tahoe Duramax",
+  "year": 2021,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 57500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13826467.jpg",
+  "photo_ids": [
+    "13826466",
+    "13826467",
+    "13826468",
+    "13826469",
+    "13826464",
+    "13826465",
+    "13826463",
+    "13826462",
+    "13826461",
+    "13826460"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:39Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

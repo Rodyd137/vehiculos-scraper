@@ -1,0 +1,28 @@
+{
+  "id": "1556468",
+  "url": "https://www.supercarros.com/jeep-grandcherokee/1556468/",
+  "title": "Jeep Grand Cherokee SUMMIT",
+  "year": 2017,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 27000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13906809.jpg",
+  "photo_ids": [
+    "13906809",
+    "13906811",
+    "13906807",
+    "13906812",
+    "13906805",
+    "13906803",
+    "13906804",
+    "13906806",
+    "13906808",
+    "13906810",
+    "13906813",
+    "13906814"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:58Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

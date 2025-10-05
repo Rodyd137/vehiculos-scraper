@@ -1,0 +1,28 @@
+{
+  "id": "1556178",
+  "url": "https://www.supercarros.com/changan-cs55/1556178/",
+  "title": "Changan CS 55 Plus",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 24000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13903267.jpg",
+  "photo_ids": [
+    "13903267",
+    "13903265",
+    "13903261",
+    "13903256",
+    "13903266",
+    "13903257",
+    "13903258",
+    "13903259",
+    "13903260",
+    "13903262",
+    "13903263",
+    "13903264"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:58Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

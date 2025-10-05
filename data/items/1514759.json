@@ -1,0 +1,27 @@
+{
+  "id": "1514759",
+  "url": "https://www.supercarros.com/nissan-nv/1514759/",
+  "title": "Nissan NV 350",
+  "year": 2018,
+  "fuel": "Diesel",
+  "condition": "Usado",
+  "price_currency": "DOP",
+  "price_amount": 1135000.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13447810.jpg",
+  "photo_ids": [
+    "13447809",
+    "13447810",
+    "13447811",
+    "13447812",
+    "13447813",
+    "13447814",
+    "13447815",
+    "13447816",
+    "13447817"
+  ],
+  "badges": [
+    "promo-ADECI"
+  ],
+  "scraped_at": "2025-10-05T19:21:37Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

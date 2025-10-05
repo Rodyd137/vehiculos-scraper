@@ -1,0 +1,27 @@
+{
+  "id": "1529073",
+  "url": "https://www.supercarros.com/honda-crv/1529073/",
+  "title": "Honda CR-V Touring Hybrid",
+  "year": 2020,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 30500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13609233.jpg",
+  "photo_ids": [
+    "13609233",
+    "13609234",
+    "13609235",
+    "13609236",
+    "13609237",
+    "13609238",
+    "13609239",
+    "13609240",
+    "13609241",
+    "13609242",
+    "13609243"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:45Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1554781",
+  "url": "https://www.supercarros.com/hyundai-cantus/1554781/",
+  "title": "Hyundai Cantus",
+  "year": 2022,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 23500.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13887942.jpg",
+  "photo_ids": [
+    "13887942",
+    "13887943",
+    "13887944",
+    "13887945",
+    "13887946",
+    "13887947",
+    "13887948",
+    "13887949",
+    "13887950",
+    "13887951",
+    "13887952",
+    "13887953"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:22:09Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

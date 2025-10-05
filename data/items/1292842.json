@@ -1,0 +1,30 @@
+{
+  "id": "1292842",
+  "url": "https://www.supercarros.com/faw-camion/1292842/",
+  "title": "Faw Camion",
+  "year": 2023,
+  "fuel": "Gasolina",
+  "condition": "Nuevo",
+  "price_currency": "USD",
+  "price_amount": 14900.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/11020599.jpg",
+  "photo_ids": [
+    "11020598",
+    "11020599",
+    "11020600",
+    "11020601",
+    "11020602",
+    "11020603",
+    "11020604",
+    "11020605",
+    "11020606",
+    "11020607",
+    "11020608",
+    "11020609"
+  ],
+  "badges": [
+    "promo-ANADIVE"
+  ],
+  "scraped_at": "2025-10-05T19:23:46Z",
+  "source": "https://www.supercarros.com/v.pesados/"
+}

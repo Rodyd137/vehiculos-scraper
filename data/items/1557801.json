@@ -1,0 +1,26 @@
+{
+  "id": "1557801",
+  "url": "https://www.supercarros.com/suzuki-lt/1557801/",
+  "title": "Suzuki LT 160 Quad Runer",
+  "year": 2007,
+  "fuel": "Gasolina",
+  "condition": "Usado",
+  "price_currency": "USD",
+  "price_amount": 2595.0,
+  "thumbnail": "https://img.supercarros.com/AdsPhotos/282x188/5/13921602.jpg",
+  "photo_ids": [
+    "13921602",
+    "13921603",
+    "13921604",
+    "13921605",
+    "13921606",
+    "13921607",
+    "13921608",
+    "13921609",
+    "13921610",
+    "13921611"
+  ],
+  "badges": [],
+  "scraped_at": "2025-10-05T19:21:58Z",
+  "source": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24"
+}

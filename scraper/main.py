@@ -16,7 +16,8 @@ DEFAULT_CONFIG = {
     "user_agent": "Mozilla/5.0 (compatible; VehiculosScraper/1.2)",
     "details": True,
     "detail_sleep_seconds": 0.8,
-    "max_details": 120,
+    # 0 o negativo = sin límite (descargar detalles de TODOS)
+    "max_details": 0,
     "order_column": "Id",
     "order_direction": "DESC",
     "items_per_page": 24
@@ -83,7 +84,7 @@ def get_base_root(base_url: str) -> str:
     p = urlparse(base_url)
     return f"{p.scheme}://{p.netloc}"
 
-def normalize_url(href: str, base_root: str):
+def normalize_url(href: str | None, base_root: str):
     if not href: return None
     if href.startswith("http"): return href
     return urljoin(base_root, href)
@@ -371,8 +372,9 @@ def _find_city_in_structured_data(soup: BeautifulSoup) -> str | None:
             if c: return c
     return None
 
-def parse_detail_page(html: str):
+def parse_detail_page(html: str, base_url: str):
     soup = BeautifulSoup(html, "lxml")
+    base_root = get_base_root(base_url)
 
     # --- Datos generales / accesorios / descripción ---
     datos_lines = extract_section_texts(soup, r"Datos\s+Generales")
@@ -446,12 +448,14 @@ def parse_detail_page(html: str):
     if not city:
         city = _find_city_in_text(soup.get_text(" ", strip=True)) or city
 
-    # --- Imágenes
+    # --- Imágenes (normalizadas a URL absolutas)
     imgs = []
     for im in soup.select("img"):
         src = (im.get("src") or "").strip()
         if "AdsPhotos" in src:
-            imgs.append(src)
+            absu = normalize_url(src, base_root)
+            if absu:
+                imgs.append(absu)
     imgs = sorted(set(imgs))
 
     return {
@@ -472,14 +476,14 @@ def enrich_with_details(item: dict, ua: str, base_url: str, sleep_s: float) -> d
     murl = to_mobile(url, base_url)
     try:
         html = fetch(murl, ua)
-        detail = parse_detail_page(html)
+        detail = parse_detail_page(html, base_url)
         item["detail"] = detail
         item["seller_name"]   = detail.get("vendor_name")
         item["primary_phone"] = detail.get("primary_phone") or (detail.get("phones") or [None])[0]
         item["city"]          = detail.get("city")
     except Exception as e:
         item.setdefault("detail_error", str(e))
-    time.sleep(sleep_s)
+    time.sleep(sleep_s if sleep_s >= 0 else 0)
     return item
 
 # ---------- Scrape por cada fuente ----------
@@ -560,15 +564,23 @@ def main():
         scrape_source(src, cfg, seen_ids, all_items)
 
     if cfg.get("details", True) and all_items:
-        max_details = int(cfg.get("max_details", 120))
+        max_details = int(cfg.get("max_details", 0))
         d_sleep = float(cfg.get("detail_sleep_seconds", 0.8))
         ua = cfg["user_agent"]
-        count = 0
-        for it in all_items:
-            if count >= max_details: break
-            enrich_with_details(it, ua, it.get("source") or base_url, d_sleep)
-            count += 1
-        print(f"[INFO] Detalles descargados: {count}")
+
+        if max_details <= 0:
+            items_to_enrich = all_items
+            print(f"[INFO] Descargando detalles para TODOS los {len(all_items)} anuncios (sin límite).")
+        else:
+            items_to_enrich = all_items[:max_details]
+            print(f"[INFO] Descargando detalles para los primeros {len(items_to_enrich)} anuncios (max_details={max_details}).")
+
+        for idx, it in enumerate(items_to_enrich, 1):
+            src_base = it.get("source") or base_url
+            print(f"[DETAIL] ({idx}/{len(items_to_enrich)}) ID={it.get('id')} …")
+            enrich_with_details(it, ua, src_base, d_sleep)
+
+        print(f"[INFO] Detalles descargados: {len(items_to_enrich)}")
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     (DATA_DIR / "listings.json").write_text(json.dumps(all_items, ensure_ascii=False, indent=2), encoding="utf-8")

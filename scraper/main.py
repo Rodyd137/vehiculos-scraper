@@ -193,9 +193,8 @@ def to_mobile(url: str, base_url: str) -> str:
     m_netloc = f"m.{root}"
     return p._replace(scheme="https", netloc=m_netloc).geturl()
 
-# Teléfonos RD (809, 829, 849) con formatos comunes
 PHONE_RE = re.compile(r"(?:\+?1?\s?(?:809|829|849))[\-\s\.]?\d{3}[\-\s\.]?\d{4}")
-EMAIL_RE = re.compile(r"[\w\.-]+@[\w\.-]+\.\w+", re.I)
+EMAIL_RE = re.compile(r"[A-Z0-9._%+\-]+@[A-Z0-9.\-]+\.[A-Z]{2,}", re.I)
 
 def extract_section_texts(soup: BeautifulSoup, title_regex: str):
     title = None
@@ -233,73 +232,98 @@ def parse_keyvals_from_block(text_lines):
         if k and v: out[k] = v
     return out
 
-# Heurísticas para sacar nombre del vendedor y ciudad
-def guess_vendor_name(lines: list[str]) -> str | None:
-    for ln in lines:
-        t = ln.strip()
-        # Prioriza claves explícitas tipo "Vendedor: Juan Pérez"
-        m = re.search(r"(?i)^(?:Vendedor|Contacto(?:\s+Vendedor)?|Dealer|Concesionario|Nombre)\s*[:\-]\s*(.+)$", t)
-        if m:
-            name = m.group(1).strip()
-            if name and not PHONE_RE.search(name) and not EMAIL_RE.search(name):
-                return name
-    # Fallback: primera línea "limpia" que no sea tel/correo/dirección
-    for ln in lines:
-        t = ln.strip()
-        if len(t) < 3: continue
-        if any(w in t.lower() for w in ["tel", "cel", "whatsapp", "correo", "email", "@", "fax"]): continue
-        if PHONE_RE.search(t) or EMAIL_RE.search(t): continue
-        # Evita líneas demasiado largas (direcciones)
-        if len(t) > 80: continue
-        # Si son solo letras, espacios y puntuación básica, úsalo
-        if re.fullmatch(r"[A-Za-zÁÉÍÓÚÑáéíóúñ\.\-\'\s&]+", t):
+def _pick_human_name(candidates: list[str]) -> str | None:
+    """
+    Dado un conjunto de líneas, elige la primera que luzca como nombre:
+    - No es teléfono, ni e-mail, ni etiqueta 'Ciudad/Ubicación/Provincia'.
+    - Tiene letras y al menos 3 caracteres.
+    """
+    for line in candidates:
+        t = line.strip()
+        if not t: continue
+        if ":" in t:  # suele ser 'Ciudad: Santo Domingo', etc.
+            k = t.split(":",1)[0].lower()
+            if any(x in k for x in ("ciudad","ubicación","ubicacion","provincia","sector","localidad","zona")):
+                continue
+        if PHONE_RE.search(t): continue
+        if EMAIL_RE.search(t): continue
+        letters = re.sub(r"[^A-Za-zÁÉÍÓÚÜÑáéíóúüñ\-\s]", "", t)
+        if len(letters.strip()) >= 3:
             return t
     return None
 
-def guess_city(general_dict: dict, vendor_lines: list[str]) -> str | None:
-    # 1) Buscar en "Datos Generales"
-    for key in ["Ciudad", "Ubicación", "Ubicacion", "Provincia", "Sector", "Municipio", "Localidad", "Zona"]:
-        for k,v in general_dict.items():
-            if key.lower() in k.lower():
-                vv = v.strip()
-                if vv: return vv
-    # 2) Buscar en bloque de vendedor
-    for ln in vendor_lines:
-        m = re.search(r"(?i)(Ciudad|Ubicaci[oó]n|Provincia|Sector|Municipio|Localidad|Zona)\s*[:\-]\s*(.+)$", ln.strip())
+def _guess_from_bottom(soup: BeautifulSoup):
+    """
+    Fallback genérico para versión móvil: toma las últimas líneas del texto de la página,
+    busca primer teléfono y la línea anterior 'humana' como posible nombre.
+    """
+    text = soup.get_text("\n", strip=True)
+    lines = [ln for ln in text.splitlines() if ln.strip()]
+    tail = lines[-40:]  # últimas ~40 líneas
+    # primer teléfono en el tail
+    first_phone = None
+    for ln in tail:
+        m = PHONE_RE.search(ln)
         if m:
-            val = m.group(2).strip()
-            if val: return val
-    # 3) Último recurso: primera línea que "parezca" ubicación (contiene palabras y quizá coma)
-    for ln in vendor_lines:
-        t = ln.strip()
-        if 3 <= len(t) <= 60 and ("," in t or " " in t):
-            if not PHONE_RE.search(t) and not EMAIL_RE.search(t):
-                return t
-    return None
+            first_phone = m.group(0)
+            break
+    # nombre: línea anterior válida
+    vendor_name = None
+    if first_phone:
+        idx = tail.index(ln)
+        prev_slice = list(reversed(tail[:idx]))
+        vendor_name = _pick_human_name(prev_slice)
+    return vendor_name, first_phone
 
 def parse_detail_page(html: str):
     soup = BeautifulSoup(html, "lxml")
 
-    # Bloques con títulos típicos
+    # --- Datos generales / accesorios / descripción ---
     datos_lines = extract_section_texts(soup, r"Datos\s+Generales")
     datos = parse_keyvals_from_block(datos_lines)
-
     acc_lines = extract_section_texts(soup, r"(Accesorios|Caracter\u00EDsticas|Características)")
     accesorios = sorted({re.sub(r"\s+", " ", t).strip("• ").strip() for t in acc_lines if t})
-
     obs_lines = extract_section_texts(soup, r"(Observaciones|Descripci\u00F3n|Descripción)")
     descripcion = "\n".join(obs_lines).strip() if obs_lines else None
 
+    # --- Vendedor: nombre / teléfonos / ciudad ---
     vend_lines = extract_section_texts(soup, r"(Vendedor|Contacto\s+Vendedor|Contacto\s+Dealer|Datos\s+del\s+Vendedor)")
+    vend_kv = parse_keyvals_from_block(vend_lines)
     vendedor_text = " \n ".join(vend_lines) if vend_lines else None
 
-    # Teléfonos y correos en bloque de vendedor
+    # Teléfonos (toma todos y luego elegimos el primero)
     phones = sorted(set(PHONE_RE.findall(vendedor_text or "")))
-    emails = sorted(set(EMAIL_RE.findall(vendedor_text or "")))
+    primary_phone = phones[0] if phones else None
 
-    # Nombre del vendedor y ciudad (heurísticos)
-    vendor_name = guess_vendor_name(vend_lines or [])
-    city = guess_city(datos or {}, vend_lines or [])
+    # Nombre: primero intenta por claves conocidas; luego heurística en líneas; luego fallback del "bottom"
+    vendor_name = vend_kv.get("Nombre") or vend_kv.get("Vendedor") or vend_kv.get("Contacto") or vend_kv.get("Dealer")
+    if not vendor_name and vend_lines:
+        vendor_name = _pick_human_name(vend_lines)
+    if not vendor_name or not primary_phone:
+        # fallback robusto a partir de la parte baja (vista móvil)
+        name_guess, phone_guess = _guess_from_bottom(soup)
+        if not vendor_name and name_guess:
+            vendor_name = name_guess
+        if not primary_phone and phone_guess:
+            primary_phone = phone_guess
+            phones = [primary_phone] + [p for p in phones if p != primary_phone]
+
+    # Ciudad (de 'Datos Generales' o de la sección de vendedor)
+    city = None
+    if datos:
+        for k, v in datos.items():
+            if re.search(r"(?i)(ciudad|ubicaci[oó]n|provincia|sector|localidad|zona)", k):
+                city = v.split(",")[0].strip() if v else None
+                if city: break
+    if not city and vend_kv:
+        for k, v in vend_kv.items():
+            if re.search(r"(?i)(ciudad|ubicaci[oó]n|provincia|sector|localidad|zona)", k):
+                city = v.split(",")[0].strip() if v else None
+                if city: break
+    if not city and vendedor_text:
+        m = re.search(r"(?i)(?:Ciudad|Ubicaci[oó]n|Provincia)\s*:\s*([A-Za-zÁÉÍÓÚÜÑáéíóúüñ\-\s]+)", vendedor_text)
+        if m:
+            city = m.group(1).strip()
 
     # Imágenes
     imgs = []
@@ -314,10 +338,10 @@ def parse_detail_page(html: str):
         "accessories": accesorios or None,
         "description": descripcion or None,
         "vendor_text": vendedor_text or None,
-        "vendor_name": vendor_name or None,
-        "city": city or None,
+        "vendor_name": vendor_name or None,     # ← NUEVO
         "phones": phones or None,
-        "emails": emails or None,
+        "primary_phone": primary_phone or None, # ← NUEVO
+        "city": city or None,                   # ← NUEVO
         "images": imgs or None
     }
 
@@ -330,12 +354,10 @@ def enrich_with_details(item: dict, ua: str, base_url: str, sleep_s: float) -> d
         detail = parse_detail_page(html)
         item["detail"] = detail
 
-        # Campos útiles al nivel superior para acceso directo
-        if detail:
-            if detail.get("vendor_name"): item["vendor_name"] = detail["vendor_name"]
-            if detail.get("city"):        item["vendor_city"] = detail["city"]
-            if detail.get("phones"):      item["vendor_phones"] = detail["phones"]
-            if detail.get("emails"):      item["vendor_emails"] = detail["emails"]
+        # Campos de conveniencia a nivel item
+        item["seller_name"]   = detail.get("vendor_name")
+        item["primary_phone"] = detail.get("primary_phone") or (detail.get("phones") or [None])[0]
+        item["city"]          = detail.get("city")
     except Exception as e:
         item.setdefault("detail_error", str(e))
     time.sleep(sleep_s)

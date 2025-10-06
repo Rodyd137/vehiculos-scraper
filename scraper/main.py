@@ -23,9 +23,20 @@ DEFAULT_CONFIG = {
     "items_per_page": 24
 }
 
+# ===========================
+# FUENTES ADICIONALES (todas las que pediste)
+# ===========================
 EXTRA_CATALOG_URLS = [
-    "https://www.supercarros.com/v.pesados/",
+    "https://www.supercarros.com/carros/hatchback/",
+    "https://www.supercarros.com/carros/sedan/",
+    "https://www.supercarros.com/carros/jeepeta/",
+    "https://www.supercarros.com/carros/camioneta/",
+    "https://www.supercarros.com/carros/coupe-deportivo/",
     "https://www.supercarros.com/motores/",
+    "https://www.supercarros.com/barcos/",
+    "https://www.supercarros.com/v.pesados/camion/",
+    "https://www.supercarros.com/v.pesados/autobus/",
+    "https://www.supercarros.com/otros/",
 ]
 
 def load_config():
@@ -524,13 +535,10 @@ def scrape_source(source_url: str, cfg: dict, seen_ids: set, all_items: list):
 def main():
     cfg = load_config()
     base_url = cfg["base_url"]
-    if not base_url:
-        print("[ERROR] Define 'base_url' en config.json (p. ej. https://www.supercarros.com/buscar)", file=sys.stderr)
-        sys.exit(1)
 
     # Log de configuración efectiva
     print("[CFG]", json.dumps({
-        "base_url": base_url,
+        "base_url": base_url or "(vacío → solo fuentes EXTRA)",
         "pages": cfg["pages"],
         "items_per_page": cfg["items_per_page"],
         "details": cfg["details"],
@@ -539,7 +547,9 @@ def main():
         "detail_sleep_seconds": cfg["detail_sleep_seconds"]
     }, ensure_ascii=False))
 
-    sources = [base_url] + EXTRA_CATALOG_URLS
+    # Si base_url está vacío, seguimos con EXTRA_CATALOG_URLS
+    sources = EXTRA_CATALOG_URLS if not base_url else [base_url] + EXTRA_CATALOG_URLS
+    print(f"[INFO] Fuentes totales: {len(sources)}")
 
     all_items: list[dict] = []
     seen_ids: set[str] = set()
@@ -561,7 +571,7 @@ def main():
             print(f"[INFO] Descargando detalles para los primeros {len(items_to_enrich)} anuncios (max_details={max_details}).")
 
         for idx, it in enumerate(items_to_enrich, 1):
-            src_base = it.get("source") or base_url
+            src_base = it.get("source") or base_url or "https://www.supercarros.com/"
             print(f"[DETAIL] ({idx}/{len(items_to_enrich)}) ID={it.get('id')} …")
             enrich_with_details(it, ua, src_base, d_sleep)
 

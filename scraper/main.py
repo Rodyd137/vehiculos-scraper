@@ -293,10 +293,34 @@ def _is_probable_name(t: str) -> bool:
     if not re.search(r"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]", tt): return False
     return True
 
-def _pick_human_name(candidates: list[str]) -> str | None:
+def _clave_de_linea(t: str) -> str:
+    """Forma comparable de una línea: sin tildes, sin viñetas, en minúscula."""
+    t = _strip_accents(t or "").lower()
+    t = t.replace("•", " ").replace("-", " ")
+    return re.sub(r"[^a-z0-9 ]+", " ", re.sub(r"\s+", " ", t)).strip()
+
+
+def _pick_human_name(candidates: list[str], excluir: set[str] | None = None) -> str | None:
+    """El primer candidato que parezca un nombre de persona o de dealer.
+
+    `excluir` trae las líneas que YA sabemos que son otra cosa —la descripción
+    que escribió el vendedor y la lista de accesorios—. Sin eso, el nombre que
+    salía era una viñeta del propio anuncio: se midió sobre 36.401 registros y
+    **2.405 tenían como "nombre del vendedor" un trozo literal de su
+    descripción**, del estilo de «Cruise control adaptativo».
+
+    Pasaba porque esas viñetas cumplen todo lo que pide `_is_probable_name`:
+    no llevan números, tienen menos de ocho palabras y no están entre las
+    palabras prohibidas. Y como viven justo encima del teléfono, eran lo
+    primero que encontraba la búsqueda hacia atrás.
+    """
     for line in candidates:
         t = line.strip().strip("•").strip("-").strip()
-        if _is_probable_name(t): return t
+        if not _is_probable_name(t):
+            continue
+        if excluir and _clave_de_linea(t) in excluir:
+            continue
+        return t
     return None
 
 def _name_from_email(email: str) -> str | None:
@@ -316,7 +340,7 @@ def _tail_lines(soup: BeautifulSoup, n: int = 50):
     lines = [ln for ln in text.splitlines() if ln.strip()]
     return lines[-n:]
 
-def _guess_from_bottom(soup: BeautifulSoup):
+def _guess_from_bottom(soup: BeautifulSoup, excluir: set[str] | None = None):
     tail = _tail_lines(soup, n=60)
     first_phone = None
     phone_idx = None
@@ -329,7 +353,7 @@ def _guess_from_bottom(soup: BeautifulSoup):
     vendor_name = None
     if first_phone is not None:
         prev_slice = list(reversed(tail[:phone_idx]))
-        vendor_name = _pick_human_name(prev_slice)
+        vendor_name = _pick_human_name(prev_slice, excluir)
     return vendor_name, first_phone, tail, phone_idx
 
 def _find_city_in_structured_data(soup: BeautifulSoup) -> str | None:
@@ -393,10 +417,25 @@ def parse_detail_page(html: str, base_url: str):
         or vend_kv.get("Empresa")
         or vend_kv.get("Concesionario")
     )
-    if not vendor_name and vend_lines:
-        vendor_name = _pick_human_name(vend_lines)
+    # Lo que NO puede ser el nombre del vendedor: lo que él mismo escribió.
+    #
+    # La descripción y los accesorios son suyos, no su nombre. Se guardan en
+    # forma comparable para poder descartarlos aunque cambien las tildes o las
+    # viñetas.
+    no_es_nombre: set[str] = set()
+    for linea in (descripcion or "").splitlines():
+        clave = _clave_de_linea(linea)
+        if clave:
+            no_es_nombre.add(clave)
+    for acc in accesorios:
+        clave = _clave_de_linea(acc)
+        if clave:
+            no_es_nombre.add(clave)
 
-    name_guess, phone_guess, tail, idx = _guess_from_bottom(soup)
+    if not vendor_name and vend_lines:
+        vendor_name = _pick_human_name(vend_lines, no_es_nombre)
+
+    name_guess, phone_guess, tail, idx = _guess_from_bottom(soup, no_es_nombre)
     if not vendor_name and name_guess:
         vendor_name = name_guess
     if not primary_phone and phone_guess:

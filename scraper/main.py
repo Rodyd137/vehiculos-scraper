@@ -3,6 +3,7 @@ from __future__ import annotations
 import os, re, json, time, sys, pathlib, datetime as dt, unicodedata
 from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode, urljoin
 import requests
+from concurrent.futures import ThreadPoolExecutor
 from bs4 import BeautifulSoup
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -73,6 +74,101 @@ def parse_price(text: str):
 
 FUEL_OPTIONS = {"Gasolina","Diesel","Gasoil/diesel","Gas/GLP","Eléctrico","El\u00E9ctrico","Híbrido","H\u00EDbrido"}
 COND_OPTIONS = {"Nuevo","Usado"}
+
+MIN_BYTES_FOTO = 5_000
+
+def leer_odometro(uso: str | None):
+    """«72,000 Mi» → (72000, "mi"). «N/D Mi» → (None, "mi").
+
+    Sale de aquí ya partido en vez de como texto, porque hasta ahora lo
+    desmenuzaba Postgres con expresiones regulares y **se le caía la unidad**:
+    quedaba el número pelado y la app lo pintaba como kilómetros. De 36.401
+    anuncios, 5.894 venían en MILLAS y se enseñaban como km, un 38 % menos de
+    lo real. Y donde la fuente pone «N/D» no hay dato: eso es nulo, no cero.
+    """
+    if not uso:
+        return (None, None)
+    t = uso.strip()
+    unidad = None
+    bajo = _strip_accents(t).lower()
+    if re.search(r"(^|[^a-z])k\.?m", bajo):
+        unidad = "km"
+    elif re.search(r"(^|[^a-z])mi", bajo):
+        unidad = "mi"
+    solo_digitos = re.sub(r"[^0-9]", "", t)
+    valor = int(solo_digitos) if solo_digitos else None
+    return (valor, unidad)
+
+
+def foto_de_verdad(url: str, ua: str) -> bool:
+    """¿Hay una foto detrás de esa dirección?
+
+    El CDN NO da 404 cuando la foto no existe: contesta **200 con un PNG
+    blanco**, y encima con extensión .jpg. Se decodifica perfectamente, así que
+    ni el navegador ni la app lo ven como un error, y la tarjeta sale en blanco.
+    Medido sobre 60 miniaturas al azar: **11 eran así, casi una de cada cinco**.
+
+    Una petición de cabecera basta y da dos señales: la falsa viaja como
+    `image/png` y pesa 115-336 bytes (1.991 en 800x600), mientras que la
+    miniatura de verdad más pequeña de 49 medidas pesaba 12.307. El corte en
+    5.000 queda lejos de las dos.
+    """
+    try:
+        r = requests.head(url, headers={"User-Agent": ua}, timeout=8, allow_redirects=True)
+        if r.status_code != 200:
+            return False
+        tipo = (r.headers.get("content-type") or "").lower()
+        if "png" in tipo:      # el marcador de "sin foto"
+            return False
+        largo = r.headers.get("content-length")
+        if largo is not None and int(largo) < MIN_BYTES_FOTO:
+            return False
+        return True
+    except Exception:
+        # Ante la duda, se conserva: perder una foto buena por un fallo de red
+        # es peor que dejar pasar una mala, que la app ya descarta por tamaño.
+        return True
+
+
+def limpiar_fotos(items: list[dict], ua: str, hilos: int = 8) -> tuple[int, int]:
+    """Quita de cada anuncio las fotos que no existen.
+
+    En paralelo porque son peticiones de cabecera, sin cuerpo ni HTML que
+    parsear: con ocho hilos, las ~50.000 comprobaciones tardan minutos en vez
+    de horas.
+    """
+    tareas: list[tuple[dict, str, str]] = []
+    for it in items:
+        thumb = it.get("thumbnail")
+        if thumb:
+            tareas.append((it, "thumbnail", thumb))
+        for pid in (it.get("photo_ids") or []):
+            tareas.append((it, pid, f"https://img.supercarros.com/AdsPhotos/282x188/5/{pid}.jpg"))
+
+    def comprobar(t):
+        it, clave, url = t
+        return (it, clave, foto_de_verdad(url, ua))
+
+    malas_thumb = 0
+    malas_foto = 0
+    with ThreadPoolExecutor(max_workers=hilos) as pool:
+        for it, clave, vale in pool.map(comprobar, tareas):
+            if vale:
+                continue
+            if clave == "thumbnail":
+                it["thumbnail"] = None
+                malas_thumb += 1
+            else:
+                it["photo_ids"] = [p for p in (it.get("photo_ids") or []) if p != clave]
+                malas_foto += 1
+
+    # Si se cayó la miniatura pero queda alguna foto buena, se asciende.
+    for it in items:
+        if not it.get("thumbnail") and it.get("photo_ids"):
+            it["thumbnail"] = f"https://img.supercarros.com/AdsPhotos/282x188/5/{it['photo_ids'][0]}.jpg"
+
+    return (malas_thumb, malas_foto)
+
 
 def parse_fuel_and_condition(text: str):
     fuel = None; condition = None
@@ -450,6 +546,9 @@ def parse_detail_page(html: str, base_url: str):
         if emails_all:
             vendor_name = _name_from_email(emails_all[0])
 
+    # El recorrido, ya partido: número y unidad por separado.
+    odometro_valor, odometro_unidad = leer_odometro((datos or {}).get("Uso"))
+
     city = None
     city = _find_city_in_structured_data(soup) or city
     if not city and datos:
@@ -480,6 +579,8 @@ def parse_detail_page(html: str, base_url: str):
     return {
         "general": datos or None,
         "accessories": accesorios or None,
+        "odometer": odometro_valor,
+        "odometer_unit": odometro_unidad,
         "description": descripcion or None,
         "vendor_text": vendedor_text or None,
         "vendor_name": vendor_name or None,
@@ -500,6 +601,10 @@ def enrich_with_details(item: dict, ua: str, base_url: str, sleep_s: float) -> d
         item["seller_name"]   = detail.get("vendor_name")
         item["primary_phone"] = detail.get("primary_phone") or (detail.get("phones") or [None])[0]
         item["city"]          = detail.get("city")
+        # Arriba también, junto a los demás datos del anuncio: así el
+        # importador no tiene que bucear en `detail` ni volver a parsear.
+        item["odometer"]      = detail.get("odometer")
+        item["odometer_unit"] = detail.get("odometer_unit")
     except Exception as e:
         item.setdefault("detail_error", str(e))
     time.sleep(max(0.0, sleep_s))
@@ -615,6 +720,31 @@ def main():
             enrich_with_details(it, ua, src_base, d_sleep)
 
         print(f"[INFO] Detalles descargados: {len(items_to_enrich)}")
+
+    # ---- Fotos que no existen ----
+    #
+    # El CDN contesta 200 con un PNG blanco cuando la foto no está, así que
+    # hay que preguntar por cada una. Se hace aquí, una sola vez, y no en cada
+    # anuncio: en paralelo son minutos en vez de horas.
+    if all_items:
+        ua = cfg["user_agent"]
+        sin_thumb, sin_foto = limpiar_fotos(all_items, ua)
+        print(f"[FOTOS] miniaturas caídas: {sin_thumb} · fotos sueltas caídas: {sin_foto}")
+
+    # ---- Anuncios que no sirven a nadie ----
+    #
+    # Sin precio Y sin ninguna foto no hay nada que enseñar. En la importación
+    # del 2026-09-11 eran 523 de 36.401, y resultaron ser EXACTAMENTE los
+    # mismos anuncios: una clase entera de anuncio roto, no dos problemas.
+    # Salían en la app como tarjetas de «US$ 0» con el dibujo de imagen rota.
+    antes = len(all_items)
+    all_items = [
+        it for it in all_items
+        if (it.get("price_amount") or 0) > 0 or it.get("thumbnail") or (it.get("photo_ids") or [])
+    ]
+    descartados = antes - len(all_items)
+    if descartados:
+        print(f"[LIMPIEZA] anuncios sin precio y sin foto, descartados: {descartados}")
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     (DATA_DIR / "listings.json").write_text(json.dumps(all_items, ensure_ascii=False, indent=2), encoding="utf-8")

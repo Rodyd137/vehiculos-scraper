@@ -676,82 +676,205 @@ def scrape_source(source_url: str, cfg: dict, seen_ids: set, all_items: list):
         page += 1
         time.sleep(max(0.0, sleep_s))
 
+# ---------- Barrido completo (28-sep-2026) ----------
+#
+# supercarros solo enseña los primeros 1.000 resultados de CUALQUIER búsqueda:
+# la página 42 sale vacía siempre (41 × 24 + 16). Con la búsqueda general y
+# las categorías, cada corrida veía ~4.800 de ~29.600 anuncios, y lo más viejo
+# dejaba de verse aunque siguiera en venta. Tampoco se notaba un borrado.
+#
+# Ahora se barre por marca (su propia web publica cuántos tiene cada una), y
+# las marcas de más de 900 se parten por años hasta que cada trozo quepa. Así
+# cada corrida ve el catálogo entero, y lo que falta de un barrido completo es
+# lo que se borró. Eso lo decide el importador de la base con `vistos.json`.
+
+TOPE_BUSQUEDA = 41 * 24        # más de esto en un trozo = se cortó
+BUSCAR = "https://www.supercarros.com/buscar"
+SEARCHVALUES = "https://www.supercarros.com/assets/js/searchvalues.js"
+
+
+def marcas_de_supercarros(ua: str) -> list[tuple[str, str, int]]:
+    """[(id, nombre, anuncios)] tal como las publica el buscador de la web."""
+    js = fetch(SEARCHVALUES, ua)
+    m = re.search(r"var SearchBrands = \[(.*?)\];", js, re.S)
+    if not m:
+        raise RuntimeError("searchvalues.js ya no trae SearchBrands")
+    marcas = []
+    for crudo in re.findall(r'"([^"]*)"', m.group(1)):
+        partes = crudo.split("|")
+        if len(partes) >= 5 and partes[0].isdigit() and partes[4].isdigit():
+            marcas.append((partes[0], partes[1], int(partes[4])))
+    return marcas
+
+
+def barrer_trozo(params: dict, cfg: dict, base_root: str) -> tuple[list[dict], bool, bool]:
+    """Todas las páginas de una búsqueda. Devuelve (anuncios, se_corto, error)."""
+    ua = cfg["user_agent"]
+    ipp = int(cfg.get("items_per_page", 24))
+    sleep_s = float(cfg["sleep_seconds"])
+    items: list[dict] = []
+    page = 0
+    while True:
+        url = add_or_replace_query(BUSCAR, PagingPageSkip=page, PagingItemsPerPage=ipp,
+                                   OrderColumn="Id", OrderDirection="DESC", **params)
+        try:
+            html = fetch(url, ua)
+        except Exception as e:
+            print(f"[WARN] {params} página {page}: {e}", file=sys.stderr)
+            return items, False, True
+        nuevos = parse_listings(html, url, base_root)
+        time.sleep(max(0.0, sleep_s))
+        if not nuevos:
+            break
+        items.extend(nuevos)
+        page += 1
+    return items, len(items) >= TOPE_BUSQUEDA, False
+
+
+def barrer_marca(marca_id: str, nombre: str, cuantos: int, desde: int, hasta: int,
+                 cfg: dict, base_root: str) -> tuple[list[dict], bool]:
+    """Una marca entera; se parte por años mientras un trozo se corte.
+    Devuelve (anuncios, completo)."""
+    params = {"Brand": marca_id}
+    partir = cuantos > 900
+    if partir:
+        params.update(YearFrom=desde, YearTo=hasta)
+    items, cortado, error = barrer_trozo(params, cfg, base_root)
+    if error:
+        return items, False
+    if cortado and desde < hasta:
+        mitad = (desde + hasta) // 2
+        print(f"[TROZO] {nombre} {desde}-{hasta} pasa de {TOPE_BUSQUEDA}: se parte en {desde}-{mitad} y {mitad+1}-{hasta}")
+        a, ok_a = barrer_marca(marca_id, nombre, cuantos, desde, mitad, cfg, base_root)
+        b, ok_b = barrer_marca(marca_id, nombre, cuantos, mitad + 1, hasta, cfg, base_root)
+        return a + b, ok_a and ok_b
+    if cortado:
+        print(f"[WARN] {nombre} {desde}-{hasta}: un solo año pasa del tope; queda incompleto", file=sys.stderr)
+        return items, False
+    return items, True
+
+
+def cargar_estado() -> dict:
+    """{id: "precio|moneda"} de los anuncios cuya ficha ya se bajó."""
+    p = DATA_DIR / "estado.json"
+    if p.exists():
+        try:
+            return json.loads(p.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    return {}
+
+
+def huella(it: dict) -> str:
+    return f"{it.get('price_amount')}|{it.get('price_currency')}"
+
+
+def sembrar_estado(estado: dict, ids: set[str], max_archivos: int = 120) -> int:
+    """Primera corrida con el barrido nuevo: sin `estado.json` se pedirían las
+    ~30.000 fichas otra vez. Las huellas salen de los archivos diarios, del
+    más nuevo al más viejo, hasta cubrir lo que está en venta."""
+    faltan = {i for i in ids if i not in estado}
+    diarios = sorted((DATA_DIR / "daily").glob("*.json"), reverse=True)[:max_archivos]
+    sembradas = 0
+    for p in diarios:
+        if not faltan:
+            break
+        try:
+            for it in json.loads(p.read_text(encoding="utf-8")):
+                i = str(it.get("id") or "")
+                if i in faltan and it.get("detail") and not it.get("detail_error"):
+                    estado[i] = huella(it)
+                    faltan.discard(i)
+                    sembradas += 1
+        except Exception as e:
+            print(f"[WARN] no se pudo leer {p.name}: {e}", file=sys.stderr)
+    return sembradas
+
+
 def main():
     cfg = load_config()
-    base_url = cfg["base_url"]
+    ua = cfg["user_agent"]
+    base_root = "https://www.supercarros.com"
+    empezo = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
+    anio_max = dt.datetime.utcnow().year + 1
 
-    # Log de configuración efectiva
-    print("[CFG]", json.dumps({
-        "base_url": base_url or "(vacío → solo fuentes EXTRA)",
-        "pages": cfg["pages"],
-        "items_per_page": cfg["items_per_page"],
-        "details": cfg["details"],
-        "max_details": cfg["max_details"],
-        "sleep_seconds": cfg["sleep_seconds"],
-        "detail_sleep_seconds": cfg["detail_sleep_seconds"]
-    }, ensure_ascii=False))
+    marcas = marcas_de_supercarros(ua)
+    esperado = sum(c for _, _, c in marcas)
+    print(f"[CFG] marcas: {len(marcas)} · anuncios según supercarros: {esperado}")
 
-    # Si base_url está vacío, seguimos con EXTRA_CATALOG_URLS
-    sources = EXTRA_CATALOG_URLS if not base_url else [base_url] + EXTRA_CATALOG_URLS
-    print(f"[INFO] Fuentes totales: {len(sources)}")
+    todos: dict[str, dict] = {}
+    completo = True
+    for marca_id, nombre, cuantos in marcas:
+        if cuantos <= 0:
+            continue
+        items, ok = barrer_marca(marca_id, nombre, cuantos, 1900, anio_max, cfg, base_root)
+        completo = completo and ok
+        for it in items:
+            if it.get("id"):
+                it["scraped_at"] = empezo
+                it["source"] = BUSCAR
+                todos.setdefault(it["id"], it)
+        print(f"[MARCA] {nombre}: {len(items)} de {cuantos}{'' if ok else ' (INCOMPLETA)'} · acumulado {len(todos)}")
 
-    all_items: list[dict] = []
-    seen_ids: set[str] = set()
+    # Por si algún anuncio no tiene marca en el buscador: los 1.000 más nuevos.
+    extra, _, _ = barrer_trozo({}, cfg, base_root)
+    for it in extra:
+        if it.get("id") and it["id"] not in todos:
+            it["scraped_at"] = empezo
+            it["source"] = BUSCAR
+            todos[it["id"]] = it
 
-    for src in sources:
-        print(f"[INFO] >>> Iniciando scrape de fuente: {src}")
-        scrape_source(src, cfg, seen_ids, all_items)
+    total = len(todos)
+    completo = completo and total >= esperado * 0.9
+    print(f"[BARRIDO] {total} anuncios de {esperado} esperados · completo: {completo}")
 
-    if cfg.get("details", True) and all_items:
-        max_details = int(cfg.get("max_details", 0))
+    # ---- Fichas: solo de lo nuevo o de lo que cambió de precio ----
+    estado = cargar_estado()
+    if not estado:
+        n = sembrar_estado(estado, set(todos.keys()))
+        print(f"[ESTADO] sembrado desde los diarios: {n} de {len(todos)}")
+    pendientes = [it for it in todos.values() if estado.get(it["id"]) != huella(it)]
+    pendientes.sort(key=lambda it: int(it["id"]) if it["id"].isdigit() else 0, reverse=True)
+    tope = int(cfg.get("max_details", 0))
+    if tope > 0:
+        pendientes = pendientes[:tope]
+    print(f"[INFO] fichas a bajar: {len(pendientes)} (nuevos o con otro precio)")
+
+    if cfg.get("details", True):
         d_sleep = float(cfg.get("detail_sleep_seconds", 0.8))
-        ua = cfg["user_agent"]
+        for idx, it in enumerate(pendientes, 1):
+            print(f"[DETAIL] ({idx}/{len(pendientes)}) ID={it.get('id')} …")
+            enrich_with_details(it, ua, base_root + "/", d_sleep)
 
-        if max_details <= 0:
-            items_to_enrich = all_items
-            print(f"[INFO] Descargando detalles para TODOS los {len(all_items)} anuncios (sin límite).")
-        else:
-            items_to_enrich = all_items[:max_details]
-            print(f"[INFO] Descargando detalles para los primeros {len(items_to_enrich)} anuncios (max_details={max_details}).")
-
-        for idx, it in enumerate(items_to_enrich, 1):
-            src_base = it.get("source") or base_url or "https://www.supercarros.com/"
-            print(f"[DETAIL] ({idx}/{len(items_to_enrich)}) ID={it.get('id')} …")
-            enrich_with_details(it, ua, src_base, d_sleep)
-
-        print(f"[INFO] Detalles descargados: {len(items_to_enrich)}")
-
-    # ---- Fotos que no existen ----
-    #
-    # El CDN contesta 200 con un PNG blanco cuando la foto no está, así que
-    # hay que preguntar por cada una. Se hace aquí, una sola vez, y no en cada
-    # anuncio: en paralelo son minutos en vez de horas.
-    if all_items:
-        ua = cfg["user_agent"]
-        sin_thumb, sin_foto = limpiar_fotos(all_items, ua)
+    # ---- Fotos que no existen (solo de lo que se va a escribir) ----
+    if pendientes:
+        sin_thumb, sin_foto = limpiar_fotos(pendientes, ua)
         print(f"[FOTOS] miniaturas caídas: {sin_thumb} · fotos sueltas caídas: {sin_foto}")
 
-    # ---- Anuncios que no sirven a nadie ----
-    #
-    # Sin precio Y sin ninguna foto no hay nada que enseñar. En la importación
-    # del 2026-09-11 eran 523 de 36.401, y resultaron ser EXACTAMENTE los
-    # mismos anuncios: una clase entera de anuncio roto, no dos problemas.
-    # Salían en la app como tarjetas de «US$ 0» con el dibujo de imagen rota.
-    antes = len(all_items)
-    all_items = [
-        it for it in all_items
+    # Sin precio Y sin ninguna foto no hay nada que enseñar (ver 2026-09-11).
+    escribir = [
+        it for it in pendientes
         if (it.get("price_amount") or 0) > 0 or it.get("thumbnail") or (it.get("photo_ids") or [])
     ]
-    descartados = antes - len(all_items)
-    if descartados:
-        print(f"[LIMPIEZA] anuncios sin precio y sin foto, descartados: {descartados}")
+    for it in escribir:
+        if not it.get("detail_error"):
+            estado[it["id"]] = huella(it)
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    (DATA_DIR / "listings.json").write_text(json.dumps(all_items, ensure_ascii=False, indent=2), encoding="utf-8")
+    (DATA_DIR / "listings.json").write_text(json.dumps(escribir, ensure_ascii=False, indent=2), encoding="utf-8")
+    (DATA_DIR / "estado.json").write_text(json.dumps(estado, ensure_ascii=False), encoding="utf-8")
+    (DATA_DIR / "vistos.json").write_text(json.dumps({
+        "terminado": dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
+        "empezo": empezo,
+        "completo": completo,
+        "esperado": esperado,
+        "total": total,
+        "ids": sorted(todos.keys()),
+    }, ensure_ascii=False), encoding="utf-8")
     today = dt.datetime.utcnow().date().isoformat()
     (DATA_DIR / "daily").mkdir(parents=True, exist_ok=True)
-    (DATA_DIR / "daily" / f"{today}.json").write_text(json.dumps(all_items, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"[DONE] Total anuncios: {len(all_items)} → data/listings.json")
+    (DATA_DIR / "daily" / f"{today}.json").write_text(json.dumps(escribir, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"[DONE] vistos: {total} · fichas escritas: {len(escribir)} → data/listings.json")
 
 if __name__ == "__main__":
     main()

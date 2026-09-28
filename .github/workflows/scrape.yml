@@ -6,6 +6,12 @@ on:
     - cron: "0 1 * * *"   # 9:00 PM America/Santo_Domingo
   workflow_dispatch:
 
+# Una corrida a la vez: con el barrido completo cada una tarda ~2,5 h, y si
+# se solapan, la segunda no puede guardar (28-sep-2026).
+concurrency:
+  group: scraper
+  cancel-in-progress: false
+
 jobs:
   scrape:
     permissions:

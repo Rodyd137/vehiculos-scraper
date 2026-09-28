@@ -1,8 +1,8 @@
 {
   "base_url": "https://www.supercarros.com/buscar?OrderColumn=Id&OrderDirection=DESC&PagingItemsPerPage=24",
   "pages": 0,
-  "sleep_seconds": 2.0,
+  "sleep_seconds": 1.5,
   "details": true,
   "detail_sleep_seconds": 0.8,
-  "max_details": 0
+  "max_details": 3000
 }
